@@ -1,0 +1,809 @@
+
+@/mnt/hgfs/shared/VLSI-Multipliers/src/oasys.log.00:952
+libc: 2.17-stable
+
+Timestamp: 1671205127.136363786
+---
+PID=8729 0.134049022 0.031178 0.102889 program start
+Complete list of environment variables at program start
+_ /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+CALIBRE_HOME /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14
+COLORTERM truecolor
+DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-K8B7TH2So1,guid=9f64ad2ab96aaeca66da06576395e508
+DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-K8B7TH2So1,guid=9f64ad2ab96aaeca66da06576395e508
+DBUS_STARTER_BUS_TYPE session
+DESKTOP_SESSION gnome-classic
+DISPLAY :0
+GDM_LANG en_US.UTF-8
+GDMSESSION gnome-classic
+GNOME_DESKTOP_SESSION_ID this-is-deprecated
+GNOME_SHELL_SESSION_MODE classic
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/ea79d994_4f7d_4478_83df_96537b288980
+GNOME_TERMINAL_SERVICE :1.107
+HISTCONTROL ignoredups
+HISTSIZE 1000
+HOME /home/vlsi
+HOSTNAME localhost.localdomain
+IMSETTINGS_INTEGRATE_DESKTOP yes
+IMSETTINGS_MODULE none
+LANG en_US.UTF-8
+LD_LIBRARY_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/Linux-x86_64-O:
+LESSOPEN {||/usr/bin/lesspipe.sh %s}
+LM_LICENSE_FILE /home/vlsi/Installation/5984_authcodes.txt
+LOGNAME vlsi
+LS_COLORS {rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:}
+MAIL /var/spool/mail/vlsi
+MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man:
+MGC_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/mgc_home
+OASYSLD_LICENSE_FILE /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/license.lic
+PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/onespin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/slec:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/.local/bin:/home/vlsi/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin
+PWD /mnt/hgfs/shared/VLSI-Multipliers/src
+QT_GRAPHICSSYSTEM_CHECKED 1
+QT_IM_MODULE ibus
+QTDIR /usr/lib64/qt-3.3
+QTINC /usr/lib64/qt-3.3/include
+QTLIB /usr/lib64/qt-3.3/lib
+RT_CMD {/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys }
+RT_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+RT_LIBPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib
+RT_MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man
+RT_PID 8719
+RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
+RT_TMP /tmp/oasys.8719
+RT_WRAPPER_SCRIPT /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/2004,unix/unix:/tmp/.ICE-unix/2004
+SHELL /bin/bash
+SHLVL 3
+SSH_AGENT_PID 2134
+SSH_AUTH_SOCK /run/user/1000/keyring/ssh
+TCL_LIBRARY /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library
+TERM xterm-256color
+USER vlsi
+USERNAME vlsi
+VTE_VERSION 5202
+WINDOWPATH 1
+XAUTHORITY /run/gdm/auth-for-vlsi-gS8icq/database
+XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+XDG_DATA_DIRS /home/vlsi/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_MENU_PREFIX gnome-
+XDG_RUNTIME_DIR /run/user/1000
+XDG_SEAT seat0
+XDG_SESSION_DESKTOP gnome-classic
+XDG_SESSION_ID 1
+XDG_SESSION_TYPE x11
+XDG_VTNR 1
+XMODIFIERS @im=ibus
+---
+
+Timestamp: 1671205127.147520263
+---
+Soft resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -S}
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671205127.168413008
+---
+Hard resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -H}
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15652
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15652
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1671205127.169232413
+---
+CPU Information
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 141
+model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+stepping	: 1
+microcode	: 0xffffffff
+cpu MHz		: 2304.000
+cache size	: 24576 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 27
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
+bogomips	: 4608.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+processor	: 1
+physical id	: 2
+apicid		: 2
+initial apicid	: 2
+
+processor	: 2
+physical id	: 4
+apicid		: 4
+initial apicid	: 4
+
+processor	: 3
+physical id	: 6
+apicid		: 6
+initial apicid	: 6
+
+This host has 4 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1671205127.325212592
+---
+Miscellaneous system info for process PID=8729
+Recorded at Fri Dec 16 17:38:47 EET 2022
+
+Executing: uptime
+ 17:38:47 up  4:10,  4 users,  load average: 0.14, 0.07, 0.05
+
+Executing: uname -a
+Linux localhost.localdomain 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+
+Executing: free
+              total        used        free      shared  buff/cache   available
+Mem:        4040804      915140      269464       18632     2856200     2828628
+Swap:       4063228           0     4063228
+
+Executing: ps u 8729
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vlsi      8729 18.0  0.7 277836 31316 pts/2    S+   17:38   0:00 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+
+Executing: cat /etc/redhat-release
+CentOS Linux release 7.7.1908 (Core)
+
+Executing: ldd /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+	linux-vdso.so.1 =>  (0x00007ffd39df9000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007fda350eb000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fda34ecf000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fda34ccb000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fda34ac3000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007fda34785000)
+	libSM.so.6 => /lib64/libSM.so.6 (0x00007fda3457d000)
+	libICE.so.6 => /lib64/libICE.so.6 (0x00007fda34361000)
+	libXi.so.6 => /lib64/libXi.so.6 (0x00007fda34151000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007fda33f46000)
+	libXfixes.so.3 => /lib64/libXfixes.so.3 (0x00007fda33d40000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007fda33b35000)
+	libXcursor.so.1 => /lib64/libXcursor.so.1 (0x00007fda3392a000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007fda33727000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007fda33468000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007fda33256000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fda33040000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007fda32e3e000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007fda32b28000)
+	libfontconfig.so.1 => /lib64/libfontconfig.so.1 (0x00007fda328e6000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fda325e4000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fda32216000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fda35312000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007fda31fec000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007fda31dc4000)
+	libuuid.so.1 => /lib64/libuuid.so.1 (0x00007fda31bbf000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007fda319af000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007fda31784000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007fda31522000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007fda312f8000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007fda310f4000)
+
+Examining disk space in the following directories:
+  Current directory: /mnt/hgfs/shared/VLSI-Multipliers/src
+  Oasys' temp directory: /tmp/oasys.8719/ (normalized path: /tmp/oasys.8719)
+  RT_TMP directory: /tmp/oasys.8719
+
+Executing: df /mnt/hgfs/shared/VLSI-Multipliers/src /tmp/oasys.8719 /tmp/oasys.8719
+Filesystem     1K-blocks      Used Available Use% Mounted on
+vmhgfs-fuse    375729148 312442176  63286972  84% /mnt/hgfs/shared
+tmpfs            2020400       440   2019960   1% /tmp
+tmpfs            2020400       440   2019960   1% /tmp
+
+
+---
+
+Timestamp: 1671205327.168651990
+---
+NDbC::beforeConcurrency uniquifier=<offset=0,modulo=5>
+
+---
+
+1671205327.173126925 Parent PID=8729 1.587378685 1.032806 0.554580 forking worker # 1
+Timestamp: 1671205327.176017747
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671205327.176017747
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671205327.209936810
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671205327.226923142
+---
+Parent 8729 started child 8889 
+
+---
+
+1671205327.235776011 Parent PID=8729 1.647637489 1.040829 0.606815 forking worker # 2
+Timestamp: 1671205327.254291854
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671205327.254291854
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671205327.283955184
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671205327.301778522
+---
+Parent 8729 started child 8891 
+
+---
+
+1671205327.302273126 Parent PID=8729 1.713913991 1.046838 0.667083 forking worker # 3
+Timestamp: 1671205327.319801861
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671205327.319801861
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671205327.401760297
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671205327.401884698
+---
+Parent 8729 started child 8897 
+
+---
+
+1671205327.402922506 Parent PID=8729 1.801197493 1.055222 0.745984 forking worker # 4
+Timestamp: 1671205327.421920053
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671205327.421920053
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671205327.491179890
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671205327.503614987
+---
+Parent 8729 started child 8900 
+
+---
+
+1671205327.505433500 BEGIN areaOpt PID=8729 1.902633798 1.063794 0.838847
+1671205338.727703784 END areaOpt PID=8729 2.274334511 1.167271 1.107069
+1671205338.849514128 BEGIN constProp PID=8729 2.280781511 1.173392 1.107396
+1671205338.852855754 END constProp PID=8729 2.283797811 1.175126 1.108679
+1671205339.051589895 BEGIN runTimingOptimizationLoopLevel2 PID=8729 2.482500418 1.372954 1.109553
+1671205339.051795696 END runTimingOptimizationLoopLevel2 PID=8729 2.482707619 1.373161 1.109553
+1671205339.052780804 BEGIN runTimingOptimizationLoopLevel2 PID=8729 2.483693318 1.374146 1.109553
+1671205339.052966205 END runTimingOptimizationLoopLevel2 PID=8729 2.483878918 1.374332 1.109553
+1671205339.236544228 Pausing MPG
+1671205339.236855330 BEGIN Optimize3Top::place PID=8729 2.625579426 1.509851 1.115734
+1671205340.148102893 END Optimize3Top::place PID=8729 3.606843052 2.096565 1.510284
+1671205340.149044801 Resuming MPG
+1671208419.367093639 Parent PID=8729 5.120035702 3.441447 1.678596 forking worker # 1
+Timestamp: 1671208419.368153446
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208419.368153446
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208419.393253823
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208419.393375023
+---
+Parent 8729 started child 10105 
+
+---
+
+1671208419.394058729 Parent PID=8729 5.146026103 3.458402 1.687631 forking worker # 2
+Timestamp: 1671208419.394786134
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208419.394786134
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208419.420055511
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208419.420137212
+---
+Parent 8729 started child 10107 
+
+---
+
+1671208419.420643616 Parent PID=8729 5.172098904 3.470017 1.702089 forking worker # 3
+Timestamp: 1671208419.421535822
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208419.421535822
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208419.455953364
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208419.456024064
+---
+Parent 8729 started child 10112 
+
+---
+
+1671208419.457500575 Parent PID=8729 5.208533206 3.482857 1.725684 forking worker # 4
+Timestamp: 1671208419.458244380
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208419.458244380
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208419.521211623
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208419.521351224
+---
+Parent 8729 started child 10115 
+
+---
+
+1671208419.524195144 BEGIN areaOpt PID=8729 5.264930108 3.488792 1.776152
+1671208426.564898384 END areaOpt PID=8729 5.549810321 3.563183 1.986634
+1671208426.706817983 BEGIN constProp PID=8729 5.556710922 3.563675 1.993042
+1671208426.710981112 END constProp PID=8729 5.560521322 3.563869 1.996659
+1671208426.897913927 BEGIN runTimingOptimizationLoopLevel2 PID=8729 5.747164429 3.750058 1.997113
+1671208426.898142229 END runTimingOptimizationLoopLevel2 PID=8729 5.747393129 3.750287 1.997113
+1671208426.899195836 BEGIN runTimingOptimizationLoopLevel2 PID=8729 5.748429728 3.751331 1.997113
+1671208426.899482038 END runTimingOptimizationLoopLevel2 PID=8729 5.748729929 3.751372 1.997366
+1671208427.082468826 Pausing MPG
+1671208427.082844029 BEGIN Optimize3Top::place PID=8729 5.888046937 3.881261 2.006793
+1671208427.682831850 END Optimize3Top::place PID=8729 6.654001762 4.406404 2.247604
+1671208427.683887757 Resuming MPG
+1671208602.964150871 Parent PID=8729 7.692536904 5.350472 2.342072 forking worker # 1
+Timestamp: 1671208602.964751375
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208602.964751375
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208602.978490171
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208602.978571872
+---
+Parent 8729 started child 10344 
+
+---
+
+1671208602.979351978 Parent PID=8729 7.707130005 5.359639 2.347536 forking worker # 2
+Timestamp: 1671208602.980617186
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208602.980617186
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208602.993170075
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208602.993285176
+---
+Parent 8729 started child 10346 
+
+---
+
+1671208602.993938980 Parent PID=8729 7.720844206 5.367431 2.353420 forking worker # 3
+Timestamp: 1671208602.994680286
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208602.994680286
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208603.006098266
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208603.006164866
+---
+Parent 8729 started child 10348 
+
+---
+
+1671208603.006788270 Parent PID=8729 7.733229907 5.373460 2.359779 forking worker # 4
+Timestamp: 1671208603.008087580
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208603.008087580
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208603.019586060
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208603.019643861
+---
+Parent 8729 started child 10352 
+
+---
+
+1671208603.020536467 BEGIN areaOpt PID=8729 7.746091608 5.382115 2.363983
+1671208606.807828415 END areaOpt PID=8729 7.828075813 5.434588 2.393495
+1671208606.953140438 BEGIN constProp PID=8729 7.834790314 5.436547 2.398250
+1671208606.956182159 END constProp PID=8729 7.837347714 5.438667 2.398688
+1671208607.125047748 BEGIN runTimingOptimizationLoopLevel2 PID=8729 8.006183021 5.606053 2.400138
+1671208607.126565158 END runTimingOptimizationLoopLevel2 PID=8729 8.007702921 5.607573 2.400138
+1671208607.128001969 BEGIN runTimingOptimizationLoopLevel2 PID=8729 8.009142121 5.609010 2.400138
+1671208607.128221070 END runTimingOptimizationLoopLevel2 PID=8729 8.009361621 5.609230 2.400138
+1671208607.242832377 Pausing MPG
+1671208607.243152379 BEGIN Optimize3Top::place PID=8729 8.086693325 5.679251 2.407449
+1671208607.711762976 END Optimize3Top::place PID=8729 8.660831253 6.004871 2.655967
+1671208607.712700583 Resuming MPG
+1671208649.537532572 Parent PID=8729 9.412785799 6.646033 2.766760 forking worker # 1
+Timestamp: 1671208649.538364378
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208649.538364378
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671208649.551896373
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208649.551963173
+---
+Parent 8729 started child 10591 
+
+---
+
+1671208649.552634478 Parent PID=8729 9.427008300 6.655088 2.771929 forking worker # 2
+Timestamp: 1671208649.553560884
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208649.553560884
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671208649.566278674
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208649.566406175
+---
+Parent 8729 started child 10593 
+
+---
+
+1671208649.566999979 Parent PID=8729 9.440692801 6.663432 2.777267 forking worker # 3
+Timestamp: 1671208649.568661991
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208649.568661991
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671208649.579664669
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208649.579722069
+---
+Parent 8729 started child 10596 
+
+---
+
+1671208649.580262373 Parent PID=8729 9.452507602 6.674268 2.778246 forking worker # 4
+Timestamp: 1671208649.581305080
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208649.581305080
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671208649.592681960
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671208649.592742361
+---
+Parent 8729 started child 10600 
+
+---
+
+1671208649.593772668 BEGIN areaOpt PID=8729 9.465233902 6.684959 2.780282
+1671208654.814569902 END areaOpt PID=8729 9.784065917 6.735528 3.048544
+1671208654.952204971 BEGIN constProp PID=8729 9.790576817 6.736518 3.054066
+1671208654.956505501 END constProp PID=8729 9.794434617 6.738336 3.056106
+1671208655.120813257 BEGIN runTimingOptimizationLoopLevel2 PID=8729 9.958584121 6.901891 3.056700
+1671208655.122064266 END runTimingOptimizationLoopLevel2 PID=8729 9.959836122 6.903142 3.056700
+1671208655.123568677 BEGIN runTimingOptimizationLoopLevel2 PID=8729 9.961340822 6.904647 3.056700
+1671208655.123765278 END runTimingOptimizationLoopLevel2 PID=8729 9.961537322 6.904843 3.056700
+1671208655.258824028 Pausing MPG
+1671208655.259130830 BEGIN Optimize3Top::place PID=8729 10.056812825 6.993638 3.063182
+1671208656.029774053 END Optimize3Top::place PID=8729 11.060551728 7.716275 3.344283
+1671208656.030552059 Resuming MPG
+1671215350.825938920 Parent PID=8729 13.358441037 9.208131 4.150318 forking worker # 1
+Timestamp: 1671215350.827087428
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671215350.827087428
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1671215350.912446725
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671215350.913395632
+---
+Parent 8729 started child 13169 
+
+---
+
+1671215350.926608124 Parent PID=8729 13.458455440 9.238321 4.220143 forking worker # 2
+Timestamp: 1671215350.928474038
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671215350.928474038
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1671215351.016922056
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671215351.017263658
+---
+Parent 8729 started child 13171 
+
+---
+
+1671215351.025872519 Parent PID=8729 13.557408344 9.250355 4.307063 forking worker # 3
+Timestamp: 1671215351.028115634
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671215351.028115634
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1671215351.115831948
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671215351.116097750
+---
+Parent 8729 started child 13177 
+
+---
+
+1671215351.118809769 Parent PID=8729 13.650095147 9.261240 4.388863 forking worker # 4
+Timestamp: 1671215351.122415594
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671215351.122415594
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1671215351.193144789
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1671215351.193638492
+---
+Parent 8729 started child 13183 
+
+---
+
+1671215351.200121538 BEGIN areaOpt PID=8729 13.729317851 9.271331 4.457994
+1671215353.835534672 END areaOpt PID=8729 14.167223064 9.332009 4.835221
+1671215353.990028253 BEGIN constProp PID=8729 14.176501463 9.336367 4.840142
+1671215353.994721586 END constProp PID=8729 14.180759463 9.337379 4.843387
+1671215354.171516823 BEGIN runTimingOptimizationLoopLevel2 PID=8729 14.356800273 9.513258 4.843549
+1671215354.172025226 END runTimingOptimizationLoopLevel2 PID=8729 14.357286073 9.513747 4.843549
+1671215354.172845831 BEGIN runTimingOptimizationLoopLevel2 PID=8729 14.358118073 9.514577 4.843549
+1671215354.173048633 END runTimingOptimizationLoopLevel2 PID=8729 14.358332273 9.514790 4.843549
+1671215354.329122825 Pausing MPG
+1671215354.329724629 BEGIN Optimize3Top::place PID=8729 14.474194378 9.629360 4.844841
+1671215355.106242461 END Optimize3Top::place PID=8729 15.521774563 10.393047 5.128734
+1671215355.107183767 Resuming MPG
