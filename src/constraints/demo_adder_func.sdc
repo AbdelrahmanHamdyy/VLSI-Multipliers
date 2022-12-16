@@ -1,24 +1,13 @@
 
-######################################################################
-# 
-#  ------------------------------------------------------------------
-#   Design    : demo_Adder
-#  ------------------------------------------------------------------
-#     SDC timing constraint file
-#  ------------------------------------------------------------------
-#
-
-
 set pad_load            10 
 set transition          0.707325
-set io_clock_period     20
-#set pad_delay           0.01
+set io_clock_period     2
 
 
 create_clock -name vsysclk -period ${io_clock_period} 
 set_load                ${pad_load}   [ all_outputs ]
-set_output_delay -clock  vsysclk   0.5 [all_outputs]
-set_input_delay -clock  vsysclk 1 [all_inputs]
+set_output_delay -clock  vsysclk   -rise  0.5 [all_outputs]
+set_input_delay -clock  vsysclk -rise 0.2 [all_inputs]
 
 
 
