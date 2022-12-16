@@ -1,16 +1,30 @@
 
+<<<<<<< HEAD
 @/mnt/hgfs/shared/VLSI-Multipliers/src/oasys.log.00:952
 libc: 2.17-stable
 
 Timestamp: 1671205127.136363786
 ---
 PID=8729 0.134049022 0.031178 0.102889 program start
+=======
+@/home/vlsi/shared/VLSI-Multipliers/src/oasys.log.00:952
+libc: 2.17-stable
+
+Timestamp: 1671205478.457252726
+---
+PID=3199 0.457229856 0.085156 0.372077 program start
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 Complete list of environment variables at program start
 _ /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
 CALIBRE_HOME /home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14
 COLORTERM truecolor
+<<<<<<< HEAD
 DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-K8B7TH2So1,guid=9f64ad2ab96aaeca66da06576395e508
 DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-K8B7TH2So1,guid=9f64ad2ab96aaeca66da06576395e508
+=======
+DBUS_SESSION_BUS_ADDRESS unix:abstract=/tmp/dbus-nroaHW2wVP,guid=41e6404713f555c4cd499bbb639c9119
+DBUS_STARTER_ADDRESS unix:abstract=/tmp/dbus-nroaHW2wVP,guid=41e6404713f555c4cd499bbb639c9119
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 DBUS_STARTER_BUS_TYPE session
 DESKTOP_SESSION gnome-classic
 DISPLAY :0
@@ -18,8 +32,13 @@ GDM_LANG en_US.UTF-8
 GDMSESSION gnome-classic
 GNOME_DESKTOP_SESSION_ID this-is-deprecated
 GNOME_SHELL_SESSION_MODE classic
+<<<<<<< HEAD
 GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/ea79d994_4f7d_4478_83df_96537b288980
 GNOME_TERMINAL_SERVICE :1.107
+=======
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/0128050a_c896_4026_88b8_8a991f7a7c58
+GNOME_TERMINAL_SERVICE :1.111
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 HISTCONTROL ignoredups
 HISTSIZE 1000
 HOME /home/vlsi
@@ -37,7 +56,11 @@ MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man:
 MGC_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/mgc_home
 OASYSLD_LICENSE_FILE /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/license.lic
 PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/onespin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib/share/slec:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin:/home/vlsi/.local/bin:/home/vlsi/bin:/home/vlsi/Installation/mgls_v9-22_3-1-0.aol/bin:/home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/bin:/home/vlsi/Installation/Calibre/aoi_cal_2020.1_25.14/bin:/home/vlsi/Installation/intelFPGA/19.1/modelsim_ase/bin:/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin
+<<<<<<< HEAD
 PWD /mnt/hgfs/shared/VLSI-Multipliers/src
+=======
+PWD /home/vlsi/shared/VLSI-Multipliers/src
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 QT_GRAPHICSSYSTEM_CHECKED 1
 QT_IM_MODULE ibus
 QTDIR /usr/lib64/qt-3.3
@@ -47,6 +70,7 @@ RT_CMD {/home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys }
 RT_HOME /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
 RT_LIBPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/lib
 RT_MANPATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/doc/man
+<<<<<<< HEAD
 RT_PID 8719
 RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
 RT_TMP /tmp/oasys.8719
@@ -55,6 +79,16 @@ SESSION_MANAGER local/unix:@/tmp/.ICE-unix/2004,unix/unix:/tmp/.ICE-unix/2004
 SHELL /bin/bash
 SHLVL 3
 SSH_AGENT_PID 2134
+=======
+RT_PID 3189
+RT_TCL_PATH /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl
+RT_TMP /tmp/oasys.3189
+RT_WRAPPER_SCRIPT /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/oasys
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/1883,unix/unix:/tmp/.ICE-unix/1883
+SHELL /bin/bash
+SHLVL 3
+SSH_AGENT_PID 2030
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 SSH_AUTH_SOCK /run/user/1000/keyring/ssh
 TCL_LIBRARY /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library
 TERM xterm-256color
@@ -62,7 +96,11 @@ USER vlsi
 USERNAME vlsi
 VTE_VERSION 5202
 WINDOWPATH 1
+<<<<<<< HEAD
 XAUTHORITY /run/gdm/auth-for-vlsi-gS8icq/database
+=======
+XAUTHORITY /run/gdm/auth-for-vlsi-mT97nd/database
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
 XDG_DATA_DIRS /home/vlsi/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
 XDG_MENU_PREFIX gnome-
@@ -75,7 +113,11 @@ XDG_VTNR 1
 XMODIFIERS @im=ibus
 ---
 
+<<<<<<< HEAD
 Timestamp: 1671205127.147520263
+=======
+Timestamp: 1671205478.492443590
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 ---
 Soft resource limits:
 
@@ -98,7 +140,11 @@ virtual memory          (kbytes, -v) unlimited
 file locks                      (-x) unlimited
 ---
 
+<<<<<<< HEAD
 Timestamp: 1671205127.168413008
+=======
+Timestamp: 1671205478.507261748
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 ---
 Hard resource limits:
 
@@ -121,19 +167,32 @@ virtual memory          (kbytes, -v) unlimited
 file locks                      (-x) unlimited
 ---
 
+<<<<<<< HEAD
 Timestamp: 1671205127.169232413
+=======
+Timestamp: 1671205478.507753021
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 ---
 CPU Information
 
 processor	: 0
 vendor_id	: GenuineIntel
 cpu family	: 6
+<<<<<<< HEAD
 model		: 141
 model name	: 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
 stepping	: 1
 microcode	: 0xffffffff
 cpu MHz		: 2304.000
 cache size	: 24576 KB
+=======
+model		: 94
+model name	: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+stepping	: 3
+microcode	: 0xffffffff
+cpu MHz		: 2711.999
+cache size	: 8192 KB
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 physical id	: 0
 siblings	: 1
 core id		: 0
@@ -142,16 +201,24 @@ apicid		: 0
 initial apicid	: 0
 fpu		: yes
 fpu_exception	: yes
+<<<<<<< HEAD
 cpuid level	: 27
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
 bogomips	: 4608.00
+=======
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl tsc_reliable nonstop_tsc eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch arat
+bogomips	: 5423.99
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 40 bits physical, 48 bits virtual
 power management:
 
 
+<<<<<<< HEAD
 processor	: 1
 physical id	: 2
 apicid		: 2
@@ -178,23 +245,47 @@ Recorded at Fri Dec 16 17:38:47 EET 2022
 
 Executing: uptime
  17:38:47 up  4:10,  4 users,  load average: 0.14, 0.07, 0.05
+=======
+
+This host has 1 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1671205478.765467024
+---
+Miscellaneous system info for process PID=3199
+Recorded at Fri Dec 16 17:44:38 EET 2022
+
+Executing: uptime
+ 17:44:38 up 6 min,  3 users,  load average: 0.05, 0.57, 0.38
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 
 Executing: uname -a
 Linux localhost.localdomain 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 
 Executing: free
               total        used        free      shared  buff/cache   available
+<<<<<<< HEAD
 Mem:        4040804      915140      269464       18632     2856200     2828628
 Swap:       4063228           0     4063228
 
 Executing: ps u 8729
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 vlsi      8729 18.0  0.7 277836 31316 pts/2    S+   17:38   0:00 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+=======
+Mem:        4040776      811416     2088948       16856     1140412     2976400
+Swap:       4063228           0     4063228
+
+Executing: ps u 3199
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+vlsi      3199 12.5  0.7 277836 31352 pts/1    S+   17:44   0:00 /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui --
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
 
 Executing: cat /etc/redhat-release
 CentOS Linux release 7.7.1908 (Core)
 
 Executing: ldd /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui
+<<<<<<< HEAD
 	linux-vdso.so.1 =>  (0x00007ffd39df9000)
 	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007fda350eb000)
 	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fda34ecf000)
@@ -807,3 +898,148 @@ Parent 8729 started child 13183
 1671215354.329724629 BEGIN Optimize3Top::place PID=8729 14.474194378 9.629360 4.844841
 1671215355.106242461 END Optimize3Top::place PID=8729 15.521774563 10.393047 5.128734
 1671215355.107183767 Resuming MPG
+=======
+	linux-vdso.so.1 =>  (0x00007ffe05ffc000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007f7bd97f6000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f7bd95da000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f7bd93d6000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f7bd91ce000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007f7bd8e90000)
+	libSM.so.6 => /lib64/libSM.so.6 (0x00007f7bd8c88000)
+	libICE.so.6 => /lib64/libICE.so.6 (0x00007f7bd8a6c000)
+	libXi.so.6 => /lib64/libXi.so.6 (0x00007f7bd885c000)
+	libXrender.so.1 => /lib64/libXrender.so.1 (0x00007f7bd8651000)
+	libXfixes.so.3 => /lib64/libXfixes.so.3 (0x00007f7bd844b000)
+	libXrandr.so.2 => /lib64/libXrandr.so.2 (0x00007f7bd8240000)
+	libXcursor.so.1 => /lib64/libXcursor.so.1 (0x00007f7bd8035000)
+	libXinerama.so.1 => /lib64/libXinerama.so.1 (0x00007f7bd7e32000)
+	libfreetype.so.6 => /lib64/libfreetype.so.6 (0x00007f7bd7b73000)
+	libXext.so.6 => /lib64/libXext.so.6 (0x00007f7bd7961000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f7bd774b000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007f7bd7549000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007f7bd7233000)
+	libfontconfig.so.1 => /lib64/libfontconfig.so.1 (0x00007f7bd6ff1000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f7bd6cef000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f7bd6921000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f7bd9a1d000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007f7bd66f7000)
+	libxcb.so.1 => /lib64/libxcb.so.1 (0x00007f7bd64cf000)
+	libuuid.so.1 => /lib64/libuuid.so.1 (0x00007f7bd62ca000)
+	libbz2.so.1 => /lib64/libbz2.so.1 (0x00007f7bd60ba000)
+	libpng15.so.15 => /lib64/libpng15.so.15 (0x00007f7bd5e8f000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007f7bd5c2d000)
+	libexpat.so.1 => /lib64/libexpat.so.1 (0x00007f7bd5a03000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007f7bd57ff000)
+
+Examining disk space in the following directories:
+  Current directory: /home/vlsi/shared/VLSI-Multipliers/src
+  Oasys' temp directory: /tmp/oasys.3189/ (normalized path: /tmp/oasys.3189)
+  RT_TMP directory: /tmp/oasys.3189
+
+Executing: df /home/vlsi/shared/VLSI-Multipliers/src /tmp/oasys.3189 /tmp/oasys.3189
+Filesystem     1K-blocks      Used Available Use% Mounted on
+vmhgfs-fuse    255441916 246918004   8523912  97% /home/vlsi/shared
+tmpfs            2020388        32   2020356   1% /tmp
+tmpfs            2020388        32   2020356   1% /tmp
+
+
+---
+
+Timestamp: 1671205980.344720065
+---
+NDbC::beforeConcurrency uniquifier=<offset=0,modulo=2>
+
+---
+
+1671205980.351357545 Parent PID=3199 4.048143290 3.438153 0.609993 forking worker # 1
+Timestamp: 1671205980.362695060
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671205980.362695060
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671205980.406420272
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=2>
+
+---
+
+Timestamp: 1671205980.418192845
+---
+Parent 3199 started child 3840 
+
+---
+
+1671205980.512771504 BEGIN areaOpt PID=3199 4.131224883 3.475409 0.655816
+1671206022.786111985 END areaOpt PID=3199 6.693681704 5.840213 0.853469
+1671206022.878310280 BEGIN constProp PID=3199 6.700156914 5.845810 0.854347
+1671206022.885387356 END constProp PID=3199 6.706625740 5.850176 0.856451
+1671206023.437899924 BEGIN runTimingOptimizationLoopLevel2 PID=3199 7.243039037 6.386549 0.856491
+1671206023.438170670 END runTimingOptimizationLoopLevel2 PID=3199 7.243310418 6.386820 0.856491
+1671206023.438329015 BEGIN runTimingOptimizationLoopLevel2 PID=3199 7.243468945 6.386978 0.856491
+1671206023.438715187 END runTimingOptimizationLoopLevel2 PID=3199 7.243854923 6.387364 0.856491
+1671206023.836024731 Pausing MPG
+1671206023.836256428 BEGIN Optimize3Top::place PID=3199 7.477804593 6.607598 0.870207
+1671206044.627104576 END Optimize3Top::place PID=3199 28.037064929 25.845366 2.191700
+1671206044.628252031 Resuming MPG
+
+@/home/vlsi/shared/VLSI-Multipliers/src/oasys.log.00:39204
+
+
+interrupt: signal 2 (Interrupt)
+
+About to print stack trace (depth=10, limit=50)
+0: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal14printBacktraceEib+0x116) [0x2ed72b6]
+1: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN7USignal9interruptEi+0x51) [0x2ed75e1]
+2: /lib64/libpthread.so.0(+0xf5f0) [0x7fd391a855f0]
+3: /lib64/libpthread.so.0(raise+0x2b) [0x7fd391a854bb]
+4: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0x2fec68c]
+5: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(gl_get_line+0x461) [0x2ff4cf1]
+6: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(Tcl_Main+0x8c2) [0x2f7ac02]
+7: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui(_ZN9MRealTime4mainEiPPc+0x16f) [0xdb993f]
+8: /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fd38eddf505]
+9: /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/bin/Linux-x86_64-O/oasysGui() [0xe7ef25]
+1671207335.442801289 Parent PID=3199 32.685872018 30.251615 2.434259 forking worker # 1
+Timestamp: 1671207335.443905264
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671207335.443905264
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=2>
+
+---
+
+Timestamp: 1671207335.474075808
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=2>
+
+---
+
+Timestamp: 1671207335.478040662
+---
+Parent 3199 started child 4435 
+
+---
+
+1671207335.479004347 BEGIN areaOpt PID=3199 32.710364484 30.270396 2.439969
+1671207356.398250416 END areaOpt PID=3199 33.080169137 30.571452 2.508718
+1671207356.529248074 BEGIN constProp PID=3199 33.088339154 30.575636 2.512704
+1671207356.532971211 END constProp PID=3199 33.091684430 30.576686 2.514999
+1671207356.986727027 BEGIN runTimingOptimizationLoopLevel2 PID=3199 33.526264088 31.010089 2.516175
+1671207356.986831339 END runTimingOptimizationLoopLevel2 PID=3199 33.526368650 31.010194 2.516175
+1671207356.986985979 BEGIN runTimingOptimizationLoopLevel2 PID=3199 33.526523308 31.010348 2.516175
+1671207356.987071628 END runTimingOptimizationLoopLevel2 PID=3199 33.526608997 31.010434 2.516175
+1671207357.356597072 Pausing MPG
+1671207357.356809990 BEGIN Optimize3Top::place PID=3199 33.777588150 31.256821 2.520767
+1671207358.623092139 END Optimize3Top::place PID=3199 34.930577568 32.291098 2.639480
+1671207358.624446975 Resuming MPG
+>>>>>>> 38905f910771b0a9c1e30442ac95aa5a5620ee1b
