@@ -1,0 +1,55 @@
+m255
+K4
+z2
+!s11f vlog 2022.4 2022.10, Oct 18 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/mnt/hgfs/shared/Mini project 2
+vbooth_multiplier
+Z0 !s110 1671224036
+!i10b 1
+!s100 [PWnWh3?OHf_BAD[N0jgA3
+I6PTZ=oFzil[HzmG>i?CWO2
+Z1 d/mnt/hgfs/shared/VLSI-Multipliers/src
+w1671223813
+8/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v
+F/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v
+!i122 40
+L0 1 101
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OP;L;2022.4;75
+r1
+!s85 0
+31
+Z4 !s108 1671224036.000000
+!s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbooth_multiplier_tb
+R0
+!i10b 1
+!s100 `D;Q;^41A2AjdQIYRQDTD2
+IhcjnJYZ22l6j`XB1nAC<F0
+R1
+w1671224031
+8/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v
+F/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v
+!i122 41
+L0 1 61
+R2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v|
+!i113 1
+R5
+R6
