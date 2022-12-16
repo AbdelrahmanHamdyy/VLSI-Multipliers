@@ -6,7 +6,7 @@ module buffer #(parameter size = 8)(
     output reg [size-1:0] Q
 );
 
-always @(posedge clk)
+always @(posedge clk, posedge en)
 begin
     if (rst)
         Q <= 'b0;
