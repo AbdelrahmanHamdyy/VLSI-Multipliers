@@ -3,34 +3,34 @@ Report Physical info:
                         |                       |Area (squm)|Leakage (uW)
 ------------------------+-----------------------+-----------+------------
 Design Name             |unsigned_seq_multiplier|           |            
-  Total Instances       |                    380|       1208|      21.526
+  Total Instances       |                    218|        601|      11.075
     Macros              |                      0|          0|       0.000
     Pads                |                      0|          0|       0.000
     Phys                |                      0|          0|       0.000
     Blackboxes          |                      0|          0|       0.000
-    Cells               |                    380|       1208|      21.526
+    Cells               |                    218|        601|      11.075
       Buffers           |                      0|          0|       0.000
-      Inverters         |                     35|         19|       0.502
-      Clock-Gates       |                      2|          8|       0.118
-      Combinational     |                    178|        355|       7.134
+      Inverters         |                     26|         14|       0.373
+      Clock-Gates       |                      1|          4|       0.059
+      Combinational     |                    120|        244|       4.862
       Latches           |                      0|          0|       0.000
-      FlipFlops         |                    165|        827|      13.771
-       Single-Bit FF    |                    165|        827|      13.771
+      FlipFlops         |                     71|        339|       5.780
+       Single-Bit FF    |                     71|        339|       5.780
        Multi-Bit FF     |                      0|          0|       0.000
-       Clock-Gated      |                    127|           |            
-       Bits             |                    165|        827|      13.771
+       Clock-Gated      |                     48|           |            
+       Bits             |                     71|        339|       5.780
          Load-Enabled   |                      0|           |            
-         Clock-Gated    |                    127|           |            
+         Clock-Gated    |                     48|           |            
   Tristate Pin Count    |                      0|           |            
 Physical Info           |Placed                 |           |            
-  Chip Size (mm x mm)   |0.105 x 0.105          |      10997|            
+  Chip Size (mm x mm)   |0.092 x 0.092          |       8400|            
   Fixed Cell Area       |                       |          0|            
     Phys Only           |                      0|          0|            
-  Placeable Area        |                       |       2009|            
-  Movable Cell Area     |                       |       1208|            
-  Utilization (%)       |                     60|           |            
-  Chip Utilization (%)  |                     60|           |            
-  Total Wire Length (mm)|                  7.057|           |            
-  Longest Wire (mm)     |                  0.058|           |            
-  Average Wire (mm)     |                  0.055|           |            
+  Placeable Area        |                       |        971|            
+  Movable Cell Area     |                       |        601|            
+  Utilization (%)       |                     61|           |            
+  Chip Utilization (%)  |                     61|           |            
+  Total Wire Length (mm)|                  4.652|           |            
+  Longest Wire (mm)     |                  0.049|           |            
+  Average Wire (mm)     |                  0.047|           |            
 ------------------------+-----------------------+-----------+------------

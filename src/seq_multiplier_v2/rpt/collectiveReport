@@ -1,0 +1,49 @@
+Report Physical info: 
+------------------------+-----------------+-----------+------------
+                        |                 |Area (squm)|Leakage (uW)
+------------------------+-----------------+-----------+------------
+Design Name             |seq_multiplier_v2|           |            
+  Total Instances       |              611|       1791|      32.189
+    Macros              |                0|          0|       0.000
+    Pads                |                0|          0|       0.000
+    Phys                |                0|          0|       0.000
+    Blackboxes          |                0|          0|       0.000
+    Cells               |              611|       1791|      32.189
+      Buffers           |                0|          0|       0.000
+      Inverters         |               68|         36|       0.976
+      Clock-Gates       |                2|          8|       0.118
+      Combinational     |              311|        598|      11.934
+      Latches           |                0|          0|       0.000
+      FlipFlops         |              230|       1149|      19.161
+       Single-Bit FF    |              230|       1149|      19.161
+       Multi-Bit FF     |                0|          0|       0.000
+       Clock-Gated      |              158|           |            
+       Bits             |              230|       1149|      19.161
+         Load-Enabled   |                0|           |            
+         Clock-Gated    |              158|           |            
+  Tristate Pin Count    |                0|           |            
+Physical Info           |Placed           |           |            
+  Chip Size (mm x mm)   |0.115 x 0.115    |      13141|            
+  Fixed Cell Area       |                 |          0|            
+    Phys Only           |                0|          0|            
+  Placeable Area        |                 |       2977|            
+  Movable Cell Area     |                 |       1791|            
+  Utilization (%)       |               60|           |            
+  Chip Utilization (%)  |               60|           |            
+  Total Wire Length (mm)|            7.770|           |            
+  Longest Wire (mm)     |            0.064|           |            
+  Average Wire (mm)     |            0.060|           |            
+------------------------+-----------------+-----------+------------
+Report Path Groups: 
+-----+-------+------+---------+---------
+     | Path  |Weight|Critical |Worst    
+     | Group |      |Range(ps)|Slack(ps)
+-----+-------+------+---------+---------
+1    |default| 1.000|      0.0|<unc>    
+2    |I2R    | 1.000|      0.0|<ill>    
+3    |I2O    | 1.000|      0.0|<ill>    
+4    |R2O    | 1.000|      0.0|<ill>    
+-----+-------+------+---------+---------
+548  |                    |                    |                     |                   |                 
+549  |*TOTAL              |          370.712982|           471.678986|          32.189445|       874.581360
+-----+--------------------+--------------------+---------------------+-------------------+-----------------

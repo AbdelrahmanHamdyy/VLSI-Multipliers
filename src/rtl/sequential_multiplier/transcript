@@ -12,448 +12,492 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# vsim fp_mul 
-# Start time: 19:17:26 on Dec 16,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.fp_mul(fast)
-add wave -position insertpoint  \
-sim:/fp_mul/a_s \
-sim:/fp_mul/b_s \
-sim:/fp_mul/c_out \
-sim:/fp_mul/clk \
-sim:/fp_mul/rst
-force -freeze sim:/fp_mul/clk 1 0, 0 {5 ns} -r 10
-force -freeze sim:/fp_mul/rst 1'h1 0 -cancel 10
-force -freeze sim:/fp_mul/a_s 32'b11000001100100000000000000000000 0
-force -freeze sim:/fp_mul/b_s 32'b01000001000110000000000000000000 0
-run 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog *.v
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 19:20:37 on Dec 16,2022
-# vlog -reportprogress 300 fp_mul.v seq_multiplier.v seq_multiplier_v2.v unsigned_seq_multiplier.v var_reg.v 
-# -- Compiling module fp_mul
-# -- Compiling module seq_multiplier
-# -- Compiling module seq_multiplier_v2
-# -- Compiling module unsigned_seq_multiplier
-# -- Compiling module var_reg
-# 
-# Top level modules:
-# 	fp_mul
-# 	seq_multiplier
-# 	seq_multiplier_v2
-# 	var_reg
-# End time: 19:20:37 on Dec 16,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.fp_mul -voptargs=+acc
-# End time: 19:21:08 on Dec 16,2022, Elapsed time: 0:03:42
-# Errors: 0, Warnings: 0
-# vsim work.fp_mul -voptargs="+acc" 
-# Start time: 19:21:08 on Dec 16,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-add wave -position insertpoint  \
-sim:/fp_mul/a \
-sim:/fp_mul/a_exp \
-sim:/fp_mul/a_mant \
-sim:/fp_mul/a_s \
-sim:/fp_mul/a_sign \
-sim:/fp_mul/b \
-sim:/fp_mul/b_exp \
-sim:/fp_mul/b_mant \
-sim:/fp_mul/b_s \
-sim:/fp_mul/b_sign \
-sim:/fp_mul/c \
-sim:/fp_mul/c_out \
-sim:/fp_mul/clk \
-sim:/fp_mul/counter \
-sim:/fp_mul/done \
-sim:/fp_mul/res_exp \
-sim:/fp_mul/res_mant \
-sim:/fp_mul/res_sign \
-sim:/fp_mul/rst \
-sim:/fp_mul/start \
-sim:/fp_mul/tmp
-do fp.do
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-do fp.do
-do fp.do
-add wave -position insertpoint  \
-sim:/fp_mul/unsigned_seq_multiplier_dut/a \
-sim:/fp_mul/unsigned_seq_multiplier_dut/A_r \
-sim:/fp_mul/unsigned_seq_multiplier_dut/Accumulator \
-sim:/fp_mul/unsigned_seq_multiplier_dut/b \
-sim:/fp_mul/unsigned_seq_multiplier_dut/B_r \
-sim:/fp_mul/unsigned_seq_multiplier_dut/c \
-sim:/fp_mul/unsigned_seq_multiplier_dut/clk \
-sim:/fp_mul/unsigned_seq_multiplier_dut/counter \
-sim:/fp_mul/unsigned_seq_multiplier_dut/done \
-sim:/fp_mul/unsigned_seq_multiplier_dut/N \
-sim:/fp_mul/unsigned_seq_multiplier_dut/rst \
-sim:/fp_mul/unsigned_seq_multiplier_dut/start
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-restart 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-add wave -position insertpoint  \
-sim:/fp_mul/a \
-sim:/fp_mul/a_exp \
-sim:/fp_mul/a_mant \
-sim:/fp_mul/a_s \
-sim:/fp_mul/a_sign \
-sim:/fp_mul/b \
-sim:/fp_mul/b_exp \
-sim:/fp_mul/b_mant \
-sim:/fp_mul/b_s \
-sim:/fp_mul/b_sign \
-sim:/fp_mul/c \
-sim:/fp_mul/c_out \
-sim:/fp_mul/clk \
-sim:/fp_mul/counter \
-sim:/fp_mul/done \
-sim:/fp_mul/res_exp \
-sim:/fp_mul/res_mant \
-sim:/fp_mul/res_sign \
-sim:/fp_mul/rst \
-sim:/fp_mul/start \
-sim:/fp_mul/tmp
-add wave -position insertpoint  \
-sim:/fp_mul/unsigned_seq_multiplier_dut/a \
-sim:/fp_mul/unsigned_seq_multiplier_dut/A_r \
-sim:/fp_mul/unsigned_seq_multiplier_dut/Accumulator \
-sim:/fp_mul/unsigned_seq_multiplier_dut/b \
-sim:/fp_mul/unsigned_seq_multiplier_dut/B_r \
-sim:/fp_mul/unsigned_seq_multiplier_dut/c \
-sim:/fp_mul/unsigned_seq_multiplier_dut/clk \
-sim:/fp_mul/unsigned_seq_multiplier_dut/counter \
-sim:/fp_mul/unsigned_seq_multiplier_dut/done \
-sim:/fp_mul/unsigned_seq_multiplier_dut/N \
-sim:/fp_mul/unsigned_seq_multiplier_dut/rst \
-sim:/fp_mul/unsigned_seq_multiplier_dut/start
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: fp_mul.v(74): (vopt-2685) [TFMPC] - Too few port connections for 'unsigned_seq_multiplier_dut'.  Expected 6, found 5.
-# ** Warning: fp_mul.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'en'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/fp_mul/unsigned_seq_multiplier_dut/counter'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/fp_mul/unsigned_seq_multiplier_dut/done'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/fp_mul/unsigned_seq_multiplier_dut/start'. 
-do fp.do
-run
-add wave -position 28  sim:/fp_mul/unsigned_seq_multiplier_dut/start_s
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-# Causality operation skipped due to absence of debug database file
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force a 1.2
-# Invalid hexadecimal digit: ..
-# ** UI-Msg: (vsim-4011) Invalid force value: 1.2.
-# 
-force -freeze sim:/fp_mul/b 32'b00111110010011001100110011001101 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/fp_mul/a 32'h0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/fp_mul/a 32'h0F00A000 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Error: fp_mul.v(42): Register is illegal in left-hand side of continuous assignment
+# vsim fp_multiplier_tb 
+# Start time: 23:08:05 on Dec 16,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): fp_multiplier_tb.v(54): (vopt-7063) Failed to find 'underflow' in hierarchical name 'underflow'.
+#         Region: fp_multiplier_tb
 # Optimization failed
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
-do fp.do
-# ** UI-Msg: (vsim-3459) Invalid region name.
-# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/fp_mul/clk' not found.
-# Error in macro ./fp.do line 3
-# ** UI-Msg: (vsim-3459) Invalid region name.
-# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/fp_mul/clk' not found.
-# 
-#     while executing
-# "force -freeze sim:/fp_mul/clk 1 0, 0 {5 ns} -r 10"
-restart
-# No Design Loaded!
-vsim work.fp_mul -voptargs=+acc
-# vsim work.fp_mul -voptargs="+acc" 
-# Start time: 19:21:08 on Dec 16,2022
+# Error loading design
+# End time: 23:08:06 on Dec 16,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim fp_multiplier_tb
+# vsim fp_multiplier_tb 
+# Start time: 23:09:23 on Dec 16,2022
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: fp_multiplier_tb.v(35): (vopt-2958) Implicit wire 'rst' does not have any driver.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.fp_multiplier_tb(fast)
+vsim fp_multiplier_tb
+# End time: 23:09:49 on Dec 16,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 1
+# vsim fp_multiplier_tb 
+# Start time: 23:09:49 on Dec 16,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+vsim work.fp_multiplier_tb
+# End time: 23:10:06 on Dec 16,2022, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 0
+# vsim work.fp_multiplier_tb 
+# Start time: 23:10:06 on Dec 16,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.fp_multiplier_tb(fast)
+vsim work.fp_multiplier_tb -voptargs=+acc
+# End time: 23:10:20 on Dec 16,2022, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
+# vsim work.fp_multiplier_tb -voptargs="+acc" 
+# Start time: 23:10:20 on Dec 16,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.fp_multiplier_tb(fast)
 # Loading work.fp_mul(fast)
 # Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-add wave -position 26  sim:/fp_mul/overflow
+add wave -position insertpoint  \
+sim:/fp_multiplier_tb/A \
+sim:/fp_multiplier_tb/B \
+sim:/fp_multiplier_tb/clk \
+sim:/fp_multiplier_tb/FailureCounter \
+sim:/fp_multiplier_tb/overflow \
+sim:/fp_multiplier_tb/reset \
+sim:/fp_multiplier_tb/result \
+sim:/fp_multiplier_tb/SuccessCounter \
+sim:/fp_multiplier_tb/T \
+sim:/fp_multiplier_tb/TestsCounter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aatta  Hostname: MYLOLY  ProcessID: 2472
+#           Attempting to use alternate WLF file "./wlftj17m0a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj17m0a
+run -all
+# TestCase# 0 : success
+# Time                  650: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                  970: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1290: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# TestCase# 4 : success
+# Time                 1930: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2250: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2570: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2890: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 3210: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=2 || Failure Cases=8 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3210 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+# A time value could not be extracted from the current line
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.fp_mul(fast)
-# Loading work.unsigned_seq_multiplier(fast)
-do fp.do
-restart
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
 # Loading work.fp_mul(fast)
 # Loading work.unsigned_seq_multiplier(fast)
 run -all
-do fp.do
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/fp_mul/a 32'h0FFFFFFFF 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/fp_mul/a 32'32'b0_11111110_10111111111111111111110 0
-# Invalid radix for based number: 3.
-# ** UI-Msg: (vsim-4011) Invalid force value: 32'32'b0_11111110_10111111111111111111110 0.
-# 
-force -freeze sim:/fp_mul/a 32'b0_11111110_10111111111111111111110 0
-force -freeze sim:/fp_mul/b b0_11111110_10111111111111111111111 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-force -freeze sim:/fp_mul/b 32'b0_11111110_10111111111111111111110 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+# Time                  250: TestCase# 0 : failed with input 40000000 and bf000000 and Output 00000000 and overflow status 0 
+# Time                  490: TestCase# 1 : failed with input 40000000 and 3f000000 and Output xxxxxxxx and overflow status x 
+# Time                  810: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 1130: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1450: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 1770: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2090: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2410: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2730: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3050: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=0 || Failure Cases=10 
+# ** Note: $stop    : fp_multiplier_tb.v(137)
+#    Time: 3050 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 137
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# Time                  370: TestCase# 0 : failed with input 40000000 and bf000000 and Output xxxxxxxx and overflow status x 
+# Time                  730: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                 1050: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 1370: TestCase# 3 : failed with input be800000 and 3e000000 and Output bd000000 and overflow status 0 
+# Time                 1690: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 2010: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2330: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2650: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2970: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3290: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=0 || Failure Cases=10 
+# ** Note: $stop    : fp_multiplier_tb.v(137)
+#    Time: 3290 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 137
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  730: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                 1050: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 1370: TestCase# 3 : failed with input be800000 and 3e000000 and Output bd000000 and overflow status 0 
+# Time                 1690: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 2010: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2330: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2650: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2970: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3290: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=1 || Failure Cases=9 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 3290 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  730: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                 1050: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 1370: TestCase# 3 : failed with input be800000 and 3e000000 and Output bd000000 and overflow status 0 
+# Time                 1690: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 2010: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2330: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2650: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2970: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3290: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=1 || Failure Cases=9 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 3290 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+# A time value could not be extracted from the current line
+# Causality operation skipped due to absence of debug database file
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  540: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                  860: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1180: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1500: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 1820: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2140: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2460: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2780: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3100: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=1 || Failure Cases=9 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3100 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+# A time value could not be extracted from the current line
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  550: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                  870: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1190: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1510: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# TestCase# 5 : success
+# Time                 2150: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2470: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2790: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3110: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=2 || Failure Cases=8 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3110 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  560: TestCase# 1 : failed with input 40000000 and 3f000000 and Output bf800000 and overflow status 0 
+# Time                  880: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1200: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1520: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# TestCase# 5 : success
+# Time                 2160: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2480: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2800: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3120: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=2 || Failure Cases=8 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3120 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+# A time value could not be extracted from the current line
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# Time                  880: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1200: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1520: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# TestCase# 5 : success
+# Time                 2160: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 2480: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2800: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3120: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=3 || Failure Cases=7 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 3120 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  410: TestCase# 1 : failed with input be800000 and be000000 and Output bf800000 and overflow status 0 
+# Time                  550: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                  870: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1190: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 1510: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 1830: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2150: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2470: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 2790: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=1 || Failure Cases=9 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 2790 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# Time                  420: TestCase# 1 : failed with input be800000 and be000000 and Output bf800000 and overflow status 0 
+# Time                  560: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                  880: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1200: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# Time                 1520: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 1840: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2160: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2480: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 2800: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=1 || Failure Cases=9 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 2800 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# Time                  870: TestCase# 2 : failed with input be800000 and be000000 and Output 3f800000 and overflow status 0 
+# Time                 1190: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# Time                 1510: TestCase# 4 : failed with input 3f800000 and 3f000000 and Output bd000000 and overflow status 0 
+# TestCase# 5 : success
+# Time                 2150: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2470: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 2790: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c2400001 and overflow status 1 
+# Time                 3110: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=3 || Failure Cases=7 
+# ** Note: $stop    : fp_multiplier_tb.v(136)
+#    Time: 3110 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 136
+# A time value could not be extracted from the current line
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# Time                 2010: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 2330: TestCase# 3 : failed with input be800000 and 3e000000 and Output 3d000000 and overflow status 0 
+# TestCase# 4 : success
+# Time                 2970: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 3290: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 3610: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 3930: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 4250: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=3 || Failure Cases=7 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 4250 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# Time                 1510: TestCase# 2 : failed with input be800000 and be000000 and Output 3d000000 and overflow status 0 
+# Time                 1830: TestCase# 3 : failed with input be800000 and 3e000000 and Output bd000000 and overflow status 0 
+# TestCase# 4 : success
+# Time                 2470: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2790: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 3110: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 3430: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 3750: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=3 || Failure Cases=7 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3750 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# Time                 2470: TestCase# 5 : failed with input 00000000 and 40a00000 and Output 3f000000 and overflow status 0 
+# Time                 2790: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 00000000 and overflow status 0 
+# Time                 3110: TestCase# 7 : failed with input 80800000 and 01400001 and Output 3ed1248e and overflow status 1 
+# Time                 3430: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 3750: TestCase# 9 : failed with input c0933333 and 40933333 and Output c19570a4 and overflow status 0 
+# Total Tests: 10 || Success Cases=5 || Failure Cases=5 
+# ** Note: $stop    : fp_multiplier_tb.v(135)
+#    Time: 3750 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 135
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 4790: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 5610: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 6430: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 7250: TestCase# 9 : failed with input c0933333 and 40933333 and Output c1a947ad and overflow status 0 
+# Total Tests: 10 || Success Cases=6 || Failure Cases=4 
+# ** Note: $stop    : fp_multiplier_tb.v(142)
+#    Time: 7250 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 142
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 1916: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2244: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 2572: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 2900: TestCase# 9 : failed with input c0933333 and 40933333 and Output c1a947ad and overflow status 0 
+# Total Tests: 10 || Success Cases=6 || Failure Cases=4 
+# ** Note: $stop    : fp_multiplier_tb.v(142)
+#    Time: 2900 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 142
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 1916: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2244: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 4372: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# Time                 6500: TestCase# 9 : failed with input c0933333 and 40933333 and Output c1a947ad and overflow status 0 
+# Total Tests: 10 || Success Cases=6 || Failure Cases=4 
+# ** Note: $stop    : fp_multiplier_tb.v(142)
+#    Time: 6500 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 142
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 1916: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2244: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 4372: TestCase# 8 : failed with input c0933333 and 40b9999a and Output c19570a4 and overflow status 0 
+# TestCase# 9 : success
+# Total Tests: 10 || Success Cases=7 || Failure Cases=3 
+# ** Note: $stop    : fp_multiplier_tb.v(142)
+#    Time: 6500 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 142
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 1916: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2244: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# Time                 4372: TestCase# 8 : failed with input c1900000 and 41180000 and Output c32b0000 and overflow status 0 
+# TestCase# 9 : success
+# Total Tests: 10 || Success Cases=7 || Failure Cases=3 
+# ** Note: $stop    : fp_multiplier_tb.v(142)
+#    Time: 6500 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 142
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fp_multiplier_tb(fast)
+# Loading work.fp_mul(fast)
+# Loading work.unsigned_seq_multiplier(fast)
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time                 1916: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time                 2244: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# TestCase# 8 : success
+# TestCase# 9 : success
+# Total Tests: 10 || Success Cases=8 || Failure Cases=2 
+# ** Note: $stop    : fp_multiplier_tb.v(140)
+#    Time: 2644 ns  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at fp_multiplier_tb.v line 140
+# End time: 00:50:32 on Dec 17,2022, Elapsed time: 1:40:12
+# Errors: 0, Warnings: 0

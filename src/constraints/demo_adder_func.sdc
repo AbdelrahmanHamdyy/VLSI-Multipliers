@@ -4,7 +4,7 @@ set transition          0.707325
 set io_clock_period     2
 
 
-create_clock -name vsysclk -period ${io_clock_period} 
+create_clock -name vsysclk -period ${io_clock_period} [ get_ports clk ] 
 set_load                ${pad_load}   [ all_outputs ]
 set_output_delay -clock  vsysclk   -rise  0.5 [all_outputs]
 set_input_delay -clock  vsysclk -rise 0.2 [all_inputs]

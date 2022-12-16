@@ -10,6 +10,28 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -19,50 +41,105 @@ R0
 cModel Technology
 Z1 dD:/academic_material/third_year/VLSI/repos/VLSI-Multipliers/src/rtl/sequential_multiplier
 T_opt
-!s110 1671210980
-Vi=YR<kdz1`=cl0lN@kzGZ2
-Z2 04 6 4 work fp_mul fast 0
-=1-020cf0a1cd70-639ca7e3-3bb-762c
-Z3 !s124 OEM10U2 
-o-quiet -auto_acc_if_foreign -work work
-Z4 tCvgOpt 0
+!s110 1671230986
+VD7DGdNDW9>LF7=jCXl`cD1
+Z2 04 16 4 work fp_multiplier_tb fast 0
+=21-020cf0a1cd70-639cf60a-86-6b90
+Z3 !s124 OEM10U3 
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
 n@_opt
-Z5 OL;O;2021.2;73
-R1
+Z6 OL;O;2021.2;73
 T_opt1
 !s110 1671216963
 VcM[DbmMecc5fMY1lUFRSQ0
-R2
+04 6 4 work fp_mul fast 0
 =12-020cf0a1cd70-639cbf42-379-9a8
-R3
-o-quiet -auto_acc_if_foreign -work work +acc
+!s124 OEM10U2 
 R4
-n@_opt1
 R5
-vfp_mul
-Z6 !s110 1671216960
-!i10b 1
-!s100 n7bN6[dD1W:T5H4jePl193
-IZECN[iDii;ZJQ1bKTR7l33
+n@_opt1
+R6
 R1
-w1671216958
+T_opt2
+!s110 1671224989
+VQKM[zC<1iKDOm:PXnBV7U0
+R2
+=1-020cf0a1cd70-639cde9d-1df-6b20
+R3
+o-quiet -auto_acc_if_foreign -work work
+R5
+n@_opt2
+R6
+R1
+vfp_mul
+Z7 !s110 1671230980
+!i10b 1
+!s100 G3KoQISK=gHGkmC=7N=od0
+IH0l4>l>S:QU:V<Z=WRQA]1
+R1
+w1671217070
 8fp_mul.v
 Ffp_mul.v
-!i122 13
-L0 3 113
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2021.2;73
+!i122 37
+L0 5 113
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z9 !s108 1671216959.000000
-Z10 !s107 var_reg.v|unsigned_seq_multiplier.v|seq_multiplier_v2.v|seq_multiplier.v|fp_mul.v|
-Z11 !s90 fp_mul.v|seq_multiplier.v|seq_multiplier_v2.v|unsigned_seq_multiplier.v|var_reg.v|
+Z10 !s108 1671230980.000000
+Z11 !s107 var_reg.v|unsigned_seq_multiplier.v|seq_multiplier_v2.v|seq_multiplier.v|fp_multiplier_tb.v|fp_mul.v|aa.v|
+Z12 !s90 aa.v|fp_mul.v|fp_multiplier_tb.v|seq_multiplier.v|seq_multiplier_v2.v|unsigned_seq_multiplier.v|var_reg.v|
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+vfp_mul_tb
+R7
+!i10b 1
+!s100 L1M>DoIb=4b7[3W:><GZ@3
+IdV40JhS7ITU6O:VzbnIU53
+R1
+w1671224359
+8aa.v
+Faa.v
+!i122 37
+L0 1 32
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
+vfp_multiplier_tb
+R7
+!i10b 1
+!s100 XzQTmJI56HiLf?fO`jkK_1
+Io;[4gT=_IFj[=13];c64h0
+R1
+w1671230979
+8fp_multiplier_tb.v
+Ffp_multiplier_tb.v
+!i122 37
+L0 1 149
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R5
 vseq_multiplier
-R6
+R7
 !i10b 1
 !s100 g:L1oBGR3:QDiJT29cX5h0
 I_;kZ8WJk:Z>m`cz6=]LeM3
@@ -70,21 +147,21 @@ R1
 w1670940089
 8seq_multiplier.v
 Fseq_multiplier.v
-!i122 13
+!i122 37
 L0 2 63
-R7
 R8
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 0
 R12
-R4
+!i113 0
+R13
+R5
 vseq_multiplier_v2
-R6
+R7
 !i10b 1
 !s100 zVHF6ZVH]n6KJ68_>:iZO3
 Ij>zC3]GWB>9dK=i6?LJf]1
@@ -92,21 +169,21 @@ R1
 w1671147109
 8seq_multiplier_v2.v
 Fseq_multiplier_v2.v
-!i122 13
+!i122 37
 L0 2 50
-R7
 R8
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 0
 R12
-R4
+!i113 0
+R13
+R5
 vunsigned_seq_multiplier
-R6
+R7
 !i10b 1
 !s100 :F2QGk5OkQBlPzFQE9j7C1
 I5o]faBb8hCAGL<l7:iZ6N0
@@ -114,21 +191,21 @@ R1
 w1671214171
 8unsigned_seq_multiplier.v
 Funsigned_seq_multiplier.v
-!i122 13
+!i122 37
 L0 2 37
-R7
 R8
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 0
 R12
-R4
+!i113 0
+R13
+R5
 vvar_reg
-R6
+R7
 !i10b 1
 !s100 W3X8TekII1d84M;W?@mi10
 ISem`gCL>oMgkd4Uc[DbW13
@@ -136,16 +213,16 @@ R1
 w1670925015
 8var_reg.v
 Fvar_reg.v
-!i122 13
+!i122 37
 L0 2 16
-R7
 R8
+R9
 r1
 !s85 0
 31
-R9
 R10
 R11
-!i113 0
 R12
-R4
+!i113 0
+R13
+R5
