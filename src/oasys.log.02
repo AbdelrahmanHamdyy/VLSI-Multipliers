@@ -1,0 +1,458 @@
+*******************************************************************
+*      Copyright (c) 2004 - 2020 Mentor Graphics Corporation      *
+*                       All Rights Reserved                       *
+*                                                                 *
+*                                                                 *
+*   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION   *
+*      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION       *
+*        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.        *
+*                                                                 *
+* Program : ../bin/Linux-x86_64-O/oasysGui                        *
+* Version : 19.2-p002                                             *
+* Date    : Fri Jan 10 14:27:22 PST 2020                          *
+* Build   : releases/19.2-49727.0-CentOS_6.5-O                    *
+*******************************************************************
+ config sdc-v1.7-cpd cli cmd explore mxdb
+loading: oasys fp rta dft RTTessent-d ctl verify edit bt upf-c aos conc vcd prot int
+checked out licenses: psyncore psynfloorplan psyndft psynpower
+
+         date     : Thu Dec 22 11:28:36 EET 2022
+         ppid/pid : 16721/16731
+         hostname : 192.168.119.130
+         arch/os  : x86_64/Linux-3.10.0-1062.12.1.el7.x86_64 
+         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+         currdir  : /mnt/hgfs/shared/VLSI-Multipliers/src
+         logfile  : /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.log.02
+         tmpdir   : /tmp/oasys.16721/
+> source /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library/history.tcl
+> source ./scripts/run.tcl
+> source scripts/0_init_design.tcl
+/mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/logs exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/rpt exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/odb exists and will be used.
+> config_report timing -format {cell edge arrival delay arc_delay net_delay slew net_load load fanout location power_domain}
+
+-----------------------------
+
+Done setting design variables
+
+-----------------------------
+
+> source scripts/1_read_design.tcl
+> read_library NangateOpenCellLibrary_typical.lib
+info:    File 'NangateOpenCellLibrary_typical.lib', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary_typical.lib' using search_path variable.  [CMD-126]
+reading /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary_typical.lib...
+Finished reading. Elapsed time= 0 seconds
+info:    The technology cmos was specified.  [LIB-200]
+info:    delay_model specified was table_lookup.  [LIB-200]
+info:    Using the cmos syntax tables...  [LIB-200]
+info:    timer ignores arcs of type 'recovery'  [LIB-117]
+info:    timer ignores arcs of type 'asynchronous'  [LIB-117]
+info:    timer ignores arcs of type 'three state disable'  [LIB-117]
+info:    found transparent arc 'DLH_X1/D->Q'  [NL-120]
+info:    found transparent arc 'DLH_X2/D->Q'  [NL-120]
+info:    found transparent arc 'DLL_X1/D->Q'  [NL-120]
+info:    found transparent arc 'DLL_X2/D->Q'  [NL-120]
+info:    found transparent arc 'TLAT_X1/D->Q'  [NL-120]
+> read_lef NangateOpenCellLibrary.tech.lef
+info:    File 'NangateOpenCellLibrary.tech.lef', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.tech.lef' using search_path variable.  [CMD-126]
+info:    units per micron 2000 defined in LEF is ignored. Tool uses 20000 units per micron.  [LEF-118]
+note:    the above message has more detailed information, see "message LEF-118"
+info:    use manufacturing grid 100  [LEF-110]
+info:    Site FreePDK45_38x28_10R_NP_162NW_34O defined in /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.tech.lef  [LEF-119]
+> read_lef NangateOpenCellLibrary.macro.lef
+info:    File 'NangateOpenCellLibrary.macro.lef', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.macro.lef' using search_path variable.  [CMD-126]
+warning: direction (tristate) of pin 'Z' of cell 'TBUF_X1' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'Z' of cell 'TBUF_X16' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'Z' of cell 'TBUF_X2' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'Z' of cell 'TBUF_X4' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'Z' of cell 'TBUF_X8' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'ZN' of cell 'TINV_X1' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+warning: direction (tristate) of pin 'Q' of cell 'TLAT_X1' in logical/timing library does not match the direction (output) from the physical library -direction from logical/timing library overrides  [LEF-100]
+> get_power_domains *
+> load_upf /mnt/hgfs/shared/VLSI-Multipliers/src/constraints/demo_adder.85.upf
+> source /mnt/hgfs/shared/VLSI-Multipliers/src/constraints/demo_adder.85.upf
+> create_power_domain PD_TOP
+info:    setting default power domain for scope '/' to '/PD_TOP'  [PF-103]
+> create_supply_net VDD
+> create_supply_net VSS
+> create_supply_port VDD
+> connect_supply_net VDD -ports VDD
+> connect_supply_net VDD -ports VDD
+> set_domain_supply_net PD_TOP -primary_power_net VDD -primary_ground_net VSS
+> create_supply_set PD_TOP_primary -function {power VDD} -function {ground VSS}
+> associate_supply_set PD_TOP_primary -handle PD_TOP.primary
+> add_port_state VDD -state {on85 0.85} -state {on95 0.95}
+> create_pst pst1 -supplies VDD
+warning: supply name 'VDD' matches both supply port and supply net - assuming supply port  [PF-207]
+> add_pst_state st0 -pst pst1 -state on85
+> config_tolerance -blackbox true -connection_mismatch true -missing_physical_library true -continue_on_error false
+> read_verilog {wallace.v multiplierTree.v CSA.v Reg.v} -include {/mnt/hgfs/shared/VLSI-Multipliers/src/rtl//** /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/fp /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/simpleMultiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/verilog_multiplier}
+info:    File 'wallace.v', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/wallace.v' using search_path variable.  [CMD-126]
+info:    File 'multiplierTree.v', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/multiplierTree.v' using search_path variable.  [CMD-126]
+info:    File 'CSA.v', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/CSA.v' using search_path variable.  [CMD-126]
+info:    File 'Reg.v', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/Reg.v' using search_path variable.  [CMD-126]
+> set_max_route_layer 8
+Top-most available layer for routing set to metal8
+> set_dont_use {NangateOpenCellLibrary/AND2_X1 NangateOpenCellLibrary/AND2_X2 NangateOpenCellLibrary/AND2_X4 NangateOpenCellLibrary/AND3_X1 NangateOpenCellLibrary/AND3_X2 NangateOpenCellLibrary/AND3_X4 NangateOpenCellLibrary/AND4_X1 NangateOpenCellLibrary/AND4_X2 NangateOpenCellLibrary/AND4_X4 NangateOpenCellLibrary/ANTENNA_X1 NangateOpenCellLibrary/AOI21_X1 NangateOpenCellLibrary/AOI21_X2 NangateOpenCellLibrary/AOI21_X4 NangateOpenCellLibrary/AOI22_X1 NangateOpenCellLibrary/AOI22_X2 NangateOpenCellLibrary/AOI22_X4 NangateOpenCellLibrary/AOI211_X1 NangateOpenCellLibrary/AOI211_X2 NangateOpenCellLibrary/AOI211_X4 NangateOpenCellLibrary/AOI221_X1 NangateOpenCellLibrary/AOI221_X2 NangateOpenCellLibrary/AOI221_X4 NangateOpenCellLibrary/AOI222_X1 NangateOpenCellLibrary/AOI222_X2 NangateOpenCellLibrary/AOI222_X4 NangateOpenCellLibrary/BUF_X1 NangateOpenCellLibrary/BUF_X2 NangateOpenCellLibrary/BUF_X4 NangateOpenCellLibrary/BUF_X8 NangateOpenCellLibrary/BUF_X16 NangateOpenCellLibrary/BUF_X32 NangateOpenCellLibrary/CLKBUF_X1 NangateOpenCellLibrary/CLKBUF_X2 NangateOpenCellLibrary/CLKBUF_X3 NangateOpenCellLibrary/CLKGATETST_X1 NangateOpenCellLibrary/CLKGATETST_X2 NangateOpenCellLibrary/CLKGATETST_X4 NangateOpenCellLibrary/CLKGATETST_X8 NangateOpenCellLibrary/CLKGATE_X1 NangateOpenCellLibrary/CLKGATE_X2 NangateOpenCellLibrary/CLKGATE_X4 NangateOpenCellLibrary/CLKGATE_X8 NangateOpenCellLibrary/DFFRS_X1 NangateOpenCellLibrary/DFFRS_X2 NangateOpenCellLibrary/DFFR_X1 NangateOpenCellLibrary/DFFR_X2 NangateOpenCellLibrary/DFFS_X1 NangateOpenCellLibrary/DFFS_X2 NangateOpenCellLibrary/DFF_X1 NangateOpenCellLibrary/DFF_X2 NangateOpenCellLibrary/DLH_X1 NangateOpenCellLibrary/DLH_X2 NangateOpenCellLibrary/DLL_X1 NangateOpenCellLibrary/DLL_X2 NangateOpenCellLibrary/FA_X1 NangateOpenCellLibrary/FILLCELL_X1 NangateOpenCellLibrary/FILLCELL_X2 NangateOpenCellLibrary/FILLCELL_X4 NangateOpenCellLibrary/FILLCELL_X8 NangateOpenCellLibrary/FILLCELL_X16 NangateOpenCellLibrary/FILLCELL_X32 NangateOpenCellLibrary/HA_X1 NangateOpenCellLibrary/INV_X1 NangateOpenCellLibrary/INV_X2 NangateOpenCellLibrary/INV_X4 NangateOpenCellLibrary/INV_X8 NangateOpenCellLibrary/INV_X16 NangateOpenCellLibrary/INV_X32 NangateOpenCellLibrary/LOGIC0_X1 NangateOpenCellLibrary/LOGIC1_X1 NangateOpenCellLibrary/MUX2_X1 NangateOpenCellLibrary/MUX2_X2 NangateOpenCellLibrary/NAND2_X1 NangateOpenCellLibrary/NAND2_X2 NangateOpenCellLibrary/NAND2_X4 NangateOpenCellLibrary/NAND3_X1 NangateOpenCellLibrary/NAND3_X2 NangateOpenCellLibrary/NAND3_X4 NangateOpenCellLibrary/NAND4_X1 NangateOpenCellLibrary/NAND4_X2 NangateOpenCellLibrary/NAND4_X4 NangateOpenCellLibrary/NOR2_X1 NangateOpenCellLibrary/NOR2_X2 NangateOpenCellLibrary/NOR2_X4 NangateOpenCellLibrary/NOR3_X1 NangateOpenCellLibrary/NOR3_X2 NangateOpenCellLibrary/NOR3_X4 NangateOpenCellLibrary/NOR4_X1 NangateOpenCellLibrary/NOR4_X2 NangateOpenCellLibrary/NOR4_X4 NangateOpenCellLibrary/OAI21_X1 NangateOpenCellLibrary/OAI21_X2 NangateOpenCellLibrary/OAI21_X4 NangateOpenCellLibrary/OAI22_X1 NangateOpenCellLibrary/OAI22_X2 NangateOpenCellLibrary/OAI22_X4 NangateOpenCellLibrary/OAI33_X1 NangateOpenCellLibrary/OAI211_X1 NangateOpenCellLibrary/OAI211_X2 NangateOpenCellLibrary/OAI211_X4 ...(34 more)} false
+> set_clock_gating_options -control_point before -minimum_bitwidth 4 -sequential_cell latch
+info:    test control port not specified - will tie test control pin to 0  [POWER-109]
+> set_parameter ungroup_small_hierarchies 0
+info:    Parameter 'ungroup_small_hierarchies' set to '0'  [PARAM-104]
+
+-----------------------------
+
+Done preparing design for synthesis
+
+-----------------------------
+
+> source scripts/2_synthesize_optimize.tcl
+> synthesize -module multiplierTree
+starting synthesize at 00:00:01(cpu)/0:00:06(wall) 72MB(vsz)/321MB(peak)
+warning: skipping cell ANTENNA_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X2 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X4 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X8 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X16 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X32 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell LOGIC0_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell LOGIC1_X1 in the library since it does not have delay arcs  [NL-215]
+info:    clock-gating cell for posedge FFs = CLKGATETST_X1 in target library 'default'  [POWER-112]
+info:    no clock-gating cell found in target library 'default' for negedge FFs for the given specification  [POWER-113]
+info:    clock_gating minimum_width = 4, maximum_fanout = 2147483647, num_stages = 2147483647, sequential_cell = latch, control_port = (null), control_point = before, observability = no, use_discrete_cells = no, create_multi_stage = no, merge_multi_stage = no, exclude_instantiated_clock_gates = no, log = (null), allow_clock_inversion = no  [POWER-111]
+info:    setting default power domain for scope '/' to '/PD_TOP'  [PF-103]
+info:    synthesizing module 'multiplierTree' (depth 1) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/multiplierTree.v:1)[7])  [VLOG-400]
+info:    synthesizing module 'buffer' (depth 2) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/Reg.v:1)[7])  [VLOG-400]
+info:    module 'buffer' assigned to power domain '/PD_TOP'  [NL-138]
+info:    done synthesizing module 'buffer' (depth 2) (1#4) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/Reg.v:1)[7])  [VLOG-401]
+info:    synthesizing module 'wallace' (depth 2) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/wallace.v:1)[7])  [VLOG-400]
+info:    synthesizing module 'CSA' (depth 3) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/CSA.v:1)[7])  [VLOG-400]
+info:    module 'CSA' assigned to power domain '/PD_TOP'  [NL-138]
+info:    done synthesizing module 'CSA' (depth 3) (2#4) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/CSA.v:1)[7])  [VLOG-401]
+warning: blackbox for instance 'RESULT' of 'simple_Adder' (parameters: 64) in module 'wallace' (parameters: none) (controlled by parameter error_on_blackbox) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/wallace.v:110)[19])  [VLOG-622]
+info:    module 'wallace' assigned to power domain '/PD_TOP'  [NL-138]
+info:    uniquifying module 'CSA' for 15 instances  [NL-105]
+info:    uniquifying module 'CSA' for 5 instances  [NL-105]
+info:    uniquifying module 'CSA' for 3 instances  [NL-105]
+info:    uniquifying module 'CSA' for 8 instances  [NL-105]
+info:    done synthesizing module 'wallace' (depth 2) (3#4) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/wallace.v:1)[7])  [VLOG-401]
+info:    synthesizing module 'buffer__parameterized0' (depth 2) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/Reg.v:1)[7])  [VLOG-400]
+info:    module 'buffer__parameterized0' assigned to power domain '/PD_TOP'  [NL-138]
+info:    done synthesizing module 'buffer__parameterized0' (depth 2) (3#4) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/Reg.v:1)[7])  [VLOG-401]
+info:    module 'multiplierTree' assigned to power domain '/PD_TOP'  [NL-138]
+info:    uniquifying module 'buffer' for 2 instances  [NL-105]
+info:    done synthesizing module 'multiplierTree' (depth 1) (4#4) ((/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree/multiplierTree.v:1)[7])  [VLOG-401]
+warning: No library characterized for (process = 1.00 voltage = 0.85 temperature = 25.00) can be found in the database for power domain '/PD_TOP'  [NL-174]
+finished synthesize at 00:00:02(cpu)/0:00:06(wall) 106MB(vsz)/353MB(peak)
+> write_design /mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/odb/2_synthesized.odb
+info:    design 'multiplierTree' has no physical info  [WRITE-120]
+warning: WrSdc.. design 'multiplierTree' has no timing constraints  [TA-118]
+> read_sdc -verbose /mnt/hgfs/shared/VLSI-Multipliers/src/constraints/demo_adder_func.sdc
+> 
+> set pad_load            10 
+> set transition          0.707325
+> set io_clock_period     2
+> 
+> 
+> create_clock -name vsysclk -period ${io_clock_period} [ get_ports clk ] 
+> set_load                ${pad_load}   [ all_outputs ]
+> set_output_delay -clock  vsysclk   -rise  0.5 [all_outputs]
+> set_input_delay -clock  vsysclk -rise 0.2 [all_inputs]
+> 
+> 
+> 
+> 
+> # set_false_path   -from [ get_ports rst ]
+> 
+> 
+> # set_input_transition    ${transition} [ all_inputs ]
+> 
+> 
+>  #   [ expr 0.3 * ${io_clock_period} ] [ all_outputs ] 
+>  #   [ remove_from_collection [ all_outputs ] [ get_ports { usb_plus usb_minus }] ]
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> 
+> check_timing
+Report Check Timing: 
+-----+------------------------------+------+--------+------+--------------------------------------
+     |Item                          |Errors|Warnings|Status|Description                           
+-----+------------------------------+------+--------+------+--------------------------------------
+1    |unconstrained_IO              |     0|       0|Passed|Unconstrained IO pin                  
+2    |unexpected_assertion          |     0|       0|Passed|Found unexpected timing assertion     
+3    |trigger_pin_without_required  |     0|      64|Passed|Trigger pin does not get required data
+4    |setup_pin_without_data        |     0|       3|Passed|Setup pin does not get arriving data  
+5    |setup_pin_with_clock          |     0|       0|Passed|Setup pin has clock signal arriving   
+6    |clock_pin_with_multiple_clocks|     0|       0|Passed|Clock pin has multiple clock signals  
+7    |clock_pin_without_clock       |     0|       0|Passed|Clock pin does not have clock signal  
+8    |clock_pin_with_data           |     0|       1|Passed|Clock pin has data signal arriving    
+-----+------------------------------+------+--------+------+--------------------------------------
+> report_design_metrics
+Report Physical info: 
+------------------------+--------------+-----------+------------
+                        |              |Area (squm)|Leakage (uW)
+------------------------+--------------+-----------+------------
+Design Name             |multiplierTree|           |            
+  Total Instances       |         13108|      15447|     352.840
+    Macros              |             0|          0|       0.000
+    Pads                |             0|          0|       0.000
+    Phys                |             0|          0|       0.000
+    Blackboxes          |             1|          0|       0.000
+    Cells               |         13107|      15447|     352.840
+      Buffers           |             0|          0|       0.000
+      Inverters         |          5900|       3139|      84.684
+      Clock-Gates       |             3|         12|       0.177
+      Combinational     |          7076|      11717|     257.853
+      Latches           |             0|          0|       0.000
+      FlipFlops         |           128|        579|      10.126
+       Single-Bit FF    |           128|        579|      10.126
+       Multi-Bit FF     |             0|          0|       0.000
+       Clock-Gated      |           128|           |            
+       Bits             |           128|        579|      10.126
+         Load-Enabled   |             0|           |            
+         Clock-Gated    |           128|           |            
+  Tristate Pin Count    |             0|           |            
+Physical Info           |Unplaced      |           |            
+  Chip Size (mm x mm)   |              |          0|            
+  Fixed Cell Area       |              |          0|            
+    Phys Only           |             0|          0|            
+  Placeable Area        |              |          0|            
+  Movable Cell Area     |              |      15447|            
+  Utilization (%)       |              |           |            
+  Chip Utilization (%)  |              |           |            
+  Total Wire Length (mm)|         0.000|           |            
+  Longest Wire (mm)     |              |           |            
+  Average Wire (mm)     |              |           |            
+------------------------+--------------+-----------+------------
+> all_inputs
+> group_path -name I2R -from { clk rst a[31] a[30] a[29] a[28] a[27] a[26] a[25] a[24] a[23] a[22] a[21] a[20] a[19] a[18] a[17] a[16] a[15] a[14] a[13] a[12] a[11] a[10] a[9] a[8] a[7] a[6] a[5] a[4] a[3] a[2] a[1] a[0] b[31] b[30] b[29] b[28] b[27] b[26] b[25] b[24] b[23] b[22] b[21] b[20] b[19] b[18] b[17] b[16] b[15] b[14] b[13] b[12] b[11] b[10] b[9] b[8] b[7] b[6] b[5] b[4] b[3] b[2] b[1] b[0] }
+# group_path -from clk rst {a[31]} {a[30]} {a[29]} {a[28]} {a[27]} {a[26]} {a[25]} {a[24]} {a[23]} {a[22]} {a[21]} {a[20]} {a[19]} {a[18]} {a[17]} {a[16]} {a[15]} {a[14]} {a[13]} {a[12]} {a[11]} {a[10]} {a[9]} {a[8]} {a[7]} {a[6]} {a[5]} {a[4]} {a[3]} {a[2]} {a[1]} {a[0]} {b[31]} {b[30]} {b[29]} {b[28]} {b[27]} {b[26]} {b[25]} {b[24]} {b[23]} {b[22]} {b[21]} {b[20]} {b[19]} {b[18]} {b[17]} {b[16]} {b[15]} {b[14]} {b[13]} {b[12]} {b[11]} {b[10]} {b[9]} {b[8]} {b[7]} {b[6]} {b[5]} {b[4]} {b[3]} {b[2]} {b[1]} {b[0]}
+> all_inputs
+> all_outputs
+> group_path -name I2O -from { clk rst a[31] a[30] a[29] a[28] a[27] a[26] a[25] a[24] a[23] a[22] a[21] a[20] a[19] a[18] a[17] a[16] a[15] a[14] a[13] a[12] a[11] a[10] a[9] a[8] a[7] a[6] a[5] a[4] a[3] a[2] a[1] a[0] b[31] b[30] b[29] b[28] b[27] b[26] b[25] b[24] b[23] b[22] b[21] b[20] b[19] b[18] b[17] b[16] b[15] b[14] b[13] b[12] b[11] b[10] b[9] b[8] b[7] b[6] b[5] b[4] b[3] b[2] b[1] b[0] } -to { c[63] c[62] c[61] c[60] c[59] c[58] c[57] c[56] c[55] c[54] c[53] c[52] c[51] c[50] c[49] c[48] c[47] c[46] c[45] c[44] c[43] c[42] c[41] c[40] c[39] c[38] c[37] c[36] c[35] c[34] c[33] c[32] c[31] c[30] c[29] c[28] c[27] c[26] c[25] c[24] c[23] c[22] c[21] c[20] c[19] c[18] c[17] c[16] c[15] c[14] c[13] c[12] c[11] c[10] c[9] c[8] c[7] c[6] c[5] c[4] c[3] c[2] c[1] c[0] }
+# group_path -from clk rst {a[31]} {a[30]} {a[29]} {a[28]} {a[27]} {a[26]} {a[25]} {a[24]} {a[23]} {a[22]} {a[21]} {a[20]} {a[19]} {a[18]} {a[17]} {a[16]} {a[15]} {a[14]} {a[13]} {a[12]} {a[11]} {a[10]} {a[9]} {a[8]} {a[7]} {a[6]} {a[5]} {a[4]} {a[3]} {a[2]} {a[1]} {a[0]} {b[31]} {b[30]} {b[29]} {b[28]} {b[27]} {b[26]} {b[25]} {b[24]} {b[23]} {b[22]} {b[21]} {b[20]} {b[19]} {b[18]} {b[17]} {b[16]} {b[15]} {b[14]} {b[13]} {b[12]} {b[11]} {b[10]} {b[9]} {b[8]} {b[7]} {b[6]} {b[5]} {b[4]} {b[3]} {b[2]} {b[1]} {b[0]} -to {c[63]} {c[62]} {c[61]} {c[60]} {c[59]} {c[58]} {c[57]} {c[56]} {c[55]} {c[54]} {c[53]} {c[52]} {c[51]} {c[50]} {c[49]} {c[48]} {c[47]} {c[46]} {c[45]} {c[44]} {c[43]} {c[42]} {c[41]} {c[40]} {c[39]} {c[38]} {c[37]} {c[36]} {c[35]} {c[34]} {c[33]} {c[32]} {c[31]} {c[30]} {c[29]} {c[28]} {c[27]} {c[26]} {c[25]} {c[24]} {c[23]} {c[22]} {c[21]} {c[20]} {c[19]} {c[18]} {c[17]} {c[16]} {c[15]} {c[14]} {c[13]} {c[12]} {c[11]} {c[10]} {c[9]} {c[8]} {c[7]} {c[6]} {c[5]} {c[4]} {c[3]} {c[2]} {c[1]} {c[0]}
+> all_outputs
+> group_path -name R2O -to { c[63] c[62] c[61] c[60] c[59] c[58] c[57] c[56] c[55] c[54] c[53] c[52] c[51] c[50] c[49] c[48] c[47] c[46] c[45] c[44] c[43] c[42] c[41] c[40] c[39] c[38] c[37] c[36] c[35] c[34] c[33] c[32] c[31] c[30] c[29] c[28] c[27] c[26] c[25] c[24] c[23] c[22] c[21] c[20] c[19] c[18] c[17] c[16] c[15] c[14] c[13] c[12] c[11] c[10] c[9] c[8] c[7] c[6] c[5] c[4] c[3] c[2] c[1] c[0] }
+# group_path -to {c[63]} {c[62]} {c[61]} {c[60]} {c[59]} {c[58]} {c[57]} {c[56]} {c[55]} {c[54]} {c[53]} {c[52]} {c[51]} {c[50]} {c[49]} {c[48]} {c[47]} {c[46]} {c[45]} {c[44]} {c[43]} {c[42]} {c[41]} {c[40]} {c[39]} {c[38]} {c[37]} {c[36]} {c[35]} {c[34]} {c[33]} {c[32]} {c[31]} {c[30]} {c[29]} {c[28]} {c[27]} {c[26]} {c[25]} {c[24]} {c[23]} {c[22]} {c[21]} {c[20]} {c[19]} {c[18]} {c[17]} {c[16]} {c[15]} {c[14]} {c[13]} {c[12]} {c[11]} {c[10]} {c[9]} {c[8]} {c[7]} {c[6]} {c[5]} {c[4]} {c[3]} {c[2]} {c[1]} {c[0]}
+> optimize -virtual
+starting optimize at 00:00:05(cpu)/0:00:09(wall) 118MB(vsz)/353MB(peak)
+Log file for child PID=16768:  /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.etc.02/oasys.w1.02.log 
+Log file for child PID=16770:  /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.etc.02/oasys.w2.02.log 
+Log file for child PID=16773:  /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.etc.02/oasys.w3.02.log 
+Log file for child PID=16777:  /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.etc.02/oasys.w4.02.log 
+info: optimized '<TOP>' area changed 0.0squm (x1), total 10129.5squm (#1, 0 secs)
+info: optimized 'wallace__GCB0' area changed -1091.1squm (x1), total 9038.4squm (#2)
+info: optimized 'wallace__GCB2' area changed -134.9squm (x1), total 8903.6squm (#3)
+info: optimized 'wallace__GCB1' area changed -326.1squm (x1), total 8577.4squm (#4)
+info: optimized 'wallace__GCB3' area changed -578.0squm (x1), total 7999.4squm (#5)
+info: optimized 'multiplierTree__GC0' area changed -728.6squm (x1), total 7270.8squm (#6)
+info: optimized '<TOP>' area changed 0.0squm (x1), total 7270.8squm (#7, 0 secs)
+info: optimized 'wallace__GCB0' area changed 0.0squm (x1), total 7270.8squm (#8)
+info: optimized 'wallace__GCB3' area changed 0.0squm (x1), total 7270.8squm (#9)
+info: optimized 'wallace__GCB1' area changed 0.0squm (x1), total 7270.8squm (#10)
+info: optimized 'wallace__GCB2' area changed 0.0squm (x1), total 7270.8squm (#11)
+info: optimized '<TOP>' area changed 0.0squm (x1), total 7270.8squm (#12, 0 secs)
+info: optimized 'wallace__GCB0' area changed -3545.8squm (x1), total 3725.1squm (#13)
+info: optimized '<TOP>' area changed 0.0squm (x1), total 3725.1squm (#14, 0 secs)
+info: optimized 'wallace__GCB0' area changed 0.0squm (x1), total 3725.1squm (#15)
+info: optimized 'wallace__GCB1' area changed -1147.0squm (x1), total 2578.1squm (#16)
+info: optimized 'wallace__GCB3' area changed -812.9squm (x1), total 1765.2squm (#17)
+info: optimized 'wallace__GCB2' area changed -591.3squm (x1), total 1173.9squm (#18)
+info: optimized '<TOP>' area changed 0.0squm (x1), total 1173.9squm (#19, 0 secs)
+info: optimized 'wallace__GCB3' area changed -1028.6squm (x1), total 145.2squm (#20)
+info: optimized '<TOP>' area changed 0.0squm (x1), total 145.2squm (#21, 0 secs)
+done optimizing area at 00:01:43(cpu)/0:01:01(wall) 111MB(vsz)/377MB(peak)
+Splitting congested rtl-partitions
+info: optimizing design 'multiplierTree' - propagating constants
+info: optimized '<TOP>' area changed 145.2squm (x1), total 0.0squm (#1, 0 secs)
+info: set slack mode to optimize shift
+info: resetting all path groups
+info: activated path group default @ <unc>ps
+info: suspended path group I2R @ <ill>ps
+info: suspended path group I2O @ <ill>ps
+info: suspended path group R2O @ <ill>ps
+info: finished path group default @ <unc>ps
+info: reactivating path groups
+info: reactivated path group default @ <unc>ps
+info: finished path group default @ <unc>ps
+info: set slack mode to normal
+info: done with all path groups
+info: restore all path groups
+info: starting area recovery on module multiplierTree
+info: area recovery done, total area reduction: 0.00squm (0.00%), slack: <unc>ps (0.0ps) (0 secs / 0.0%)
+done optimizing virtual at 00:01:43(cpu)/0:01:01(wall) 103MB(vsz)/377MB(peak)
+finished optimize at 00:01:43(cpu)/0:01:01(wall) 103MB(vsz)/377MB(peak)
+> write_design /mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/odb/2_virtual_opt.odb
+> report_timing
+Report for group default
+Report for group I2R
+Report for group I2O
+Report for group R2O
+> report_path_groups
+Report Path Groups: 
+-----+-------+------+---------+---------
+     | Path  |Weight|Critical |Worst    
+     | Group |      |Range(ps)|Slack(ps)
+-----+-------+------+---------+---------
+1    |default| 1.000|      0.0|<unc>    
+2    |I2R    | 1.000|      0.0|<ill>    
+3    |I2O    | 1.000|      0.0|<ill>    
+4    |R2O    | 1.000|      0.0|<ill>    
+-----+-------+------+---------+---------
+> redirect -file /mnt/hgfs/shared/VLSI-Multipliers/src/multiplierTree/logs/chip.log { create_chip   -bottom_clearance 30 -left_clearance 30 -right_clearance 30 -top_clearance 30 -utilization 60 }
+1
+Redirect terminated because of error
+    while executing
+"redirect -file ${log_dir}/chip.log { create_chip   -bottom_clearance 30 -left_clearance 30 -right_clearance 30 -top_clearance 30 -utilization 60 }"
+    (file "scripts/2_synthesize_optimize.tcl" line 70)
+    invoked from within
+"tcl_source scripts/2_synthesize_optimize.tcl"
+Redirect terminated because of error
+    while executing
+"redirect -file ${log_dir}/chip.log { create_chip   -bottom_clearance 30 -left_clearance 30 -right_clearance 30 -top_clearance 30 -utilization 60 }"
+    (file "scripts/2_synthesize_optimize.tcl" line 70)
+    invoked from within
+"tcl_source scripts/2_synthesize_optimize.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 2 tcl_source $resolvedFilePath"
+    (procedure "rt::sourceFile" line 31)
+    invoked from within
+"rt::sourceFile false false {} scripts/2_synthesize_optimize.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    invoked from within
+"source scripts/2_synthesize_optimize.tcl"
+    (file "./scripts/run.tcl" line 7)
+    invoked from within
+"tcl_source ./scripts/run.tcl"
+> source ./scripts/run.tcl
+> source scripts/0_init_design.tcl
+/mnt/hgfs/shared/VLSI-Multipliers/src/seq_multiplier exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/seq_multiplier/logs exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/seq_multiplier/rpt exists and will be used.
+/mnt/hgfs/shared/VLSI-Multipliers/src/seq_multiplier/odb exists and will be used.
+> config_report timing -format {cell edge arrival delay arc_delay net_delay slew net_load load fanout location power_domain}
+
+-----------------------------
+
+Done setting design variables
+
+-----------------------------
+
+> source scripts/1_read_design.tcl
+> read_library NangateOpenCellLibrary_typical.lib
+info:    File 'NangateOpenCellLibrary_typical.lib', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary_typical.lib' using search_path variable.  [CMD-126]
+> read_lef NangateOpenCellLibrary.tech.lef
+info:    File 'NangateOpenCellLibrary.tech.lef', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.tech.lef' using search_path variable.  [CMD-126]
+info:    units per micron 2000 defined in LEF is ignored. Tool uses 20000 units per micron.  [LEF-118]
+info:    use manufacturing grid 100  [LEF-110]
+warning: layer 'metal1' read in previously - ignored  [LEF-103]
+warning: layer 'metal2' read in previously - ignored  [LEF-103]
+warning: layer 'metal3' read in previously - ignored  [LEF-103]
+warning: layer 'metal4' read in previously - ignored  [LEF-103]
+warning: layer 'metal5' read in previously - ignored  [LEF-103]
+warning: layer 'metal6' read in previously - ignored  [LEF-103]
+warning: layer 'metal7' read in previously - ignored  [LEF-103]
+warning: layer 'metal8' read in previously - ignored  [LEF-103]
+warning: layer 'metal9' read in previously - ignored  [LEF-103]
+warning: layer 'metal10' read in previously - ignored  [LEF-103]
+-------> Message [LEF-103] suppressed 1 times
+warning: site 'FreePDK45_38x28_10R_NP_162NW_34O' read in previously - ignored  [LEF-104]
+> read_lef NangateOpenCellLibrary.macro.lef
+info:    File 'NangateOpenCellLibrary.macro.lef', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.macro.lef' using search_path variable.  [CMD-126]
+warning: macro 'AND2_X1' read in previously - ignored  [LEF-105]
+warning: macro 'AND2_X2' read in previously - ignored  [LEF-105]
+warning: macro 'AND2_X4' read in previously - ignored  [LEF-105]
+warning: macro 'AND3_X1' read in previously - ignored  [LEF-105]
+warning: macro 'AND3_X2' read in previously - ignored  [LEF-105]
+warning: macro 'AND3_X4' read in previously - ignored  [LEF-105]
+warning: macro 'AND4_X1' read in previously - ignored  [LEF-105]
+warning: macro 'AND4_X2' read in previously - ignored  [LEF-105]
+warning: macro 'AND4_X4' read in previously - ignored  [LEF-105]
+warning: macro 'ANTENNA_X1' read in previously - ignored  [LEF-105]
+> get_power_domains *
+> config_tolerance -blackbox true -connection_mismatch true -missing_physical_library true -continue_on_error false
+> read_verilog seq_multiplier.v -include {/mnt/hgfs/shared/VLSI-Multipliers/src/rtl//** /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/fp /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/multiplierTree /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/simpleMultiplier /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/verilog_multiplier}
+-------> Message [LEF-105] suppressed 124 times
+info:    File 'seq_multiplier.v', resolved to path '/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier.v' using search_path variable.  [CMD-126]
+> set_max_route_layer 8
+> set_dont_use {NangateOpenCellLibrary/AND2_X1 NangateOpenCellLibrary/AND2_X2 NangateOpenCellLibrary/AND2_X4 NangateOpenCellLibrary/AND3_X1 NangateOpenCellLibrary/AND3_X2 NangateOpenCellLibrary/AND3_X4 NangateOpenCellLibrary/AND4_X1 NangateOpenCellLibrary/AND4_X2 NangateOpenCellLibrary/AND4_X4 NangateOpenCellLibrary/ANTENNA_X1 NangateOpenCellLibrary/AOI21_X1 NangateOpenCellLibrary/AOI21_X2 NangateOpenCellLibrary/AOI21_X4 NangateOpenCellLibrary/AOI22_X1 NangateOpenCellLibrary/AOI22_X2 NangateOpenCellLibrary/AOI22_X4 NangateOpenCellLibrary/AOI211_X1 NangateOpenCellLibrary/AOI211_X2 NangateOpenCellLibrary/AOI211_X4 NangateOpenCellLibrary/AOI221_X1 NangateOpenCellLibrary/AOI221_X2 NangateOpenCellLibrary/AOI221_X4 NangateOpenCellLibrary/AOI222_X1 NangateOpenCellLibrary/AOI222_X2 NangateOpenCellLibrary/AOI222_X4 NangateOpenCellLibrary/BUF_X1 NangateOpenCellLibrary/BUF_X2 NangateOpenCellLibrary/BUF_X4 NangateOpenCellLibrary/BUF_X8 NangateOpenCellLibrary/BUF_X16 NangateOpenCellLibrary/BUF_X32 NangateOpenCellLibrary/CLKBUF_X1 NangateOpenCellLibrary/CLKBUF_X2 NangateOpenCellLibrary/CLKBUF_X3 NangateOpenCellLibrary/CLKGATETST_X1 NangateOpenCellLibrary/CLKGATETST_X2 NangateOpenCellLibrary/CLKGATETST_X4 NangateOpenCellLibrary/CLKGATETST_X8 NangateOpenCellLibrary/CLKGATE_X1 NangateOpenCellLibrary/CLKGATE_X2 NangateOpenCellLibrary/CLKGATE_X4 NangateOpenCellLibrary/CLKGATE_X8 NangateOpenCellLibrary/DFFRS_X1 NangateOpenCellLibrary/DFFRS_X2 NangateOpenCellLibrary/DFFR_X1 NangateOpenCellLibrary/DFFR_X2 NangateOpenCellLibrary/DFFS_X1 NangateOpenCellLibrary/DFFS_X2 NangateOpenCellLibrary/DFF_X1 NangateOpenCellLibrary/DFF_X2 NangateOpenCellLibrary/DLH_X1 NangateOpenCellLibrary/DLH_X2 NangateOpenCellLibrary/DLL_X1 NangateOpenCellLibrary/DLL_X2 NangateOpenCellLibrary/FA_X1 NangateOpenCellLibrary/FILLCELL_X1 NangateOpenCellLibrary/FILLCELL_X2 NangateOpenCellLibrary/FILLCELL_X4 NangateOpenCellLibrary/FILLCELL_X8 NangateOpenCellLibrary/FILLCELL_X16 NangateOpenCellLibrary/FILLCELL_X32 NangateOpenCellLibrary/HA_X1 NangateOpenCellLibrary/INV_X1 NangateOpenCellLibrary/INV_X2 NangateOpenCellLibrary/INV_X4 NangateOpenCellLibrary/INV_X8 NangateOpenCellLibrary/INV_X16 NangateOpenCellLibrary/INV_X32 NangateOpenCellLibrary/LOGIC0_X1 NangateOpenCellLibrary/LOGIC1_X1 NangateOpenCellLibrary/MUX2_X1 NangateOpenCellLibrary/MUX2_X2 NangateOpenCellLibrary/NAND2_X1 NangateOpenCellLibrary/NAND2_X2 NangateOpenCellLibrary/NAND2_X4 NangateOpenCellLibrary/NAND3_X1 NangateOpenCellLibrary/NAND3_X2 NangateOpenCellLibrary/NAND3_X4 NangateOpenCellLibrary/NAND4_X1 NangateOpenCellLibrary/NAND4_X2 NangateOpenCellLibrary/NAND4_X4 NangateOpenCellLibrary/NOR2_X1 NangateOpenCellLibrary/NOR2_X2 NangateOpenCellLibrary/NOR2_X4 NangateOpenCellLibrary/NOR3_X1 NangateOpenCellLibrary/NOR3_X2 NangateOpenCellLibrary/NOR3_X4 NangateOpenCellLibrary/NOR4_X1 NangateOpenCellLibrary/NOR4_X2 NangateOpenCellLibrary/NOR4_X4 NangateOpenCellLibrary/OAI21_X1 NangateOpenCellLibrary/OAI21_X2 NangateOpenCellLibrary/OAI21_X4 NangateOpenCellLibrary/OAI22_X1 NangateOpenCellLibrary/OAI22_X2 NangateOpenCellLibrary/OAI22_X4 NangateOpenCellLibrary/OAI33_X1 NangateOpenCellLibrary/OAI211_X1 NangateOpenCellLibrary/OAI211_X2 NangateOpenCellLibrary/OAI211_X4 ...(34 more)} false
+> set_clock_gating_options -control_point before -minimum_bitwidth 4 -sequential_cell latch
+info:    test control port not specified - will tie test control pin to 0  [POWER-109]
+> set_parameter ungroup_small_hierarchies 0
+info:    Parameter 'ungroup_small_hierarchies' set to '0'  [PARAM-104]
+
+-----------------------------
+
+Done preparing design for synthesis
+
+-----------------------------
+
+> source scripts/2_synthesize_optimize.tcl
+> synthesize -module seq_multiplier
+starting synthesize at 00:01:43(cpu)/0:01:11(wall) 103MB(vsz)/377MB(peak)
+info:    clock_gating minimum_width = 4, maximum_fanout = 2147483647, num_stages = 2147483647, sequential_cell = latch, control_port = (null), control_point = before, observability = no, use_discrete_cells = no, create_multi_stage = no, merge_multi_stage = no, exclude_instantiated_clock_gates = no, log = (null), allow_clock_inversion = no  [POWER-111]
+warning: skipping cell ANTENNA_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X2 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X4 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X8 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X16 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell FILLCELL_X32 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell LOGIC0_X1 in the library since it does not have delay arcs  [NL-215]
+warning: skipping cell LOGIC1_X1 in the library since it does not have delay arcs  [NL-215]
+error:   Unsupported attempt to replace top design (multiplierTree) with another design (seq_multiplier). Use 'delete_design' before trying to synthesize another design.  [SYN-130]
+finished synthesize at 00:01:43(cpu)/0:01:12(wall) 103MB(vsz)/377MB(peak)
+error:   1 error message(s) issued while executing command 'synthesize'
+Synthesize failed
+    while executing
+"synthesize -module ${top_module} "
+    invoked from within
+"if { $parameters == 1 } {
+     synthesize -module ${top_module} -parameters ${param_values}
+} else {
+     synthesize -module ${top_module} 
+}"
+    (file "scripts/2_synthesize_optimize.tcl" line 33)
+    invoked from within
+"tcl_source scripts/2_synthesize_optimize.tcl"
+Synthesize failed
+    while executing
+"synthesize -module ${top_module} "
+    invoked from within
+"if { $parameters == 1 } {
+     synthesize -module ${top_module} -parameters ${param_values}
+} else {
+     synthesize -module ${top_module} 
+}"
+    (file "scripts/2_synthesize_optimize.tcl" line 33)
+    invoked from within
+"tcl_source scripts/2_synthesize_optimize.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 2 tcl_source $resolvedFilePath"
+    (procedure "rt::sourceFile" line 31)
+    invoked from within
+"rt::sourceFile false false {} scripts/2_synthesize_optimize.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    invoked from within
+"source scripts/2_synthesize_optimize.tcl"
+    (file "./scripts/run.tcl" line 7)
+    invoked from within
+"tcl_source ./scripts/run.tcl"

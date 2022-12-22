@@ -18,7 +18,7 @@ if (mult !== value ) begin \
     integer  SuccessCounter = 0;
     integer  FailureCounter = 0;
     // Parameters
-    localparam T = 4;
+    localparam T = 2000;
     // Ports
     reg [31:0] A;
     reg [31:0] B;

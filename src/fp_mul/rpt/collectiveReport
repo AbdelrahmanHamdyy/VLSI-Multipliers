@@ -3,35 +3,35 @@ Report Physical info:
                         |             |Area (squm)|Leakage (uW)
 ------------------------+-------------+-----------+------------
 Design Name             |fp_mul       |           |            
-  Total Instances       |          504|       1245|      23.393
+  Total Instances       |          509|       1219|      23.217
     Macros              |            0|          0|       0.000
     Pads                |            0|          0|       0.000
     Phys                |            0|          0|       0.000
     Blackboxes          |            0|          0|       0.000
-    Cells               |          504|       1245|      23.393
+    Cells               |          509|       1219|      23.217
       Buffers           |            0|          0|       0.000
-      Inverters         |           43|         23|       0.617
+      Inverters         |           42|         22|       0.603
       Clock-Gates       |            3|         12|       0.177
-      Combinational     |          285|        380|       8.479
+      Combinational     |          291|        384|       8.587
       Latches           |            0|          0|       0.000
-      FlipFlops         |          173|        831|      14.120
-       Single-Bit FF    |          173|        831|      14.120
+      FlipFlops         |          173|        801|      13.850
+       Single-Bit FF    |          173|        801|      13.850
        Multi-Bit FF     |            0|          0|       0.000
        Clock-Gated      |          144|           |            
-       Bits             |          173|        831|      14.120
+       Bits             |          173|        801|      13.850
          Load-Enabled   |            0|           |            
          Clock-Gated    |          144|           |            
   Tristate Pin Count    |            0|           |            
 Physical Info           |Placed       |           |            
-  Chip Size (mm x mm)   |0.106 x 0.106|      11142|            
+  Chip Size (mm x mm)   |0.105 x 0.105|      11042|            
   Fixed Cell Area       |             |          0|            
     Phys Only           |            0|          0|            
-  Placeable Area        |             |       2034|            
-  Movable Cell Area     |             |       1245|            
-  Utilization (%)       |           61|           |            
-  Chip Utilization (%)  |           61|           |            
-  Total Wire Length (mm)|        5.383|           |            
-  Longest Wire (mm)     |        0.056|           |            
+  Placeable Area        |             |       2017|            
+  Movable Cell Area     |             |       1219|            
+  Utilization (%)       |           60|           |            
+  Chip Utilization (%)  |           60|           |            
+  Total Wire Length (mm)|        5.374|           |            
+  Longest Wire (mm)     |        0.057|           |            
   Average Wire (mm)     |        0.054|           |            
 ------------------------+-------------+-----------+------------
 Report Path Groups: 
@@ -40,10 +40,10 @@ Report Path Groups:
      | Group |      |Range(ps)|Slack(ps)
 -----+-------+------+---------+---------
 1    |default| 1.000|      0.0|    845.5
-2    |I2R    | 1.000|      0.0|   1705.9
+2    |I2R    | 1.000|      0.0|   1546.6
 3    |I2O    | 1.000|      0.0|<ill>    
-4    |R2O    | 1.000|      0.0|   1373.8
+4    |R2O    | 1.000|      0.0|<ill>    
 -----+-------+------+---------+---------
-174  |                            |                    |                     |                   |                 
-175  |*TOTAL                      |          434.585449|           477.083832|          23.392714|       935.061951
+179  |                            |                    |                     |                   |                 
+180  |*TOTAL                      |          423.040771|           454.635284|          23.217094|       900.893127
 -----+----------------------------+--------------------+---------------------+-------------------+-----------------

@@ -1,9 +1,9 @@
 Report for group default
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Startpoint: mul_start_reg/Q
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Endpoint: unsigned_seq_multiplier_dut/Accumulator_reg[22]/D
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Path Group: default
 Data required time: 1964.9
     (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 35.1)
@@ -15,7 +15,7 @@ Logic depth: 22
 Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
                                                         (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     32   105,   50                       
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     32   105,   55                       
 mul_start_reg/CK->Q      DFF_X1*                 rr    176.1    176.1    176.1      0.0      0.0     15.4    148.6     49    52,   52  /PD_TOP        (1.10)
 unsigned_seq_multiplier_dut/i_1_119/A->ZN
                          INV_X32                 rf    187.6     11.5     10.9      0.6     15.3      6.3     55.7     24    52,   52  /PD_TOP        (1.10)
@@ -66,48 +66,23 @@ unsigned_seq_multiplier_dut/Accumulator_reg[22]/D
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2R
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-Startpoint: rst
-    (Clocked by vsysclk R)
-Endpoint: mul_start_reg/D
-    (Clocked by vsysclk R)
+Startpoint: b_s[22]
+    (Clocked by rtDefaultClock R)
+Endpoint: b_reg[22]/D
+    (Clocked by sysclk R)
 Path Group: I2R
-Data required time: 1959.3
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 40.7)
-Data arrival time: 253.4
-Slack: 1705.9
-Logic depth: 2
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                     Arrival               Arc      Net               Net    Total   fan-                                   
-Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
-                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-rst                      {set_input_delay}        r    200.0    200.0    200.0                        3.6     58.7      3    54,  105                       
-i_0_0_0/A->ZN            INV_X32                 rf    207.7      7.7      7.3      0.4      0.0     14.5     84.4     39    52,   52  /PD_TOP        (1.10)
-mul_start_reg_enable_mux_0/S->Z
-                         MUX2_X1                 ff    253.4     45.7     45.1      0.6      6.0      0.3      1.5      1    52,   52  /PD_TOP        (1.10)
-mul_start_reg/D          DFF_X1                   f    253.4      0.0               0.0      9.8                             52,   52  /PD_TOP        (1.10)
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-Report for group I2O
-Report for group R2O
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-Startpoint: c_out_reg[31]/Q
-    (Clocked by vsysclk R)
-Endpoint: c_out[31]
-    (Clocked by vsysclk R)
-Path Group: R2O
-Data required time: 1500.0
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
-Data arrival time: 126.2
-Slack: 1373.8
+Data required time: 1747.0
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 253.0)
+Data arrival time: 200.4
+Slack: 1546.6
 Logic depth: 0
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
 Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
                                                         (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     32   105,   50                       
-clk_gate_overflow_reg/CK->GCK
-                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     33    52,   52  /PD_TOP        (1.10)
-c_out_reg[31]/CK->Q      DFFR_X1                 rr    125.8    125.8    125.8      0.0      0.0      3.2     13.2      1    52,   52  /PD_TOP        (1.10)
-c_out[31]                                         r    126.2      0.4               0.4     33.8                            105,   55                       
+b_s[22]                  {set_input_delay}        f    200.0    200.0    200.0                        3.0      4.1      1    52,  105                       
+b_reg[22]/D              DFF_X1                   f    200.4      0.4               0.4    707.3                             52,   52  /PD_TOP        (1.10)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O

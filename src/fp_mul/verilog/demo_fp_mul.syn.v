@@ -1,9 +1,9 @@
 /*
  * Created by 
-   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Fri Dec 16 23:38:17 2022
+   ../bin/Linux-x86_64-O/oasysGui 19.2-p002 on Thu Dec 22 19:19:13 2022
  * (C) Mentor Graphics Corporation
  */
-/* CheckSum: 2462473590 */
+/* CheckSum: 3969986635 */
 
 module datapath(p_0, Accumulator, Accumulator1);
    input [23:0]p_0;
@@ -419,14 +419,12 @@ module fp_mul(clk, rst, a_s, b_s, c_out, overflow);
    output overflow;
 
    wire [25:0]res_mant;
-   wire n_0_66;
-   wire n_0_67;
-   wire n_0_68;
-   wire n_0_69;
-   wire n_0_70;
-   wire n_0_71;
-   wire n_0_72;
-   wire n_0_73;
+   wire n_0_100;
+   wire n_0_101;
+   wire n_0_102;
+   wire n_0_103;
+   wire n_0_104;
+   wire n_0_105;
    wire n_0_0;
    wire n_0_1;
    wire n_0_2;
@@ -465,12 +463,12 @@ module fp_mul(clk, rst, a_s, b_s, c_out, overflow);
    wire n_0_35;
    wire n_0_36;
    wire n_0_37;
-   wire mul_start;
+   wire n_0_38;
    wire n_0_39;
+   wire mul_start;
+   wire n_0_41;
    wire b;
    wire a;
-   wire n_0_40;
-   wire n_0_41;
    wire n_0_42;
    wire n_0_43;
    wire n_0_44;
@@ -480,298 +478,304 @@ module fp_mul(clk, rst, a_s, b_s, c_out, overflow);
    wire n_0_48;
    wire n_0_49;
    wire n_0_51;
+   wire n_0_52;
    wire n_0_53;
    wire n_0_54;
    wire n_0_55;
    wire n_0_56;
    wire n_0_57;
-   wire [4:0]counter;
    wire n_0_58;
+   wire [4:0]counter;
    wire n_0_50;
-   wire n_0_38;
-   wire n_0_1_9;
-   wire n_0_1_2;
-   wire n_0_1_10;
-   wire n_0_1_3;
-   wire n_0_1_11;
-   wire n_0_1_4;
-   wire n_0_1_12;
-   wire n_0_1_5;
-   wire n_0_1_13;
-   wire n_0_1_6;
-   wire n_0_1_14;
-   wire n_0_1_7;
-   wire n_0_1_15;
-   wire n_0_1_8;
-   wire [31:0]c_reg;
-   wire n_0_1_16;
-   wire n_0_1_1;
-   wire n_0_1_17;
-   wire n_0_1_18;
-   wire n_0_1_19;
-   wire n_0_1_20;
-   wire n_0_1_21;
-   wire n_0_1_22;
+   wire n_0_40;
+   wire n_0_0_12;
+   wire n_0_0_2;
+   wire n_0_0_13;
+   wire n_0_0_3;
+   wire n_0_0_14;
+   wire n_0_0_4;
+   wire n_0_0_15;
+   wire n_0_0_5;
+   wire n_0_0_16;
+   wire n_0_0_6;
+   wire n_0_0_17;
+   wire n_0_0_7;
+   wire n_0_0_18;
+   wire n_0_0_8;
+   wire n_0_0_19;
+   wire n_0_0_0;
+   wire n_0_0_20;
+   wire n_0_0_1;
+   wire n_0_0_21;
+   wire n_0_0_9;
    wire n_0_59;
-   wire n_0_1_0;
-   wire n_0_2_3;
-   wire n_0_2_0;
-   wire n_0_2_4;
-   wire n_0_2_1;
-   wire n_0_2_5;
-   wire n_0_2_2;
    wire n_0_60;
-   wire start;
-   wire n_0_2_6;
-   wire n_0_2_7;
+   wire n_0_61;
    wire n_0_62;
    wire n_0_63;
    wire n_0_64;
    wire n_0_65;
-   wire n_0_2_8;
-   wire n_0_61;
-   wire n_0_2_9;
-   wire n_0_2_10;
-   wire n_0_52;
+   wire n_0_66;
+   wire n_0_67;
+   wire n_0_68;
+   wire n_0_69;
+   wire n_0_70;
+   wire n_0_71;
+   wire n_0_72;
+   wire n_0_73;
+   wire n_0_74;
+   wire n_0_75;
+   wire n_0_76;
+   wire n_0_77;
+   wire n_0_78;
+   wire n_0_79;
+   wire n_0_80;
+   wire n_0_81;
+   wire n_0_82;
+   wire n_0_0_22;
+   wire n_0_0_10;
+   wire n_0_83;
+   wire n_0_84;
+   wire n_0_85;
+   wire n_0_86;
+   wire n_0_87;
+   wire n_0_88;
+   wire n_0_89;
+   wire n_0_0_23;
+   wire n_0_90;
+   wire n_0_0_24;
+   wire n_0_0_25;
+   wire n_0_0_26;
+   wire n_0_0_27;
+   wire n_0_0_28;
+   wire n_0_0_29;
+   wire n_0_0_30;
+   wire n_0_0_31;
+   wire n_0_0_32;
+   wire n_0_91;
+   wire n_0_92;
+   wire n_0_93;
+   wire n_0_94;
+   wire n_0_95;
+   wire n_0_98;
+   wire n_0_0_34;
+   wire start;
+   wire n_0_97;
+   wire n_0_0_11;
+   wire n_0_96;
+   wire n_0_0_33;
+   wire n_0_0_35;
+   wire n_0_99;
+   wire n_0_0_36;
+   wire n_0_0_37;
+   wire n_0_0_38;
 
    unsigned_seq_multiplier unsigned_seq_multiplier_dut (.clk(clk), .rst(rst), 
-      .start_s(mul_start), .a({uc_0, n_0_15, n_0_16, n_0_17, n_0_18, n_0_19, 
-      n_0_20, n_0_21, n_0_22, n_0_23, n_0_24, n_0_25, n_0_26, n_0_27, n_0_28, 
-      n_0_29, n_0_30, n_0_31, n_0_32, n_0_33, n_0_34, n_0_35, n_0_36, n_0_37}), 
-      .b({uc_1, n_0_66, n_0_67, n_0_68, n_0_69, n_0_70, n_0_71, n_0_72, n_0_73, 
-      n_0_0, n_0_1, n_0_2, n_0_3, n_0_4, n_0_5, n_0_6, n_0_7, n_0_8, n_0_9, 
-      n_0_10, n_0_11, n_0_12, n_0_13, n_0_14}), .c({uc_2, uc_3, res_mant[23], 
-      res_mant[22], res_mant[21], res_mant[20], res_mant[19], res_mant[18], 
-      res_mant[17], res_mant[16], res_mant[15], res_mant[14], res_mant[13], 
-      res_mant[12], res_mant[11], res_mant[10], res_mant[9], res_mant[8], 
-      res_mant[7], res_mant[6], res_mant[5], res_mant[4], res_mant[3], 
-      res_mant[2], res_mant[1], uc_4, uc_5, uc_6, uc_7, uc_8, uc_9, uc_10, uc_11, 
-      uc_12, uc_13, uc_14, uc_15, uc_16, uc_17, uc_18, uc_19, uc_20, uc_21, 
-      uc_22, uc_23, uc_24, uc_25, uc_26}));
-   DFFR_X1 overflow_reg (.D(n_0_59), .RN(n_0_58), .CK(n_0_50), .Q(overflow), 
-      .QN());
-   DFFR_X1 \c_out_reg[31]  (.D(c_reg[31]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[31]), .QN());
-   DFFR_X1 \c_out_reg[30]  (.D(c_reg[30]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[30]), .QN());
-   DFFR_X1 \c_out_reg[29]  (.D(c_reg[29]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[29]), .QN());
-   DFFR_X1 \c_out_reg[28]  (.D(c_reg[28]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[28]), .QN());
-   DFFR_X1 \c_out_reg[27]  (.D(c_reg[27]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[27]), .QN());
-   DFFR_X1 \c_out_reg[26]  (.D(c_reg[26]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[26]), .QN());
-   DFFR_X1 \c_out_reg[25]  (.D(c_reg[25]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[25]), .QN());
-   DFFR_X1 \c_out_reg[24]  (.D(c_reg[24]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[24]), .QN());
-   DFFR_X1 \c_out_reg[23]  (.D(c_reg[23]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[23]), .QN());
-   DFFR_X1 \c_out_reg[22]  (.D(c_reg[22]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[22]), .QN());
-   DFFR_X1 \c_out_reg[21]  (.D(c_reg[21]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[21]), .QN());
-   DFFR_X1 \c_out_reg[20]  (.D(c_reg[20]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[20]), .QN());
-   DFFR_X1 \c_out_reg[19]  (.D(c_reg[19]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[19]), .QN());
-   DFFR_X1 \c_out_reg[18]  (.D(c_reg[18]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[18]), .QN());
-   DFFR_X1 \c_out_reg[17]  (.D(c_reg[17]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[17]), .QN());
-   DFFR_X1 \c_out_reg[16]  (.D(c_reg[16]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[16]), .QN());
-   DFFR_X1 \c_out_reg[15]  (.D(c_reg[15]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[15]), .QN());
-   DFFR_X1 \c_out_reg[14]  (.D(c_reg[14]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[14]), .QN());
-   DFFR_X1 \c_out_reg[13]  (.D(c_reg[13]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[13]), .QN());
-   DFFR_X1 \c_out_reg[12]  (.D(c_reg[12]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[12]), .QN());
-   DFFR_X1 \c_out_reg[11]  (.D(c_reg[11]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[11]), .QN());
-   DFFR_X1 \c_out_reg[10]  (.D(c_reg[10]), .RN(n_0_58), .CK(n_0_50), .Q(
-      c_out[10]), .QN());
-   DFFR_X1 \c_out_reg[9]  (.D(c_reg[9]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[9]), 
-      .QN());
-   DFFR_X1 \c_out_reg[8]  (.D(c_reg[8]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[8]), 
-      .QN());
-   DFFR_X1 \c_out_reg[7]  (.D(c_reg[7]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[7]), 
-      .QN());
-   DFFR_X1 \c_out_reg[6]  (.D(c_reg[6]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[6]), 
-      .QN());
-   DFFR_X1 \c_out_reg[5]  (.D(c_reg[5]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[5]), 
-      .QN());
-   DFFR_X1 \c_out_reg[4]  (.D(c_reg[4]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[4]), 
-      .QN());
-   DFFR_X1 \c_out_reg[3]  (.D(c_reg[3]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[3]), 
-      .QN());
-   DFFR_X1 \c_out_reg[2]  (.D(c_reg[2]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[2]), 
-      .QN());
-   DFFR_X1 \c_out_reg[1]  (.D(c_reg[1]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[1]), 
-      .QN());
-   DFFR_X1 \c_out_reg[0]  (.D(c_reg[0]), .RN(n_0_58), .CK(n_0_50), .Q(c_out[0]), 
-      .QN());
-   DFF_X1 \b_reg[22]  (.D(b_s[22]), .CK(n_0_38), .Q(n_0_66), .QN());
-   DFF_X1 \b_reg[21]  (.D(b_s[21]), .CK(n_0_38), .Q(n_0_67), .QN());
-   DFF_X1 \b_reg[20]  (.D(b_s[20]), .CK(n_0_38), .Q(n_0_68), .QN());
-   DFF_X1 \b_reg[19]  (.D(b_s[19]), .CK(n_0_38), .Q(n_0_69), .QN());
-   DFF_X1 \b_reg[18]  (.D(b_s[18]), .CK(n_0_38), .Q(n_0_70), .QN());
-   DFF_X1 \b_reg[17]  (.D(b_s[17]), .CK(n_0_38), .Q(n_0_71), .QN());
-   DFF_X1 \b_reg[16]  (.D(b_s[16]), .CK(n_0_38), .Q(n_0_72), .QN());
-   DFF_X1 \b_reg[15]  (.D(b_s[15]), .CK(n_0_38), .Q(n_0_73), .QN());
-   DFF_X1 \b_reg[14]  (.D(b_s[14]), .CK(n_0_38), .Q(n_0_0), .QN());
-   DFF_X1 \b_reg[13]  (.D(b_s[13]), .CK(n_0_38), .Q(n_0_1), .QN());
-   DFF_X1 \b_reg[12]  (.D(b_s[12]), .CK(n_0_38), .Q(n_0_2), .QN());
-   DFF_X1 \b_reg[11]  (.D(b_s[11]), .CK(n_0_38), .Q(n_0_3), .QN());
-   DFF_X1 \b_reg[10]  (.D(b_s[10]), .CK(n_0_38), .Q(n_0_4), .QN());
-   DFF_X1 \b_reg[9]  (.D(b_s[9]), .CK(n_0_38), .Q(n_0_5), .QN());
-   DFF_X1 \b_reg[8]  (.D(b_s[8]), .CK(n_0_38), .Q(n_0_6), .QN());
-   DFF_X1 \b_reg[7]  (.D(b_s[7]), .CK(n_0_38), .Q(n_0_7), .QN());
-   DFF_X1 \b_reg[6]  (.D(b_s[6]), .CK(n_0_38), .Q(n_0_8), .QN());
-   DFF_X1 \b_reg[5]  (.D(b_s[5]), .CK(n_0_38), .Q(n_0_9), .QN());
-   DFF_X1 \b_reg[4]  (.D(b_s[4]), .CK(n_0_38), .Q(n_0_10), .QN());
-   DFF_X1 \b_reg[3]  (.D(b_s[3]), .CK(n_0_38), .Q(n_0_11), .QN());
-   DFF_X1 \b_reg[2]  (.D(b_s[2]), .CK(n_0_38), .Q(n_0_12), .QN());
-   DFF_X1 \b_reg[1]  (.D(b_s[1]), .CK(n_0_38), .Q(n_0_13), .QN());
-   DFF_X1 \b_reg[0]  (.D(b_s[0]), .CK(n_0_38), .Q(n_0_14), .QN());
-   DFF_X1 \a_reg[22]  (.D(a_s[22]), .CK(n_0_38), .Q(n_0_15), .QN());
-   DFF_X1 \a_reg[21]  (.D(a_s[21]), .CK(n_0_38), .Q(n_0_16), .QN());
-   DFF_X1 \a_reg[20]  (.D(a_s[20]), .CK(n_0_38), .Q(n_0_17), .QN());
-   DFF_X1 \a_reg[19]  (.D(a_s[19]), .CK(n_0_38), .Q(n_0_18), .QN());
-   DFF_X1 \a_reg[18]  (.D(a_s[18]), .CK(n_0_38), .Q(n_0_19), .QN());
-   DFF_X1 \a_reg[17]  (.D(a_s[17]), .CK(n_0_38), .Q(n_0_20), .QN());
-   DFF_X1 \a_reg[16]  (.D(a_s[16]), .CK(n_0_38), .Q(n_0_21), .QN());
-   DFF_X1 \a_reg[15]  (.D(a_s[15]), .CK(n_0_38), .Q(n_0_22), .QN());
-   DFF_X1 \a_reg[14]  (.D(a_s[14]), .CK(n_0_38), .Q(n_0_23), .QN());
-   DFF_X1 \a_reg[13]  (.D(a_s[13]), .CK(n_0_38), .Q(n_0_24), .QN());
-   DFF_X1 \a_reg[12]  (.D(a_s[12]), .CK(n_0_38), .Q(n_0_25), .QN());
-   DFF_X1 \a_reg[11]  (.D(a_s[11]), .CK(n_0_38), .Q(n_0_26), .QN());
-   DFF_X1 \a_reg[10]  (.D(a_s[10]), .CK(n_0_38), .Q(n_0_27), .QN());
-   DFF_X1 \a_reg[9]  (.D(a_s[9]), .CK(n_0_38), .Q(n_0_28), .QN());
-   DFF_X1 \a_reg[8]  (.D(a_s[8]), .CK(n_0_38), .Q(n_0_29), .QN());
-   DFF_X1 \a_reg[7]  (.D(a_s[7]), .CK(n_0_38), .Q(n_0_30), .QN());
-   DFF_X1 \a_reg[6]  (.D(a_s[6]), .CK(n_0_38), .Q(n_0_31), .QN());
-   DFF_X1 \a_reg[5]  (.D(a_s[5]), .CK(n_0_38), .Q(n_0_32), .QN());
-   DFF_X1 \a_reg[4]  (.D(a_s[4]), .CK(n_0_38), .Q(n_0_33), .QN());
-   DFF_X1 \a_reg[3]  (.D(a_s[3]), .CK(n_0_38), .Q(n_0_34), .QN());
-   DFF_X1 \a_reg[2]  (.D(a_s[2]), .CK(n_0_38), .Q(n_0_35), .QN());
-   DFF_X1 \a_reg[1]  (.D(a_s[1]), .CK(n_0_38), .Q(n_0_36), .QN());
-   DFF_X1 \a_reg[0]  (.D(a_s[0]), .CK(n_0_38), .Q(n_0_37), .QN());
-   DFF_X1 mul_start_reg (.D(n_0_39), .CK(clk), .Q(mul_start), .QN());
-   MUX2_X1 mul_start_reg_enable_mux_0 (.A(mul_start), .B(start), .S(n_0_58), 
-      .Z(n_0_39));
-   DFF_X1 \b_reg[31]  (.D(b_s[31]), .CK(n_0_38), .Q(b), .QN());
-   DFF_X1 \a_reg[31]  (.D(a_s[31]), .CK(n_0_38), .Q(a), .QN());
-   DFF_X1 \b_reg[30]  (.D(b_s[30]), .CK(n_0_38), .Q(n_0_40), .QN());
-   DFF_X1 \b_reg[29]  (.D(b_s[29]), .CK(n_0_38), .Q(n_0_41), .QN());
-   DFF_X1 \b_reg[28]  (.D(b_s[28]), .CK(n_0_38), .Q(n_0_42), .QN());
-   DFF_X1 \b_reg[27]  (.D(b_s[27]), .CK(n_0_38), .Q(n_0_43), .QN());
-   DFF_X1 \b_reg[26]  (.D(b_s[26]), .CK(n_0_38), .Q(n_0_44), .QN());
-   DFF_X1 \b_reg[25]  (.D(b_s[25]), .CK(n_0_38), .Q(n_0_45), .QN());
-   DFF_X1 \b_reg[24]  (.D(b_s[24]), .CK(n_0_38), .Q(n_0_46), .QN());
-   DFF_X1 \b_reg[23]  (.D(b_s[23]), .CK(n_0_38), .Q(n_0_47), .QN());
-   DFF_X1 \a_reg[30]  (.D(a_s[30]), .CK(n_0_38), .Q(n_0_48), .QN());
-   DFF_X1 \a_reg[29]  (.D(a_s[29]), .CK(n_0_38), .Q(n_0_49), .QN());
-   DFF_X1 \a_reg[28]  (.D(a_s[28]), .CK(n_0_38), .Q(n_0_51), .QN());
-   DFF_X1 \a_reg[27]  (.D(a_s[27]), .CK(n_0_38), .Q(n_0_53), .QN());
-   DFF_X1 \a_reg[26]  (.D(a_s[26]), .CK(n_0_38), .Q(n_0_54), .QN());
-   DFF_X1 \a_reg[25]  (.D(a_s[25]), .CK(n_0_38), .Q(n_0_55), .QN());
-   DFF_X1 \a_reg[24]  (.D(a_s[24]), .CK(n_0_38), .Q(n_0_56), .QN());
-   DFF_X1 \a_reg[23]  (.D(a_s[23]), .CK(n_0_38), .Q(n_0_57), .QN());
-   DFFR_X1 \counter_reg[4]  (.D(n_0_65), .RN(n_0_58), .CK(clk), .Q(counter[4]), 
-      .QN());
-   DFFR_X1 \counter_reg[3]  (.D(n_0_64), .RN(n_0_58), .CK(clk), .Q(counter[3]), 
-      .QN());
-   DFFR_X1 \counter_reg[2]  (.D(n_0_63), .RN(n_0_58), .CK(clk), .Q(counter[2]), 
-      .QN());
-   DFFR_X1 \counter_reg[1]  (.D(n_0_62), .RN(n_0_58), .CK(clk), .Q(counter[1]), 
-      .QN());
-   DFFR_X1 \counter_reg[0]  (.D(n_0_52), .RN(n_0_58), .CK(clk), .Q(counter[0]), 
-      .QN());
-   INV_X1 i_0_0_0 (.A(rst), .ZN(n_0_58));
-   CLKGATETST_X1 clk_gate_overflow_reg (.CK(clk), .E(n_0_61), .SE(1'b0), 
+      .start_s(mul_start), .a({uc_0, n_0_17, n_0_18, n_0_19, n_0_20, n_0_21, 
+      n_0_22, n_0_23, n_0_24, n_0_25, n_0_26, n_0_27, n_0_28, n_0_29, n_0_30, 
+      n_0_31, n_0_32, n_0_33, n_0_34, n_0_35, n_0_36, n_0_37, n_0_38, n_0_39}), 
+      .b({uc_1, n_0_100, n_0_101, n_0_102, n_0_103, n_0_104, n_0_105, n_0_0, 
+      n_0_1, n_0_2, n_0_3, n_0_4, n_0_5, n_0_6, n_0_7, n_0_8, n_0_9, n_0_10, 
+      n_0_11, n_0_12, n_0_13, n_0_14, n_0_15, n_0_16}), .c({uc_2, uc_3, 
+      res_mant[23], res_mant[22], res_mant[21], res_mant[20], res_mant[19], 
+      res_mant[18], res_mant[17], res_mant[16], res_mant[15], res_mant[14], 
+      res_mant[13], res_mant[12], res_mant[11], res_mant[10], res_mant[9], 
+      res_mant[8], res_mant[7], res_mant[6], res_mant[5], res_mant[4], 
+      res_mant[3], res_mant[2], res_mant[1], uc_4, uc_5, uc_6, uc_7, uc_8, uc_9, 
+      uc_10, uc_11, uc_12, uc_13, uc_14, uc_15, uc_16, uc_17, uc_18, uc_19, 
+      uc_20, uc_21, uc_22, uc_23, uc_24, uc_25, uc_26}));
+   DFF_X1 overflow_reg (.D(n_0_98), .CK(n_0_50), .Q(overflow), .QN());
+   DFF_X1 \c_out_reg[31]  (.D(n_0_90), .CK(n_0_50), .Q(c_out[31]), .QN());
+   DFF_X1 \c_out_reg[30]  (.D(n_0_89), .CK(n_0_50), .Q(c_out[30]), .QN());
+   DFF_X1 \c_out_reg[29]  (.D(n_0_88), .CK(n_0_50), .Q(c_out[29]), .QN());
+   DFF_X1 \c_out_reg[28]  (.D(n_0_87), .CK(n_0_50), .Q(c_out[28]), .QN());
+   DFF_X1 \c_out_reg[27]  (.D(n_0_86), .CK(n_0_50), .Q(c_out[27]), .QN());
+   DFF_X1 \c_out_reg[26]  (.D(n_0_85), .CK(n_0_50), .Q(c_out[26]), .QN());
+   DFF_X1 \c_out_reg[25]  (.D(n_0_84), .CK(n_0_50), .Q(c_out[25]), .QN());
+   DFF_X1 \c_out_reg[24]  (.D(n_0_83), .CK(n_0_50), .Q(c_out[24]), .QN());
+   DFF_X1 \c_out_reg[23]  (.D(n_0_82), .CK(n_0_50), .Q(c_out[23]), .QN());
+   DFF_X1 \c_out_reg[22]  (.D(n_0_81), .CK(n_0_50), .Q(c_out[22]), .QN());
+   DFF_X1 \c_out_reg[21]  (.D(n_0_80), .CK(n_0_50), .Q(c_out[21]), .QN());
+   DFF_X1 \c_out_reg[20]  (.D(n_0_79), .CK(n_0_50), .Q(c_out[20]), .QN());
+   DFF_X1 \c_out_reg[19]  (.D(n_0_78), .CK(n_0_50), .Q(c_out[19]), .QN());
+   DFF_X1 \c_out_reg[18]  (.D(n_0_77), .CK(n_0_50), .Q(c_out[18]), .QN());
+   DFF_X1 \c_out_reg[17]  (.D(n_0_76), .CK(n_0_50), .Q(c_out[17]), .QN());
+   DFF_X1 \c_out_reg[16]  (.D(n_0_75), .CK(n_0_50), .Q(c_out[16]), .QN());
+   DFF_X1 \c_out_reg[15]  (.D(n_0_74), .CK(n_0_50), .Q(c_out[15]), .QN());
+   DFF_X1 \c_out_reg[14]  (.D(n_0_73), .CK(n_0_50), .Q(c_out[14]), .QN());
+   DFF_X1 \c_out_reg[13]  (.D(n_0_72), .CK(n_0_50), .Q(c_out[13]), .QN());
+   DFF_X1 \c_out_reg[12]  (.D(n_0_71), .CK(n_0_50), .Q(c_out[12]), .QN());
+   DFF_X1 \c_out_reg[11]  (.D(n_0_70), .CK(n_0_50), .Q(c_out[11]), .QN());
+   DFF_X1 \c_out_reg[10]  (.D(n_0_69), .CK(n_0_50), .Q(c_out[10]), .QN());
+   DFF_X1 \c_out_reg[9]  (.D(n_0_68), .CK(n_0_50), .Q(c_out[9]), .QN());
+   DFF_X1 \c_out_reg[8]  (.D(n_0_67), .CK(n_0_50), .Q(c_out[8]), .QN());
+   DFF_X1 \c_out_reg[7]  (.D(n_0_66), .CK(n_0_50), .Q(c_out[7]), .QN());
+   DFF_X1 \c_out_reg[6]  (.D(n_0_65), .CK(n_0_50), .Q(c_out[6]), .QN());
+   DFF_X1 \c_out_reg[5]  (.D(n_0_64), .CK(n_0_50), .Q(c_out[5]), .QN());
+   DFF_X1 \c_out_reg[4]  (.D(n_0_63), .CK(n_0_50), .Q(c_out[4]), .QN());
+   DFF_X1 \c_out_reg[3]  (.D(n_0_62), .CK(n_0_50), .Q(c_out[3]), .QN());
+   DFF_X1 \c_out_reg[2]  (.D(n_0_61), .CK(n_0_50), .Q(c_out[2]), .QN());
+   DFF_X1 \c_out_reg[1]  (.D(n_0_60), .CK(n_0_50), .Q(c_out[1]), .QN());
+   DFF_X1 \c_out_reg[0]  (.D(n_0_59), .CK(n_0_50), .Q(c_out[0]), .QN());
+   DFF_X1 \b_reg[22]  (.D(b_s[22]), .CK(n_0_40), .Q(n_0_100), .QN());
+   DFF_X1 \b_reg[21]  (.D(b_s[21]), .CK(n_0_40), .Q(n_0_101), .QN());
+   DFF_X1 \b_reg[20]  (.D(b_s[20]), .CK(n_0_40), .Q(n_0_102), .QN());
+   DFF_X1 \b_reg[19]  (.D(b_s[19]), .CK(n_0_40), .Q(n_0_103), .QN());
+   DFF_X1 \b_reg[18]  (.D(b_s[18]), .CK(n_0_40), .Q(n_0_104), .QN());
+   DFF_X1 \b_reg[17]  (.D(b_s[17]), .CK(n_0_40), .Q(n_0_105), .QN());
+   DFF_X1 \b_reg[16]  (.D(b_s[16]), .CK(n_0_40), .Q(n_0_0), .QN());
+   DFF_X1 \b_reg[15]  (.D(b_s[15]), .CK(n_0_40), .Q(n_0_1), .QN());
+   DFF_X1 \b_reg[14]  (.D(b_s[14]), .CK(n_0_40), .Q(n_0_2), .QN());
+   DFF_X1 \b_reg[13]  (.D(b_s[13]), .CK(n_0_40), .Q(n_0_3), .QN());
+   DFF_X1 \b_reg[12]  (.D(b_s[12]), .CK(n_0_40), .Q(n_0_4), .QN());
+   DFF_X1 \b_reg[11]  (.D(b_s[11]), .CK(n_0_40), .Q(n_0_5), .QN());
+   DFF_X1 \b_reg[10]  (.D(b_s[10]), .CK(n_0_40), .Q(n_0_6), .QN());
+   DFF_X1 \b_reg[9]  (.D(b_s[9]), .CK(n_0_40), .Q(n_0_7), .QN());
+   DFF_X1 \b_reg[8]  (.D(b_s[8]), .CK(n_0_40), .Q(n_0_8), .QN());
+   DFF_X1 \b_reg[7]  (.D(b_s[7]), .CK(n_0_40), .Q(n_0_9), .QN());
+   DFF_X1 \b_reg[6]  (.D(b_s[6]), .CK(n_0_40), .Q(n_0_10), .QN());
+   DFF_X1 \b_reg[5]  (.D(b_s[5]), .CK(n_0_40), .Q(n_0_11), .QN());
+   DFF_X1 \b_reg[4]  (.D(b_s[4]), .CK(n_0_40), .Q(n_0_12), .QN());
+   DFF_X1 \b_reg[3]  (.D(b_s[3]), .CK(n_0_40), .Q(n_0_13), .QN());
+   DFF_X1 \b_reg[2]  (.D(b_s[2]), .CK(n_0_40), .Q(n_0_14), .QN());
+   DFF_X1 \b_reg[1]  (.D(b_s[1]), .CK(n_0_40), .Q(n_0_15), .QN());
+   DFF_X1 \b_reg[0]  (.D(b_s[0]), .CK(n_0_40), .Q(n_0_16), .QN());
+   DFF_X1 \a_reg[22]  (.D(a_s[22]), .CK(n_0_40), .Q(n_0_17), .QN());
+   DFF_X1 \a_reg[21]  (.D(a_s[21]), .CK(n_0_40), .Q(n_0_18), .QN());
+   DFF_X1 \a_reg[20]  (.D(a_s[20]), .CK(n_0_40), .Q(n_0_19), .QN());
+   DFF_X1 \a_reg[19]  (.D(a_s[19]), .CK(n_0_40), .Q(n_0_20), .QN());
+   DFF_X1 \a_reg[18]  (.D(a_s[18]), .CK(n_0_40), .Q(n_0_21), .QN());
+   DFF_X1 \a_reg[17]  (.D(a_s[17]), .CK(n_0_40), .Q(n_0_22), .QN());
+   DFF_X1 \a_reg[16]  (.D(a_s[16]), .CK(n_0_40), .Q(n_0_23), .QN());
+   DFF_X1 \a_reg[15]  (.D(a_s[15]), .CK(n_0_40), .Q(n_0_24), .QN());
+   DFF_X1 \a_reg[14]  (.D(a_s[14]), .CK(n_0_40), .Q(n_0_25), .QN());
+   DFF_X1 \a_reg[13]  (.D(a_s[13]), .CK(n_0_40), .Q(n_0_26), .QN());
+   DFF_X1 \a_reg[12]  (.D(a_s[12]), .CK(n_0_40), .Q(n_0_27), .QN());
+   DFF_X1 \a_reg[11]  (.D(a_s[11]), .CK(n_0_40), .Q(n_0_28), .QN());
+   DFF_X1 \a_reg[10]  (.D(a_s[10]), .CK(n_0_40), .Q(n_0_29), .QN());
+   DFF_X1 \a_reg[9]  (.D(a_s[9]), .CK(n_0_40), .Q(n_0_30), .QN());
+   DFF_X1 \a_reg[8]  (.D(a_s[8]), .CK(n_0_40), .Q(n_0_31), .QN());
+   DFF_X1 \a_reg[7]  (.D(a_s[7]), .CK(n_0_40), .Q(n_0_32), .QN());
+   DFF_X1 \a_reg[6]  (.D(a_s[6]), .CK(n_0_40), .Q(n_0_33), .QN());
+   DFF_X1 \a_reg[5]  (.D(a_s[5]), .CK(n_0_40), .Q(n_0_34), .QN());
+   DFF_X1 \a_reg[4]  (.D(a_s[4]), .CK(n_0_40), .Q(n_0_35), .QN());
+   DFF_X1 \a_reg[3]  (.D(a_s[3]), .CK(n_0_40), .Q(n_0_36), .QN());
+   DFF_X1 \a_reg[2]  (.D(a_s[2]), .CK(n_0_40), .Q(n_0_37), .QN());
+   DFF_X1 \a_reg[1]  (.D(a_s[1]), .CK(n_0_40), .Q(n_0_38), .QN());
+   DFF_X1 \a_reg[0]  (.D(a_s[0]), .CK(n_0_40), .Q(n_0_39), .QN());
+   DFF_X1 mul_start_reg (.D(n_0_41), .CK(clk), .Q(mul_start), .QN());
+   MUX2_X1 mul_start_reg_enable_mux_0 (.A(mul_start), .B(start), .S(n_0_97), 
+      .Z(n_0_41));
+   DFF_X1 \b_reg[31]  (.D(b_s[31]), .CK(n_0_40), .Q(b), .QN());
+   DFF_X1 \a_reg[31]  (.D(a_s[31]), .CK(n_0_40), .Q(a), .QN());
+   DFF_X1 \b_reg[30]  (.D(b_s[30]), .CK(n_0_40), .Q(n_0_42), .QN());
+   DFF_X1 \b_reg[29]  (.D(b_s[29]), .CK(n_0_40), .Q(n_0_43), .QN());
+   DFF_X1 \b_reg[28]  (.D(b_s[28]), .CK(n_0_40), .Q(n_0_44), .QN());
+   DFF_X1 \b_reg[27]  (.D(b_s[27]), .CK(n_0_40), .Q(n_0_45), .QN());
+   DFF_X1 \b_reg[26]  (.D(b_s[26]), .CK(n_0_40), .Q(n_0_46), .QN());
+   DFF_X1 \b_reg[25]  (.D(b_s[25]), .CK(n_0_40), .Q(n_0_47), .QN());
+   DFF_X1 \b_reg[24]  (.D(b_s[24]), .CK(n_0_40), .Q(n_0_48), .QN());
+   DFF_X1 \b_reg[23]  (.D(b_s[23]), .CK(n_0_40), .Q(n_0_49), .QN());
+   DFF_X1 \a_reg[30]  (.D(a_s[30]), .CK(n_0_40), .Q(n_0_51), .QN());
+   DFF_X1 \a_reg[29]  (.D(a_s[29]), .CK(n_0_40), .Q(n_0_52), .QN());
+   DFF_X1 \a_reg[28]  (.D(a_s[28]), .CK(n_0_40), .Q(n_0_53), .QN());
+   DFF_X1 \a_reg[27]  (.D(a_s[27]), .CK(n_0_40), .Q(n_0_54), .QN());
+   DFF_X1 \a_reg[26]  (.D(a_s[26]), .CK(n_0_40), .Q(n_0_55), .QN());
+   DFF_X1 \a_reg[25]  (.D(a_s[25]), .CK(n_0_40), .Q(n_0_56), .QN());
+   DFF_X1 \a_reg[24]  (.D(a_s[24]), .CK(n_0_40), .Q(n_0_57), .QN());
+   DFF_X1 \a_reg[23]  (.D(a_s[23]), .CK(n_0_40), .Q(n_0_58), .QN());
+   DFF_X1 \counter_reg[4]  (.D(n_0_96), .CK(clk), .Q(counter[4]), .QN());
+   DFF_X1 \counter_reg[3]  (.D(n_0_95), .CK(clk), .Q(counter[3]), .QN());
+   DFF_X1 \counter_reg[2]  (.D(n_0_94), .CK(clk), .Q(counter[2]), .QN());
+   DFF_X1 \counter_reg[1]  (.D(n_0_93), .CK(clk), .Q(counter[1]), .QN());
+   DFF_X1 \counter_reg[0]  (.D(n_0_92), .CK(clk), .Q(counter[0]), .QN());
+   CLKGATETST_X1 clk_gate_overflow_reg (.CK(clk), .E(n_0_99), .SE(1'b0), 
       .GCK(n_0_50));
-   CLKGATETST_X1 clk_gate_b_reg__1 (.CK(clk), .E(n_0_60), .SE(1'b0), .GCK(n_0_38));
-   FA_X1 i_0_1_0 (.A(n_0_46), .B(n_0_56), .CI(n_0_1_1), .CO(n_0_1_2), .S(n_0_1_9));
-   FA_X1 i_0_1_1 (.A(n_0_45), .B(n_0_55), .CI(n_0_1_2), .CO(n_0_1_3), .S(
-      n_0_1_10));
-   FA_X1 i_0_1_2 (.A(n_0_44), .B(n_0_54), .CI(n_0_1_3), .CO(n_0_1_4), .S(
-      n_0_1_11));
-   FA_X1 i_0_1_3 (.A(n_0_43), .B(n_0_53), .CI(n_0_1_4), .CO(n_0_1_5), .S(
-      n_0_1_12));
-   FA_X1 i_0_1_4 (.A(n_0_42), .B(n_0_51), .CI(n_0_1_5), .CO(n_0_1_6), .S(
-      n_0_1_13));
-   FA_X1 i_0_1_5 (.A(n_0_41), .B(n_0_49), .CI(n_0_1_6), .CO(n_0_1_7), .S(
-      n_0_1_14));
-   FA_X1 i_0_1_6 (.A(n_0_48), .B(n_0_1_0), .CI(n_0_1_7), .CO(n_0_1_8), .S(
-      n_0_1_15));
-   AND2_X1 i_0_1_7 (.A1(res_mant[1]), .A2(n_0_1_18), .ZN(c_reg[0]));
-   AND2_X1 i_0_1_8 (.A1(res_mant[2]), .A2(n_0_1_18), .ZN(c_reg[1]));
-   AND2_X1 i_0_1_9 (.A1(res_mant[3]), .A2(n_0_1_18), .ZN(c_reg[2]));
-   AND2_X1 i_0_1_10 (.A1(res_mant[4]), .A2(n_0_1_18), .ZN(c_reg[3]));
-   AND2_X1 i_0_1_11 (.A1(res_mant[5]), .A2(n_0_1_18), .ZN(c_reg[4]));
-   AND2_X1 i_0_1_12 (.A1(res_mant[6]), .A2(n_0_1_18), .ZN(c_reg[5]));
-   AND2_X1 i_0_1_13 (.A1(res_mant[7]), .A2(n_0_1_18), .ZN(c_reg[6]));
-   AND2_X1 i_0_1_14 (.A1(res_mant[8]), .A2(n_0_1_18), .ZN(c_reg[7]));
-   AND2_X1 i_0_1_15 (.A1(res_mant[9]), .A2(n_0_1_18), .ZN(c_reg[8]));
-   AND2_X1 i_0_1_16 (.A1(res_mant[10]), .A2(n_0_1_18), .ZN(c_reg[9]));
-   AND2_X1 i_0_1_17 (.A1(res_mant[11]), .A2(n_0_1_18), .ZN(c_reg[10]));
-   AND2_X1 i_0_1_18 (.A1(res_mant[12]), .A2(n_0_1_18), .ZN(c_reg[11]));
-   AND2_X1 i_0_1_19 (.A1(res_mant[13]), .A2(n_0_1_18), .ZN(c_reg[12]));
-   AND2_X1 i_0_1_20 (.A1(res_mant[14]), .A2(n_0_1_18), .ZN(c_reg[13]));
-   AND2_X1 i_0_1_21 (.A1(res_mant[15]), .A2(n_0_1_18), .ZN(c_reg[14]));
-   AND2_X1 i_0_1_22 (.A1(res_mant[16]), .A2(n_0_1_18), .ZN(c_reg[15]));
-   AND2_X1 i_0_1_23 (.A1(res_mant[17]), .A2(n_0_1_18), .ZN(c_reg[16]));
-   AND2_X1 i_0_1_24 (.A1(res_mant[18]), .A2(n_0_1_18), .ZN(c_reg[17]));
-   AND2_X1 i_0_1_25 (.A1(res_mant[19]), .A2(n_0_1_18), .ZN(c_reg[18]));
-   AND2_X1 i_0_1_26 (.A1(res_mant[20]), .A2(n_0_1_18), .ZN(c_reg[19]));
-   AND2_X1 i_0_1_27 (.A1(res_mant[21]), .A2(n_0_1_18), .ZN(c_reg[20]));
-   AND2_X1 i_0_1_28 (.A1(res_mant[22]), .A2(n_0_1_18), .ZN(c_reg[21]));
-   AND2_X1 i_0_1_29 (.A1(res_mant[23]), .A2(n_0_1_18), .ZN(c_reg[22]));
-   AND2_X1 i_0_1_30 (.A1(n_0_1_18), .A2(n_0_1_16), .ZN(c_reg[23]));
-   XNOR2_X1 i_0_1_31 (.A(n_0_47), .B(n_0_57), .ZN(n_0_1_16));
-   OR2_X1 i_0_1_32 (.A1(n_0_47), .A2(n_0_57), .ZN(n_0_1_1));
-   AND2_X1 i_0_1_33 (.A1(n_0_1_9), .A2(n_0_1_18), .ZN(c_reg[24]));
-   AND2_X1 i_0_1_34 (.A1(n_0_1_10), .A2(n_0_1_18), .ZN(c_reg[25]));
-   AND2_X1 i_0_1_35 (.A1(n_0_1_11), .A2(n_0_1_18), .ZN(c_reg[26]));
-   AND2_X1 i_0_1_36 (.A1(n_0_1_12), .A2(n_0_1_18), .ZN(c_reg[27]));
-   AND2_X1 i_0_1_37 (.A1(n_0_1_13), .A2(n_0_1_18), .ZN(c_reg[28]));
-   AND2_X1 i_0_1_38 (.A1(n_0_1_14), .A2(n_0_1_18), .ZN(c_reg[29]));
-   AND2_X1 i_0_1_39 (.A1(n_0_1_15), .A2(n_0_1_18), .ZN(c_reg[30]));
-   XNOR2_X1 i_0_1_40 (.A(a), .B(n_0_1_17), .ZN(c_reg[31]));
-   NAND2_X1 i_0_1_41 (.A1(b), .A2(n_0_1_18), .ZN(n_0_1_17));
-   AOI22_X1 i_0_1_42 (.A1(n_0_1_22), .A2(n_0_1_21), .B1(n_0_1_20), .B2(n_0_1_19), 
-      .ZN(n_0_1_18));
-   NOR4_X1 i_0_1_43 (.A1(n_0_40), .A2(n_0_41), .A3(n_0_42), .A4(n_0_43), 
-      .ZN(n_0_1_19));
-   NOR4_X1 i_0_1_44 (.A1(n_0_44), .A2(n_0_45), .A3(n_0_46), .A4(n_0_47), 
-      .ZN(n_0_1_20));
-   NOR4_X1 i_0_1_45 (.A1(n_0_48), .A2(n_0_49), .A3(n_0_51), .A4(n_0_53), 
-      .ZN(n_0_1_21));
-   NOR4_X1 i_0_1_46 (.A1(n_0_54), .A2(n_0_55), .A3(n_0_56), .A4(n_0_57), 
-      .ZN(n_0_1_22));
-   XNOR2_X1 i_0_1_47 (.A(n_0_40), .B(n_0_1_8), .ZN(n_0_59));
-   INV_X1 i_0_1_48 (.A(n_0_40), .ZN(n_0_1_0));
-   HA_X1 i_0_2_0 (.A(counter[1]), .B(counter[0]), .CO(n_0_2_0), .S(n_0_2_3));
-   HA_X1 i_0_2_1 (.A(counter[2]), .B(n_0_2_0), .CO(n_0_2_1), .S(n_0_2_4));
-   HA_X1 i_0_2_2 (.A(counter[3]), .B(n_0_2_1), .CO(n_0_2_2), .S(n_0_2_5));
-   NOR2_X1 i_0_2_3 (.A1(rst), .A2(n_0_2_6), .ZN(n_0_60));
-   INV_X1 i_0_2_4 (.A(n_0_2_6), .ZN(start));
-   NAND2_X1 i_0_2_5 (.A1(n_0_2_10), .A2(n_0_2_7), .ZN(n_0_2_6));
-   NOR3_X1 i_0_2_6 (.A1(counter[4]), .A2(counter[3]), .A3(counter[0]), .ZN(
-      n_0_2_7));
-   AND2_X1 i_0_2_7 (.A1(n_0_2_3), .A2(n_0_2_9), .ZN(n_0_62));
-   AND2_X1 i_0_2_8 (.A1(n_0_2_4), .A2(n_0_2_9), .ZN(n_0_63));
-   AND2_X1 i_0_2_9 (.A1(n_0_2_5), .A2(n_0_2_9), .ZN(n_0_64));
-   AOI211_X1 i_0_2_10 (.A(n_0_2_8), .B(n_0_61), .C1(counter[4]), .C2(n_0_2_2), 
-      .ZN(n_0_65));
-   NOR2_X1 i_0_2_11 (.A1(counter[4]), .A2(n_0_2_2), .ZN(n_0_2_8));
-   INV_X1 i_0_2_12 (.A(n_0_2_9), .ZN(n_0_61));
-   NAND4_X1 i_0_2_13 (.A1(counter[4]), .A2(counter[0]), .A3(counter[3]), 
-      .A4(n_0_2_10), .ZN(n_0_2_9));
-   NOR2_X1 i_0_2_14 (.A1(counter[2]), .A2(counter[1]), .ZN(n_0_2_10));
-   INV_X1 i_0_2_15 (.A(counter[0]), .ZN(n_0_52));
+   CLKGATETST_X1 clk_gate_b_reg__1 (.CK(clk), .E(n_0_91), .SE(1'b0), .GCK(n_0_40));
+   FA_X1 i_0_0_0 (.A(n_0_48), .B(n_0_57), .CI(n_0_0_10), .CO(n_0_0_2), .S(
+      n_0_0_12));
+   FA_X1 i_0_0_1 (.A(n_0_47), .B(n_0_56), .CI(n_0_0_2), .CO(n_0_0_3), .S(
+      n_0_0_13));
+   FA_X1 i_0_0_2 (.A(n_0_46), .B(n_0_55), .CI(n_0_0_3), .CO(n_0_0_4), .S(
+      n_0_0_14));
+   FA_X1 i_0_0_3 (.A(n_0_45), .B(n_0_54), .CI(n_0_0_4), .CO(n_0_0_5), .S(
+      n_0_0_15));
+   FA_X1 i_0_0_4 (.A(n_0_44), .B(n_0_53), .CI(n_0_0_5), .CO(n_0_0_6), .S(
+      n_0_0_16));
+   FA_X1 i_0_0_5 (.A(n_0_43), .B(n_0_52), .CI(n_0_0_6), .CO(n_0_0_7), .S(
+      n_0_0_17));
+   FA_X1 i_0_0_6 (.A(n_0_51), .B(n_0_0_11), .CI(n_0_0_7), .CO(n_0_0_8), .S(
+      n_0_0_18));
+   HA_X1 i_0_0_7 (.A(counter[1]), .B(counter[0]), .CO(n_0_0_0), .S(n_0_0_19));
+   HA_X1 i_0_0_8 (.A(counter[2]), .B(n_0_0_0), .CO(n_0_0_1), .S(n_0_0_20));
+   HA_X1 i_0_0_9 (.A(counter[3]), .B(n_0_0_1), .CO(n_0_0_9), .S(n_0_0_21));
+   AND2_X1 i_0_0_10 (.A1(res_mant[1]), .A2(n_0_0_23), .ZN(n_0_59));
+   AND2_X1 i_0_0_11 (.A1(res_mant[2]), .A2(n_0_0_23), .ZN(n_0_60));
+   AND2_X1 i_0_0_12 (.A1(res_mant[3]), .A2(n_0_0_23), .ZN(n_0_61));
+   AND2_X1 i_0_0_13 (.A1(res_mant[4]), .A2(n_0_0_23), .ZN(n_0_62));
+   AND2_X1 i_0_0_14 (.A1(res_mant[5]), .A2(n_0_0_23), .ZN(n_0_63));
+   AND2_X1 i_0_0_15 (.A1(res_mant[6]), .A2(n_0_0_23), .ZN(n_0_64));
+   AND2_X1 i_0_0_16 (.A1(res_mant[7]), .A2(n_0_0_23), .ZN(n_0_65));
+   AND2_X1 i_0_0_17 (.A1(res_mant[8]), .A2(n_0_0_23), .ZN(n_0_66));
+   AND2_X1 i_0_0_18 (.A1(res_mant[9]), .A2(n_0_0_23), .ZN(n_0_67));
+   AND2_X1 i_0_0_19 (.A1(res_mant[10]), .A2(n_0_0_23), .ZN(n_0_68));
+   AND2_X1 i_0_0_20 (.A1(res_mant[11]), .A2(n_0_0_23), .ZN(n_0_69));
+   AND2_X1 i_0_0_21 (.A1(res_mant[12]), .A2(n_0_0_23), .ZN(n_0_70));
+   AND2_X1 i_0_0_22 (.A1(res_mant[13]), .A2(n_0_0_23), .ZN(n_0_71));
+   AND2_X1 i_0_0_23 (.A1(res_mant[14]), .A2(n_0_0_23), .ZN(n_0_72));
+   AND2_X1 i_0_0_24 (.A1(res_mant[15]), .A2(n_0_0_23), .ZN(n_0_73));
+   AND2_X1 i_0_0_25 (.A1(res_mant[16]), .A2(n_0_0_23), .ZN(n_0_74));
+   AND2_X1 i_0_0_26 (.A1(res_mant[17]), .A2(n_0_0_23), .ZN(n_0_75));
+   AND2_X1 i_0_0_27 (.A1(res_mant[18]), .A2(n_0_0_23), .ZN(n_0_76));
+   AND2_X1 i_0_0_28 (.A1(res_mant[19]), .A2(n_0_0_23), .ZN(n_0_77));
+   AND2_X1 i_0_0_29 (.A1(res_mant[20]), .A2(n_0_0_23), .ZN(n_0_78));
+   AND2_X1 i_0_0_30 (.A1(res_mant[21]), .A2(n_0_0_23), .ZN(n_0_79));
+   AND2_X1 i_0_0_31 (.A1(res_mant[22]), .A2(n_0_0_23), .ZN(n_0_80));
+   AND2_X1 i_0_0_32 (.A1(res_mant[23]), .A2(n_0_0_23), .ZN(n_0_81));
+   AOI211_X1 i_0_0_33 (.A(rst), .B(n_0_0_26), .C1(n_0_0_10), .C2(n_0_0_22), 
+      .ZN(n_0_82));
+   NAND2_X1 i_0_0_34 (.A1(n_0_49), .A2(n_0_58), .ZN(n_0_0_22));
+   OR2_X1 i_0_0_35 (.A1(n_0_49), .A2(n_0_58), .ZN(n_0_0_10));
+   AND2_X1 i_0_0_36 (.A1(n_0_0_12), .A2(n_0_0_23), .ZN(n_0_83));
+   AND2_X1 i_0_0_37 (.A1(n_0_0_13), .A2(n_0_0_23), .ZN(n_0_84));
+   AND2_X1 i_0_0_38 (.A1(n_0_0_14), .A2(n_0_0_23), .ZN(n_0_85));
+   AND2_X1 i_0_0_39 (.A1(n_0_0_15), .A2(n_0_0_23), .ZN(n_0_86));
+   AND2_X1 i_0_0_40 (.A1(n_0_0_16), .A2(n_0_0_23), .ZN(n_0_87));
+   AND2_X1 i_0_0_41 (.A1(n_0_0_17), .A2(n_0_0_23), .ZN(n_0_88));
+   AND2_X1 i_0_0_42 (.A1(n_0_0_18), .A2(n_0_0_23), .ZN(n_0_89));
+   NOR2_X1 i_0_0_43 (.A1(n_0_0_26), .A2(rst), .ZN(n_0_0_23));
+   AND2_X1 i_0_0_44 (.A1(n_0_0_24), .A2(n_0_97), .ZN(n_0_90));
+   XNOR2_X1 i_0_0_45 (.A(a), .B(n_0_0_25), .ZN(n_0_0_24));
+   NAND3_X1 i_0_0_46 (.A1(n_0_0_30), .A2(n_0_0_27), .A3(b), .ZN(n_0_0_25));
+   NAND2_X1 i_0_0_47 (.A1(n_0_0_30), .A2(n_0_0_27), .ZN(n_0_0_26));
+   NAND2_X1 i_0_0_48 (.A1(n_0_0_29), .A2(n_0_0_28), .ZN(n_0_0_27));
+   NOR4_X1 i_0_0_49 (.A1(n_0_42), .A2(n_0_43), .A3(n_0_44), .A4(n_0_45), 
+      .ZN(n_0_0_28));
+   NOR4_X1 i_0_0_50 (.A1(n_0_46), .A2(n_0_47), .A3(n_0_48), .A4(n_0_49), 
+      .ZN(n_0_0_29));
+   NAND2_X1 i_0_0_51 (.A1(n_0_0_32), .A2(n_0_0_31), .ZN(n_0_0_30));
+   NOR4_X1 i_0_0_52 (.A1(n_0_51), .A2(n_0_52), .A3(n_0_53), .A4(n_0_54), 
+      .ZN(n_0_0_31));
+   NOR4_X1 i_0_0_53 (.A1(n_0_55), .A2(n_0_56), .A3(n_0_57), .A4(n_0_58), 
+      .ZN(n_0_0_32));
+   AND2_X1 i_0_0_54 (.A1(start), .A2(n_0_97), .ZN(n_0_91));
+   NOR2_X1 i_0_0_55 (.A1(rst), .A2(counter[0]), .ZN(n_0_92));
+   AND2_X1 i_0_0_56 (.A1(n_0_0_19), .A2(n_0_0_35), .ZN(n_0_93));
+   AND2_X1 i_0_0_57 (.A1(n_0_0_20), .A2(n_0_0_35), .ZN(n_0_94));
+   AND2_X1 i_0_0_58 (.A1(n_0_0_21), .A2(n_0_0_35), .ZN(n_0_95));
+   AOI21_X1 i_0_0_59 (.A(n_0_0_34), .B1(n_0_0_8), .B2(n_0_0_11), .ZN(n_0_98));
+   OAI21_X1 i_0_0_60 (.A(n_0_97), .B1(n_0_0_11), .B2(n_0_0_8), .ZN(n_0_0_34));
+   NOR4_X1 i_0_0_61 (.A1(n_0_0_37), .A2(counter[0]), .A3(counter[3]), .A4(
+      counter[4]), .ZN(start));
+   INV_X1 i_0_0_62 (.A(rst), .ZN(n_0_97));
+   INV_X1 i_0_0_63 (.A(n_0_42), .ZN(n_0_0_11));
+   AOI211_X1 i_0_0_64 (.A(n_0_0_33), .B(n_0_99), .C1(counter[4]), .C2(n_0_0_9), 
+      .ZN(n_0_96));
+   NOR2_X1 i_0_0_65 (.A1(counter[4]), .A2(n_0_0_9), .ZN(n_0_0_33));
+   INV_X1 i_0_0_66 (.A(n_0_99), .ZN(n_0_0_35));
+   OAI21_X1 i_0_0_67 (.A(n_0_0_38), .B1(n_0_0_37), .B2(n_0_0_36), .ZN(n_0_99));
+   NAND3_X1 i_0_0_68 (.A1(counter[4]), .A2(counter[3]), .A3(counter[0]), 
+      .ZN(n_0_0_36));
+   OR2_X1 i_0_0_69 (.A1(counter[2]), .A2(counter[1]), .ZN(n_0_0_37));
+   INV_X1 i_0_0_70 (.A(rst), .ZN(n_0_0_38));
 endmodule

@@ -25,7 +25,7 @@ module booth_multiplier #(
   assign start = (SC ==  0);
 
 
-  always @(posedge clk, posedge rst)
+  always @(posedge clk)
   begin
 
     if(rst == 1'b1)
@@ -34,7 +34,6 @@ module booth_multiplier #(
       SC = 0;
       c = 'bz;
     end
-
     else
     begin
         if(en)

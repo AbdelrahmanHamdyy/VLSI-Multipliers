@@ -86,7 +86,7 @@ module fp_mul(
     );
 
     // REG at inputs and outputs 
-    always @(posedge clk, posedge rst) begin
+    always @(posedge clk) begin
         if(rst) begin
             counter=0;
             c_out =0;
