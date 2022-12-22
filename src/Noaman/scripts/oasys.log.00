@@ -1,0 +1,49 @@
+*******************************************************************
+*      Copyright (c) 2004 - 2020 Mentor Graphics Corporation      *
+*                       All Rights Reserved                       *
+*                                                                 *
+*                                                                 *
+*   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION   *
+*      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION       *
+*        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.        *
+*                                                                 *
+* Program : ../bin/Linux-x86_64-O/oasysGui                        *
+* Version : 19.2-p002                                             *
+* Date    : Fri Jan 10 14:27:22 PST 2020                          *
+* Build   : releases/19.2-49727.0-CentOS_6.5-O                    *
+*******************************************************************
+ config sdc-v1.7-cpd cli cmd explore mxdb
+loading: oasys fp rta dft RTTessent-d ctl verify edit bt upf-c aos conc vcd prot int
+checked out licenses: psyncore psynfloorplan psyndft psynpower
+
+         date     : Mon Oct 17 14:41:25 EET 2022
+         ppid/pid : 3338/3348
+         hostname : hp815.eun.eg
+         arch/os  : x86_64/Linux-3.10.0-1062.el7.x86_64 
+         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+         currdir  : /home/vlsi/Desktop/lab3/scripts
+         logfile  : /home/vlsi/Desktop/lab3/scripts/oasys.log.00
+         tmpdir   : /tmp/oasys.3338/
+> source /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library/history.tcl
+> source run.tcl
+> source scripts/0_init_design.tcl
+couldn't read file "scripts/0_init_design.tcl": no such file or directory
+    while executing
+"tcl_source scripts/0_init_design.tcl"
+couldn't read file "scripts/0_init_design.tcl": no such file or directory
+    while executing
+"tcl_source scripts/0_init_design.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 2 tcl_source $resolvedFilePath"
+    (procedure "rt::sourceFile" line 31)
+    invoked from within
+"rt::sourceFile false false {} scripts/0_init_design.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    invoked from within
+"source scripts/0_init_design.tcl"
+    (file "run.tcl" line 4)
+    invoked from within
+"tcl_source run.tcl"

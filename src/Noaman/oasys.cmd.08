@@ -1,0 +1,28 @@
+#--------------------------------------------------------------------
+#         date     : Thu Dec 22 18:10:13 EET 2022
+#         ppid/pid : 6916/6926
+#         hostname : localhost.localdomain
+#         arch/os  : x86_64/Linux-3.10.0-1062.12.1.el7.x86_64 
+#         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+#         currdir  : /home/vlsi/Desktop/lab3/lab3
+#         logfile  : /home/vlsi/Desktop/lab3/lab3/oasys.log.08
+#         tmpdir   : /tmp/oasys.6916/
+#--------------------------------------------------------------------
+# Starting Interactive Session
+source scripts/0_init_design.tcl
+source scripts/1_read_design.tcl
+source scripts/2_synthesize_optimize.tcl
+source scripts/3_export_design.tcl
+source scripts/0_init_design.tcl
+source scripts/1_read_design.tcl
+source scripts/2_synthesize_optimize.tcl
+source scripts/4_clear_designs.tcl
+source scripts/0_init_design.tcl
+source scripts/1_read_design.tcl
+source scripts/2_synthesize_optimize.tcl
+source scripts/3_export_design.tcl
+source scripts/4_clear_designs.tcl
+source scripts/0_init_design.tcl
+source scripts/1_read_design.tcl
+source scripts/2_synthesize_optimize.tcl
+source scripts/3_export_design.tcl

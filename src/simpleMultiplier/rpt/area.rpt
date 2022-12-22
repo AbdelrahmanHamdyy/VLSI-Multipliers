@@ -2,9 +2,9 @@ Report Instance Areas:
 -----+--------+----------------------+-----+---------
      |Instance|Module                |Cells|Cell Area
 -----+--------+----------------------+-----+---------
-1    |top     |                      | 3576|     6377
-2    |  inRegA|buffer__0_65          |   65|      179
-3    |  inRegB|buffer                |   65|      179
-4    |  M64   |multOperator          | 3317|     5660
-5    |  outReg|buffer__parameterized0|  129|      358
+1    |top     |                      | 2774|     6263
+2    |  inRegA|buffer__0_68          |   67|      184
+3    |  inRegB|buffer                |   67|      184
+4    |  M64   |multOperator          | 2509|     5531
+5    |  outReg|buffer__parameterized0|  131|      363
 -----+--------+----------------------+-----+---------

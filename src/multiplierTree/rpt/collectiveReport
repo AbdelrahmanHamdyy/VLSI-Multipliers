@@ -3,47 +3,47 @@ Report Physical info:
                         |              |Area (squm)|Leakage (uW)
 ------------------------+--------------+-----------+------------
 Design Name             |multiplierTree|           |            
-  Total Instances       |          6859|       8216|     183.659
+  Total Instances       |          7257|       8422|     189.858
     Macros              |             0|          0|       0.000
     Pads                |             0|          0|       0.000
     Phys                |             0|          0|       0.000
     Blackboxes          |             0|          0|       0.000
-    Cells               |          6859|       8216|     183.659
-      Buffers           |             0|          0|       0.000
-      Inverters         |           110|         59|       1.579
-      Clock-Gates       |             0|          0|       0.000
-      Combinational     |          6621|       7579|     171.954
+    Cells               |          7257|       8422|     189.858
+      Buffers           |             1|          1|       0.021
+      Inverters         |           195|        104|       2.799
+      Clock-Gates       |             3|         12|       0.177
+      Combinational     |          6930|       7727|     176.734
       Latches           |             0|          0|       0.000
       FlipFlops         |           128|        579|      10.126
        Single-Bit FF    |           128|        579|      10.126
        Multi-Bit FF     |             0|          0|       0.000
-       Clock-Gated      |             0|           |            
+       Clock-Gated      |           128|           |            
        Bits             |           128|        579|      10.126
          Load-Enabled   |             0|           |            
-         Clock-Gated    |             0|           |            
+         Clock-Gated    |           128|           |            
   Tristate Pin Count    |             0|           |            
 Physical Info           |Placed        |           |            
-  Chip Size (mm x mm)   |0.177 x 0.177 |      31334|            
+  Chip Size (mm x mm)   |0.178 x 0.178 |      31853|            
   Fixed Cell Area       |              |          0|            
     Phys Only           |             0|          0|            
-  Placeable Area        |              |      13578|            
-  Movable Cell Area     |              |       8216|            
+  Placeable Area        |              |      13920|            
+  Movable Cell Area     |              |       8422|            
   Utilization (%)       |            60|           |            
   Chip Utilization (%)  |            60|           |            
-  Total Wire Length (mm)|        99.447|           |            
-  Longest Wire (mm)     |         0.152|           |            
-  Average Wire (mm)     |         0.082|           |            
+  Total Wire Length (mm)|        97.995|           |            
+  Longest Wire (mm)     |         0.135|           |            
+  Average Wire (mm)     |         0.080|           |            
 ------------------------+--------------+-----------+------------
 Report Path Groups: 
 -----+-------+------+---------+---------
      | Path  |Weight|Critical |Worst    
      | Group |      |Range(ps)|Slack(ps)
 -----+-------+------+---------+---------
-1    |default| 1.000|      0.0|<unc>    
-2    |I2R    | 1.000|      0.0|<ill>    
+1    |default| 1.000|      0.0|    152.2
+2    |I2R    | 1.000|      0.0|   1698.0
 3    |I2O    | 1.000|      0.0|<ill>    
-4    |R2O    | 1.000|      0.0|<ill>    
+4    |R2O    | 1.000|      0.0|   1387.4
 -----+-------+------+---------+---------
 5    |          |                    |                     |                   |                 
-6    |*TOTAL    |         3502.757080|          7436.849609|         183.659180|     11123.266602
+6    |*TOTAL    |         1997.378784|          5055.204590|         189.857941|      7242.440918
 -----+----------+--------------------+---------------------+-------------------+-----------------
