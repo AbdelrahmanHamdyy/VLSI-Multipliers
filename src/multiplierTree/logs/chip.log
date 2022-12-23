@@ -1,9 +1,3 @@
 > create_chip -bottom_clearance 30 -left_clearance 30 -right_clearance 30 -top_clearance 30 -utilization 60
-<<<<<<< HEAD
-info:    create new die (0.000000 0.000000) (60.000000 60.000000)  [FP-110]
-error:   invalid core arguments (too small) (30.000000 30.000000) (30.000000 30.000000)  [FP-107]
-error:   1 error message(s) issued while executing command 'create_chip'
-=======
 info:    create new die (0.000000 0.000000) (178.475000 178.475000)  [FP-110]
 info:    create new core (30.000000 30.000000) (148.369950 147.599950), 84 core rows  [FP-109]
->>>>>>> 53f48843cdc75ef4a7fc3453691f70c7bcf3bbb3

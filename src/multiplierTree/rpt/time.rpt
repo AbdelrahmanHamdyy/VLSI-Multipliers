@@ -1,9 +1,9 @@
 Report for group default
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Startpoint: inRegA/Q_reg[11]/Q
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Endpoint: outReg/Q_reg[52]/D
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Path Group: default
 Data required time: 1969.2
     (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 30.8)
@@ -80,37 +80,37 @@ outReg/Q_reg[52]/D       DFF_X1                   r   1817.0      1.1           
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2R
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-Startpoint: rst
-    (Clocked by vsysclk R)
+Startpoint: en
+    (Clocked by rtDefaultClock R)
 Endpoint: inRegA/clk_gate_Q_reg/E
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Path Group: I2R
-Data required time: 1914.9
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 85.1)
-Data arrival time: 216.9
-Slack: 1698.0
+Data required time: 1937.2
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 62.8)
+Data arrival time: 440.9
+Slack: 1496.3
 Logic depth: 1
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
 Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
                                                         (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-rst                      {set_input_delay}        r    200.0    200.0    200.0                        4.2     87.1      6    47,  178                       
-inRegA/i_0_0/A2->ZN      OR2_X4                  rr    216.9     16.6     16.6      0.0      0.0      0.3      1.2      1    51,  131  /PD_TOP        (1.10)
-inRegA/clk_gate_Q_reg/E  CLKGATETST_X2            r    216.9      0.3               0.3      5.2                             51,  131  /PD_TOP        (1.10)
+en                       {set_input_delay}        f    200.0    200.0    200.0                        4.1     10.6      3     0,  119                       
+inRegA/i_0_0/A1->ZN      OR2_X4                  ff    440.9    240.4    240.4      0.0    707.3      0.3      1.2      1    51,  131  /PD_TOP        (1.10)
+inRegA/clk_gate_Q_reg/E  CLKGATETST_X2            f    440.9      0.5               0.5      7.4                             51,  131  /PD_TOP        (1.10)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2O
 Report for group R2O
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Startpoint: outReg/Q_reg[61]/Q
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Endpoint: c[61]
-    (Clocked by vsysclk R)
+    (Clocked by sysclk R)
 Path Group: R2O
-Data required time: 1500.0
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data required time: 1000.0
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 1000.0)
 Data arrival time: 112.6
-Slack: 1387.4
+Slack: 887.4
 Logic depth: 0
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
