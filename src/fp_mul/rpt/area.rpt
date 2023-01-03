@@ -2,6 +2,6 @@ Report Instance Areas:
 -----+-----------------------------+-----------------------+-----+---------
      |Instance                     |Module                 |Cells|Cell Area
 -----+-----------------------------+-----------------------+-----+---------
-1    |top                          |                       |  393|     1170
-2    |  unsigned_seq_multiplier_dut|unsigned_seq_multiplier|  216|      593
+1    |top                          |                       |  509|     1219
+2    |  unsigned_seq_multiplier_dut|unsigned_seq_multiplier|  332|      643
 -----+-----------------------------+-----------------------+-----+---------

@@ -1,7 +1,7 @@
 #---------------------------------------------------------------------
-# start session at Tue Jan 3 19:18:42 2023
+# start session at Tue Jan 3 19:27:05 2023
 # version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
-# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 7500 
+# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 10598 
 # Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
 #---------------------------------------------------------------------
 setup_nrf
@@ -16,7 +16,8 @@ set_option -name toolbar:main:zoom:location -value {310 20}
 set_option -name toolbar:main:custom_editing:location -value {508 20}
 set_option -name toolbar:main:objects:location -value {735 20}
 set_option -name toolbar:main:cross_probe:location -value {412 48}
-source flow_scripts/1_place.tcl 
+write_db -file db/import.db
+source flow_scripts/1_place.tcl > LOGs/place.log
 # config_shell -echo false
 # config_shell -echo false
 # config_shell -echo false
@@ -186,7 +187,7 @@ source flow_scripts/1_place.tcl
 # config_place_timing -name ipo_target_utilization
 # config_shell -echo_script false
 # config_place_timing -name ipo_target_utilization
-# config_place_timing -name ipo_target_utilization -value 60.095639999999996
+# config_place_timing -name ipo_target_utilization -value 59.5606
 # config_place_timing -name ipo_drc_use_placement_regions -value true
 # ipo_sweep_drc -max_slew 5000 -max_radius 1000u -max_cap 500 -max_fanout 48
 # config_place_timing -name ipo_drc_use_placement_regions -reset
@@ -205,7 +206,7 @@ source flow_scripts/1_place.tcl
 # config_shell -echo_script false
 # create_property -name rpt_gplace_plc_util -object_type partition -storage sparse -data_type double -hidden true -persistent true -init 0
 # get_top_partition
-# set_property -name rpt_gplace_plc_util -object fp_mul -value 54.8187
+# set_property -name rpt_gplace_plc_util -object fp_mul -value 54.3232
 # config_place_timing -name max_utilization
 # get_top_partition
 # get_property -obj fp_mul -name max_layer
@@ -230,7 +231,7 @@ source flow_scripts/1_place.tcl
 # ipo_vr_server -purge true
 # config_shell -echo_script false
 # config_place_timing -name ipo_target_utilization
-# ipo_sweep_size -target 0.043018400000000054
+# ipo_sweep_size -target 0.04213799999999999
 # ipo_vr_server -start true
 # update_timing
 # config_place_timing -name clock_tree_latency_estimation
@@ -353,9 +354,17 @@ source flow_scripts/1_place.tcl
 # get_config -name config_auto_learning -param store_place_locations
 # get_config -name config_auto_learning -param store_setup_violations
 set_option -name window:main:errors:state -value visible
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 749}
+set_option -name window:main:message_area:location -value {328 610}
+set_option -name window:main:message_area:size -value {632 216}
+set_option -name window:main:view:location -value {1081 171}
+set_option -name window:main:view:size -value {960 848}
 set_option -name window:main:errors:size -value {757 600}
+set_option -name window:main:errors:state -value hidden
+write_db -file db/place.db
 create_pg_ports -net {VDD VSS}
-source flow_scripts/2_clock.tcl 
+source flow_scripts/2_clock.tcl > LOGs/clock.log
 # fk_msg -set_prompt NRF
 # new_config_flow -name flow_msg_prompt -quiet
 # new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
@@ -781,8 +790,8 @@ source flow_scripts/2_clock.tcl
 # create_cts_spec -name cts_vsysclk_new_mode \
   -balance_roots false \
   -root_pins [get_pins -of [get_clocks  vsysclk_new_mode  ]]
-# check_cts_constraints -write_repair scr/cts_repair_7500_1672766443.tcl -cts_spec { cts_vsysclk_new_mode }
-# read_constraints -context scr/cts_repair_7500_1672766443.tcl
+# check_cts_constraints -write_repair scr/cts_repair_10598_1672767023.tcl -cts_spec { cts_vsysclk_new_mode }
+# read_constraints -context scr/cts_repair_10598_1672767023.tcl
 # compile_cts -cts_spec { cts_vsysclk_new_mode }
 # remove_timing -type context
 # config_default_value -command compile_cts -argument legalize -value true
@@ -797,19 +806,19 @@ source flow_scripts/2_clock.tcl
 # new_config_flow -name verbose_level
 # collect_clock_nets
 # config_shell -echo false
-# get_pins -leaf -of CTS_n_tid0_74 CTS_n_tid0_73 CTS_n_tid1_3 CTS_n_tid1_4 CTS_n_tid1_133 n_tid1_163 CTS_n_tid1_134 clk unsigned_seq_multiplier_dut/CTS_n_tid0_5 unsigned_seq_multiplier_dut/CTS_n_tid0_6 unsigned_seq_multiplier_dut/n_tid1_162 unsigned_seq_multiplier_dut/CTS_n_tid1_78 -filter @direction==out
-# get_cells -leaf -of clk_gate_overflow_reg/GCK CTS_L4_c_tid0_57/Z CTS_L3_c_tid1_5/Z clk_gate_b_reg__1/GCK CTS_L2_tid1__c5_tid1__c91/Z CTS_L2_tid1__c3_tid1__c90/Z CTS_L1_tid1__c1_tid1__c92/Z unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6/Z unsigned_seq_multiplier_dut/clk_gate_B_r_reg/GCK unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c56/Z unsigned_seq_multiplier_dut/CTS_L3_tid1__c4_tid1__c57/Z -filter !@is_macro && @type!=pad && logic_type!='flip-flop'
+# get_pins -leaf -of n_tid1_157 CTS_n_tid1_3 CTS_n_tid1_4 CTS_n_tid0_116 CTS_n_tid1_131 clk unsigned_seq_multiplier_dut/CTS_n_tid0_5 unsigned_seq_multiplier_dut/CTS_n_tid0_6 unsigned_seq_multiplier_dut/n_tid1_116 -filter @direction==out
+# get_cells -leaf -of CTS_L2_tid1__c3_tid1__c88/Z CTS_L3_c_tid1_5/Z clk_gate_b_reg__1/GCK clk_gate_overflow_reg/GCK CTS_L1_tid1__c1_tid1__c89/Z unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6/Z unsigned_seq_multiplier_dut/clk_gate_B_r_reg/GCK unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c52/Z -filter !@is_macro && @type!=pad && logic_type!='flip-flop'
 # config_shell -echo_script false
 # get_cells -filter is_physical && is_fixed
 # set_property -name placed -value unplaced 
 # fk_msg -type info Converting CTS libcell-based halo constraints to instance-based ones
 # new_config_flow -name flow_msg_prompt -quiet
 # new_config_flow -name verbose_level
-# place_detail -cells_only clk_gate_overflow_reg CTS_L4_c_tid0_57 CTS_L3_c_tid1_5 clk_gate_b_reg__1 CTS_L2_tid1__c5_tid1__c91 CTS_L2_tid1__c3_tid1__c90 CTS_L1_tid1__c1_tid1__c92 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c56 unsigned_seq_multiplier_dut/CTS_L3_tid1__c4_tid1__c57
+# place_detail -cells_only CTS_L2_tid1__c3_tid1__c88 CTS_L3_c_tid1_5 clk_gate_b_reg__1 clk_gate_overflow_reg CTS_L1_tid1__c1_tid1__c89 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c52
 # config_shell -echo_script false
-# place_detail -cells_only clk_gate_overflow_reg CTS_L4_c_tid0_57 CTS_L3_c_tid1_5 clk_gate_b_reg__1 CTS_L2_tid1__c5_tid1__c91 CTS_L2_tid1__c3_tid1__c90 CTS_L1_tid1__c1_tid1__c92 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c56 unsigned_seq_multiplier_dut/CTS_L3_tid1__c4_tid1__c57
-# get_cells clk_gate_overflow_reg CTS_L4_c_tid0_57 CTS_L3_c_tid1_5 clk_gate_b_reg__1 CTS_L2_tid1__c5_tid1__c91 CTS_L2_tid1__c3_tid1__c90 CTS_L1_tid1__c1_tid1__c92 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c56 unsigned_seq_multiplier_dut/CTS_L3_tid1__c4_tid1__c57
-# set_property -name placed -value fixed clk_gate_overflow_reg CTS_L4_c_tid0_57 CTS_L3_c_tid1_5 clk_gate_b_reg__1 CTS_L2_tid1__c5_tid1__c91 CTS_L2_tid1__c3_tid1__c90 CTS_L1_tid1__c1_tid1__c92 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c56 unsigned_seq_multiplier_dut/CTS_L3_tid1__c4_tid1__c57
+# place_detail -cells_only CTS_L2_tid1__c3_tid1__c88 CTS_L3_c_tid1_5 clk_gate_b_reg__1 clk_gate_overflow_reg CTS_L1_tid1__c1_tid1__c89 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c52
+# get_cells CTS_L2_tid1__c3_tid1__c88 CTS_L3_c_tid1_5 clk_gate_b_reg__1 clk_gate_overflow_reg CTS_L1_tid1__c1_tid1__c89 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c52
+# set_property -name placed -value fixed CTS_L2_tid1__c3_tid1__c88 CTS_L3_c_tid1_5 clk_gate_b_reg__1 clk_gate_overflow_reg CTS_L1_tid1__c1_tid1__c89 unsigned_seq_multiplier_dut/CTS_L3_c_tid0_6 unsigned_seq_multiplier_dut/clk_gate_B_r_reg unsigned_seq_multiplier_dut/CTS_L2_tid1__c2_tid1__c52
 # fk_msg -type info Removing CTS instance-based halo constraints
 # new_config_flow -name flow_msg_prompt -quiet
 # new_config_flow -name verbose_level
@@ -1634,7 +1643,7 @@ source flow_scripts/2_clock.tcl
 # config_shell -echo_script false
 # config_units -for output -value_type time -units nano
 # config_clock_timing -name low_effort_io_optimization
-# print_table -title run_clock_timing QoR Progress Summary -column_names Stage WNS TNS WHS THS Utilization Congestion {Total Runtime (min)} Memory -values Initial 0.00 0.00 0.00 0.00 54.69 0.000 2.02 1215 CTS 0.00 0.00 -74.00 -321.00 55.40 0.000 2.13 1245 Setup 0.00 0.00 0.00 0.00 55.40 0.000 2.15 1245 Hold 0.00 0.00 0.00 0.00 55.96 0.000 2.17 1245 Converge 0.00 0.00 0.00 0.00 55.96 0.000 2.18 1245 Final 0.00 0.00 0.00 0.00 55.96 0.000 2.18 1245
+# print_table -title run_clock_timing QoR Progress Summary -column_names Stage WNS TNS WHS THS Utilization Congestion {Total Runtime (min)} Memory -values Initial 0.00 0.00 0.00 0.00 54.20 0.000 3.30 1215 CTS 0.00 0.00 -49.00 -517.00 54.84 0.000 3.42 1245 Setup 0.00 0.00 0.00 0.00 54.84 0.000 3.43 1245 Hold 0.00 0.00 0.00 0.00 55.62 0.000 3.43 1245 Converge 0.00 0.00 0.00 0.00 55.62 0.000 3.45 1245 Final 0.00 0.00 0.00 0.00 55.62 0.000 3.45 1245
 # config_clock_timing -name optimize_effort_level
 # config_name_rules -cell c
 # config_name_rules -net n
@@ -1642,6 +1651,8 @@ source flow_scripts/2_clock.tcl
 # save_db -directory dbs/clock.db -overwrite true -data design -cpus 4 -description 
 # config_shell -echo false
 # get_config -name config_auto_learning -param store_hold_violations
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:state -value hidden
 ## trigger_gui -name main:view_clock_tree_cockpit
 set_option -name window:design:view:state -value hidden
 set_option -name window:design:view:state -value visible
@@ -1652,8 +1663,3 @@ set_option -name window:design:view:state -value visible
 set_option -name window:cts:view:tabbed -value true
 set_option -name window:cts:view:state -value maximized
 set_option -name window:cts:view:state -value visible
-set_option -name window:hierarchy:explorer:location -value {62 77}
-set_option -name window:hierarchy:explorer:size -value {260 749}
-set_option -name window:main:message_area:location -value {328 610}
-set_option -name window:main:message_area:size -value {1592 216}
-set_option -name window:main:view:location -value {30 52}

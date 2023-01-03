@@ -5,8 +5,8 @@ create_cts_spec -name cts_vsysclk_new_mode \
   -root_pins [get_pins -of [get_clocks  vsysclk_new_mode  ]]
 
 # 2) final check & compile cts
-check_cts_constraints -write_repair scr/cts_repair_7500_1672766443.tcl -cts_spec { cts_vsysclk_new_mode }
-read_constraints -context scr/cts_repair_7500_1672766443.tcl
+check_cts_constraints -write_repair scr/cts_repair_10598_1672767023.tcl -cts_spec { cts_vsysclk_new_mode }
+read_constraints -context scr/cts_repair_10598_1672767023.tcl
 compile_cts -cts_spec { cts_vsysclk_new_mode }
 
 # Cleanup temporary exclude/explicit leaf pins / dont_modify specs

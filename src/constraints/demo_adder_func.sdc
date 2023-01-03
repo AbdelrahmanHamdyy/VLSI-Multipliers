@@ -12,7 +12,7 @@
 set pad_load            10  
 #set transition          0.707321
 #set io_clock_period     4.0
-set clock_period        4.0
+set clock_period        2.0
 
 
 create_clock -name vsysclk -period ${clock_period} [ get_ports clk ]
