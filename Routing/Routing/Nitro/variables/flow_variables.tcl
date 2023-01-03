@@ -124,8 +124,8 @@ set MGC_ck_inv_cell_list {}                ; # ADVANCED: Acceptable list of libr
 set MGC_cts_force_inverter_only false      ; # ADVANCED: Build clock tree with inverters only
 set MGC_set_ports_as_clock_leaves false    ; # REVIEW  : By default, output clock ports are not balanced with the other leaves. When set to 'true', output clock ports are valid clock leaves.
 set MGC_cts_max_trans 0.25n                ; # REVIEW  : max_tranision constraint on the clock network 
-set MGC_cts_max_leaf_trans 0.25n           ; # ADVANCED: max_tranision constraint at the leaf pins. The slew at leaf clock pins is impacting value of the timing check.
-set MGC_cts_max_skew 0.1n                 ; # REVIEW  : Target maximum skew
+set MGC_cts_max_leaf_trans 0.3n           ; # ADVANCED: max_tranision constraint at the leaf pins. The slew at leaf clock pins is impacting value of the timing check.
+set MGC_cts_max_skew 0.5n                 ; # REVIEW  : Target maximum skew
 
 ##
 ## CTS customization is provided with scr/cts_spec.tcl

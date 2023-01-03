@@ -1,0 +1,1158 @@
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[22]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[22] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                         Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                   | 
+|    mul_start_reg/CK                                  DFF_X1    Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1    Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8    Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8    Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                         Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1    Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1    Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1   Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1   Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1  Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1  Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1    Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1    Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                      Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1   Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1   Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1  Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1  Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1  Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1  Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1  Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1  Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1  Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1  Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1   Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1   Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1   Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1   Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1   Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1   Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1   Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1   Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1   Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1   Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1   Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1   Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/A            INV_X1    Rise  1.0830 0.0000 0.0930          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/ZN           INV_X1    Fall  1.0920 0.0090 0.0190 0.431687 1.63225  2.06394           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/C1           AOI221_X1 Fall  1.0920 0.0000 0.0190          1.38349                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/ZN           AOI221_X1 Rise  1.1650 0.0730 0.0630 0.752422 3.90286  4.65528           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/A            OAI21_X1  Rise  1.1650 0.0000 0.0630          1.67072                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/ZN           OAI21_X1  Fall  1.1940 0.0290 0.0150 0.358061 1.70023  2.05829           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/A            INV_X1    Fall  1.1940 0.0000 0.0150          1.54936                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/ZN           INV_X1    Rise  1.2210 0.0270 0.0170 1.40257  4.83954  6.2421            3       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_68/A3           NOR3_X1   Rise  1.2210 0.0000 0.0170          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_68/ZN           NOR3_X1   Fall  1.2350 0.0140 0.0100 0.329003 1.65842  1.98743           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_65/B            AOI211_X1 Fall  1.2350 0.0000 0.0100          1.47055                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_65/ZN           AOI211_X1 Rise  1.3110 0.0760 0.0480 0.647018 2.57361  3.22063           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_64/B            XNOR2_X1  Rise  1.3110 0.0000 0.0480          2.57361                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_64/ZN           XNOR2_X1  Rise  1.3570 0.0460 0.0170 0.149523 1.12828  1.2778            1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[23]            Rise  1.3570 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[22]/D DFFR_X1   Rise  1.3570 0.0000 0.0170          1.12828                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[22]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[22]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0350 1.9650 | 
+| data required time                       |  1.9650        | 
+|                                          |                | 
+| data required time                       |  1.9650        | 
+| data arrival time                        | -1.3570        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.6080        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[21]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[21] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                         Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                   | 
+|    mul_start_reg/CK                                  DFF_X1    Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1    Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8    Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8    Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                         Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1    Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1    Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1   Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1   Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1  Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1  Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1    Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1    Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                      Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1   Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1   Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1  Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1  Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1  Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1  Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1  Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1  Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1  Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1  Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1   Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1   Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1   Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1   Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1   Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1   Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1   Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1   Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1   Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1   Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1   Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1   Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/A            INV_X1    Rise  1.0830 0.0000 0.0930          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/ZN           INV_X1    Fall  1.0920 0.0090 0.0190 0.431687 1.63225  2.06394           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/C1           AOI221_X1 Fall  1.0920 0.0000 0.0190          1.38349                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/ZN           AOI221_X1 Rise  1.1650 0.0730 0.0630 0.752422 3.90286  4.65528           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/A            OAI21_X1  Rise  1.1650 0.0000 0.0630          1.67072                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/ZN           OAI21_X1  Fall  1.1940 0.0290 0.0150 0.358061 1.70023  2.05829           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/A            INV_X1    Fall  1.1940 0.0000 0.0150          1.54936                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/ZN           INV_X1    Rise  1.2210 0.0270 0.0170 1.40257  4.83954  6.2421            3       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_61/B2           OAI21_X1  Rise  1.2210 0.0000 0.0170          1.57189                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_61/ZN           OAI21_X1  Fall  1.2420 0.0210 0.0130 0.149066 2.41145  2.56052           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_60/B            XOR2_X1   Fall  1.2420 0.0000 0.0130          2.41145                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_60/Z            XOR2_X1   Fall  1.2990 0.0570 0.0110 0.706333 1.12828  1.83461           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[22]            Fall  1.2990 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[21]/D DFFR_X1   Fall  1.2990 0.0000 0.0110          1.05273                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[21]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[21]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0420 1.9580 | 
+| data required time                       |  1.9580        | 
+|                                          |                | 
+| data required time                       |  1.9580        | 
+| data arrival time                        | -1.2990        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.6590        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[20]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[20] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                         Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                   | 
+|    mul_start_reg/CK                                  DFF_X1    Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1    Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8    Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8    Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                         Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1    Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1    Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1   Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1   Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1  Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1  Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1    Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1    Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                      Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1   Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1   Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1  Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1  Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1  Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1  Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1  Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1  Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1  Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1  Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1   Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1   Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1   Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1   Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1   Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1   Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1   Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1   Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1   Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1   Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1   Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1   Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/A            INV_X1    Rise  1.0830 0.0000 0.0930          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/ZN           INV_X1    Fall  1.0920 0.0090 0.0190 0.431687 1.63225  2.06394           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/C1           AOI221_X1 Fall  1.0920 0.0000 0.0190          1.38349                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/ZN           AOI221_X1 Rise  1.1650 0.0730 0.0630 0.752422 3.90286  4.65528           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/A            OAI21_X1  Rise  1.1650 0.0000 0.0630          1.67072                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_70/ZN           OAI21_X1  Fall  1.1940 0.0290 0.0150 0.358061 1.70023  2.05829           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/A            INV_X1    Fall  1.1940 0.0000 0.0150          1.54936                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_69/ZN           INV_X1    Rise  1.2210 0.0270 0.0170 1.40257  4.83954  6.2421            3       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_58/A2           NOR2_X1   Rise  1.2210 0.0000 0.0170          1.65135                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_58/ZN           NOR2_X1   Fall  1.2360 0.0150 0.0090 0.504243 2.57361  3.07785           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/i_57/B            XNOR2_X1  Fall  1.2360 0.0000 0.0090          2.36817                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_57/ZN           XNOR2_X1  Fall  1.2740 0.0380 0.0110 0.391361 1.12828  1.51964           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[21]            Fall  1.2740 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[20]/D DFFR_X1   Fall  1.2740 0.0000 0.0110          1.05273                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[20]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[20]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0420 1.9580 | 
+| data required time                       |  1.9580        | 
+|                                          |                | 
+| data required time                       |  1.9580        | 
+| data arrival time                        | -1.2740        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.6840        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[18]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[18] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                  | 
+|    mul_start_reg/CK                                  DFF_X1   Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1   Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8   Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8   Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                        Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1   Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1   Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1  Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1  Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1 Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1 Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1   Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1   Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                     Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1  Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1  Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1 Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1 Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1 Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1 Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1 Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1 Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1 Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1 Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1  Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1  Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1  Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1  Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1  Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1  Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1  Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1  Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1  Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1  Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1  Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1  Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/B2           AOI21_X1 Rise  1.0830 0.0000 0.0930          1.67685                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/ZN           AOI21_X1 Fall  1.1200 0.0370 0.0240 1.47794  3.8585   5.33644           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_52/A            AOI21_X1 Fall  1.1200 0.0000 0.0240          1.53534                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_52/ZN           AOI21_X1 Rise  1.1770 0.0570 0.0320 0.71744  3.22324  3.94068           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_50/B2           OAI21_X1 Rise  1.1770 0.0000 0.0320          1.57189                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_50/ZN           OAI21_X1 Fall  1.2020 0.0250 0.0150 0.221965 2.41145  2.63342           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_49/B            XOR2_X1  Fall  1.2020 0.0000 0.0150          2.41145                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_49/Z            XOR2_X1  Fall  1.2600 0.0580 0.0110 0.654594 1.12828  1.78287           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[19]           Fall  1.2600 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[18]/D DFFR_X1  Fall  1.2600 0.0000 0.0110          1.05273                                     F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[18]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[18]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0420 1.9580 | 
+| data required time                       |  1.9580        | 
+|                                          |                | 
+| data required time                       |  1.9580        | 
+| data arrival time                        | -1.2600        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.6980        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[17]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[17] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                  | 
+|    mul_start_reg/CK                                  DFF_X1   Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1   Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8   Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8   Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                        Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1   Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1   Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1  Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1  Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1 Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1 Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1   Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1   Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                     Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1  Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1  Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1 Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1 Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1 Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1 Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1 Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1 Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1 Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1 Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1  Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1  Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1  Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1  Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1  Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1  Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1  Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1  Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1  Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1  Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1  Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1  Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/B2           AOI21_X1 Rise  1.0830 0.0000 0.0930          1.67685                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/ZN           AOI21_X1 Fall  1.1200 0.0370 0.0240 1.47794  3.8585   5.33644           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_52/A            AOI21_X1 Fall  1.1200 0.0000 0.0240          1.53534                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_52/ZN           AOI21_X1 Rise  1.1770 0.0570 0.0320 0.71744  3.22324  3.94068           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_47/A2           NOR2_X1  Rise  1.1770 0.0000 0.0320          1.65135                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_47/ZN           NOR2_X1  Fall  1.1940 0.0170 0.0110 0.596542 2.57361  3.17015           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_46/B            XNOR2_X1 Fall  1.1940 0.0000 0.0110          2.36817                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_46/ZN           XNOR2_X1 Fall  1.2330 0.0390 0.0110 0.40044  1.12828  1.52872           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[18]           Fall  1.2330 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[17]/D DFFR_X1  Fall  1.2330 0.0000 0.0110          1.05273                                     F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[17]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[17]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0420 1.9580 | 
+| data required time                       |  1.9580        | 
+|                                          |                | 
+| data required time                       |  1.9580        | 
+| data arrival time                        | -1.2330        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.7250        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[19]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[19] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                         Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                   | 
+|    mul_start_reg/CK                                  DFF_X1    Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1    Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8    Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8    Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                         Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1    Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1    Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1   Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1   Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1  Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1  Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1    Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1    Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                      Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1   Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1   Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1  Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1  Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1  Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1  Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1  Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1  Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1  Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1  Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1   Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1   Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1   Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1   Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1   Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1   Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1   Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1   Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1   Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1   Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1   Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1   Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/A            INV_X1    Rise  1.0830 0.0000 0.0930          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_74/ZN           INV_X1    Fall  1.0920 0.0090 0.0190 0.431687 1.63225  2.06394           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/C1           AOI221_X1 Fall  1.0920 0.0000 0.0190          1.38349                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_71/ZN           AOI221_X1 Rise  1.1650 0.0730 0.0630 0.752422 3.90286  4.65528           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_56/A            XOR2_X1   Rise  1.1650 0.0000 0.0630          2.23214                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_56/Z            XOR2_X1   Rise  1.2180 0.0530 0.0210 0.407858 1.12828  1.53613           1       63.9955                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[20]            Rise  1.2180 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[19]/D DFFR_X1   Rise  1.2180 0.0000 0.0210          1.12828                                     F             | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[19]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[19]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0360 1.9640 | 
+| data required time                       |  1.9640        | 
+|                                          |                | 
+| data required time                       |  1.9640        | 
+| data arrival time                        | -1.2180        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.7460        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[16]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[16] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                  | 
+|    mul_start_reg/CK                                  DFF_X1   Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1   Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8   Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8   Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                        Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1   Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1   Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1  Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1  Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1 Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1 Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1   Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1   Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                     Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1  Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1  Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1 Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1 Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1 Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1 Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1 Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1 Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1 Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1 Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1  Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1  Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1  Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1  Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1  Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1  Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1  Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1  Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1  Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1  Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1  Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1  Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/B2           AOI21_X1 Rise  1.0830 0.0000 0.0930          1.67685                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_53/ZN           AOI21_X1 Fall  1.1200 0.0370 0.0240 1.47794  3.8585   5.33644           2       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/i_45/A            XOR2_X1  Fall  1.1200 0.0000 0.0240          2.18123                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_45/Z            XOR2_X1  Fall  1.1760 0.0560 0.0130 0.182124 1.12828  1.3104            1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[17]           Fall  1.1760 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[16]/D DFFR_X1  Fall  1.1760 0.0000 0.0130          1.05273                                     F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[16]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[16]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0420 1.9580 | 
+| data required time                       |  1.9580        | 
+|                                          |                | 
+| data required time                       |  1.9580        | 
+| data arrival time                        | -1.1760        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.7820        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[15]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[15] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                  | 
+|    mul_start_reg/CK                                  DFF_X1   Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1   Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8   Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8   Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                        Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1   Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1   Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1  Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1  Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1 Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1 Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1   Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1   Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                     Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1  Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1  Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1 Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1 Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1 Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1 Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1 Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1 Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1 Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1 Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1  Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1  Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1  Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1  Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1  Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1  Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1  Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1  Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/A3           NOR3_X1  Rise  0.9250 0.0000 0.0980          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_83/ZN           NOR3_X1  Fall  0.9430 0.0180 0.0230 0.482066 1.60595  2.08802           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/A4           NOR4_X1  Fall  0.9430 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_75/ZN           NOR4_X1  Rise  1.0830 0.1400 0.0930 1.39372  5.60923  7.00295           3       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_44/A            XOR2_X1  Rise  1.0830 0.0000 0.0930          2.23214                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_44/Z            XOR2_X1  Rise  1.1360 0.0530 0.0200 0.202772 1.12828  1.33105           1       51.6518                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[16]           Rise  1.1360 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[15]/D DFFR_X1  Rise  1.1360 0.0000 0.0200          1.12828                                     F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[15]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[15]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0360 1.9640 | 
+| data required time                       |  1.9640        | 
+|                                          |                | 
+| data required time                       |  1.9640        | 
+| data arrival time                        | -1.1360        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.8280        | 
+-------------------------------------------------------------
+
+
+ Timing Path to unsigned_seq_multiplier_dut/Accumulator_reg[14]/D 
+  
+ Path Start Point : mul_start_reg (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : unsigned_seq_multiplier_dut/Accumulator_reg[14] (DFFR_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : sysclk_new_mode 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                  Cell     Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  33.5964  57.115            32      63.9955  c    K        | 
+| Data Path:                                                                                                                                                  | 
+|    mul_start_reg/CK                                  DFF_X1   Rise  0.0000 0.0000 0.0000          0.949653                                    F             | 
+|    mul_start_reg/Q                                   DFF_X1   Rise  0.0960 0.0960 0.0190 0.382569 6.58518  6.96775           1       62.1205  F             | 
+|    sps__L1_c1_c1/A                                   BUF_X8   Rise  0.0960 0.0000 0.0190          6.58518                                                   | 
+|    sps__L1_c1_c1/Z                                   BUF_X8   Rise  0.1480 0.0520 0.0410 30.9197  90.909   121.829           49      45.5692                | 
+|    unsigned_seq_multiplier_dut/start_s                        Rise  0.1480 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_1_119/A             INV_X1   Rise  0.1540 0.0060 0.0430          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_119/ZN            INV_X1   Fall  0.2280 0.0740 0.0480 21.4746  22.0355  43.5101           24      53.5938                | 
+|    unsigned_seq_multiplier_dut/i_1_24/A1             AND2_X1  Fall  0.2290 0.0010 0.0480          0.874832                                                  | 
+|    unsigned_seq_multiplier_dut/i_1_24/ZN             AND2_X1  Fall  0.3480 0.1190 0.0630 18.7841  38.9811  57.7652           24      59.5312                | 
+|    unsigned_seq_multiplier_dut/i_1_27/B2             AOI22_X1 Fall  0.3490 0.0010 0.0630          1.52031                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_27/ZN             AOI22_X1 Rise  0.4170 0.0680 0.0320 0.274595 1.70023  1.97483           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_1_28/A              INV_X1   Rise  0.4170 0.0000 0.0320          1.70023                                                   | 
+|    unsigned_seq_multiplier_dut/i_1_28/ZN             INV_X1   Fall  0.4370 0.0200 0.0130 1.06825  4.97555  6.0438            3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/p_0[1]                     Fall  0.4370 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/A1          NOR2_X1  Fall  0.4370 0.0000 0.0130          1.41309                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_123/ZN          NOR2_X1  Rise  0.4630 0.0260 0.0170 0.300616 1.62635  1.92697           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/A           AOI21_X1 Rise  0.4630 0.0000 0.0170          1.62635                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_120/ZN          AOI21_X1 Fall  0.4820 0.0190 0.0130 0.650725 3.90347  4.55419           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/A           OAI21_X1 Fall  0.4820 0.0000 0.0130          1.51857                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_119/ZN          OAI21_X1 Rise  0.5050 0.0230 0.0200 0.322247 1.6642   1.98645           1       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/A2          NAND2_X1 Rise  0.5050 0.0000 0.0200          1.6642                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_118/ZN          NAND2_X1 Fall  0.5270 0.0220 0.0120 0.558291 3.84775  4.40605           2       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/B2          OAI22_X1 Fall  0.5270 0.0000 0.0120          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_117/ZN          OAI22_X1 Rise  0.5960 0.0690 0.0530 1.01582  5.49545  6.51127           3       54.6652                | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/A3          NOR3_X1  Rise  0.5960 0.0000 0.0530          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_111/ZN          NOR3_X1  Fall  0.6140 0.0180 0.0150 0.420004 1.60595  2.02595           1       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/A4          NOR4_X1  Fall  0.6140 0.0000 0.0150          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_103/ZN          NOR4_X1  Rise  0.7620 0.1480 0.1020 2.46096  5.49606  7.95702           3       60.1562                | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/A3           NOR3_X1  Rise  0.7630 0.0010 0.1020          1.6163                                                    | 
+|    unsigned_seq_multiplier_dut/i_4/i_97/ZN           NOR3_X1  Fall  0.7790 0.0160 0.0230 0.121434 1.60595  1.72738           1       59.5313                | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/A4           NOR4_X1  Fall  0.7790 0.0000 0.0230          1.55423                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_89/ZN           NOR4_X1  Rise  0.9250 0.1460 0.0980 1.99886  5.49545  7.4943            3       53.5938                | 
+|    unsigned_seq_multiplier_dut/i_4/i_41/B1           AOI21_X1 Rise  0.9250 0.0000 0.0980          1.647                                                     | 
+|    unsigned_seq_multiplier_dut/i_4/i_41/ZN           AOI21_X1 Fall  0.9590 0.0340 0.0300 0.569477 3.93237  4.50185           2       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_40/A            INV_X1   Fall  0.9590 0.0000 0.0300          1.54936                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_40/ZN           INV_X1   Rise  0.9800 0.0210 0.0120 0.161041 1.67685  1.83789           1       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_39/B2           AOI21_X1 Rise  0.9800 0.0000 0.0120          1.67685                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_39/ZN           AOI21_X1 Fall  1.0020 0.0220 0.0150 0.829144 3.84775  4.6769            2       51.9754                | 
+|    unsigned_seq_multiplier_dut/i_4/i_37/B2           OAI22_X1 Fall  1.0020 0.0000 0.0150          1.55047                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_37/ZN           OAI22_X1 Rise  1.0530 0.0510 0.0350 0.230089 2.57361  2.8037            1       62.1205                | 
+|    unsigned_seq_multiplier_dut/i_4/i_36/B            XNOR2_X1 Rise  1.0530 0.0000 0.0350          2.57361                                                   | 
+|    unsigned_seq_multiplier_dut/i_4/i_36/ZN           XNOR2_X1 Rise  1.0970 0.0440 0.0170 0.314263 1.12828  1.44254           1       62.1205                | 
+|    unsigned_seq_multiplier_dut/i_4/Accumulator1[15]           Rise  1.0970 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[14]/D DFFR_X1  Rise  1.0970 0.0000 0.0170          1.12828                                     F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to unsigned_seq_multiplier_dut/Accumulator_reg[14]/CK 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                                                   Cell    Edge Arrival Delay  Slew   Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                                        Rise  0.0000 0.0000 0.7070 23.5186  30.3974  53.916            32      63.9955  c    K        | 
+|    unsigned_seq_multiplier_dut/clk                            Rise  0.0000 0.0000                                                                           | 
+|    unsigned_seq_multiplier_dut/Accumulator_reg[14]/CK DFFR_X1 Rise  0.0000 0.0000 0.0000          0.976605                                    F             | 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| library setup check                      | -0.0350 1.9650 | 
+| data required time                       |  1.9650        | 
+|                                          |                | 
+| data required time                       |  1.9650        | 
+| data arrival time                        | -1.0970        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.8680        | 
+-------------------------------------------------------------
+
+
+ Timing Path to c_out[1] 
+  
+ Path Start Point : c_out_reg[1] (DFF_X1) 
+                       (rising edge-triggered flip-flop clocked by sysclk_new_mode) 
+ Path End Point   : c_out[1] 
+                       (rising IO latch clocked by sysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **outputs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Pin                          Cell          Edge Arrival Delay  Slew   DeltaDelay  Wire Cap Pin Cap  Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    clk                                     Rise  0.0000 0.0000 0.7070             23.5186  33.5964  57.115            32      63.9955  c    K        | 
+|    clk_gate_overflow_reg/CK  CLKGATETST_X1 Rise  0.0000 0.0000 0.0000                      1.8122                                      FA            | 
+|    clk_gate_overflow_reg/GCK CLKGATETST_X1 Rise  0.0000 0.0000 0.1380             25.3151  31.3386  56.6537           33      45.5692  FA   K        | 
+| Data Path:                                                                                                                                           | 
+|    c_out_reg[1]/CK           DFF_X1        Rise  0.0000 0.0000 0.0000                      0.949653                                    F             | 
+|    c_out_reg[1]/Q            DFF_X1        Rise  0.1150 0.1150 0.0370             5.12623  10       15.1262           1       51.6853  F             | 
+|    c_out[1]                                Rise  0.1200 0.0050 0.0370    0.0030            10                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Required Time Trace to clk 
+
+
+------------------------------------------------------------------------------------------------------------
+| Pin    Cell Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|----------------------------------------------------------------------------------------------------------|
+|    clk      Rise  0.0000 0.0000 0.7070 23.5186  30.3974 53.916            32      63.9955  c    K        | 
+------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------
+|                                          | Time    Total  | 
+|-----------------------------------------------------------|
+| target clock sysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                 |  2.0000 2.0000 | 
+| output delay                             | -1.0000 1.0000 | 
+| data required time                       |  1.0000        | 
+|                                          |                | 
+| data required time                       |  1.0000        | 
+| data arrival time                        | -0.1200        | 
+| pessimism                                |  0.0000        | 
+|                                          |                | 
+| slack                                    |  0.8800        | 
+-------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 304M, CVMEM - 1762M, PVMEM - 1995M)

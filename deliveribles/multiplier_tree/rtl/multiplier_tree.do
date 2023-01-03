@@ -8,7 +8,7 @@ vlog simple_Adder.v
 vlog multiplierTree.v
 ///
 vlog multiplierTree_tb.v
-vsim seq_multilpier_tb
-add wave seq_multilpier_tb/*
+vsim multiplierTree_tb
+add wave multiplierTree_tb/*
 ///
 run

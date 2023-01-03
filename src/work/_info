@@ -10,7 +10,7 @@ z2
 cModel Technology
 d/mnt/hgfs/shared/Mini project 2
 vAND2_X1
-Z0 !s110 1672739999
+Z0 !s110 1672748385
 !i10b 1
 !s100 DBG5e?gZ>=oCE^1kP`H0C1
 ITOV8fjW?TzGPFN<DI=?<g2
@@ -18,19 +18,19 @@ Z1 d/mnt/hgfs/shared/VLSI-Multipliers/src
 Z2 w1671207325
 Z3 8/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v
 Z4 F/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v
-!i122 50
+!i122 55
 L0 43 13
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 Z6 OP;L;2022.4;75
 r1
 !s85 0
 31
-Z7 !s108 1672739999.000000
-!s107 /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v|
-Z8 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v|
+Z7 !s108 1672748385.000000
+Z8 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v|
 !i113 1
-Z9 o-work work
-Z10 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 n@a@n@d2_@x1
 vAND2_X2
 R0
@@ -41,7 +41,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 57 13
 R5
 R6
@@ -49,11 +49,11 @@ r1
 !s85 0
 31
 R7
-Z11 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/lib_data/NangateOpenCellLibrary.v|
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d2_@x2
 vAND2_X4
 R0
@@ -64,7 +64,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 71 13
 R5
 R6
@@ -72,11 +72,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d2_@x4
 vAND3_X1
 R0
@@ -87,7 +87,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 85 16
 R5
 R6
@@ -95,11 +95,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d3_@x1
 vAND3_X2
 R0
@@ -110,7 +110,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 102 16
 R5
 R6
@@ -118,11 +118,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d3_@x2
 vAND3_X4
 R0
@@ -133,7 +133,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 119 16
 R5
 R6
@@ -141,11 +141,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d3_@x4
 vAND4_X1
 R0
@@ -156,7 +156,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 136 19
 R5
 R6
@@ -164,11 +164,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d4_@x1
 vAND4_X2
 R0
@@ -179,7 +179,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 156 19
 R5
 R6
@@ -187,11 +187,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d4_@x2
 vAND4_X4
 R0
@@ -202,7 +202,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 176 19
 R5
 R6
@@ -210,11 +210,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@d4_@x4
 vANTENNA_X1
 R0
@@ -225,7 +225,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 196 4
 R5
 R6
@@ -233,11 +233,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@n@t@e@n@n@a_@x1
 vAOI211_X1
 R0
@@ -248,7 +248,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 201 24
 R5
 R6
@@ -256,11 +256,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i211_@x1
 vAOI211_X2
 R0
@@ -271,7 +271,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 226 24
 R5
 R6
@@ -279,11 +279,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i211_@x2
 vAOI211_X4
 R0
@@ -294,7 +294,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 251 26
 R5
 R6
@@ -302,11 +302,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i211_@x4
 vAOI21_X1
 R0
@@ -317,7 +317,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 278 19
 R5
 R6
@@ -325,11 +325,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i21_@x1
 vAOI21_X2
 R0
@@ -340,7 +340,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 298 19
 R5
 R6
@@ -348,11 +348,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i21_@x2
 vAOI21_X4
 R0
@@ -363,7 +363,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 318 19
 R5
 R6
@@ -371,11 +371,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i21_@x4
 vAOI221_X1
 R0
@@ -386,7 +386,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 338 39
 R5
 R6
@@ -394,11 +394,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i221_@x1
 vAOI221_X2
 R0
@@ -409,7 +409,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 378 39
 R5
 R6
@@ -417,11 +417,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i221_@x2
 vAOI221_X4
 R0
@@ -432,7 +432,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 418 41
 R5
 R6
@@ -440,11 +440,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i221_@x4
 vAOI222_X1
 R0
@@ -455,7 +455,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 460 74
 R5
 R6
@@ -463,11 +463,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i222_@x1
 vAOI222_X2
 R0
@@ -478,7 +478,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 535 74
 R5
 R6
@@ -486,11 +486,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i222_@x2
 vAOI222_X4
 R0
@@ -501,7 +501,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 610 76
 R5
 R6
@@ -509,11 +509,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i222_@x4
 vAOI22_X1
 R0
@@ -524,7 +524,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 687 28
 R5
 R6
@@ -532,11 +532,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i22_@x1
 vAOI22_X2
 R0
@@ -547,7 +547,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 716 28
 R5
 R6
@@ -555,11 +555,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i22_@x2
 vAOI22_X4
 R0
@@ -570,7 +570,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 745 28
 R5
 R6
@@ -578,11 +578,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@a@o@i22_@x4
 vbooth_multiplier
 Z12 !s110 1671224036
@@ -604,8 +604,8 @@ Z13 !s108 1671224036.000000
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v|
 !i113 1
-R9
 R10
+R11
 vbooth_multiplier_tb
 R12
 !i10b 1
@@ -626,8 +626,8 @@ R13
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier_tb.v|
 !i113 1
-R9
 R10
+R11
 vBUF_X1
 R0
 !i10b 1
@@ -637,7 +637,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 774 11
 R5
 R6
@@ -645,11 +645,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x1
 vBUF_X16
 R0
@@ -660,7 +660,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 786 11
 R5
 R6
@@ -668,11 +668,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x16
 vBUF_X2
 R0
@@ -683,7 +683,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 798 11
 R5
 R6
@@ -691,11 +691,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x2
 vBUF_X32
 R0
@@ -706,7 +706,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 810 11
 R5
 R6
@@ -714,11 +714,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x32
 vBUF_X4
 R0
@@ -729,7 +729,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 822 11
 R5
 R6
@@ -737,11 +737,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x4
 vBUF_X8
 R0
@@ -752,7 +752,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 834 11
 R5
 R6
@@ -760,11 +760,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@b@u@f_@x8
 vCLKBUF_X1
 R0
@@ -775,7 +775,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 846 11
 R5
 R6
@@ -783,11 +783,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@b@u@f_@x1
 vCLKBUF_X2
 R0
@@ -798,7 +798,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 858 11
 R5
 R6
@@ -806,11 +806,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@b@u@f_@x2
 vCLKBUF_X3
 R0
@@ -821,7 +821,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 870 11
 R5
 R6
@@ -829,11 +829,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@b@u@f_@x3
 vCLKGATE_X1
 R0
@@ -844,7 +844,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1139 35
 R5
 R6
@@ -852,11 +852,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e_@x1
 vCLKGATE_X2
 R0
@@ -867,7 +867,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1192 35
 R5
 R6
@@ -875,11 +875,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e_@x2
 vCLKGATE_X4
 R0
@@ -890,7 +890,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1245 35
 R5
 R6
@@ -898,11 +898,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e_@x4
 vCLKGATE_X8
 R0
@@ -913,7 +913,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1298 35
 R5
 R6
@@ -921,11 +921,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e_@x8
 vCLKGATETST_X1
 R0
@@ -936,7 +936,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 899 42
 R5
 R6
@@ -944,11 +944,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e@t@s@t_@x1
 vCLKGATETST_X2
 R0
@@ -959,7 +959,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 959 42
 R5
 R6
@@ -967,11 +967,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e@t@s@t_@x2
 vCLKGATETST_X4
 R0
@@ -982,7 +982,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1019 42
 R5
 R6
@@ -990,11 +990,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e@t@s@t_@x4
 vCLKGATETST_X8
 R0
@@ -1005,7 +1005,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1079 42
 R5
 R6
@@ -1013,34 +1013,34 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@c@l@k@g@a@t@e@t@s@t_@x8
 vdatapath
-R0
+Z14 !s110 1672748386
 !i10b 1
-!s100 [?bZcT`70;4NWb6]dmOG>1
-IXmenP9FC`[H<lQ7Qcdko71
+!s100 ?OBHH@IYUUX6cXhGkmHS52
+IK[<lT=eXVUK1;_>6Cj]?Q0
 R1
-Z14 w1672739860
-Z15 8/mnt/hgfs/shared/VLSI-Multipliers/src/fp_mul/verilog/demo_fp_mul.syn.v
-Z16 F/mnt/hgfs/shared/VLSI-Multipliers/src/fp_mul/verilog/demo_fp_mul.syn.v
-!i122 49
-L0 8 154
+Z15 w1672748287
+Z16 8/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/fp_mul/nitro/multiplier.route.v
+Z17 F/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/fp_mul/nitro/multiplier.route.v
+!i122 56
+L0 6 265
 R5
 R6
 r1
 !s85 0
 31
-R7
-Z17 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/fp_mul/verilog/demo_fp_mul.syn.v|
-Z18 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/fp_mul/verilog/demo_fp_mul.syn.v|
+Z18 !s108 1672748386.000000
+!s107 /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/fp_mul/nitro/multiplier.route.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/fp_mul/nitro/multiplier.route.v|
 !i113 1
-R9
 R10
+R11
 vDFF_X1
 R0
 !i10b 1
@@ -1050,7 +1050,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2089 40
 R5
 R6
@@ -1058,11 +1058,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f_@x1
 vDFF_X2
 R0
@@ -1073,7 +1073,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2149 40
 R5
 R6
@@ -1081,11 +1081,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f_@x2
 vDFFR_X1
 R0
@@ -1096,7 +1096,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1664 84
 R5
 R6
@@ -1104,11 +1104,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@r_@x1
 vDFFR_X2
 R0
@@ -1119,7 +1119,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1771 84
 R5
 R6
@@ -1127,11 +1127,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@r_@x2
 vDFFRS_X1
 R0
@@ -1142,7 +1142,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1359 128
 R5
 R6
@@ -1150,11 +1150,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@r@s_@x1
 vDFFRS_X2
 R0
@@ -1165,7 +1165,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1513 128
 R5
 R6
@@ -1173,11 +1173,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@r@s_@x2
 vDFFS_X1
 R0
@@ -1188,7 +1188,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1878 84
 R5
 R6
@@ -1196,11 +1196,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@s_@x1
 vDFFS_X2
 R0
@@ -1211,7 +1211,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1985 84
 R5
 R6
@@ -1219,11 +1219,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@f@f@s_@x2
 vDLH_X1
 R0
@@ -1234,7 +1234,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2207 35
 R5
 R6
@@ -1242,11 +1242,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@l@h_@x1
 vDLH_X2
 R0
@@ -1257,7 +1257,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2260 35
 R5
 R6
@@ -1265,11 +1265,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@l@h_@x2
 vDLL_X1
 R0
@@ -1280,7 +1280,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2313 35
 R5
 R6
@@ -1288,11 +1288,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@l@l_@x1
 vDLL_X2
 R0
@@ -1303,7 +1303,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2366 35
 R5
 R6
@@ -1311,11 +1311,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@d@l@l_@x2
 vFA_X1
 R0
@@ -1326,7 +1326,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2402 36
 R5
 R6
@@ -1334,11 +1334,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@a_@x1
 vFILLCELL_X1
 R0
@@ -1349,7 +1349,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2439 3
 R5
 R6
@@ -1357,11 +1357,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x1
 vFILLCELL_X16
 R0
@@ -1372,7 +1372,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2455 3
 R5
 R6
@@ -1380,11 +1380,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x16
 vFILLCELL_X2
 R0
@@ -1395,7 +1395,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2443 3
 R5
 R6
@@ -1403,11 +1403,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x2
 vFILLCELL_X32
 R0
@@ -1418,7 +1418,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2459 3
 R5
 R6
@@ -1426,11 +1426,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x32
 vFILLCELL_X4
 R0
@@ -1441,7 +1441,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2447 3
 R5
 R6
@@ -1449,11 +1449,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x4
 vFILLCELL_X8
 R0
@@ -1464,7 +1464,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2451 3
 R5
 R6
@@ -1472,56 +1472,56 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@f@i@l@l@c@e@l@l_@x8
 vfp_mul
-R0
-!i10b 1
-!s100 UTVRO@;aRAG1?QLc4R[Do0
-IcEYUZ3YTDohFg]>l>kO`U1
-R1
 R14
+!i10b 1
+!s100 R<@36ROO4L8fY=UgWk@DA2
+IhAecg>CUhLU=MC^f17iVo1
+R1
 R15
 R16
-!i122 49
-L0 413 369
+R17
+!i122 56
+L0 678 536
 R5
 R6
 r1
 !s85 0
 31
-R7
-R17
 R18
+Z20 !s107 /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/fp_mul/nitro/multiplier.route.v|
+R19
 !i113 1
-R9
 R10
+R11
 vfp_multiplier_tb
 R0
 !i10b 1
 !s100 dkY`O9[0MzGO8^:?]5BEJ3
 IJj=G^SokeG0PD]B>EO8CH1
 R1
-Z19 w1671807863
+Z21 w1671807863
 8/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v
 F/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v
-!i122 48
+!i122 54
 L0 1 149
 R5
 R6
 r1
 !s85 0
 31
-!s108 1672739998.000000
+!s108 1672748384.000000
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v|
 !i113 1
-R9
 R10
+R11
 vHA_X1
 R0
 !i10b 1
@@ -1531,7 +1531,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2463 19
 R5
 R6
@@ -1539,11 +1539,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@h@a_@x1
 vINV_X1
 R0
@@ -1554,7 +1554,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2483 11
 R5
 R6
@@ -1562,11 +1562,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x1
 vINV_X16
 R0
@@ -1577,7 +1577,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2495 11
 R5
 R6
@@ -1585,11 +1585,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x16
 vINV_X2
 R0
@@ -1600,7 +1600,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2507 11
 R5
 R6
@@ -1608,11 +1608,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x2
 vINV_X32
 R0
@@ -1623,7 +1623,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2519 11
 R5
 R6
@@ -1631,11 +1631,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x32
 vINV_X4
 R0
@@ -1646,7 +1646,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2531 11
 R5
 R6
@@ -1654,11 +1654,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x4
 vINV_X8
 R0
@@ -1669,7 +1669,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2543 11
 R5
 R6
@@ -1677,11 +1677,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@i@n@v_@x8
 vLOGIC0_X1
 R0
@@ -1692,7 +1692,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2555 5
 R5
 R6
@@ -1700,11 +1700,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@l@o@g@i@c0_@x1
 vLOGIC1_X1
 R0
@@ -1715,7 +1715,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2561 5
 R5
 R6
@@ -1723,11 +1723,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@l@o@g@i@c1_@x1
 vMUX2_X1
 R0
@@ -1738,7 +1738,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2567 21
 R5
 R6
@@ -1746,11 +1746,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@m@u@x2_@x1
 vMUX2_X2
 R0
@@ -1761,7 +1761,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2589 21
 R5
 R6
@@ -1769,11 +1769,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@m@u@x2_@x2
 vNAND2_X1
 R0
@@ -1784,7 +1784,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2611 14
 R5
 R6
@@ -1792,11 +1792,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d2_@x1
 vNAND2_X2
 R0
@@ -1807,7 +1807,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2626 14
 R5
 R6
@@ -1815,11 +1815,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d2_@x2
 vNAND2_X4
 R0
@@ -1830,7 +1830,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2641 14
 R5
 R6
@@ -1838,11 +1838,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d2_@x4
 vNAND3_X1
 R0
@@ -1853,7 +1853,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2656 17
 R5
 R6
@@ -1861,11 +1861,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d3_@x1
 vNAND3_X2
 R0
@@ -1876,7 +1876,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2674 17
 R5
 R6
@@ -1884,11 +1884,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d3_@x2
 vNAND3_X4
 R0
@@ -1899,7 +1899,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2692 17
 R5
 R6
@@ -1907,11 +1907,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d3_@x4
 vNAND4_X1
 R0
@@ -1922,7 +1922,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2710 20
 R5
 R6
@@ -1930,11 +1930,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d4_@x1
 vNAND4_X2
 R0
@@ -1945,7 +1945,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2731 20
 R5
 R6
@@ -1953,11 +1953,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d4_@x2
 vNAND4_X4
 R0
@@ -1968,7 +1968,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2752 20
 R5
 R6
@@ -1976,14 +1976,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@a@n@d4_@x4
 Ung_xbuf
-Z20 !s110 1672740000
+R14
 !i10b 1
 !s100 SNN2DERKWV02eV2iO@MLI0
 I@Hje;`QX7mNBF0>OCcbf11
@@ -1991,7 +1991,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5377 0
 R5
 R6
@@ -1999,11 +1999,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 vNOR2_X1
 R0
 !i10b 1
@@ -2013,7 +2013,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2773 14
 R5
 R6
@@ -2021,11 +2021,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r2_@x1
 vNOR2_X2
 R0
@@ -2036,7 +2036,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2788 14
 R5
 R6
@@ -2044,11 +2044,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r2_@x2
 vNOR2_X4
 R0
@@ -2059,7 +2059,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2803 14
 R5
 R6
@@ -2067,11 +2067,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r2_@x4
 vNOR3_X1
 R0
@@ -2082,7 +2082,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2818 17
 R5
 R6
@@ -2090,11 +2090,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r3_@x1
 vNOR3_X2
 R0
@@ -2105,7 +2105,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2836 17
 R5
 R6
@@ -2113,11 +2113,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r3_@x2
 vNOR3_X4
 R0
@@ -2128,7 +2128,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2854 17
 R5
 R6
@@ -2136,11 +2136,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r3_@x4
 vNOR4_X1
 R0
@@ -2151,7 +2151,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2872 20
 R5
 R6
@@ -2159,11 +2159,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r4_@x1
 vNOR4_X2
 R0
@@ -2174,7 +2174,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2893 20
 R5
 R6
@@ -2182,11 +2182,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r4_@x2
 vNOR4_X4
 R0
@@ -2197,7 +2197,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2914 20
 R5
 R6
@@ -2205,11 +2205,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@n@o@r4_@x4
 vOAI211_X1
 R0
@@ -2220,7 +2220,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2935 24
 R5
 R6
@@ -2228,11 +2228,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i211_@x1
 vOAI211_X2
 R0
@@ -2243,7 +2243,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2960 24
 R5
 R6
@@ -2251,11 +2251,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i211_@x2
 vOAI211_X4
 R0
@@ -2266,7 +2266,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2985 24
 R5
 R6
@@ -2274,11 +2274,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i211_@x4
 vOAI21_X1
 R0
@@ -2289,7 +2289,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3010 19
 R5
 R6
@@ -2297,11 +2297,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i21_@x1
 vOAI21_X2
 R0
@@ -2312,7 +2312,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3030 19
 R5
 R6
@@ -2320,11 +2320,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i21_@x2
 vOAI21_X4
 R0
@@ -2335,7 +2335,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3050 19
 R5
 R6
@@ -2343,11 +2343,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i21_@x4
 vOAI221_X1
 R0
@@ -2358,7 +2358,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3070 39
 R5
 R6
@@ -2366,11 +2366,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i221_@x1
 vOAI221_X2
 R0
@@ -2381,7 +2381,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3110 39
 R5
 R6
@@ -2389,11 +2389,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i221_@x2
 vOAI221_X4
 R0
@@ -2404,7 +2404,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3150 41
 R5
 R6
@@ -2412,11 +2412,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i221_@x4
 vOAI222_X1
 R0
@@ -2427,7 +2427,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3192 74
 R5
 R6
@@ -2435,11 +2435,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i222_@x1
 vOAI222_X2
 R0
@@ -2450,7 +2450,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3267 74
 R5
 R6
@@ -2458,11 +2458,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i222_@x2
 vOAI222_X4
 R0
@@ -2473,7 +2473,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3342 76
 R5
 R6
@@ -2481,11 +2481,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i222_@x4
 vOAI22_X1
 R0
@@ -2496,7 +2496,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3419 28
 R5
 R6
@@ -2504,11 +2504,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i22_@x1
 vOAI22_X2
 R0
@@ -2519,7 +2519,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3448 28
 R5
 R6
@@ -2527,11 +2527,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i22_@x2
 vOAI22_X4
 R0
@@ -2542,7 +2542,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3477 28
 R5
 R6
@@ -2550,11 +2550,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i22_@x4
 vOAI33_X1
 R0
@@ -2565,7 +2565,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3506 62
 R5
 R6
@@ -2573,11 +2573,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@a@i33_@x1
 vOR2_X1
 R0
@@ -2588,7 +2588,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3569 13
 R5
 R6
@@ -2596,11 +2596,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r2_@x1
 vOR2_X2
 R0
@@ -2611,7 +2611,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3583 13
 R5
 R6
@@ -2619,11 +2619,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r2_@x2
 vOR2_X4
 R0
@@ -2634,7 +2634,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3597 13
 R5
 R6
@@ -2642,11 +2642,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r2_@x4
 vOR3_X1
 R0
@@ -2657,7 +2657,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3611 16
 R5
 R6
@@ -2665,11 +2665,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r3_@x1
 vOR3_X2
 R0
@@ -2680,7 +2680,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3628 16
 R5
 R6
@@ -2688,11 +2688,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r3_@x2
 vOR3_X4
 R0
@@ -2703,7 +2703,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3645 16
 R5
 R6
@@ -2711,11 +2711,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r3_@x4
 vOR4_X1
 R0
@@ -2726,7 +2726,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3662 19
 R5
 R6
@@ -2734,11 +2734,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r4_@x1
 vOR4_X2
 R0
@@ -2749,7 +2749,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3682 19
 R5
 R6
@@ -2757,11 +2757,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r4_@x2
 vOR4_X4
 R0
@@ -2772,7 +2772,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3702 19
 R5
 R6
@@ -2780,14 +2780,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@o@r4_@x4
 vSDFF_X1
-R20
+R14
 !i10b 1
 !s100 jXQh3dgn?k9HL]JCQ7^DD2
 IF4;=nW]W;NKgfd:5E0`;C3
@@ -2795,7 +2795,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4965 84
 R5
 R6
@@ -2803,14 +2803,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f_@x1
 vSDFF_X2
-R20
+R14
 !i10b 1
 !s100 EzObE3AakMePD94Nf3fc_1
 IWIKJOz@5PfT4PLib2Q=c60
@@ -2818,7 +2818,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5069 84
 R5
 R6
@@ -2826,14 +2826,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f_@x2
 vSDFFR_X1
-R20
+R14
 !i10b 1
 !s100 S88:eWTUe9_`1iYhz4aPH3
 IgQd`11kNS7_1mi3bi:@<31
@@ -2841,7 +2841,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4288 147
 R5
 R6
@@ -2849,14 +2849,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@r_@x1
 vSDFFR_X2
-R20
+R14
 !i10b 1
 !s100 >l9H6Fj]zXmc[aZ8N@d9C1
 IGXnWDVFl1DYn67f2A>6J]1
@@ -2864,7 +2864,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4458 147
 R5
 R6
@@ -2872,11 +2872,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@r_@x2
 vSDFFRS_X1
 R0
@@ -2887,7 +2887,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3747 246
 R5
 R6
@@ -2895,14 +2895,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@r@s_@x1
 vSDFFRS_X2
-R20
+R14
 !i10b 1
 !s100 ;]W9L^anVmI@f?C3UJhjP1
 I5gRP6fVaP[ZX31CdLllJ93
@@ -2910,7 +2910,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4019 246
 R5
 R6
@@ -2918,14 +2918,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@r@s_@x2
 vSDFFS_X1
-R20
+R14
 !i10b 1
 !s100 ngb=LTEh?JLL6oKJIL<^`2
 I5c2Flgj7D2UNVBaAiL^gJ2
@@ -2933,7 +2933,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4628 147
 R5
 R6
@@ -2941,14 +2941,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@s_@x1
 vSDFFS_X2
-R20
+R14
 !i10b 1
 !s100 ?KJ>kaTHgV>KWZN<@T]Gb3
 IS_bnZLWhAK4@:eSii44Yi0
@@ -2956,7 +2956,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4798 147
 R5
 R6
@@ -2964,11 +2964,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@s@d@f@f@s_@x2
 Useq_CLKGATE_X1
 R0
@@ -2979,7 +2979,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1122 0
 R5
 R6
@@ -2987,11 +2987,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e_@x1
 Useq_CLKGATE_X2
 R0
@@ -3002,7 +3002,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1175 0
 R5
 R6
@@ -3010,11 +3010,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e_@x2
 Useq_CLKGATE_X4
 R0
@@ -3025,7 +3025,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1228 0
 R5
 R6
@@ -3033,11 +3033,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e_@x4
 Useq_CLKGATE_X8
 R0
@@ -3048,7 +3048,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1281 0
 R5
 R6
@@ -3056,11 +3056,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e_@x8
 Useq_CLKGATETST_X1
 R0
@@ -3071,7 +3071,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 882 0
 R5
 R6
@@ -3079,11 +3079,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e@t@s@t_@x1
 Useq_CLKGATETST_X2
 R0
@@ -3094,7 +3094,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 942 0
 R5
 R6
@@ -3102,11 +3102,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e@t@s@t_@x2
 Useq_CLKGATETST_X4
 R0
@@ -3117,7 +3117,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1002 0
 R5
 R6
@@ -3125,11 +3125,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e@t@s@t_@x4
 Useq_CLKGATETST_X8
 R0
@@ -3140,7 +3140,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1062 0
 R5
 R6
@@ -3148,11 +3148,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@c@l@k@g@a@t@e@t@s@t_@x8
 Useq_DFF_X1
 R0
@@ -3163,7 +3163,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2070 0
 R5
 R6
@@ -3171,11 +3171,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f_@x1
 Useq_DFF_X2
 R0
@@ -3186,7 +3186,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2130 0
 R5
 R6
@@ -3194,11 +3194,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f_@x2
 Useq_DFFR_X1
 R0
@@ -3209,7 +3209,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1642 0
 R5
 R6
@@ -3217,11 +3217,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@r_@x1
 Useq_DFFR_X2
 R0
@@ -3232,7 +3232,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1749 0
 R5
 R6
@@ -3240,11 +3240,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@r_@x2
 Useq_DFFRS_X1
 R0
@@ -3255,7 +3255,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1334 0
 R5
 R6
@@ -3263,11 +3263,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@r@s_@x1
 Useq_DFFRS_X2
 R0
@@ -3278,7 +3278,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1488 0
 R5
 R6
@@ -3286,11 +3286,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@r@s_@x2
 Useq_DFFS_X1
 R0
@@ -3301,7 +3301,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1856 0
 R5
 R6
@@ -3309,11 +3309,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@s_@x1
 Useq_DFFS_X2
 R0
@@ -3324,7 +3324,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 1963 0
 R5
 R6
@@ -3332,11 +3332,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@f@f@s_@x2
 Useq_DLH_X1
 R0
@@ -3347,7 +3347,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2190 0
 R5
 R6
@@ -3355,11 +3355,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@l@h_@x1
 Useq_DLH_X2
 R0
@@ -3370,7 +3370,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2243 0
 R5
 R6
@@ -3378,11 +3378,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@l@h_@x2
 Useq_DLL_X1
 R0
@@ -3393,7 +3393,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2296 0
 R5
 R6
@@ -3401,11 +3401,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@l@l_@x1
 Useq_DLL_X2
 R0
@@ -3416,7 +3416,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 2349 0
 R5
 R6
@@ -3424,19 +3424,19 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@d@l@l_@x2
 vseq_multiplier
-Z21 !s110 1672739922
+Z22 !s110 1672739922
 !i10b 1
 !s100 ^UgkN59nFR8mC;09]KCna0
 IJjK]aaVU`UBe;S1STDKT22
 R1
-R19
+R21
 8/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier.v
 F/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier.v
 !i122 44
@@ -3446,14 +3446,14 @@ R6
 r1
 !s85 0
 31
-Z22 !s108 1672739922.000000
+Z23 !s108 1672739922.000000
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier.v|
 !i113 1
-R9
 R10
+R11
 vseq_multiplier_v2
-R21
+R22
 !i10b 1
 !s100 [;]PK9H^Z^fQ<ICiaa:fH2
 I6lmM=hglk@<;PWl=AP@QC0
@@ -3468,14 +3468,14 @@ R6
 r1
 !s85 0
 31
-R22
+R23
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier_v2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/seq_multiplier_v2.v|
 !i113 1
-R9
 R10
+R11
 Useq_SDFF_X1
-R20
+R14
 !i10b 1
 !s100 aV;TA>go`oX<3foQl@coP1
 IfoLKUD=kzk>h3melX7THh0
@@ -3483,7 +3483,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4946 0
 R5
 R6
@@ -3491,14 +3491,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f_@x1
 Useq_SDFF_X2
-R20
+R14
 !i10b 1
 !s100 L;JD`C]oaLzkeF<<1`d5Y3
 I4:VQZbV47E6BF1;PKl4nQ1
@@ -3506,7 +3506,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5050 0
 R5
 R6
@@ -3514,14 +3514,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f_@x2
 Useq_SDFFR_X1
-R20
+R14
 !i10b 1
 !s100 Vc9a@jU3lb@<6oX:>E1So2
 I:J6^c8Cgl<a<jUY9bXKWU1
@@ -3529,7 +3529,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4266 0
 R5
 R6
@@ -3537,14 +3537,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@r_@x1
 Useq_SDFFR_X2
-R20
+R14
 !i10b 1
 !s100 jB]Ig=:>PPRU>OYH6oaB91
 Inf]g3TIVC7iYRZ3XNJjES2
@@ -3552,7 +3552,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4436 0
 R5
 R6
@@ -3560,11 +3560,11 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@r_@x2
 Useq_SDFFRS_X1
 R0
@@ -3575,7 +3575,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3722 0
 R5
 R6
@@ -3583,14 +3583,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@r@s_@x1
 Useq_SDFFRS_X2
-R0
+R14
 !i10b 1
 !s100 ?d3chQm9AE^UVa>hajlPW1
 Ib[Fj;`<8SCFTHa?5M]_?=2
@@ -3598,7 +3598,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 3994 0
 R5
 R6
@@ -3606,14 +3606,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@r@s_@x2
 Useq_SDFFS_X1
-R20
+R14
 !i10b 1
 !s100 hegQZVGFAHO?SbFg2<F`[1
 IlYDzDifh4IJ;:VQMBHdbd3
@@ -3621,7 +3621,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4606 0
 R5
 R6
@@ -3629,14 +3629,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@s_@x1
 Useq_SDFFS_X2
-R20
+R14
 !i10b 1
 !s100 <j043^85AaBSY4:odCf1>1
 IRJJMA_WEP3Xma>Q@j1dSO3
@@ -3644,7 +3644,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 4776 0
 R5
 R6
@@ -3652,14 +3652,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@s@d@f@f@s_@x2
 Useq_TLAT_X1
-R20
+R14
 !i10b 1
 !s100 aL7COoB;En0fQ_G:Cl>:@2
 I`DFK5d`On1?znmn4:@<=62
@@ -3667,7 +3667,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5250 0
 R5
 R6
@@ -3675,14 +3675,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 nseq_@t@l@a@t_@x1
 vTBUF_X1
-R20
+R14
 !i10b 1
 !s100 4@J1]k8=3`<5hNV7j2HlC3
 I[`l^PdQ^XCn]7B9QeEUDS2
@@ -3690,7 +3690,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5154 15
 R5
 R6
@@ -3698,14 +3698,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@b@u@f_@x1
 vTBUF_X16
-R20
+R14
 !i10b 1
 !s100 Nal5lIhL8;1SJ=<zo>jn=0
 ILHhS<[=EIM[7z4dVVY<WH2
@@ -3713,7 +3713,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5170 15
 R5
 R6
@@ -3721,14 +3721,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@b@u@f_@x16
 vTBUF_X2
-R20
+R14
 !i10b 1
 !s100 nT5CNT`ML?NRE[SX9_b?`1
 IXh@3h6dXhR_;`[^KiW?2S2
@@ -3736,7 +3736,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5186 15
 R5
 R6
@@ -3744,14 +3744,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@b@u@f_@x2
 vTBUF_X4
-R20
+R14
 !i10b 1
 !s100 aB1LNLgJAXeb:Vn_CiAU43
 ILQzE2BDd_?hVF[mJLk61=2
@@ -3759,7 +3759,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5202 15
 R5
 R6
@@ -3767,14 +3767,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@b@u@f_@x4
 vTBUF_X8
-R20
+R14
 !i10b 1
 !s100 6f3CcJ@Zm94VWa`6FnK202
 IW>Kz@E4?d9i=N7?OcCP201
@@ -3782,7 +3782,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5218 15
 R5
 R6
@@ -3790,14 +3790,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@b@u@f_@x8
 vTINV_X1
-R20
+R14
 !i10b 1
 !s100 X8ZUX@]W>V4__X^_B^DhM3
 IiLL`]6=z[C4lEK:^N3hIF1
@@ -3805,7 +3805,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5234 15
 R5
 R6
@@ -3813,14 +3813,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@i@n@v_@x1
 vTLAT_X1
-R20
+R14
 !i10b 1
 !s100 KfBAYPR[YNKHKA5BYO>UT0
 IaGkXRSY3ZSN45FPJo?7Xe3
@@ -3828,7 +3828,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5267 41
 R5
 R6
@@ -3836,34 +3836,34 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@t@l@a@t_@x1
 vunsigned_seq_multiplier
-R0
-!i10b 1
-!s100 X<a4b55M3<5m?L>cSoW532
-I]h7E56d^MCJTCTSgL;Tcz2
-R1
 R14
+!i10b 1
+!s100 PfYOl9Mhb51QbT<nnz_M`0
+I@zoclSPDgcNiOCKUE;5QV3
+R1
 R15
 R16
-!i122 49
-L0 163 249
+R17
+!i122 56
+L0 272 405
 R5
 R6
 r1
 !s85 0
 31
-R7
-R17
 R18
+R20
+R19
 !i113 1
-R9
 R10
+R11
 vvar_reg
 !s110 1672739923
 !i10b 1
@@ -3884,10 +3884,10 @@ r1
 !s107 /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/var_reg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/var_reg.v|
 !i113 1
-R9
 R10
+R11
 vXNOR2_X1
-R20
+R14
 !i10b 1
 !s100 ?:XdW]0cM@40VBD8ThFhF3
 I?icllKz>n5=dAfS@@lRa?2
@@ -3895,7 +3895,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5309 16
 R5
 R6
@@ -3903,14 +3903,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@x@n@o@r2_@x1
 vXNOR2_X2
-R20
+R14
 !i10b 1
 !s100 3fZ9[]cfXF]DVQcfXSX7R3
 I_m[U?nmfNKSOIfRF_=XCS2
@@ -3918,7 +3918,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5326 16
 R5
 R6
@@ -3926,14 +3926,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@x@n@o@r2_@x2
 vXOR2_X1
-R20
+R14
 !i10b 1
 !s100 XkMN11URn`5_KEXO0=kAN2
 If]o1nlR4cN4<cj5;2TaeS2
@@ -3941,7 +3941,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5343 15
 R5
 R6
@@ -3949,14 +3949,14 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@x@o@r2_@x1
 vXOR2_X2
-R20
+R14
 !i10b 1
 !s100 VlDUVZm46ADc1C8dSoooR0
 IOU8VD>C=T?oj740_Ni^EL3
@@ -3964,7 +3964,7 @@ R1
 R2
 R3
 R4
-!i122 50
+!i122 55
 L0 5359 15
 R5
 R6
@@ -3972,9 +3972,9 @@ r1
 !s85 0
 31
 R7
-R11
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 n@x@o@r2_@x2

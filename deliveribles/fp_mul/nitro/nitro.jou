@@ -1,0 +1,104 @@
+#---------------------------------------------------------------------
+# start session at Tue Jan 3 18:07:36 2023
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 12557 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+## trigger_gui -name main:open_design
+read_db -file /mnt/hgfs/shared/VLSI-Multipliers/Routing/Routing/Nitro/work/db/place.db -cpus 4
+set_option -name view:design:mfg_grid:step:y -value 50
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 749}
+set_option -name window:main:message_area:location -value {328 610}
+set_option -name window:main:message_area:size -value {1592 216}
+set_option -name window:main:view:location -value {30 52}
+## trigger_gui -name main:view_floorplan_panel
+set_option -name window:main:floorplan_panel:state -value visible
+set_option -name window:main:floorplan_panel:tabbed -value false
+set_option -name view:design:scheme0:layer1:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:wire:visible -value true
+set_option -name window:main:message_area:size -value {1399 216}
+set_option -name window:main:floorplan_panel:location -value {1733 77}
+set_option -name window:main:floorplan_panel:size -value {187 749}
+set_option -name view:design:scheme0:layer1:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer3:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer5:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer7:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer9:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer11:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer13:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer15:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer17:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer19:pre_route:wire:visible -value false
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer1:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:global_route:wire:visible -value true
+zoom_to -target area -xl_area -24700a -yb_area 109457a -xr_area 518700a -yt_area 662857a
+zoom_to -target area -xl_area 52894a -yb_area 166809a -xr_area 487614a -yt_area 609529a
+zoom_to -target area -xl_area -24700a -yb_area 109456a -xr_area 518700a -yt_area 662856a
+zoom_to -target area -xl_area -283346a -yb_area -81718a -xr_area 622319a -yt_area 840614a
+zoom_to -target area -xl_area -444999a -yb_area -201201a -xr_area 687081a -yt_area 951712a
+zoom_to -target area -xl_area -283345a -yb_area -81717a -xr_area 622318a -yt_area 840612a
+zoom_to -target area -xl_area -154021a -yb_area 13869a -xr_area 570508a -yt_area 751732a
+zoom_to -target area -xl_area 18409a -yb_area 141318a -xr_area 501427a -yt_area 633226a
+zoom_to -target area -xl_area 87381a -yb_area 192297a -xr_area 473795a -yt_area 585823a
+zoom_to -target area -xl_area 142558a -yb_area 233081a -xr_area 451689a -yt_area 547901a
+zoom_to -target area -xl_area 237147a -yb_area 302995a -xr_area 413793a -yt_area 482892a
+zoom_to -target area -xl_area 279187a -yb_area 334068a -xr_area 396950a -yt_area 453999a
+zoom_to -target area -xl_area 258167a -yb_area 318531a -xr_area 405370a -yt_area 468444a
+zoom_to -target area -xl_area -162225a -yb_area 7803a -xr_area 573790a -yt_area 757368a
+zoom_to -target area -xl_area -53795a -yb_area 71251a -xr_area 535016a -yt_area 670903a
+zoom_to -target area -xl_area 32949a -yb_area 122009a -xr_area 503997a -yt_area 601730a
+## trigger_gui -name main:open_design
+## trigger_gui -name main:view_clock_tree_cockpit
+set_option -name window:design:view:state -value hidden
+set_option -name window:design:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+set_option -name window:cts:view:state -value visible
+set_option -name window:cts:view:state -value maximized
+## trigger_gui -name main:activate_window -param cts:view
+set_option -name window:design:view:size -value {264 218}
+set_option -name window:design:view:state -value maximized
+## trigger_gui -name main:activate_window -param design:view
+set_option -name window:design:view:state -value visible
+set_option -name window:cts:view:state -value hidden
+set_option -name window:design:view:state -value maximized
+set_option -name window:main:view:state -value maximized
+#---------------------------------------------------------------------
+# end session at Tue Jan 3 18:15:05 2023
+#---------------------------------------------------------------------

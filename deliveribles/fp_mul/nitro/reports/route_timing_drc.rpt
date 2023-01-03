@@ -1,0 +1,88 @@
+Report 'report_drc': DRC Violations
+Generated on Tue Jan 3 14:16:32 2023
+  
+-----------------------------
+| Constraint Max Transition | 
+| Total Cost -35.5600       | 
+| Violators  70             | 
+-----------------------------
+
+
+  
+-----------------------------------------------------------------
+| Pin                                 Actual Limit Slack   Edge | 
+|---------------------------------------------------------------|
+| i_0_0_33/A                          707    199   -0.5080 Fall | 
+| i_0_0_43/A2                         707    199   -0.5080 Fall | 
+| i_0_0_55/A1                         707    199   -0.5080 Fall | 
+| i_0_0_62/A                          707    199   -0.5080 Fall | 
+| i_0_0_70/A                          707    199   -0.5080 Fall | 
+| sph__c101/A                         707    199   -0.5080 Fall | 
+| sph__c103/A                         707    199   -0.5080 Fall | 
+| sph__c105/A                         707    199   -0.5080 Fall | 
+| sph__c107/A                         707    199   -0.5080 Fall | 
+| sph__c109/A                         707    199   -0.5080 Fall | 
+| sph__c11/A                          707    199   -0.5080 Fall | 
+| sph__c111/A                         707    199   -0.5080 Fall | 
+| sph__c113/A                         707    199   -0.5080 Fall | 
+| sph__c115/A                         707    199   -0.5080 Fall | 
+| sph__c117/A                         707    199   -0.5080 Fall | 
+| sph__c119/A                         707    199   -0.5080 Fall | 
+| sph__c121/A                         707    199   -0.5080 Fall | 
+| sph__c123/A                         707    199   -0.5080 Fall | 
+| sph__c125/A                         707    199   -0.5080 Fall | 
+| sph__c127/A                         707    199   -0.5080 Fall | 
+| sph__c129/A                         707    199   -0.5080 Fall | 
+| sph__c13/A                          707    199   -0.5080 Fall | 
+| sph__c15/A                          707    199   -0.5080 Fall | 
+| sph__c17/A                          707    199   -0.5080 Fall | 
+| sph__c19/A                          707    199   -0.5080 Fall | 
+| sph__c21/A                          707    199   -0.5080 Fall | 
+| sph__c23/A                          707    199   -0.5080 Fall | 
+| sph__c25/A                          707    199   -0.5080 Fall | 
+| sph__c27/A                          707    199   -0.5080 Fall | 
+| sph__c29/A                          707    199   -0.5080 Fall | 
+| sph__c3/A                           707    199   -0.5080 Fall | 
+| sph__c31/A                          707    199   -0.5080 Fall | 
+| sph__c33/A                          707    199   -0.5080 Fall | 
+| sph__c35/A                          707    199   -0.5080 Fall | 
+| sph__c37/A                          707    199   -0.5080 Fall | 
+| sph__c39/A                          707    199   -0.5080 Fall | 
+| sph__c41/A                          707    199   -0.5080 Fall | 
+| sph__c43/A                          707    199   -0.5080 Fall | 
+| sph__c45/A                          707    199   -0.5080 Fall | 
+| sph__c47/A                          707    199   -0.5080 Fall | 
+| sph__c49/A                          707    199   -0.5080 Fall | 
+| sph__c5/A                           707    199   -0.5080 Fall | 
+| sph__c51/A                          707    199   -0.5080 Fall | 
+| sph__c53/A                          707    199   -0.5080 Fall | 
+| sph__c55/A                          707    199   -0.5080 Fall | 
+| sph__c57/A                          707    199   -0.5080 Fall | 
+| sph__c59/A                          707    199   -0.5080 Fall | 
+| sph__c61/A                          707    199   -0.5080 Fall | 
+| sph__c63/A                          707    199   -0.5080 Fall | 
+| sph__c65/A                          707    199   -0.5080 Fall | 
+| sph__c67/A                          707    199   -0.5080 Fall | 
+| sph__c69/A                          707    199   -0.5080 Fall | 
+| sph__c7/A                           707    199   -0.5080 Fall | 
+| sph__c71/A                          707    199   -0.5080 Fall | 
+| sph__c73/A                          707    199   -0.5080 Fall | 
+| sph__c75/A                          707    199   -0.5080 Fall | 
+| sph__c77/A                          707    199   -0.5080 Fall | 
+| sph__c79/A                          707    199   -0.5080 Fall | 
+| sph__c81/A                          707    199   -0.5080 Fall | 
+| sph__c83/A                          707    199   -0.5080 Fall | 
+| sph__c85/A                          707    199   -0.5080 Fall | 
+| sph__c87/A                          707    199   -0.5080 Fall | 
+| sph__c89/A                          707    199   -0.5080 Fall | 
+| sph__c9/A                           707    199   -0.5080 Fall | 
+| sph__c91/A                          707    199   -0.5080 Fall | 
+| sph__c93/A                          707    199   -0.5080 Fall | 
+| sph__c95/A                          707    199   -0.5080 Fall | 
+| sph__c97/A                          707    199   -0.5080 Fall | 
+| sph__c99/A                          707    199   -0.5080 Fall | 
+| unsigned_seq_multiplier_dut/i_0_0/A 707    199   -0.5080 Fall | 
+-----------------------------------------------------------------
+
+
+info UI33: performed report_constraints for 0 sec (CPU time: 0 sec; MEM: RSS - 304M, CVMEM - 1762M, PVMEM - 1995M)

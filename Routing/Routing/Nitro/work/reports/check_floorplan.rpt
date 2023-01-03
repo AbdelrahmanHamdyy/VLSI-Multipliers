@@ -35,7 +35,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | not_aligned_pin                      | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.                | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| offgrid_core_access                  | 96    | Warning | Library core pin has only offgird routing access.                  | 
+| offgrid_core_access                  | 58    | Warning | Library core pin has only offgird routing access.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_core_access                       | 0     | Passed  | Library core pin doesn't have routing access.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -100,7 +100,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | undefined_endcap                     | 1     | Warning | No library cells of type endcap are defined.                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_without_endcaps                  | 92    | Warning | Row has no endcap cells at ends.                                   | 
+| row_without_endcaps                  | 66    | Warning | Row has no endcap cells at ends.                                   | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | pin_off_track_center                 | 0     | Passed  | Port shape of macro or partition pin, on masked layer, is off      | 
 |                                      |       |         | track center.                                                      | 
@@ -121,9 +121,9 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | macro_halo_overlap                   | 0     | Passed  | Standard cells overlap user defined macro halo.                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m1_rail                  | 46    | Warning | Cell row is missing M1 rail.                                       | 
+| row_missing_m1_rail                  | 33    | Warning | Cell row is missing M1 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m2_rail                  | 46    | Warning | Cell row is missing M2 rail.                                       | 
+| row_missing_m2_rail                  | 33    | Warning | Cell row is missing M2 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | large_std_cell                       | 0     | Passed  | Macro may be marked as standard cell.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -144,7 +144,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | same_site_cellrow_overlap            | 0     | Passed  | Cell rows with same sites overlap.                                 | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row_sites                        | 46    | Warning | The row does not contain an odd number of sites, or it extends     | 
+| odd_row_sites                        | 33    | Warning | The row does not contain an odd number of sites, or it extends     | 
 |                                      |       |         | beyond an adjacent row an odd number of sites. Every row must      | 
 |                                      |       |         | have an odd number of sites, and when they extend beyond an        | 
 |                                      |       |         | adjacent row, it must be an even number of sites.                  | 
@@ -154,10 +154,10 @@ info  report_region_utilization is restricted to regions with property member_ha
 |                                      |       |         | have an even number of sites, and when they extend beyond          | 
 |                                      |       |         | an adjacent row, it must be an even number of sites.               | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row                              | 1     | Warning | The opposite horizontal core edges which have even number          | 
+| odd_row                              | 0     | Passed  | The opposite horizontal core edges which have even number          | 
 |                                      |       |         | of rows between each other.                                        | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| even_row                             | 0     | Passed  | The opposite horizontal core edges which have odd number of        | 
+| even_row                             | 1     | Warning | The opposite horizontal core edges which have odd number of        | 
 |                                      |       |         | rows between each other.                                           | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | cell_outside_partition               | 0     | Passed  | Cell outside of parent partition. Will cause pin assignment        | 
@@ -212,12 +212,12 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_domain_cells                      | 0     | Passed  | Cells not assigned to a power domain.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_cell_power_net                    | 1     | Warning | Cell is not connected to a power net. Use set_domain_supply_net    | 
+| no_cell_power_net                    | 2     | Warning | Cell is not connected to a power net. Use set_domain_supply_net    | 
 |                                      |       |         | to associate a power net with a power domain and all of its        | 
 |                                      |       |         | cells. Or use connect_supply_net to directly connect a power pin   | 
 |                                      |       |         | to a power net.                                                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_cell_ground_net                   | 1     | Warning | Cell is not connected to a ground net. Use set_domain_supply_net   | 
+| no_cell_ground_net                   | 2     | Warning | Cell is not connected to a ground net. Use set_domain_supply_net   | 
 |                                      |       |         | to associate a ground net with a power domain and all of           | 
 |                                      |       |         | its cells. Or use connect_supply_net to directly connect a         | 
 |                                      |       |         | ground pin to a ground net.                                        | 
@@ -236,4 +236,4 @@ info  report_region_utilization is restricted to regions with property member_ha
 -------------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 190M, CVMEM - 1687M, PVMEM - 1992M)
+info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 190M, CVMEM - 1686M, PVMEM - 1992M)

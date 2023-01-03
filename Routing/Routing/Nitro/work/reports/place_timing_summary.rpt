@@ -1,16 +1,16 @@
 Report 'report_mcmm_variation': MCMM Variation
-Generated on Fri Dec 23 03:40:43 2022
+Generated on Tue Jan 3 19:20:13 2023
   
-----------------------------------------------------------------
-| MCMM variability report for design 'booth_multiplier' (nano) |
-|--------------------------------------------------------------|
-| MODE CORNER WNS TNS #Endpts WHS THS #Endpts                  | 
-----------------------------------------------------------------
+------------------------------------------------------
+| MCMM variability report for design 'fp_mul' (nano) |
+|----------------------------------------------------|
+| MODE CORNER WNS TNS #Endpts WHS THS #Endpts        | 
+------------------------------------------------------
 
 
-info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 374M, CVMEM - 1841M, PVMEM - 2637M)
+info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 362M, CVMEM - 1850M, PVMEM - 2637M)
 Report 'report_path_group': Path Group
-Generated on Fri Dec 23 03:40:43 2022
+Generated on Tue Jan 3 19:20:13 2023
   
 -------------------------------------------------------------------------------------------
 |                               PATH GROUPS (SETUP) (nano)                                |
@@ -19,7 +19,7 @@ Generated on Fri Dec 23 03:40:43 2022
 -------------------------------------------------------------------------------------------
 
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 374M, CVMEM - 1841M, PVMEM - 2637M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 362M, CVMEM - 1850M, PVMEM - 2637M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_LATE
@@ -27,13 +27,13 @@ Select : SELECT_LATE
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 2.4990 236       236             | 
+| 0.0000 - 4.9990 111       111             | 
 ---------------------------------------------
 
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 374M, CVMEM - 1841M, PVMEM - 2637M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 362M, CVMEM - 1850M, PVMEM - 2637M)
 Report 'report_path_group': Path Group
-Generated on Fri Dec 23 03:40:43 2022
+Generated on Tue Jan 3 19:20:13 2023
   
 -------------------------------------------------------------------------------------------
 |                                PATH GROUPS (HOLD) (nano)                                |
@@ -42,7 +42,7 @@ Generated on Fri Dec 23 03:40:43 2022
 -------------------------------------------------------------------------------------------
 
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 374M, CVMEM - 1841M, PVMEM - 2637M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 362M, CVMEM - 1850M, PVMEM - 2637M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_EARLY
@@ -50,8 +50,9 @@ Select : SELECT_EARLY
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 2.4990 236       236             | 
+| 0.0000 - 0.2490 109       109             | 
+| 0.2500 - 0.4990 2         111             | 
 ---------------------------------------------
 
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 374M, CVMEM - 1841M, PVMEM - 2637M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 362M, CVMEM - 1850M, PVMEM - 2637M)
