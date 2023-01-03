@@ -9,7 +9,7 @@ write_verilog -file $dataDir/${design}.power.v.gz -power true -well_connections 
 
 set required_gds [get_lib_cells -of_objects [get_objects -type cell -leaf]]
 
-config_search_path -dir "/home/vlsi/Desktop/Nitro/lib_data/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds" [config_search_path]
+config_search_path -dir "/mnt/hgfs/shared/VLSI-Multipliers/Routing/Routing/Nitro/lib_data/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds" [config_search_path]
 
 foreach x $required_gds {	
     config_stream_lib -common "${x}.gds"
