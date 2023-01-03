@@ -190,8 +190,40 @@ Report End Points:
 1    |I2O  |      |       |     |     |     |     |           |         
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
 Report End Points: 
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
-     |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
-1    |R2O  |      |       |     |     |     |     |           |         
------+-----+------+-------+-----+-----+-----+-----+-----------+---------
+-----+-----+------+-------+------+-----+-----+-----+---------------+---------
+     |Group|Launch|Capture|Shift |Delay|Depth|Slack|Begin Point    |End Point
+-----+-----+------+-------+------+-----+-----+-----+---------------+---------
+1    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[30]/Q|c_out[30]
+2    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[28]/Q|c_out[28]
+3    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[26]/Q|c_out[26]
+4    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[25]/Q|c_out[25]
+5    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[22]/Q|c_out[22]
+6    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[20]/Q|c_out[20]
+7    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[18]/Q|c_out[18]
+8    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[17]/Q|c_out[17]
+9    |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.1|c_out_reg[14]/Q|c_out[14]
+10   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[31]/Q|c_out[31]
+11   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[29]/Q|c_out[29]
+12   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[12]/Q|c_out[12]
+13   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[10]/Q|c_out[10]
+14   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[9]/Q |c_out[9] 
+15   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[6]/Q |c_out[6] 
+16   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[4]/Q |c_out[4] 
+17   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[2]/Q |c_out[2] 
+18   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.2|c_out_reg[1]/Q |c_out[1] 
+19   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[27]/Q|c_out[27]
+20   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[24]/Q|c_out[24]
+21   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[23]/Q|c_out[23]
+22   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[21]/Q|c_out[21]
+23   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[19]/Q|c_out[19]
+24   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[16]/Q|c_out[16]
+25   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[15]/Q|c_out[15]
+26   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[13]/Q|c_out[13]
+27   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[11]/Q|c_out[11]
+28   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[8]/Q |c_out[8] 
+29   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[7]/Q |c_out[7] 
+30   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.3|c_out_reg[5]/Q |c_out[5] 
+31   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.4|c_out_reg[3]/Q |c_out[3] 
+32   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.4|c_out_reg[0]/Q |c_out[0] 
+33   |R2O  |sysclk|sysclk |2000.0|  0.4|    0|889.4|overflow_reg/Q |overflow 
+-----+-----+------+-------+------+-----+-----+-----+---------------+---------

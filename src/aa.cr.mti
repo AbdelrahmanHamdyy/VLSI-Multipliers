@@ -1,0 +1,8 @@
+/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v {1 {vlog -work work -stats=none /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v
+Model Technology ModelSim DE vlog 2022.4 Compiler 2022.10 Oct 18 2022
+-- Compiling module fp_multiplier_tb
+
+Top level modules:
+	fp_multiplier_tb
+
+} {} {}}

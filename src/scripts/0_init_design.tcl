@@ -18,7 +18,7 @@ set search_path    "${demo_rtl_dir}/** ${library_path} ${all_rtl_sub_directories
 ###########################TODO Update top Module parameters#####################
 set parameters 0
 set param_values { {N 8} }
-set top_module "multiplierTree"
+set top_module "fp_mul"
 set output_dir "${ekit_dir}/${top_module}"
 
 ###########################TODO RTL and Constraints paths ######################
@@ -27,7 +27,8 @@ set output_dir "${ekit_dir}/${top_module}"
 # set rtl_list { "ripple_carry_adder.v"  "fa.v" "ha.v"}
 # set rtl_list { "fp_adder.v" "CLA.v" "count_leading_zeros.v" }
 # set rtl_list { "unsigned_seq_multiplier.v"  "fp_mul.v"}
-set rtl_list { "fa.v" "ha.v" "CSA.v" "buffer.v" "wallace.v" "simple_Adder.v" "multiplierTree.v" }
+set rtl_list { "unsigned_seq_multiplier.v" "fp_mul.v"}
+
 set demo_adder_sdc_files "${ekit_dir}/constraints/demo_adder_func.sdc"
 ################################# RTL and Libraries ###########################################
 

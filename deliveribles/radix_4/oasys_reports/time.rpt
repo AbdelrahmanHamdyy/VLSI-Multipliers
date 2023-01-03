@@ -1,0 +1,158 @@
+Report for group default
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: radixNoamanMult/counter_reg[1]/Q
+    (Clocked by vsysclk R)
+Endpoint: radixNoamanMult/finalResult_reg[58]/D
+    (Clocked by vsysclk R)
+Path Group: default
+Data required time: 1969.2
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 30.8)
+Data arrival time: 1696.8
+Slack: 272.4
+Logic depth: 40
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     70    63,    0                       
+radixNoamanMult/clk_gate_counter_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0      5    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/counter_reg[1]/CK->Q
+                         DFF_X1*                 rr    187.3    187.3    187.3      0.0      0.0     20.4    265.5     56    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_140/A->ZN
+                         INV_X32                 rf    208.5     21.2     20.3      0.9     15.3     20.4    250.8     56    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_156/A2->ZN
+                         NOR2_X4*                fr    274.8     66.3     65.4      0.9     10.9      3.6     39.9     10    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_160/A2->ZN
+                         AOI22_X4                rf    291.6     16.8     16.7      0.1     15.3      0.3      4.3      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_162/A1->ZN
+                         NAND3_X4                fr    309.4     17.8     17.8      0.0     12.3      0.3      4.5      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_163/B2->ZN
+                         AOI21_X2                rf    324.4     15.0     15.0      0.0     12.3      0.4      3.0      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_168/A->ZN
+                         AOI221_X4               fr    461.1    136.7    136.7      0.0      7.2      1.3     38.9      4    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_169/A->ZN
+                         INV_X8                  rf    468.2      7.1      7.1      0.0     25.6      0.3      4.4      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_184/A1->ZN
+                         OAI22_X4                fr    503.3     35.1     35.1      0.0      3.5      0.9     11.5      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_199/A1->ZN
+                         NOR2_X4*                rf    559.5     56.2     56.2      0.0     39.2     11.5    135.1     31    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_202/B1->ZN
+                         AOI221_X4               fr    698.9    139.4    138.9      0.5     15.3      1.3     39.2      4    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_203/A1->ZN
+                         NOR2_X4                 rf    714.4     15.5     15.5      0.0     25.7      0.8     12.9      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_431/A1->ZN
+                         NOR2_X4                 fr    736.7     22.3     22.3      0.0      7.6      0.3      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_428/A->ZN
+                         AOI21_X4                rf    752.7     16.0     16.0      0.0     15.3      0.6      7.8      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_427/B2->ZN
+                         OAI22_X4                fr    800.5     47.8     47.8      0.0      9.1      0.6      7.9      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_426/A->ZN
+                         OAI21_X4                rf    824.7     24.2     24.2      0.0     34.6      0.3      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_425/A2->ZN
+                         NAND2_X4                fr    846.4     21.7     21.7      0.0      9.4      0.9     12.0      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_419/A3->ZN
+                         NOR3_X4                 rf    858.7     12.3     12.3      0.0     13.6      0.3      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_411/A4->ZN
+                         NOR4_X4                 fr    959.8    101.1    101.1      0.0      6.6      1.0     12.0      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_405/A3->ZN
+                         NOR3_X4                 rf    977.6     17.8     17.8      0.0     61.3      0.3      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_397/A4->ZN
+                         NOR4_X4                 fr   1079.2    101.6    101.6      0.0      6.6      1.0     12.1      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_391/A3->ZN
+                         NOR3_X4                 rf   1097.3     18.1     18.1      0.0     61.7      0.3      4.5      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_488/A1->ZN
+                         NOR4_X4                 fr   1175.6     78.3     78.3      0.0      6.7      1.3     16.6      4    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_483/B1->ZN
+                         OAI21_X4                rf   1197.2     21.6     21.6      0.0     72.5      0.3      4.7      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_482/A3->ZN
+                         NAND3_X4                fr   1231.0     33.8     33.8      0.0      9.6      0.3     25.7      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_481/A->ZN
+                         INV_X8                  rf   1238.0      7.0      7.0      0.0     24.3      0.3      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_480/A4->ZN
+                         NAND4_X4                fr   1258.5     20.5     20.5      0.0      3.4      0.4      4.1      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_479/A3->ZN
+                         NAND4_X4                rf   1310.9     52.4     52.4      0.0     14.6      0.3     25.8      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_478/A->ZN
+                         INV_X8                  fr   1334.8     23.9     23.9      0.0     33.5      1.2     16.5      4    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_468/C2->ZN
+                         OAI211_X4               rf   1356.8     22.0     22.0      0.0      8.3      0.4      4.2      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_467/A4->ZN
+                         NAND4_X4*               fr   1399.5     42.7     42.7      0.0     14.5      0.6     30.0      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_466/A->ZN
+                         INV_X8                  rf   1406.4      6.9      6.9      0.0     15.3      0.3      4.3      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_308/B2->ZN
+                         OAI21_X4                fr   1441.1     34.7     34.7      0.0      3.5      0.6      8.4      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_201/A1->ZN
+                         NAND2_X4                rf   1470.2     29.1     29.1      0.0     23.2      0.3     25.7      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_199/A->ZN
+                         INV_X8                  fr   1486.3     16.1     16.1      0.0     15.7      0.9     12.2      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_188/B1->ZN
+                         OAI21_X4                rf   1501.1     14.8     14.8      0.0      7.3      0.6      7.8      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_186/B2->ZN
+                         OAI22_X4*               fr   1576.6     75.5     75.5      0.0     10.8      0.6     30.5      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_185/A->ZN
+                         INV_X8                  rf   1584.6      8.0      8.0      0.0     15.3      0.6      7.9      2    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_179/B2->ZN
+                         OAI22_X4                fr   1625.2     40.6     40.6      0.0      3.9      0.3      4.0      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_200/i_178/B->ZN
+                         XNOR2_X2                rr   1667.4     42.2     42.2      0.0     29.8      0.3      2.5      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_62/A2->ZN
+                         AND2_X4                 rr   1696.8     29.4     29.4      0.0     19.2      0.3      1.4      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/finalResult_reg[58]/D
+                         DFF_X1                   r   1696.8      0.0               0.0      6.3                             62,   52  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2R
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: en
+    (Clocked by vsysclk R)
+Endpoint: radixNoamanMult/counter_reg[3]/D
+    (Clocked by vsysclk R)
+Path Group: I2R
+Data required time: 1961.3
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 38.7)
+Data arrival time: 335.8
+Slack: 1625.5
+Logic depth: 4
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+en                       {set_input_delay}        r    200.0    200.0    200.0                        6.1     22.9      7    63,    0                       
+radixNoamanMult/i_0_1_3/A->ZN
+                         OAI21_X4*               rf    264.1     63.8     63.8      0.0      0.0     17.6    178.6     66    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_143/A->ZN
+                         OAI21_X4*               fr    306.0     41.9     41.3      0.6     15.3      0.9     33.2      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_145/A->ZN
+                         INV_X8                  rf    313.7      7.7      7.7      0.0     15.3      0.8      6.9      3    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/i_0_1_148/A1->ZN
+                         AND2_X4                 ff    335.8     22.1     22.1      0.0      3.8      0.3      1.4      1    62,   52  /PD_TOP        (1.10)
+radixNoamanMult/counter_reg[3]/D
+                         DFF_X1                   f    335.8      0.0               0.0      4.8                             62,   52  /PD_TOP        (1.10)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Report for group I2O
+Report for group R2O
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Startpoint: out/Q_reg[60]/Q
+    (Clocked by vsysclk R)
+Endpoint: result[60]
+    (Clocked by vsysclk R)
+Path Group: R2O
+Data required time: 1500.0
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 111.9
+Slack: 1388.1
+Logic depth: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Arrival               Arc      Net               Net    Total   fan-                                   
+Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
+                                                        (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     70    63,    0                       
+out/clk_gate_Q_reg/CK->GCK
+                         CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     64    62,   85  /PD_TOP        (1.10)
+out/Q_reg[60]/CK->Q      DFF_X1                  rr    111.4    111.4    111.4      0.0      0.0      3.6     13.6      1    62,   85  /PD_TOP        (1.10)
+result[60]                                        r    111.9      0.5               0.5     33.9                             80,  130                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------

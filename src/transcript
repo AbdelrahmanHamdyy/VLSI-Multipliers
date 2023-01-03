@@ -1,0 +1,107 @@
+# Project file /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/aaah.mpf was not found.
+# Unable to open project.
+# Loading project aa
+# Compile of fp_mul.v was successful.
+# Compile of fp_multiplier_tb.v was successful.
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_v2.v was successful.
+# Compile of unsigned_seq_multiplier.v was successful.
+# Compile of var_reg.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.fp_multiplier_tb
+# vsim work.fp_multiplier_tb 
+# Start time: 11:58:56 on Jan 03,2023
+# //  ModelSim DE 2022.4 Oct 18 2022 Linux 3.10.0-1062.12.1.el7.x86_64
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.fp_multiplier_tb
+# Loading work.fp_mul
+# Loading work.unsigned_seq_multiplier
+add wave -position insertpoint  \
+sim:/fp_multiplier_tb/T \
+sim:/fp_multiplier_tb/TestsCounter \
+sim:/fp_multiplier_tb/SuccessCounter \
+sim:/fp_multiplier_tb/FailureCounter \
+sim:/fp_multiplier_tb/A \
+sim:/fp_multiplier_tb/B \
+sim:/fp_multiplier_tb/clk \
+sim:/fp_multiplier_tb/reset \
+sim:/fp_multiplier_tb/result \
+sim:/fp_multiplier_tb/overflow
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time               958000: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time              1122000: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# TestCase# 8 : success
+# TestCase# 9 : success
+# Total Tests: 10 || Success Cases=8 || Failure Cases=2 
+# ** Note: $stop    : /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v(140)
+#    Time: 1322 us  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v line 140
+# Compile of fp_multiplier_tb.v was successful.
+# Compile of demo_fp_mul.syn.v was successful.
+# Compile of NangateOpenCellLibrary.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.fp_multiplier_tb
+# Loading work.fp_mul
+# Loading work.unsigned_seq_multiplier
+# Loading work.DFFR_X1
+# Loading work.datapath
+# Loading work.INV_X1
+# Loading work.OAI21_X1
+# Loading work.XOR2_X1
+# Loading work.XNOR2_X1
+# Loading work.NOR2_X1
+# Loading work.OAI22_X1
+# Loading work.AOI21_X1
+# Loading work.AOI211_X1
+# Loading work.NAND2_X1
+# Loading work.NOR3_X1
+# Loading work.AOI221_X1
+# Loading work.NOR4_X1
+# Loading work.AND2_X1
+# Loading work.OR3_X1
+# Loading work.AOI22_X1
+# Loading work.OR2_X1
+# Loading work.DFF_X1
+# Loading work.CLKGATETST_X1
+# Loading work.MUX2_X1
+# Loading work.FA_X1
+# Loading work.HA_X1
+# Loading work.NAND3_X1
+# Loading work.seq_DFFR_X1
+# Loading work.ng_xbuf
+# Loading work.seq_DFF_X1
+# Loading work.seq_CLKGATETST_X1
+run -all
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# Time               958000: TestCase# 6 : failed with input 7f5ffffe and 7f5fffff and Output 3ed1248e and overflow status 1 
+# Time              1122000: TestCase# 7 : failed with input 80800000 and 01400001 and Output c2400001 and overflow status 1 
+# TestCase# 8 : success
+# TestCase# 9 : success
+# Total Tests: 10 || Success Cases=8 || Failure Cases=2 
+# ** Note: $stop    : /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v(140)
+#    Time: 1322 us  Iteration: 0  Instance: /fp_multiplier_tb
+# Break in Module fp_multiplier_tb at /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/sequential_multiplier/fp_multiplier_tb.v line 140
