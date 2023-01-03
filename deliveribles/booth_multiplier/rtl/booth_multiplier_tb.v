@@ -1,57 +1,72 @@
-module booth_multiplier_tb;
+module BoothTB;
+    `define assert(in1,in2,value,numTest,prod_out) \
+      if (prod_out !== value) begin \
+        $display("TestCase# %0d : failed with input %0d and %0d | Output = %0d | where it should be =%0d " ,numTest, a,b, prod_out, value); \
+        FailureCounter = FailureCounter +1; \
+        end \
+        else begin\
+        $display("TestCase# %0d : success",TestsCounter); \
+        SuccessCounter = SuccessCounter +1; \
+        end \
+        TestsCounter = TestsCounter+1;
 
-  // Parameters
-  localparam  N = 32;
-  localparam  T = 10;
-  // Ports
-  reg clk = 0;
-  reg rst = 0;
-  reg en = 0;
-  reg [N-1 : 0] a;
-  reg [N-1 : 0 ] b;
-  wire [ (N*2) - 1 : 0] c;
+reg [31:0] a, b;
+wire signed [63:0] result;
+integer TestsCounter = 0;
+integer  SuccessCounter = 0;
+integer  FailureCounter = 0;
 
-  booth_multiplier
-  booth_multiplier_dut (
-    .clk (clk ),
-    .rst (rst ),
-    .en (en ),
-    .a (a ),
-    .b (b ),
-    .c  ( c)
-  );
 
-  initial begin
-    begin
-      rst = 1;
-      // en = 0;
-      en = 1;
-      #T;
-      rst = 0;
-      a = 0;
-      b = 10;
-      #(T*32);
-      a = 10;
-      b = 0;
-      #(T*32);
-      a = 5;
-      b = 10;
-
-      #(T*32);
-      a = 12;
-      b = -3;
-      #(T*32);
-      a = -12;
-      b = -12;
-      #(T*32);
-      a = -12;
-      b = 5;
-      // en = 0;
-      $finish;
-    end
-  end
-
-  always
-  #(T/2)  clk = ! clk ;
-
+reg clk, reset,en;
+booth_multiplier boothMul(clk, reset,en, a, b, result);
+initial begin
+	clk = 0;
+    en=1;
+	reset = 1;
+	#4;
+	reset = 0;
+	a=35;
+	b=96;
+	#128;
+	a=-15;
+	b=20;
+	#4
+	`assert(a,b,3360,TestsCounter,result)
+	#124;
+	a=-17;
+	b=-17;
+	#4
+	`assert(a,b,-300,TestsCounter,result)
+	#124;
+	a=1;
+	b=40;
+	#4
+	`assert(a,b,289,TestsCounter,result)
+	#124;
+	a=0;
+	b=64;
+	#4
+	`assert(a,b,40,TestsCounter,result)
+	#124;
+	a=36;
+	b=42;
+	#4
+	`assert(a,b,0,TestsCounter,result)
+	#124;
+	a=165;
+	b=348;
+	#4
+	`assert(a,b,1512,TestsCounter,result)
+	#124;
+	a=3672;
+	b=9648;
+	#4
+	`assert(a,b,57420,TestsCounter,result)	
+	#128;
+	`assert(a,b,35427456,TestsCounter,result)
+end
+always begin
+	#2;
+	clk = ~clk;
+end
 endmodule

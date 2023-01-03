@@ -1,4 +1,4 @@
-module RadixNoaman (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRegisterOutput);
+module radix4Booth (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRegisterOutput);
   // inputs A,B that will be sent to be multiplied
   input[31:0] inputOne;
   input[31:0] inputTwo;
@@ -24,7 +24,7 @@ module RadixNoaman (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRe
   //INPUT ONE'S COMPLEMENT SHIFTED
   assign firstInputComplementShifted = firstInputComplement << 1'b1;
   reg resetReg;
-
+  //VALUE THAT WE WILL SHIFT THE TEMPORARY PRODUCT WITH
   reg [31:0]shiftAmount;
 
   reg [4:0] shiftingLoopParam;
@@ -46,11 +46,12 @@ module RadixNoaman (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRe
   assign Indicators[13] = {inputTwo[27], inputTwo[26], inputTwo[25]};
   assign Indicators[14] = {inputTwo[29], inputTwo[28], inputTwo[27]};
   assign Indicators[15] = {inputTwo[31], inputTwo[30], inputTwo[29]};
-  //ALWAYS BLOCK
+
   always @(posedge clk) begin
+  //ENABLE MUST BE 1 TO START OUR WORK
     if (enable === 1'b1) begin
       //WE START OUR JOB SO DON'T NEED TO WRITE ANYTHING ON THE OUTPUT REGISTER
-      enableRegisterOutput = 1;
+      enableRegisterOutput = 0;
       //IN CASE OF RESTART SO WE NEED TO START EVERYTHING AGAIN FROM THE BEGINNING WHERE OUR COUNTER IS ZERO
       if (reset === 1'b1) begin
         counter = 0;
@@ -60,7 +61,7 @@ module RadixNoaman (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRe
       else if (resetReg === 1'b1) begin
         counter = 0;
         finalResult = 0;
-        resetReg = 0; // make it waits 1 cycle after reset is gone to 0 to get right data
+        resetReg = 0; // WAITING AN EXTRA CYCLE FOR RESET
       end
       else begin
         if(counter===0)begin
@@ -82,13 +83,18 @@ module RadixNoaman (inputOne,inputTwo,finalResult, clk, reset,  enable, enableRe
         finalResult = finalResult + temporaryProduct;
         //INCREMENT OUR COUNTER
         counter = counter + 1;
-        //WE EXCEEDED OUR LIMIT SO WE NEED TO START FROM THE BEGINNING
-        if (counter === 5'd17) begin 
-          counter = 0;
+        //IT'S TIME TO WRITE TO THE OUTPUT REG
+        if(counter===5'd16)begin
+          enableRegisterOutput=1;
+        end
+        //IT'S TIME TO RESET THE COUNTER
+        if(counter===5'd17)begin
+          counter=0;
         end
       end
     end
     else begin
+    //THEN ENABLE IS SET TO ZERO
       finalResult=64'bz;
       enableRegisterOutput=1'b0;
     end

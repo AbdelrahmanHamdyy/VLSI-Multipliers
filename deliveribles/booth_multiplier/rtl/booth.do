@@ -1,5 +1,5 @@
-vlog booth_multilpier_tb.v
-vlog booth_multilpier.v
-vsim booth_multilpier_tb
-add wave booth_multilpier_tb/*
+vlog booth_multiplier_tb.v
+vlog booth_multiplier.v
+vsim BoothTB
+add wave BoothTB/*
 run

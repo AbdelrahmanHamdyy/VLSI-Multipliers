@@ -1,5 +1,5 @@
-vlog seq_multilpier_tb.v
-vlog seq_multilpier.v
-vsim seq_multilpier_tb
-add wave seq_multilpier_tb/*
+vlog seq_multiplier_tb.v
+vlog seq_multiplier.v
+vsim seqTB
+add wave seqTB/*
 run

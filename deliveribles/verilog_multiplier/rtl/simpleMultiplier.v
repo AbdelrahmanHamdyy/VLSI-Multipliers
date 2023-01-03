@@ -2,9 +2,9 @@ module simpleMultiplier (
     input clk,
     input rst,
     input en,
-    input [31:0] a,
-    input [31:0] b,
-    output [63:0] c
+    input singed [31:0] a,
+    input signed [31:0] b,
+    output signed [63:0] c
 );
 
 wire [31:0] a_out;
