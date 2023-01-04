@@ -1,0 +1,8 @@
+*drcRulesFile: /mnt/hgfs/shared/VLSI-Multipliers/drc_lvs/calibre-drc-block.rule
+*drcRunDir: /home/vlsi/Desktop/Routing/Nitro/work
+*drcLayoutPaths: /home/vlsi/Desktop/Routing/Nitro/work/fp_adder_buff.gds
+*drcLayoutPrimary: fp_adder_buff
+*drcResultsFile: fp_adder_buff.drc.results
+*drcSummaryFile: fp_adder_buff.drc.summary
+*drcDFMDefaultsResultsFile: fp_adder_buff.dfmDefaults.db
+*cmnFDIDEFLayoutPath: fp_adder_buff.def

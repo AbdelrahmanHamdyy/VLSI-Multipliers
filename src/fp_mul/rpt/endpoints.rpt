@@ -1,230 +1,159 @@
 Report End Points: 
------+-------+-------+-------+------+-----+-----+------+----------------+-------------------------------------------------
-     |Group  |Launch |Capture|Shift |Delay|Depth|Slack |Begin Point     |End Point                                        
------+-------+-------+-------+------+-----+-----+------+----------------+-------------------------------------------------
-1    |default|vsysclk|vsysclk|2000.0|943.3|   22| 845.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[22]/D
-2    |default|vsysclk|vsysclk|2000.0|891.9|   21| 890.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[21]/D
-3    |default|vsysclk|vsysclk|2000.0|865.1|   21| 918.1|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[20]/D
-4    |default|vsysclk|vsysclk|2000.0|828.1|   19| 954.3|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[18]/D
-5    |default|vsysclk|vsysclk|2000.0|814.3|   18| 973.4|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[19]/D
-6    |default|vsysclk|vsysclk|2000.0|799.4|   19| 983.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[17]/D
-7    |default|vsysclk|vsysclk|2000.0|757.4|   17|1025.0|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[16]/D
-8    |default|vsysclk|vsysclk|2000.0|736.6|   16|1051.1|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[15]/D
-9    |default|vsysclk|vsysclk|2000.0|680.3|   18|1108.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[14]/D
-10   |default|vsysclk|vsysclk|2000.0|646.1|   17|1136.3|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[13]/D
-11   |default|vsysclk|vsysclk|2000.0|620.6|   15|1161.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[12]/D
-12   |default|vsysclk|vsysclk|2000.0|578.5|   14|1209.2|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[11]/D
-13   |default|vsysclk|vsysclk|2000.0|560.8|   16|1228.0|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[10]/D
-14   |default|vsysclk|vsysclk|2000.0|617.1|   10|1251.0|a_reg[23]/Q     |overflow_reg/D                                   
-15   |default|vsysclk|vsysclk|2000.0|622.1|    9|1254.5|a_reg[23]/Q     |c_out_reg[30]/D                                  
-16   |default|vsysclk|vsysclk|2000.0|526.6|   15|1255.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[9]/D 
-17   |default|vsysclk|vsysclk|2000.0|501.1|   13|1281.3|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[8]/D 
-18   |default|vsysclk|vsysclk|2000.0|549.6|    8|1327.0|a_reg[23]/Q     |c_out_reg[29]/D                                  
-19   |default|vsysclk|vsysclk|2000.0|453.1|   12|1335.7|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[7]/D 
-20   |default|vsysclk|vsysclk|2000.0|438.6|   14|1350.2|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[6]/D 
-21   |default|vsysclk|vsysclk|2000.0|404.4|   13|1378.0|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[5]/D 
-22   |default|vsysclk|vsysclk|2000.0|477.1|    7|1399.5|a_reg[23]/Q     |c_out_reg[28]/D                                  
-23   |default|vsysclk|vsysclk|2000.0|378.9|   11|1403.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[4]/D 
-24   |default|vsysclk|vsysclk|2000.0|339.3|   10|1448.4|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[3]/D 
-25   |default|vsysclk|vsysclk|2000.0|404.6|    6|1472.0|a_reg[23]/Q     |c_out_reg[27]/D                                  
-26   |default|vsysclk|vsysclk|2000.0|284.3|    9|1498.1|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[2]/D 
-27   |default|vsysclk|vsysclk|2000.0|248.0|    7|1534.4|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[0]/D 
-28   |default|vsysclk|vsysclk|2000.0|332.1|    5|1544.5|a_reg[23]/Q     |c_out_reg[26]/D                                  
-29   |default|vsysclk|vsysclk|2000.0|231.7|    7|1551.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/Accumulator_reg[1]/D 
-30   |default|vsysclk|vsysclk|2000.0|215.4|    6|1570.5|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[23]/D        
-31   |default|vsysclk|vsysclk|2000.0|259.6|    4|1617.0|a_reg[23]/Q     |c_out_reg[25]/D                                  
-32   |default|vsysclk|vsysclk|2000.0|202.8|    5|1639.0|counter_reg[0]/Q|counter_reg[4]/D                                 
-33   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[24]/D                                  
-34   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[22]/D                                  
-35   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[21]/D                                  
-36   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[20]/D                                  
-37   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[19]/D                                  
-38   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[18]/D                                  
-39   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[17]/D                                  
-40   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[16]/D                                  
-41   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[15]/D                                  
-42   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[14]/D                                  
-43   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[13]/D                                  
-44   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[12]/D                                  
-45   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[11]/D                                  
-46   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[10]/D                                  
-47   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[9]/D                                   
-48   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[8]/D                                   
-49   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[7]/D                                   
-50   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[6]/D                                   
-51   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[5]/D                                   
-52   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[4]/D                                   
-53   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[3]/D                                   
-54   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[2]/D                                   
-55   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[1]/D                                   
-56   |default|vsysclk|vsysclk|2000.0|146.8|    5|1677.1|b_reg[30]/Q     |c_out_reg[0]/D                                   
-57   |default|vsysclk|vsysclk|2000.0|162.8|    4|1686.4|counter_reg[0]/Q|counter_reg[3]/D                                 
-58   |default|vsysclk|vsysclk|2000.0|190.1|    5|1686.8|b_reg[23]/Q     |c_out_reg[31]/D                                  
-59   |default|vsysclk|vsysclk|2000.0|119.3|    2|1696.4|counter_reg[4]/Q|clk_gate_b_reg__1/E                              
-60   |default|vsysclk|vsysclk|2000.0| 89.7|    2|1702.6|counter_reg[0]/Q|clk_gate_overflow_reg/E                          
-61   |default|vsysclk|vsysclk|2000.0|105.1|    4|1711.4|b_reg[30]/Q     |c_out_reg[23]/D                                  
-62   |default|vsysclk|vsysclk|2000.0|121.9|    4|1719.4|counter_reg[0]/Q|counter_reg[2]/D                                 
-63   |default|vsysclk|vsysclk|2000.0|121.9|    4|1719.4|counter_reg[0]/Q|counter_reg[1]/D                                 
-64   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[21]/D        
-65   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[20]/D        
-66   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[19]/D        
-67   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[18]/D        
-68   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[17]/D        
-69   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[16]/D        
-70   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[15]/D        
-71   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[14]/D        
-72   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[13]/D        
-73   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[12]/D        
-74   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[11]/D        
-75   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[10]/D        
-76   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[9]/D         
-77   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[8]/D         
-78   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[7]/D         
-79   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[6]/D         
-80   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[5]/D         
-81   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[4]/D         
-82   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[3]/D         
-83   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[2]/D         
-84   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[1]/D         
-85   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[0]/D         
-86   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[22]/D        
-87   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[21]/D        
-88   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[20]/D        
-89   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[19]/D        
-90   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[18]/D        
-91   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[17]/D        
-92   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[16]/D        
-93   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[15]/D        
-94   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[14]/D        
-95   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[13]/D        
-96   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[12]/D        
-97   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[11]/D        
-98   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[10]/D        
-99   |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[9]/D         
-100  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[8]/D         
-101  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[7]/D         
-102  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[6]/D         
-103  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[5]/D         
-104  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[4]/D         
-105  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[3]/D         
-106  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[2]/D         
-107  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[1]/D         
-108  |default|vsysclk|vsysclk|2000.0| 59.4|    1|1723.8|mul_start_reg/Q |unsigned_seq_multiplier_dut/A_r_reg[0]/D         
-109  |default|vsysclk|vsysclk|2000.0|123.3|    2|1746.4|counter_reg[4]/Q|mul_start_reg/D                                  
-110  |default|vsysclk|vsysclk|2000.0| 22.0|    1|1771.3|mul_start_reg/Q |unsigned_seq_multiplier_dut/B_r_reg[22]/D        
-111  |default|vsysclk|vsysclk|2000.0| 11.4|    1|1829.9|counter_reg[0]/Q|counter_reg[0]/D                                 
------+-------+-------+-------+------+-----+-----+------+----------------+-------------------------------------------------
+-----+-------+-------+-------+------+-----+-----+------+----------------+-----------------------
+     |Group  |Launch |Capture|Shift |Delay|Depth|Slack |Begin Point     |End Point              
+-----+-------+-------+-------+------+-----+-----+------+----------------+-----------------------
+1    |default|vsysclk|vsysclk|2000.0|704.3|   11|1169.7|a_reg[23]/Q     |overflow_reg/D         
+2    |default|vsysclk|vsysclk|2000.0|679.1|   11|1196.4|a_reg[23]/Q     |c_out_reg[30]/D        
+3    |default|vsysclk|vsysclk|2000.0|658.1|   10|1211.6|a_reg[23]/Q     |c_out_reg[29]/D        
+4    |default|vsysclk|vsysclk|2000.0|585.4|    9|1284.3|a_reg[23]/Q     |c_out_reg[28]/D        
+5    |default|vsysclk|vsysclk|2000.0|512.5|    8|1357.2|a_reg[23]/Q     |c_out_reg[27]/D        
+6    |default|vsysclk|vsysclk|2000.0|441.0|    7|1428.7|a_reg[23]/Q     |c_out_reg[26]/D        
+7    |default|vsysclk|vsysclk|2000.0|368.1|    6|1501.6|a_reg[23]/Q     |c_out_reg[25]/D        
+8    |default|vsysclk|vsysclk|2000.0|296.4|    5|1573.3|a_reg[23]/Q     |c_out_reg[24]/D        
+9    |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[22]/D        
+10   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[21]/D        
+11   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[20]/D        
+12   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[19]/D        
+13   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[18]/D        
+14   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[17]/D        
+15   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[16]/D        
+16   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[15]/D        
+17   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[14]/D        
+18   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[13]/D        
+19   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[12]/D        
+20   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[11]/D        
+21   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[10]/D        
+22   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[9]/D         
+23   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[8]/D         
+24   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[7]/D         
+25   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[6]/D         
+26   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[5]/D         
+27   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[4]/D         
+28   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[3]/D         
+29   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[2]/D         
+30   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[1]/D         
+31   |default|vsysclk|vsysclk|2000.0|258.8|    6|1610.9|a_reg[23]/Q     |c_out_reg[0]/D         
+32   |default|vsysclk|vsysclk|2000.0|238.9|    5|1628.1|a_reg[23]/Q     |c_out_reg[23]/D        
+33   |default|vsysclk|vsysclk|2000.0|172.4|    5|1670.1|counter_reg[0]/Q|counter_reg[4]/D       
+34   |default|vsysclk|vsysclk|2000.0|190.7|    5|1686.2|a_reg[23]/Q     |c_out_reg[31]/D        
+35   |default|vsysclk|vsysclk|2000.0|162.6|    4|1687.8|counter_reg[0]/Q|counter_reg[3]/D       
+36   |default|vsysclk|vsysclk|2000.0|128.8|    3|1699.9|counter_reg[1]/Q|clk_gate_b_reg/E       
+37   |default|vsysclk|vsysclk|2000.0| 92.5|    4|1703.5|counter_reg[0]/Q|clk_gate_overflow_reg/E
+38   |default|vsysclk|vsysclk|2000.0|124.8|    3|1725.6|counter_reg[0]/Q|counter_reg[2]/D       
+39   |default|vsysclk|vsysclk|2000.0|109.6|    4|1732.9|counter_reg[0]/Q|counter_reg[1]/D       
+40   |default|vsysclk|vsysclk|2000.0|132.8|    3|1749.9|counter_reg[1]/Q|mul_start_reg/D        
+41   |default|vsysclk|vsysclk|2000.0| 11.5|    1|1831.0|counter_reg[0]/Q|counter_reg[0]/D       
+-----+-------+-------+-------+------+-----+-----+------+----------------+-----------------------
 Report End Points: 
------+-----+-------+-------+------+-----+-----+------+-----------+----------------------------------------------
-     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point                                     
------+-----+-------+-------+------+-----+-----+------+-----------+----------------------------------------------
-1    |I2R  |vsysclk|vsysclk|2000.0| 37.8|    2|1674.5|rst        |clk_gate_overflow_reg/E                       
-2    |I2R  |vsysclk|vsysclk|2000.0| 70.0|    4|1691.3|rst        |counter_reg[3]/D                              
-3    |I2R  |vsysclk|vsysclk|2000.0| 70.0|    4|1691.3|rst        |counter_reg[2]/D                              
-4    |I2R  |vsysclk|vsysclk|2000.0| 70.0|    4|1691.3|rst        |counter_reg[1]/D                              
-5    |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[30]/D                               
-6    |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[29]/D                               
-7    |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[28]/D                               
-8    |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[27]/D                               
-9    |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[26]/D                               
-10   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[25]/D                               
-11   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[24]/D                               
-12   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[22]/D                               
-13   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[21]/D                               
-14   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[20]/D                               
-15   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[19]/D                               
-16   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[18]/D                               
-17   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[17]/D                               
-18   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[16]/D                               
-19   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[15]/D                               
-20   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[14]/D                               
-21   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[13]/D                               
-22   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[12]/D                               
-23   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[11]/D                               
-24   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[10]/D                               
-25   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[9]/D                                
-26   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[8]/D                                
-27   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[7]/D                                
-28   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[6]/D                                
-29   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[5]/D                                
-30   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[4]/D                                
-31   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[3]/D                                
-32   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[2]/D                                
-33   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[1]/D                                
-34   |I2R  |vsysclk|vsysclk|2000.0| 64.4|    2|1696.9|rst        |c_out_reg[0]/D                                
-35   |I2R  |vsysclk|vsysclk|2000.0| 52.3|    3|1707.8|rst        |counter_reg[4]/D                              
-36   |I2R  |vsysclk|vsysclk|2000.0| 30.1|    2|1708.1|rst        |clk_gate_b_reg__1/E                           
-37   |I2R  |vsysclk|vsysclk|2000.0| 50.2|    2|1709.1|rst        |mul_start_reg/D                               
-38   |I2R  |vsysclk|vsysclk|2000.0| 37.0|    3|1723.7|rst        |overflow_reg/D                                
-39   |I2R  |vsysclk|vsysclk|2000.0| 30.3|    2|1731.0|rst        |c_out_reg[31]/D                               
-40   |I2R  |vsysclk|vsysclk|2000.0|  6.6|    1|1731.5|rst        |unsigned_seq_multiplier_dut/clk_gate_B_r_reg/E
-41   |I2R  |vsysclk|vsysclk|2000.0|  8.8|    1|1751.3|rst        |c_out_reg[23]/D                               
-42   |I2R  |vsysclk|vsysclk|2000.0|  4.4|    1|1756.9|rst        |counter_reg[0]/D                              
-43   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[22]    |b_reg[22]/D                                   
-44   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[21]    |b_reg[21]/D                                   
-45   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[20]    |b_reg[20]/D                                   
-46   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[19]    |b_reg[19]/D                                   
-47   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[18]    |b_reg[18]/D                                   
-48   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[17]    |b_reg[17]/D                                   
-49   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[16]    |b_reg[16]/D                                   
-50   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[15]    |b_reg[15]/D                                   
-51   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[14]    |b_reg[14]/D                                   
-52   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[13]    |b_reg[13]/D                                   
-53   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[12]    |b_reg[12]/D                                   
-54   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[11]    |b_reg[11]/D                                   
-55   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[10]    |b_reg[10]/D                                   
-56   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[9]     |b_reg[9]/D                                    
-57   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[8]     |b_reg[8]/D                                    
-58   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[7]     |b_reg[7]/D                                    
-59   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[6]     |b_reg[6]/D                                    
-60   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[5]     |b_reg[5]/D                                    
-61   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[4]     |b_reg[4]/D                                    
-62   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[3]     |b_reg[3]/D                                    
-63   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[2]     |b_reg[2]/D                                    
-64   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[1]     |b_reg[1]/D                                    
-65   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[0]     |b_reg[0]/D                                    
-66   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[22]    |a_reg[22]/D                                   
-67   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[21]    |a_reg[21]/D                                   
-68   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[20]    |a_reg[20]/D                                   
-69   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[19]    |a_reg[19]/D                                   
-70   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[18]    |a_reg[18]/D                                   
-71   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[17]    |a_reg[17]/D                                   
-72   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[16]    |a_reg[16]/D                                   
-73   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[15]    |a_reg[15]/D                                   
-74   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[14]    |a_reg[14]/D                                   
-75   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[13]    |a_reg[13]/D                                   
-76   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[12]    |a_reg[12]/D                                   
-77   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[11]    |a_reg[11]/D                                   
-78   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[10]    |a_reg[10]/D                                   
-79   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[9]     |a_reg[9]/D                                    
-80   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[8]     |a_reg[8]/D                                    
-81   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[7]     |a_reg[7]/D                                    
-82   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[6]     |a_reg[6]/D                                    
-83   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[5]     |a_reg[5]/D                                    
-84   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[4]     |a_reg[4]/D                                    
-85   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[3]     |a_reg[3]/D                                    
-86   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[2]     |a_reg[2]/D                                    
-87   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[1]     |a_reg[1]/D                                    
-88   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[0]     |a_reg[0]/D                                    
-89   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[31]    |b_reg[31]/D                                   
-90   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[31]    |a_reg[31]/D                                   
-91   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[30]    |b_reg[30]/D                                   
-92   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[29]    |b_reg[29]/D                                   
-93   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[28]    |b_reg[28]/D                                   
-94   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[27]    |b_reg[27]/D                                   
-95   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[26]    |b_reg[26]/D                                   
-96   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[25]    |b_reg[25]/D                                   
-97   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[24]    |b_reg[24]/D                                   
-98   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|b_s[23]    |b_reg[23]/D                                   
-99   |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[30]    |a_reg[30]/D                                   
-100  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[29]    |a_reg[29]/D                                   
-101  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[28]    |a_reg[28]/D                                   
-102  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[27]    |a_reg[27]/D                                   
-103  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[26]    |a_reg[26]/D                                   
-104  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[25]    |a_reg[25]/D                                   
-105  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[24]    |a_reg[24]/D                                   
-106  |I2R  |vsysclk|vsysclk|2000.0|  0.4|    0|1770.5|a_s[23]    |a_reg[23]/D                                   
------+-----+-------+-------+------+-----+-----+------+-----------+----------------------------------------------
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
+     |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point|End Point              
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
+1    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[29]/D        
+2    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[28]/D        
+3    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[27]/D        
+4    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[26]/D        
+5    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[25]/D        
+6    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[24]/D        
+7    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[22]/D        
+8    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[21]/D        
+9    |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[20]/D        
+10   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[19]/D        
+11   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[18]/D        
+12   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[17]/D        
+13   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[16]/D        
+14   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[15]/D        
+15   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[14]/D        
+16   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[13]/D        
+17   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[12]/D        
+18   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[11]/D        
+19   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[10]/D        
+20   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[9]/D         
+21   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[8]/D         
+22   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[7]/D         
+23   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[6]/D         
+24   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[5]/D         
+25   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[4]/D         
+26   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[3]/D         
+27   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[2]/D         
+28   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[1]/D         
+29   |I2R  |vsysclk|vsysclk|2000.0|152.4|    5|1609.6|rst        |c_out_reg[0]/D         
+30   |I2R  |vsysclk|vsysclk|2000.0|132.5|    4|1626.8|rst        |c_out_reg[23]/D        
+31   |I2R  |vsysclk|vsysclk|2000.0| 33.4|    2|1681.4|rst        |clk_gate_overflow_reg/E
+32   |I2R  |vsysclk|vsysclk|2000.0| 30.0|    2|1708.2|rst        |clk_gate_b_reg/E       
+33   |I2R  |vsysclk|vsysclk|2000.0| 50.1|    2|1709.2|rst        |mul_start_reg/D        
+34   |I2R  |vsysclk|vsysclk|2000.0| 50.5|    2|1710.8|rst        |counter_reg[3]/D       
+35   |I2R  |vsysclk|vsysclk|2000.0| 50.5|    2|1710.8|rst        |counter_reg[2]/D       
+36   |I2R  |vsysclk|vsysclk|2000.0| 50.5|    2|1710.8|rst        |counter_reg[1]/D       
+37   |I2R  |vsysclk|vsysclk|2000.0| 39.6|    3|1721.7|rst        |counter_reg[4]/D       
+38   |I2R  |vsysclk|vsysclk|2000.0| 33.1|    3|1728.2|rst        |c_out_reg[30]/D        
+39   |I2R  |vsysclk|vsysclk|2000.0| 30.2|    2|1731.1|rst        |c_out_reg[31]/D        
+40   |I2R  |vsysclk|vsysclk|2000.0|  7.2|    1|1753.5|rst        |overflow_reg/D         
+41   |I2R  |vsysclk|vsysclk|2000.0|  4.3|    1|1757.0|rst        |counter_reg[0]/D       
+42   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[22]    |b_reg[22]/D            
+43   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[21]    |b_reg[21]/D            
+44   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[20]    |b_reg[20]/D            
+45   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[19]    |b_reg[19]/D            
+46   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[18]    |b_reg[18]/D            
+47   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[17]    |b_reg[17]/D            
+48   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[16]    |b_reg[16]/D            
+49   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[15]    |b_reg[15]/D            
+50   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[14]    |b_reg[14]/D            
+51   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[13]    |b_reg[13]/D            
+52   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[12]    |b_reg[12]/D            
+53   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[11]    |b_reg[11]/D            
+54   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[10]    |b_reg[10]/D            
+55   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[9]     |b_reg[9]/D             
+56   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[8]     |b_reg[8]/D             
+57   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[7]     |b_reg[7]/D             
+58   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[6]     |b_reg[6]/D             
+59   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[5]     |b_reg[5]/D             
+60   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[4]     |b_reg[4]/D             
+61   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[3]     |b_reg[3]/D             
+62   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[2]     |b_reg[2]/D             
+63   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[1]     |b_reg[1]/D             
+64   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[0]     |b_reg[0]/D             
+65   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[22]    |a_reg[22]/D            
+66   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[21]    |a_reg[21]/D            
+67   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[20]    |a_reg[20]/D            
+68   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[19]    |a_reg[19]/D            
+69   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[18]    |a_reg[18]/D            
+70   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[17]    |a_reg[17]/D            
+71   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[16]    |a_reg[16]/D            
+72   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[15]    |a_reg[15]/D            
+73   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[14]    |a_reg[14]/D            
+74   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[13]    |a_reg[13]/D            
+75   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[12]    |a_reg[12]/D            
+76   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[11]    |a_reg[11]/D            
+77   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[10]    |a_reg[10]/D            
+78   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[9]     |a_reg[9]/D             
+79   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[8]     |a_reg[8]/D             
+80   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[7]     |a_reg[7]/D             
+81   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[6]     |a_reg[6]/D             
+82   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[5]     |a_reg[5]/D             
+83   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[4]     |a_reg[4]/D             
+84   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[3]     |a_reg[3]/D             
+85   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[2]     |a_reg[2]/D             
+86   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[1]     |a_reg[1]/D             
+87   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[0]     |a_reg[0]/D             
+88   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[31]    |b_reg[31]/D            
+89   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[31]    |a_reg[31]/D            
+90   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[30]    |b_reg[30]/D            
+91   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[29]    |b_reg[29]/D            
+92   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[28]    |b_reg[28]/D            
+93   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[27]    |b_reg[27]/D            
+94   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[26]    |b_reg[26]/D            
+95   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[25]    |b_reg[25]/D            
+96   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[24]    |b_reg[24]/D            
+97   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|b_s[23]    |b_reg[23]/D            
+98   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[30]    |a_reg[30]/D            
+99   |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[29]    |a_reg[29]/D            
+100  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[28]    |a_reg[28]/D            
+101  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[27]    |a_reg[27]/D            
+102  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[26]    |a_reg[26]/D            
+103  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[25]    |a_reg[25]/D            
+104  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[24]    |a_reg[24]/D            
+105  |I2R  |vsysclk|vsysclk|2000.0|  0.3|    0|1770.6|a_s[23]    |a_reg[23]/D            
+-----+-----+-------+-------+------+-----+-----+------+-----------+-----------------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
@@ -235,37 +164,37 @@ Report End Points:
 -----+-----+-------+-------+------+-----+-----+------+---------------+---------
      |Group|Launch |Capture|Shift |Delay|Depth|Slack |Begin Point    |End Point
 -----+-----+-------+-------+------+-----+-----+------+---------------+---------
-1    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1403.9|c_out_reg[30]/Q|c_out[30]
-2    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1403.9|c_out_reg[26]/Q|c_out[26]
-3    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1403.9|c_out_reg[25]/Q|c_out[25]
-4    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1403.9|c_out_reg[22]/Q|c_out[22]
-5    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[31]/Q|c_out[31]
-6    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[29]/Q|c_out[29]
-7    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[28]/Q|c_out[28]
-8    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[27]/Q|c_out[27]
-9    |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[24]/Q|c_out[24]
-10   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[23]/Q|c_out[23]
-11   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[21]/Q|c_out[21]
-12   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[20]/Q|c_out[20]
-13   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[18]/Q|c_out[18]
-14   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[17]/Q|c_out[17]
-15   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[14]/Q|c_out[14]
-16   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[12]/Q|c_out[12]
-17   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[10]/Q|c_out[10]
-18   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[9]/Q |c_out[9] 
-19   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[6]/Q |c_out[6] 
-20   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[4]/Q |c_out[4] 
-21   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[2]/Q |c_out[2] 
-22   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.0|c_out_reg[1]/Q |c_out[1] 
-23   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[19]/Q|c_out[19]
-24   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[16]/Q|c_out[16]
-25   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[15]/Q|c_out[15]
-26   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[13]/Q|c_out[13]
-27   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[11]/Q|c_out[11]
-28   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[8]/Q |c_out[8] 
-29   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[7]/Q |c_out[7] 
-30   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[5]/Q |c_out[5] 
-31   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[3]/Q |c_out[3] 
-32   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|c_out_reg[0]/Q |c_out[0] 
-33   |R2O  |vsysclk|vsysclk|2000.0|  0.4|    0|1404.1|overflow_reg/Q |overflow 
+1    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[31]/Q|c_out[31]
+2    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[30]/Q|c_out[30]
+3    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[28]/Q|c_out[28]
+4    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[24]/Q|c_out[24]
+5    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[23]/Q|c_out[23]
+6    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[22]/Q|c_out[22]
+7    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[20]/Q|c_out[20]
+8    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[16]/Q|c_out[16]
+9    |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[15]/Q|c_out[15]
+10   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.5|c_out_reg[14]/Q|c_out[14]
+11   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[29]/Q|c_out[29]
+12   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[27]/Q|c_out[27]
+13   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[26]/Q|c_out[26]
+14   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[25]/Q|c_out[25]
+15   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[21]/Q|c_out[21]
+16   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[19]/Q|c_out[19]
+17   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[18]/Q|c_out[18]
+18   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[13]/Q|c_out[13]
+19   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[12]/Q|c_out[12]
+20   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[8]/Q |c_out[8] 
+21   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[7]/Q |c_out[7] 
+22   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[6]/Q |c_out[6] 
+23   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[4]/Q |c_out[4] 
+24   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|c_out_reg[0]/Q |c_out[0] 
+25   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.6|overflow_reg/Q |overflow 
+26   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[17]/Q|c_out[17]
+27   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[11]/Q|c_out[11]
+28   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[10]/Q|c_out[10]
+29   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[9]/Q |c_out[9] 
+30   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[5]/Q |c_out[5] 
+31   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[3]/Q |c_out[3] 
+32   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[2]/Q |c_out[2] 
+33   |R2O  |vsysclk|vsysclk|2000.0|  0.3|    0|1404.7|c_out_reg[1]/Q |c_out[1] 
 -----+-----+-------+-------+------+-----+-----+------+---------------+---------

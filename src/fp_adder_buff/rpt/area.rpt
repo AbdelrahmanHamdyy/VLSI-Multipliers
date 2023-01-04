@@ -1,0 +1,21 @@
+Report Instance Areas: 
+-----+--------------------------------+----------------------------+-----+---------
+     |Instance                        |Module                      |Cells|Cell Area
+-----+--------------------------------+----------------------------+-----+---------
+1    |top                             |                            | 1146|     1648
+2    |  inRegA                        |buffer__0_55                |   67|      184
+3    |  inRegB                        |buffer__0_58                |   67|      184
+4    |  A32                           |fp_adder                    |  937|     1080
+5    |    CLA_dut                     |CLA                         |   93|      117
+6    |      cla1                      |CLA_4bit__0_66              |   17|       20
+7    |      genblk1_4_cla             |CLA_4bit__0_82              |   15|       19
+8    |      genblk1_8_cla             |CLA_4bit__0_90              |   15|       19
+9    |      genblk1_12_cla            |CLA_4bit__0_98              |   15|       19
+10   |      genblk1_16_cla            |CLA_4bit__0_106             |   15|       19
+11   |      genblk1_20_cla            |CLA_4bit__0_114             |   15|       19
+12   |      genblk1_24_cla            |CLA_4bit                    |    1|        2
+13   |    count_leading_zeros_instance|count_leading_zeros         |   46|       42
+14   |  outRegS                       |buffer                      |   67|      184
+15   |  outRegO                       |buffer__parameterized0__0_52|    4|        7
+16   |  outRegU                       |buffer__parameterized0      |    4|        7
+-----+--------------------------------+----------------------------+-----+---------

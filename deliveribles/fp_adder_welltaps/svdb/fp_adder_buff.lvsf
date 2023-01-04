@@ -1,0 +1,14 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/vlsi/Desktop/Routing/Nitro/work
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {2 0 2 0}
+lvs_LvsOutFile LVS_SUMMARY lvs.summary
+lvs_SourceCase YES
+lvs_LayoutCase YES
+lvs_PowerName VDD
+lvs_GroundName GROUND
+lvs_LvsOutFile LVS_REPORT fp_adder_buff.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST _source.net_
+lvs_LvsOutFile RULES_FILE /home/vlsi/Desktop/Routing/Nitro/work/_calibre-lvs.rule_
+lvs_LvsRunTimes 1672799743 1672799743

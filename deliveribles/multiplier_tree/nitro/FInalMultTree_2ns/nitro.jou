@@ -2021,3 +2021,41 @@ set_option -name view:design:scheme0:layer15:global_route:wire:visible -value tr
 set_option -name view:design:scheme0:layer17:global_route:wire:visible -value true
 set_option -name view:design:scheme0:layer19:global_route:wire:visible -value true
 calibredrv -m multiplierTree.gds
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 05:55:03 2023
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 31314 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+## trigger_gui -name main:open_design
+read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db -cpus 4
+set_option -name view:design:mfg_grid:step:y -value 50
+report_region_utilization 
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 749}
+set_option -name window:main:message_area:location -value {328 610}
+set_option -name window:main:message_area:size -value {1592 216}
+set_option -name window:main:view:location -value {280 20}
+zoom_to -target area -xl_area -64980a -yb_area 282161a -xr_area 1364580a -yt_area 1714121a
+zoom_to -target area -xl_area -64980a -yb_area 2712153a -xr_area 1364580a -yt_area 4144113a
+zoom_to -target area -xl_area -139532a -yb_area 2541836a -xr_area 1647417a -yt_area 4331786a
+zoom_to -target area -xl_area -1630576a -yb_area -864492a -xr_area 7304169a -yt_area 8085258a
+zoom_to -target area -xl_area -2873114a -yb_area -3703099a -xr_area 12018126a -yt_area 11213150a
+zoom_to -target area -xl_area -2251844a -yb_area -2283795a -xr_area 9661147a -yt_area 9649203a
+zoom_to -target area -xl_area -1754828a -yb_area -1148351a -xr_area 7775563a -yt_area 8398045a
+zoom_to -target area -xl_area -760796a -yb_area 1122534a -xr_area 4004398a -yt_area 5895732a
+zoom_to -target area -xl_area -561989a -yb_area 1576711a -xr_area 3250165a -yt_area 5395269a
+set_option -name window:main:view:state -value maximized
+#---------------------------------------------------------------------
+# end session at Wed Jan 4 05:58:18 2023
+#---------------------------------------------------------------------

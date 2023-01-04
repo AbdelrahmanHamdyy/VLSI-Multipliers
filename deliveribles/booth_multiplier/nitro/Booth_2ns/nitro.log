@@ -2805,3 +2805,80 @@ LAYOUT MEMORY    =            1893 K  =            1 M
 LAYOUT READ TIME = 0 sec REAL.  TOTAL TIME = 0 sec REAL.
 
 % 
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 05:52:26 2023
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+----------------------------------------------------------------------------------
+|     Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019     | 
+| Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 31066 | 
+|              Copyright (c) 2003-2019 Mentor Graphics Corporation               | 
+|                              All Rights Reserved                               | 
+|          THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION           | 
+|              WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION              | 
+|               OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.                | 
+----------------------------------------------------------------------------------
+
+Nitro-SoC> start
+Nitro-SoC> read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db -cpus 4
+error UI19: Cannot open file '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/init_db.tcl'.
+error UI3: Specify a valid file list value for '-files' .
+Nitro-SoC> read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db -cpus 4
+info UI1340: Loading folded database from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db'.
+Database information: 
+----------------------------------------------------------------------------------------------------
+| Property Name | Property Value                                                   | Property Type | 
+|---------------+------------------------------------------------------------------+---------------|
+| name*         |                                                                  | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| file          | /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/ | string        | 
+|               | nitro/Booth_2ns/db/final.db/                                     |               | 
+|---------------+------------------------------------------------------------------+---------------|
+| host          | Linux (localhost.localdomain)                                    | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| build         | 1.68700.2.290                                                    | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| date          | Fri Dec 23 03:48:35 2022                                         | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| p_version     | 2019.1.R2                                                        | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| comment*      |                                                                  | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| db_version    | 4.0.5                                                            | string        | 
+|---------------+------------------------------------------------------------------+---------------|
+| is_current    | true                                                             | bool          | 
+----------------------------------------------------------------------------------------------------
+
+info UI33: performed database load for 0 sec (CPU time: 0 sec; MEM: RSS - 162M, CVMEM - 761M, PVMEM - 784M)
+info UI1340: Loading libraries from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db/Technology/'.
+info UI33: performed library load for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 771M, PVMEM - 784M)
+info UI1340: Loading design from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db/Design'.
+info Reading Scan data
+info Reading Trailing data
+Successfully mapped 0 checks
+info UI33: performed design load for 0 sec (CPU time: 0 sec; MEM: RSS - 177M, CVMEM - 786M, PVMEM - 876M)
+info UI33: performed source of /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db/init_db.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 177M, CVMEM - 786M, PVMEM - 876M)
+Nitro-SoC> report_region_utilization 
+info running report region utilization in global placement context: 
+    - utilization = (mobile_cell_area/(row_area - obstruction_area)).
+    - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
+    - by default, cell area include all bloats associated with the cells. 
+
+
+info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
+Report 'Region_Utilization': Region Utilization Report
+Generated on Wed Jan 4 05:53:29 2023
+  
+--------------------------------------------------------------------------------------------------------------------------------
+|                                                  Report Region Utilization                                                   |
+|---+------------------+----+-----+-----------+----------------+--------------+-----------------------+------------------------|
+|   | Partition/Region | MH | NMH | Cell Area | Placeable Area | Useable Area | Placer Utilization(%) | Silicon Utilization(%) | 
+|---+------------------+----+-----+-----------+----------------+--------------+-----------------------+------------------------|
+| 0 | booth_multiplier | -  | -   | 1572.06   | 1352.61        | 1572.06      | 116.224               | 92.8                   | 
+--------------------------------------------------------------------------------------------------------------------------------
+
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 184M, CVMEM - 795M, PVMEM - 876M)
+Nitro-SoC> exit
+#---------------------------------------------------------------------
+# end session at Wed Jan 4 05:54:17 2023
+#---------------------------------------------------------------------

@@ -23,3 +23,976 @@ set_option -name window:main:view:state -value maximized
 #---------------------------------------------------------------------
 # end session at Tue Jan 3 21:18:06 2023
 #---------------------------------------------------------------------
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 05:59:38 2023
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 31720 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+set_option -name window:hierarchy:explorer:location -value {62 77}
+set_option -name window:hierarchy:explorer:size -value {260 749}
+set_option -name window:main:message_area:location -value {328 610}
+set_option -name window:main:message_area:size -value {1592 216}
+## trigger_gui -name main:open_design
+read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db -cpus 4
+set_option -name view:design:mfg_grid:step:y -value 50
+zoom_to -target area -xl_area -268987a -yb_area -332206a -xr_area 1517962a -yt_area 1457743a
+zoom_to -target area -xl_area 241031a -yb_area 335860a -xr_area 1134505a -yt_area 1230834a
+zoom_to -target area -xl_area 343034a -yb_area 469473a -xr_area 1057813a -yt_area 1185452a
+zoom_to -target area -xl_area 517897a -yb_area 698524a -xr_area 926341a -yt_area 1107654a
+zoom_to -target area -xl_area 564527a -yb_area 759604a -xr_area 891282a -yt_area 1086908a
+zoom_to -target area -xl_area 601831a -yb_area 808468a -xr_area 863234a -yt_area 1070311a
+set_option -name view:design:scheme0:layer1:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:global_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:global_route:wire:visible -value true
+zoom_to -target area -xl_area 592959a -yb_area 772167a -xr_area 919712a -yt_area 1099470a
+zoom_to -target area -xl_area 526425a -yb_area 499912a -xr_area 1343307a -yt_area 1318169a
+zoom_to -target area -xl_area 498701a -yb_area 386472a -xr_area 1519803a -yt_area 1409293a
+set_option -name view:design:scheme0:cell:visible -value false
+set_option -name view:design:scheme0:text:visible -value false
+zoom_to -target area -xl_area 480577a -yb_area 215744a -xr_area 1756954a -yt_area 1494269a
+zoom_to -target area -xl_area 457922a -yb_area 2333a -xr_area 2053393a -yt_area 1600489a
+zoom_to -target area -xl_area 480576a -yb_area 215743a -xr_area 1756952a -yt_area 1494267a
+zoom_to -target area -xl_area 498699a -yb_area 386471a -xr_area 1519799a -yt_area 1409290a
+zoom_to -target area -xl_area 522863a -yb_area 614108a -xr_area 1203596a -yt_area 1295987a
+zoom_to -target area -xl_area 538972a -yb_area 765866a -xr_area 992794a -yt_area 1220452a
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value false
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value true
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value false
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value true
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value false
+set_option -name preference:hierarchy:max_cells:explorer:objects:cell:visible -value true
+zoom_to -target area -xl_area 521026a -yb_area 766026a -xr_area 974848a -yt_area 1220612a
+zoom_to -target area -xl_area 392457a -yb_area 766026a -xr_area 846279a -yt_area 1220612a
+zoom_to -target area -xl_area 348375a -yb_area 766026a -xr_area 802197a -yt_area 1220612a
+zoom_to -target area -xl_area 300621a -yb_area 766026a -xr_area 754443a -yt_area 1220612a
+zoom_to -target area -xl_area 259295a -yb_area 766026a -xr_area 713117a -yt_area 1220612a
+zoom_to -target area -xl_area 227153a -yb_area 766026a -xr_area 680975a -yt_area 1220612a
+zoom_to -target area -xl_area 195010a -yb_area 766026a -xr_area 648832a -yt_area 1220612a
+zoom_to -target area -xl_area 196846a -yb_area 766026a -xr_area 650668a -yt_area 1220612a
+zoom_to -target area -xl_area 196846a -yb_area 766026a -xr_area 650668a -yt_area 1220612a
+zoom_to -target area -xl_area 199122a -yb_area 719075a -xr_area 766399a -yt_area 1287307a
+zoom_to -target area -xl_area 169983a -yb_area 797250a -xr_area 623804a -yt_area 1251835a
+zoom_to -target area -xl_area 131131a -yb_area 901483a -xr_area 433678a -yt_area 1204539a
+zoom_to -target area -xl_area 115590a -yb_area 943176a -xr_area 357627a -yt_area 1185620a
+zoom_to -target area -xl_area 94869a -yb_area 998766a -xr_area 256227a -yt_area 1160395a
+zoom_to -target area -xl_area 94646a -yb_area 1015062a -xr_area 256004a -yt_area 1176691a
+zoom_to -target area -xl_area 94646a -yb_area 1031062a -xr_area 256004a -yt_area 1192691a
+zoom_to -target area -xl_area 94646a -yb_area 1047062a -xr_area 256004a -yt_area 1208691a
+zoom_to -target area -xl_area 94646a -yb_area 1063061a -xr_area 256004a -yt_area 1224690a
+zoom_to -target area -xl_area 94646a -yb_area 1079061a -xr_area 256004a -yt_area 1240690a
+zoom_to -target area -xl_area 94646a -yb_area 1095060a -xr_area 256004a -yt_area 1256689a
+zoom_to -target area -xl_area 94646a -yb_area 1111060a -xr_area 256004a -yt_area 1272689a
+zoom_to -target area -xl_area 94646a -yb_area 1127060a -xr_area 256004a -yt_area 1288689a
+zoom_to -target area -xl_area 94646a -yb_area 1143059a -xr_area 256004a -yt_area 1304688a
+zoom_to -target area -xl_area 100522a -yb_area 1143059a -xr_area 261880a -yt_area 1304688a
+zoom_to -target area -xl_area 110971a -yb_area 1143059a -xr_area 272329a -yt_area 1304688a
+zoom_to -target area -xl_area 165174a -yb_area 1143059a -xr_area 326532a -yt_area 1304688a
+zoom_to -target area -xl_area 177255a -yb_area 1143059a -xr_area 338613a -yt_area 1304688a
+zoom_to -target area -xl_area 178888a -yb_area 1143059a -xr_area 340246a -yt_area 1304688a
+zoom_to -target area -xl_area 182153a -yb_area 1143059a -xr_area 343511a -yt_area 1304688a
+zoom_to -target area -xl_area 214479a -yb_area 1143059a -xr_area 375837a -yt_area 1304688a
+zoom_to -target area -xl_area 224601a -yb_area 1143059a -xr_area 385959a -yt_area 1304688a
+zoom_to -target area -xl_area 233417a -yb_area 1143059a -xr_area 394775a -yt_area 1304688a
+zoom_to -target area -xl_area 263784a -yb_area 1143059a -xr_area 425142a -yt_area 1304688a
+zoom_to -target area -xl_area 301334a -yb_area 1143059a -xr_area 462692a -yt_area 1304688a
+zoom_to -target area -xl_area 350639a -yb_area 1143059a -xr_area 511997a -yt_area 1304688a
+zoom_to -target area -xl_area 367618a -yb_area 1143059a -xr_area 528976a -yt_area 1304688a
+zoom_to -target area -xl_area 393087a -yb_area 1143059a -xr_area 554445a -yt_area 1304688a
+zoom_to -target area -xl_area 447616a -yb_area 1143059a -xr_area 608974a -yt_area 1304688a
+zoom_to -target area -xl_area 471452a -yb_area 1143059a -xr_area 632810a -yt_area 1304688a
+zoom_to -target area -xl_area 490064a -yb_area 1143059a -xr_area 651422a -yt_area 1304688a
+zoom_to -target area -xl_area 505411a -yb_area 1143059a -xr_area 666769a -yt_area 1304688a
+zoom_to -target area -xl_area 508676a -yb_area 1143059a -xr_area 670034a -yt_area 1304688a
+zoom_to -target area -xl_area 530880a -yb_area 1143059a -xr_area 692238a -yt_area 1304688a
+zoom_to -target area -xl_area 544267a -yb_area 1143059a -xr_area 705625a -yt_area 1304688a
+zoom_to -target area -xl_area 553083a -yb_area 1143059a -xr_area 714441a -yt_area 1304688a
+zoom_to -target area -xl_area 566471a -yb_area 1143059a -xr_area 727829a -yt_area 1304688a
+zoom_to -target area -xl_area 570062a -yb_area 1143059a -xr_area 731420a -yt_area 1304688a
+zoom_to -target area -xl_area 581817a -yb_area 1143059a -xr_area 743175a -yt_area 1304688a
+zoom_to -target area -xl_area 593899a -yb_area 1143059a -xr_area 755257a -yt_area 1304688a
+zoom_to -target area -xl_area 649734a -yb_area 1143059a -xr_area 811092a -yt_area 1304688a
+zoom_to -target area -xl_area 671938a -yb_area 1143059a -xr_area 833296a -yt_area 1304688a
+zoom_to -target area -xl_area 675203a -yb_area 1143059a -xr_area 836561a -yt_area 1304688a
+zoom_to -target area -xl_area 692509a -yb_area 1143059a -xr_area 853867a -yt_area 1304688a
+zoom_to -target area -xl_area 739854a -yb_area 1143059a -xr_area 901212a -yt_area 1304688a
+zoom_to -target area -xl_area 741814a -yb_area 1143059a -xr_area 903172a -yt_area 1304688a
+zoom_to -target area -xl_area 733325a -yb_area 1143059a -xr_area 894683a -yt_area 1304688a
+zoom_to -target area -xl_area 591940a -yb_area 1143059a -xr_area 753298a -yt_area 1304688a
+zoom_to -target area -xl_area 512269a -yb_area 1143059a -xr_area 673627a -yt_area 1304688a
+zoom_to -target area -xl_area 439128a -yb_area 1143059a -xr_area 600486a -yt_area 1304688a
+zoom_to -target area -xl_area 393088a -yb_area 1143059a -xr_area 554446a -yt_area 1304688a
+zoom_to -target area -xl_area 318314a -yb_area 1143059a -xr_area 479672a -yt_area 1304688a
+zoom_to -target area -xl_area 284356a -yb_area 1143059a -xr_area 445714a -yt_area 1304688a
+zoom_to -target area -xl_area 163542a -yb_area 1143059a -xr_area 324900a -yt_area 1304688a
+zoom_to -target area -xl_area 58075a -yb_area 1143059a -xr_area 219433a -yt_area 1304688a
+zoom_to -target area -xl_area 24117a -yb_area 1143059a -xr_area 185475a -yt_area 1304688a
+zoom_to -target area -xl_area 17260a -yb_area 1143059a -xr_area 178618a -yt_area 1304688a
+zoom_to -target area -xl_area 20850a -yb_area 1143059a -xr_area 182208a -yt_area 1304688a
+zoom_to -target area -xl_area 39462a -yb_area 1143059a -xr_area 200820a -yt_area 1304688a
+zoom_to -target area -xl_area 47952a -yb_area 1143059a -xr_area 209310a -yt_area 1304688a
+zoom_to -target area -xl_area 47952a -yb_area 1143059a -xr_area 209310a -yt_area 1304688a
+zoom_to -target area -xl_area 56441a -yb_area 1143059a -xr_area 217799a -yt_area 1304688a
+zoom_to -target area -xl_area 63298a -yb_area 1143059a -xr_area 224656a -yt_area 1304688a
+zoom_to -target area -xl_area 64931a -yb_area 1143059a -xr_area 226289a -yt_area 1304688a
+zoom_to -target area -xl_area 72270a -yb_area 1127753a -xr_area 273967a -yt_area 1329789a
+zoom_to -target area -xl_area 81444a -yb_area 1108621a -xr_area 333565a -yt_area 1361165a
+zoom_to -target area -xl_area 62473a -yb_area 1134794a -xr_area 264169a -yt_area 1336828a
+zoom_to -target area -xl_area 47296a -yb_area 1155732a -xr_area 208652a -yt_area 1317358a
+zoom_to -target area -xl_area 56023a -yb_area 1130549a -xr_area 257717a -yt_area 1332581a
+zoom_to -target area -xl_area 121478a -yb_area 941681a -xr_area 625713a -yt_area 1446761a
+zoom_to -target area -xl_area 99659a -yb_area 1004637a -xr_area 503047a -yt_area 1408701a
+zoom_to -target area -xl_area 62256a -yb_area 1112562a -xr_area 292762a -yt_area 1343455a
+zoom_to -target area -xl_area 52281a -yb_area 1141342a -xr_area 236685a -yt_area 1326056a
+zoom_to -target area -xl_area 32332a -yb_area 1198902a -xr_area 124534a -yt_area 1291259a
+zoom_to -target area -xl_area 28342a -yb_area 1210414a -xr_area 102103a -yt_area 1284299a
+select_objects -objects [get_area_objects -type cell -xl_area 10000a -yb_area 1242000a -xr_area 17600a -yt_area 1256000a -filter "@name == FILL_c8763 && @xorigin == 10000 && @yorigin == 1242000"] -keep true
+clear_selection
+zoom_to -target area -xl_area 28254a -yb_area 1218728a -xr_area 87262a -yt_area 1277835a
+zoom_to -target area -xl_area 28104a -yb_area 1232980a -xr_area 61822a -yt_area 1266754a
+zoom_to -target area -xl_area 28064a -yb_area 1236780a -xr_area 55038a -yt_area 1263799a
+zoom_to -target area -xl_area 27995a -yb_area 1243295a -xr_area 43408a -yt_area 1258733a
+zoom_to -target area -xl_area 28064a -yb_area 1244913a -xr_area 40394a -yt_area 1257263a
+zoom_to -target area -xl_area 28156a -yb_area 1247071a -xr_area 36376a -yt_area 1255304a
+zoom_to -target area -xl_area 28192a -yb_area 1247934a -xr_area 34768a -yt_area 1254520a
+zoom_to -target area -xl_area 28155a -yb_area 1247071a -xr_area 36374a -yt_area 1255303a
+zoom_to -target area -xl_area 28032a -yb_area 1244194a -xr_area 41730a -yt_area 1257914a
+zoom_to -target area -xl_area 28093a -yb_area 1245632a -xr_area 39051a -yt_area 1256608a
+zoom_to -target area -xl_area 27109a -yb_area 1222616a -xr_area 81899a -yt_area 1277496a
+zoom_to -target area -xl_area 26801a -yb_area 1215423a -xr_area 95288a -yt_area 1284023a
+zoom_to -target area -xl_area 25776a -yb_area 1191447a -xr_area 139921a -yt_area 1305780a
+zoom_to -target area -xl_area 42875a -yb_area 1191588a -xr_area 157020a -yt_area 1305921a
+zoom_to -target area -xl_area 119328a -yb_area 1191588a -xr_area 233473a -yt_area 1305921a
+zoom_to -target area -xl_area 148200a -yb_area 1191588a -xr_area 262345a -yt_area 1305921a
+zoom_to -target area -xl_area 204327a -yb_area 1191588a -xr_area 318472a -yt_area 1305921a
+zoom_to -target area -xl_area 241745a -yb_area 1191588a -xr_area 355890a -yt_area 1305921a
+zoom_to -target area -xl_area 251908a -yb_area 1191588a -xr_area 366053a -yt_area 1305921a
+zoom_to -target area -xl_area 255372a -yb_area 1191588a -xr_area 369517a -yt_area 1305921a
+zoom_to -target area -xl_area 265535a -yb_area 1191588a -xr_area 379680a -yt_area 1305921a
+zoom_to -target area -xl_area 267152a -yb_area 1191588a -xr_area 381297a -yt_area 1305921a
+zoom_to -target area -xl_area 277315a -yb_area 1191588a -xr_area 391460a -yt_area 1305921a
+zoom_to -target area -xl_area 340371a -yb_area 1191588a -xr_area 454516a -yt_area 1305921a
+zoom_to -target area -xl_area 362314a -yb_area 1191588a -xr_area 476459a -yt_area 1305921a
+zoom_to -target area -xl_area 372477a -yb_area 1191588a -xr_area 486622a -yt_area 1305921a
+zoom_to -target area -xl_area 399732a -yb_area 1191588a -xr_area 513877a -yt_area 1305921a
+zoom_to -target area -xl_area 421906a -yb_area 1191588a -xr_area 536051a -yt_area 1305921a
+zoom_to -target area -xl_area 437150a -yb_area 1191588a -xr_area 551295a -yt_area 1305921a
+zoom_to -target area -xl_area 447313a -yb_area 1191588a -xr_area 561458a -yt_area 1305921a
+zoom_to -target area -xl_area 455859a -yb_area 1191588a -xr_area 570004a -yt_area 1305921a
+zoom_to -target area -xl_area 457476a -yb_area 1191588a -xr_area 571621a -yt_area 1305921a
+zoom_to -target area -xl_area 467870a -yb_area 1191588a -xr_area 582015a -yt_area 1305921a
+zoom_to -target area -xl_area 471104a -yb_area 1191588a -xr_area 585249a -yt_area 1305921a
+zoom_to -target area -xl_area 474568a -yb_area 1191588a -xr_area 588713a -yt_area 1305921a
+zoom_to -target area -xl_area 491661a -yb_area 1191588a -xr_area 605806a -yt_area 1305921a
+zoom_to -target area -xl_area 510370a -yb_area 1191588a -xr_area 624515a -yt_area 1305921a
+zoom_to -target area -xl_area 518685a -yb_area 1191588a -xr_area 632830a -yt_area 1305921a
+zoom_to -target area -xl_area 627474a -yb_area 1191588a -xr_area 741619a -yt_area 1305921a
+zoom_to -target area -xl_area 646183a -yb_area 1191588a -xr_area 760328a -yt_area 1305921a
+zoom_to -target area -xl_area 649648a -yb_area 1191588a -xr_area 763793a -yt_area 1305921a
+zoom_to -target area -xl_area 698846a -yb_area 1191588a -xr_area 812991a -yt_area 1305921a
+zoom_to -target area -xl_area 719403a -yb_area 1191588a -xr_area 833548a -yt_area 1305921a
+zoom_to -target area -xl_area 768601a -yb_area 1191588a -xr_area 882746a -yt_area 1305921a
+zoom_to -target area -xl_area 795856a -yb_area 1191588a -xr_area 910001a -yt_area 1305921a
+zoom_to -target area -xl_area 838355a -yb_area 1191588a -xr_area 952500a -yt_area 1305921a
+zoom_to -target area -xl_area 879238a -yb_area 1191588a -xr_area 993383a -yt_area 1305921a
+zoom_to -target area -xl_area 899564a -yb_area 1191588a -xr_area 1013709a -yt_area 1305921a
+zoom_to -target area -xl_area 919890a -yb_area 1191588a -xr_area 1034035a -yt_area 1305921a
+zoom_to -target area -xl_area 940447a -yb_area 1191588a -xr_area 1054592a -yt_area 1305921a
+zoom_to -target area -xl_area 955691a -yb_area 1191588a -xr_area 1069836a -yt_area 1305921a
+zoom_to -target area -xl_area 972552a -yb_area 1191588a -xr_area 1086697a -yt_area 1305921a
+zoom_to -target area -xl_area 982946a -yb_area 1191588a -xr_area 1097091a -yt_area 1305921a
+zoom_to -target area -xl_area 936983a -yb_area 1191588a -xr_area 1051128a -yt_area 1305921a
+zoom_to -target area -xl_area 800938a -yb_area 1191588a -xr_area 915083a -yt_area 1305921a
+zoom_to -target area -xl_area 768602a -yb_area 1191588a -xr_area 882747a -yt_area 1305921a
+zoom_to -target area -xl_area 766985a -yb_area 1191588a -xr_area 881130a -yt_area 1305921a
+zoom_to -target area -xl_area 744811a -yb_area 1191588a -xr_area 858956a -yt_area 1305921a
+zoom_to -target area -xl_area 627475a -yb_area 1191588a -xr_area 741620a -yt_area 1305921a
+zoom_to -target area -xl_area 416825a -yb_area 1191588a -xr_area 530970a -yt_area 1305921a
+zoom_to -target area -xl_area 165062a -yb_area 1191588a -xr_area 279207a -yt_area 1305921a
+zoom_to -target area -xl_area 17237a -yb_area 1191588a -xr_area 131382a -yt_area 1305921a
+zoom_to -target area -xl_area -20181a -yb_area 1191588a -xr_area 93964a -yt_area 1305921a
+zoom_to -target area -xl_area -69379a -yb_area 1191588a -xr_area 44766a -yt_area 1305921a
+zoom_to -target area -xl_area -120425a -yb_area 1191588a -xr_area -6280a -yt_area 1305921a
+zoom_to -target area -xl_area -150914a -yb_area 1191588a -xr_area -36769a -yt_area 1305921a
+zoom_to -target area -xl_area -183251a -yb_area 1191588a -xr_area -69106a -yt_area 1305921a
+zoom_to -target area -xl_area -191797a -yb_area 1191588a -xr_area -77652a -yt_area 1305921a
+zoom_to -target area -xl_area -188333a -yb_area 1191588a -xr_area -74188a -yt_area 1305921a
+zoom_to -target area -xl_area -171472a -yb_area 1191588a -xr_area -57327a -yt_area 1305921a
+zoom_to -target area -xl_area -81391a -yb_area 1191588a -xr_area 32754a -yt_area 1305921a
+zoom_to -target area -xl_area 81909a -yb_area 1191588a -xr_area 196054a -yt_area 1305921a
+zoom_to -target area -xl_area 216107a -yb_area 1191588a -xr_area 330252a -yt_area 1305921a
+zoom_to -target area -xl_area 268769a -yb_area 1191588a -xr_area 382914a -yt_area 1305921a
+zoom_to -target area -xl_area 270617a -yb_area 1191588a -xr_area 384762a -yt_area 1305921a
+zoom_to -target area -xl_area 270617a -yb_area 1191588a -xr_area 384762a -yt_area 1305921a
+zoom_to -target area -xl_area 270617a -yb_area 1191588a -xr_area 384762a -yt_area 1305921a
+zoom_to -target area -xl_area 268770a -yb_area 1191588a -xr_area 382915a -yt_area 1305921a
+zoom_to -target area -xl_area 197399a -yb_area 1191588a -xr_area 311544a -yt_area 1305921a
+zoom_to -target area -xl_area 141271a -yb_area 1191588a -xr_area 255416a -yt_area 1305921a
+zoom_to -target area -xl_area 122562a -yb_area 1191588a -xr_area 236707a -yt_area 1305921a
+zoom_to -target area -xl_area 114247a -yb_area 1191588a -xr_area 228392a -yt_area 1305921a
+zoom_to -target area -xl_area 107318a -yb_area 1191588a -xr_area 221463a -yt_area 1305921a
+zoom_to -target area -xl_area 98772a -yb_area 1191588a -xr_area 212917a -yt_area 1305921a
+zoom_to -target area -xl_area 88609a -yb_area 1191588a -xr_area 202754a -yt_area 1305921a
+zoom_to -target area -xl_area 86992a -yb_area 1191588a -xr_area 201137a -yt_area 1305921a
+zoom_to -target area -xl_area 85375a -yb_area 1191588a -xr_area 199520a -yt_area 1305921a
+zoom_to -target area -xl_area 80063a -yb_area 1191588a -xr_area 194208a -yt_area 1305921a
+zoom_to -target area -xl_area 78446a -yb_area 1191588a -xr_area 192591a -yt_area 1305921a
+zoom_to -target area -xl_area 76829a -yb_area 1191588a -xr_area 190974a -yt_area 1305921a
+zoom_to -target area -xl_area 81910a -yb_area 1191588a -xr_area 196055a -yt_area 1305921a
+zoom_to -target area -xl_area 70919a -yb_area 1210320a -xr_area 162235a -yt_area 1301786a
+zoom_to -target area -xl_area 62126a -yb_area 1225306a -xr_area 135178a -yt_area 1298478a
+zoom_to -target area -xl_area 44542a -yb_area 1255277a -xr_area 81068a -yt_area 1291863a
+zoom_to -target area -xl_area 41024a -yb_area 1261271a -xr_area 70244a -yt_area 1290539a
+zoom_to -target area -xl_area 38210a -yb_area 1266066a -xr_area 61586a -yt_area 1289480a
+select_objects -objects [get_area_objects -type wire -xl_area 28500a -yb_area 1239000a -xr_area 28500a -yt_area 1281000a -filter "@net_name == n_0_95 && @length == 42000.0000 && @width == 0.0000 && @layer == metal4 && @orientation == vertical && @route_type == global_route"] -keep true
+select_objects -objects [get_area_objects -type wire -xl_area 28500a -yb_area 1239000a -xr_area 28500a -yt_area 1281000a -filter "@net_name == n_0_0_57 && @length == 42000.0000 && @width == 0.0000 && @layer == metal2 && @orientation == vertical && @route_type == global_route"] -keep false
+clear_selection
+set_option -name view:design:scheme0:layer1:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer1:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer0:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer2:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer4:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer6:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer8:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer10:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer12:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer14:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer16:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer18:final_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer1:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer1:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer0:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer3:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer3:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer2:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer5:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer5:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer4:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer7:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer7:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer6:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer9:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer9:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer8:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer11:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer11:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer10:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer13:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer13:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer12:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer15:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer15:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer14:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer17:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer17:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer16:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer19:final_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer19:final_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer18:final_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer1:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer1:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer0:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer2:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer4:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer6:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer8:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer10:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer12:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer14:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer16:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer18:pre_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer1:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer1:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer0:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer3:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer3:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer2:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer5:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer5:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer4:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer7:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer7:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer6:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer9:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer9:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer8:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer11:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer11:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer10:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer13:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer13:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer12:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer15:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer15:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer14:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer17:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer17:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer16:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer19:pre_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer19:pre_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer18:pre_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value true
+zoom_to -target area -xl_area 37061a -yb_area 1262205a -xr_area 66281a -yt_area 1291472a
+zoom_to -target area -xl_area 35625a -yb_area 1257379a -xr_area 72150a -yt_area 1293962a
+zoom_to -target area -xl_area 29920a -yb_area 1259913a -xr_area 59140a -yt_area 1289179a
+zoom_to -target area -xl_area 20141a -yb_area 1264258a -xr_area 36838a -yt_area 1280981a
+zoom_to -target area -xl_area 17533a -yb_area 1265416a -xr_area 30890a -yt_area 1278794a
+zoom_to -target area -xl_area 14055a -yb_area 1266961a -xr_area 22959a -yt_area 1275879a
+zoom_to -target area -xl_area 12664a -yb_area 1267578a -xr_area 19787a -yt_area 1274712a
+zoom_to -target area -xl_area 14169a -yb_area 1266823a -xr_area 23072a -yt_area 1275740a
+zoom_to -target area -xl_area 11066a -yb_area 1266833a -xr_area 19969a -yt_area 1275750a
+zoom_to -target area -xl_area -2535a -yb_area 1266833a -xr_area 6368a -yt_area 1275750a
+zoom_to -target area -xl_area -12731a -yb_area 1266833a -xr_area -3828a -yt_area 1275750a
+zoom_to -target area -xl_area -14425a -yb_area 1266833a -xr_area -5522a -yt_area 1275750a
+zoom_to -target area -xl_area -19541a -yb_area 1266833a -xr_area -10638a -yt_area 1275750a
+zoom_to -target area -xl_area -17831a -yb_area 1266833a -xr_area -8928a -yt_area 1275750a
+zoom_to -target area -xl_area -4230a -yb_area 1266833a -xr_area 4673a -yt_area 1275750a
+zoom_to -target area -xl_area 16181a -yb_area 1266833a -xr_area 25084a -yt_area 1275750a
+zoom_to -target area -xl_area 24683a -yb_area 1266833a -xr_area 33586a -yt_area 1275750a
+zoom_to -target area -xl_area 24683a -yb_area 1266833a -xr_area 33586a -yt_area 1275750a
+zoom_to -target area -xl_area 26377a -yb_area 1266833a -xr_area 35280a -yt_area 1275750a
+zoom_to -target area -xl_area 24684a -yb_area 1266833a -xr_area 33587a -yt_area 1275750a
+zoom_to -target area -xl_area 16182a -yb_area 1266833a -xr_area 25085a -yt_area 1275750a
+zoom_to -target area -xl_area 7679a -yb_area 1266833a -xr_area 16582a -yt_area 1275750a
+zoom_to -target area -xl_area 5968a -yb_area 1266833a -xr_area 14871a -yt_area 1275750a
+zoom_to -target area -xl_area 4274a -yb_area 1266833a -xr_area 13177a -yt_area 1275750a
+zoom_to -target area -xl_area 5967a -yb_area 1266833a -xr_area 14870a -yt_area 1275750a
+zoom_to -target area -xl_area 7678a -yb_area 1266833a -xr_area 16581a -yt_area 1275750a
+zoom_to -target area -xl_area 11065a -yb_area 1266833a -xr_area 19968a -yt_area 1275750a
+zoom_to -target area -xl_area 12776a -yb_area 1266833a -xr_area 21679a -yt_area 1275750a
+zoom_to -target area -xl_area 16181a -yb_area 1266833a -xr_area 25084a -yt_area 1275750a
+zoom_to -target area -xl_area 19567a -yb_area 1266833a -xr_area 28470a -yt_area 1275750a
+zoom_to -target area -xl_area 17875a -yb_area 1266833a -xr_area 26778a -yt_area 1275750a
+zoom_to -target area -xl_area 12777a -yb_area 1266833a -xr_area 21680a -yt_area 1275750a
+zoom_to -target area -xl_area 9372a -yb_area 1266833a -xr_area 18275a -yt_area 1275750a
+zoom_to -target area -xl_area 7679a -yb_area 1266833a -xr_area 16582a -yt_area 1275750a
+zoom_to -target area -xl_area 4274a -yb_area 1266833a -xr_area 13177a -yt_area 1275750a
+check_design
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:location -value {30 192}
+set_option -name window:main:errors:size -value {757 600}
+zoom_to -target area -xl_area 3166a -yb_area 1265723a -xr_area 14294a -yt_area 1276868a
+zoom_to -target area -xl_area -528a -yb_area 1262023a -xr_area 18017a -yt_area 1280597a
+zoom_to -target area -xl_area -37464a -yb_area 1225023a -xr_area 55261a -yt_area 1317893a
+zoom_to -target area -xl_area -49007a -yb_area 1213461a -xr_area 66898a -yt_area 1329548a
+zoom_to -target area -xl_area -279879a -yb_area 982225a -xr_area 299646a -yt_area 1562660a
+zoom_to -target area -xl_area -352026a -yb_area 909964a -xr_area 372379a -yt_area 1635507a
+zoom_to -target area -xl_area -346164a -yb_area 910124a -xr_area 378241a -yt_area 1635667a
+zoom_to -target area -xl_area -206919a -yb_area 910124a -xr_area 517486a -yt_area 1635667a
+zoom_to -target area -xl_area -1715a -yb_area 910124a -xr_area 722690a -yt_area 1635667a
+zoom_to -target area -xl_area 219612a -yb_area 910124a -xr_area 944017a -yt_area 1635667a
+zoom_to -target area -xl_area 348207a -yb_area 910124a -xr_area 1072612a -yt_area 1635667a
+zoom_to -target area -xl_area 370193a -yb_area 910124a -xr_area 1094598a -yt_area 1635667a
+zoom_to -target area -xl_area 374590a -yb_area 910124a -xr_area 1098995a -yt_area 1635667a
+zoom_to -target area -xl_area 254358a -yb_area 844349a -xr_area 1159863a -yt_area 1751277a
+zoom_to -target area -xl_area 254358a -yb_area 821632a -xr_area 1159863a -yt_area 1728560a
+zoom_to -target area -xl_area 254358a -yb_area 647575a -xr_area 1159863a -yt_area 1554503a
+zoom_to -target area -xl_area 254358a -yb_area 563295a -xr_area 1159863a -yt_area 1470223a
+zoom_to -target area -xl_area 254358a -yb_area 451532a -xr_area 1159863a -yt_area 1358460a
+zoom_to -target area -xl_area 254358a -yb_area 413056a -xr_area 1159863a -yt_area 1319984a
+zoom_to -target area -xl_area 254358a -yb_area 334272a -xr_area 1159863a -yt_area 1241200a
+zoom_to -target area -xl_area 254358a -yb_area 400230a -xr_area 1159863a -yt_area 1307158a
+zoom_to -target area -xl_area 254358a -yb_area 310454a -xr_area 1159863a -yt_area 1217382a
+zoom_to -target area -xl_area 254358a -yb_area 383740a -xr_area 1159863a -yt_area 1290668a
+zoom_to -target area -xl_area 254358a -yb_area 378245a -xr_area 1159863a -yt_area 1285173a
+zoom_to -target area -xl_area 254358a -yb_area 845449a -xr_area 1159863a -yt_area 1752377a
+zoom_to -target area -xl_area -7694a -yb_area 725670a -xr_area 1124186a -yt_area 1859330a
+zoom_to -target area -xl_area -7694a -yb_area 696814a -xr_area 1124186a -yt_area 1830474a
+zoom_to -target area -xl_area -7694a -yb_area 630398a -xr_area 1124186a -yt_area 1764058a
+zoom_to -target area -xl_area -7694a -yb_area 646429a -xr_area 1124186a -yt_area 1780089a
+zoom_to -target area -xl_area -7694a -yb_area 101357a -xr_area 1124186a -yt_area 1235017a
+zoom_to -target area -xl_area -7694a -yb_area 170062a -xr_area 1124186a -yt_area 1303722a
+zoom_to -target area -xl_area -7694a -yb_area -116214a -xr_area 1124186a -yt_area 1017446a
+zoom_to -target area -xl_area 62437a -yb_area -21169a -xr_area 967941a -yt_area 885758a
+zoom_to -target area -xl_area 118542a -yb_area 54866a -xr_area 842945a -yt_area 780407a
+zoom_to -target area -xl_area 163426a -yb_area 115694a -xr_area 742948a -yt_area 696126a
+zoom_to -target area -xl_area 240370a -yb_area 219970a -xr_area 571525a -yt_area 551645a
+zoom_to -target area -xl_area 297365a -yb_area 297211a -xr_area 444545a -yt_area 444622a
+zoom_to -target area -xl_area 306484a -yb_area 309569a -xr_area 424227a -yt_area 427497a
+zoom_to -target area -xl_area 324722a -yb_area 334286a -xr_area 383593a -yt_area 393249a
+zoom_to -target area -xl_area 328369a -yb_area 339229a -xr_area 375465a -yt_area 386399a
+zoom_to -target area -xl_area 333232a -yb_area 345820a -xr_area 364629a -yt_area 377266a
+zoom_to -target area -xl_area 335177a -yb_area 348456a -xr_area 360294a -yt_area 373612a
+zoom_to -target area -xl_area 337770a -yb_area 351971a -xr_area 354514a -yt_area 368741a
+zoom_to -target area -xl_area 339499a -yb_area 354314a -xr_area 350661a -yt_area 365493a
+zoom_to -target area -xl_area 339924a -yb_area 355355a -xr_area 348853a -yt_area 364297a
+zoom_to -target area -xl_area 340264a -yb_area 356187a -xr_area 347406a -yt_area 363340a
+zoom_to -target area -xl_area 340536a -yb_area 356853a -xr_area 346249a -yt_area 362575a
+zoom_to -target area -xl_area 341001a -yb_area 357995a -xr_area 344265a -yt_area 361264a
+zoom_to -target area -xl_area 340845a -yb_area 357614a -xr_area 344925a -yt_area 361700a
+zoom_to -target area -xl_area 340650a -yb_area 357138a -xr_area 345750a -yt_area 362245a
+zoom_to -target area -xl_area 340844a -yb_area 357613a -xr_area 344923a -yt_area 361698a
+zoom_to -target area -xl_area 337736a -yb_area 350005a -xr_area 358131a -yt_area 370430a
+zoom_to -target area -xl_area 336765a -yb_area 347627a -xr_area 362258a -yt_area 373158a
+zoom_to -target area -xl_area 317345a -yb_area 300075a -xr_area 444810a -yt_area 427730a
+zoom_to -target area -xl_area 311276a -yb_area 285214a -xr_area 470606a -yt_area 444782a
+zoom_to -target area -xl_area 303690a -yb_area 266638a -xr_area 502852a -yt_area 466097a
+zoom_to -target area -xl_area 294207a -yb_area 243418a -xr_area 543159a -yt_area 492741a
+zoom_to -target area -xl_area 282353a -yb_area 214393a -xr_area 593543a -yt_area 526046a
+zoom_to -target area -xl_area 242842a -yb_area 117644a -xr_area 761491a -yt_area 637065a
+zoom_to -target area -xl_area 218148a -yb_area 57176a -xr_area 866459a -yt_area 706452a
+zoom_to -target area -xl_area 187280a -yb_area -18408a -xr_area 997668a -yt_area 793185a
+zoom_to -target area -xl_area 148695a -yb_area -112888a -xr_area 1161680a -yt_area 901602a
+zoom_to -target area -xl_area 148695a -yb_area -11422a -xr_area 1161680a -yt_area 1003068a
+zoom_to -target area -xl_area 148695a -yb_area 89002a -xr_area 1161680a -yt_area 1103492a
+zoom_to -target area -xl_area 148695a -yb_area 189427a -xr_area 1161680a -yt_area 1203917a
+zoom_to -target area -xl_area 148695a -yb_area 289851a -xr_area 1161680a -yt_area 1304341a
+zoom_to -target area -xl_area 148695a -yb_area 390275a -xr_area 1161680a -yt_area 1404765a
+zoom_to -target area -xl_area 148695a -yb_area 490700a -xr_area 1161680a -yt_area 1505190a
+zoom_to -target area -xl_area 354106a -yb_area 643386a -xr_area 1164494a -yt_area 1454978a
+zoom_to -target area -xl_area 764929a -yb_area 948758a -xr_area 1170123a -yt_area 1354554a
+zoom_to -target area -xl_area 847094a -yb_area 1009833a -xr_area 1171248a -yt_area 1334469a
+zoom_to -target area -xl_area 1011423a -yb_area 1131981a -xr_area 1173500a -yt_area 1294299a
+zoom_to -target area -xl_area 1044289a -yb_area 1156411a -xr_area 1173950a -yt_area 1286265a
+zoom_to -target area -xl_area 1100630a -yb_area 1198290a -xr_area 1174721a -yt_area 1272492a
+zoom_to -target area -xl_area 1100599a -yb_area 1221098a -xr_area 1174690a -yt_area 1295300a
+zoom_to -target area -xl_area 1100599a -yb_area 1294251a -xr_area 1174690a -yt_area 1368453a
+zoom_to -target area -xl_area 1100599a -yb_area 1299797a -xr_area 1174690a -yt_area 1373999a
+zoom_to -target area -xl_area 1084817a -yb_area 1291758a -xr_area 1177430a -yt_area 1384510a
+zoom_to -target area -xl_area 1065089a -yb_area 1281709a -xr_area 1180855a -yt_area 1397649a
+## trigger_gui -name main:view_floorplan_panel
+set_option -name window:main:floorplan_panel:state -value visible
+set_option -name window:main:floorplan_panel:tabbed -value false
+set_option -name window:main:message_area:size -value {1399 216}
+set_option -name window:main:floorplan_panel:location -value {1733 77}
+set_option -name window:main:floorplan_panel:size -value {187 749}
+zoom_to -target area -xl_area 1066779a -yb_area 1256559a -xr_area 1211486a -yt_area 1401484a
+zoom_to -target area -xl_area 1072414a -yb_area 1172727a -xr_area 1313592a -yt_area 1414268a
+zoom_to -target area -xl_area 1093547a -yb_area 858358a -xr_area 1696491a -yt_area 1462210a
+zoom_to -target area -xl_area 1078647a -yb_area 859356a -xr_area 1681591a -yt_area 1463208a
+zoom_to -target area -xl_area 1007892a -yb_area 859356a -xr_area 1610836a -yt_area 1463208a
+zoom_to -target area -xl_area 868823a -yb_area 859356a -xr_area 1471767a -yt_area 1463208a
+zoom_to -target area -xl_area 756592a -yb_area 859356a -xr_area 1359536a -yt_area 1463208a
+zoom_to -target area -xl_area 677299a -yb_area 859356a -xr_area 1280243a -yt_area 1463208a
+zoom_to -target area -xl_area 637042a -yb_area 859356a -xr_area 1239986a -yt_area 1463208a
+zoom_to -target area -xl_area 607764a -yb_area 859356a -xr_area 1210708a -yt_area 1463208a
+zoom_to -target area -xl_area 602885a -yb_area 859356a -xr_area 1205829a -yt_area 1463208a
+zoom_to -target area -xl_area 590686a -yb_area 859356a -xr_area 1193630a -yt_area 1463208a
+zoom_to -target area -xl_area 562628a -yb_area 859356a -xr_area 1165572a -yt_area 1463208a
+zoom_to -target area -xl_area 517491a -yb_area 859356a -xr_area 1120435a -yt_area 1463208a
+zoom_to -target area -xl_area 471135a -yb_area 859356a -xr_area 1074079a -yt_area 1463208a
+zoom_to -target area -xl_area 457716a -yb_area 859356a -xr_area 1060660a -yt_area 1463208a
+zoom_to -target area -xl_area 455276a -yb_area 859356a -xr_area 1058220a -yt_area 1463208a
+zoom_to -target area -xl_area 449177a -yb_area 859356a -xr_area 1052121a -yt_area 1463208a
+zoom_to -target area -xl_area 439418a -yb_area 859356a -xr_area 1042362a -yt_area 1463208a
+zoom_to -target area -xl_area 404040a -yb_area 859356a -xr_area 1006984a -yt_area 1463208a
+zoom_to -target area -xl_area 397941a -yb_area 859356a -xr_area 1000885a -yt_area 1463208a
+zoom_to -target area -xl_area 390621a -yb_area 859356a -xr_area 993565a -yt_area 1463208a
+zoom_to -target area -xl_area 380862a -yb_area 859356a -xr_area 983806a -yt_area 1463208a
+zoom_to -target area -xl_area 378422a -yb_area 859356a -xr_area 981366a -yt_area 1463208a
+zoom_to -target area -xl_area 368663a -yb_area 859356a -xr_area 971607a -yt_area 1463208a
+zoom_to -target area -xl_area 361344a -yb_area 859356a -xr_area 964288a -yt_area 1463208a
+zoom_to -target area -xl_area 349145a -yb_area 859356a -xr_area 952089a -yt_area 1463208a
+zoom_to -target area -xl_area 332066a -yb_area 859356a -xr_area 935010a -yt_area 1463208a
+zoom_to -target area -xl_area 322307a -yb_area 859356a -xr_area 925251a -yt_area 1463208a
+zoom_to -target area -xl_area 268287a -yb_area 786314a -xr_area 1021967a -yt_area 1541129a
+zoom_to -target area -xl_area 200762a -yb_area 695012a -xr_area 1142861a -yt_area 1638530a
+zoom_to -target area -xl_area 116356a -yb_area 580884a -xr_area 1293979a -yt_area 1760281a
+zoom_to -target area -xl_area 200761a -yb_area 695011a -xr_area 1142859a -yt_area 1638528a
+zoom_to -target area -xl_area 268285a -yb_area 786313a -xr_area 1021963a -yt_area 1541126a
+zoom_to -target area -xl_area 322304a -yb_area 859354a -xr_area 925246a -yt_area 1463204a
+zoom_to -target area -xl_area 414908a -yb_area 984568a -xr_area 759446a -yt_area 1329624a
+zoom_to -target area -xl_area 456065a -yb_area 1040218a -xr_area 685757a -yt_area 1270255a
+zoom_to -target area -xl_area 483503a -yb_area 1077318a -xr_area 636631a -yt_area 1230676a
+zoom_to -target area -xl_area 494478a -yb_area 1092158a -xr_area 616980a -yt_area 1214844a
+zoom_to -target area -xl_area 503258a -yb_area 1104030a -xr_area 601259a -yt_area 1202178a
+zoom_to -target area -xl_area 494477a -yb_area 1092158a -xr_area 616978a -yt_area 1214843a
+zoom_to -target area -xl_area 428625a -yb_area 1003119a -xr_area 734877a -yt_area 1309831a
+zoom_to -target area -xl_area 355456a -yb_area 904186a -xr_area 865875a -yt_area 1415372a
+zoom_to -target area -xl_area 309726a -yb_area 842353a -xr_area 947749a -yt_area 1481335a
+zoom_to -target area -xl_area 252563a -yb_area 765062a -xr_area 1050091a -yt_area 1563789a
+zoom_to -target area -xl_area 251990a -yb_area 761366a -xr_area 1049518a -yt_area 1560093a
+zoom_to -target area -xl_area 251990a -yb_area 704890a -xr_area 1049518a -yt_area 1503617a
+zoom_to -target area -xl_area 251990a -yb_area 519327a -xr_area 1049518a -yt_area 1318054a
+zoom_to -target area -xl_area 251990a -yb_area 306333a -xr_area 1049518a -yt_area 1105060a
+zoom_to -target area -xl_area 251990a -yb_area 245017a -xr_area 1049518a -yt_area 1043744a
+zoom_to -target area -xl_area 251990a -yb_area 188541a -xr_area 1049518a -yt_area 987268a
+zoom_to -target area -xl_area 251990a -yb_area -58338a -xr_area 1049518a -yt_area 740389a
+zoom_to -target area -xl_area 251990a -yb_area -143858a -xr_area 1049518a -yt_area 654869a
+zoom_to -target area -xl_area 251990a -yb_area -148699a -xr_area 1049518a -yt_area 650028a
+zoom_to -target area -xl_area 251990a -yb_area -143859a -xr_area 1049518a -yt_area 654868a
+zoom_to -target area -xl_area 251990a -yb_area -155153a -xr_area 1049518a -yt_area 643574a
+zoom_to -target area -xl_area 251990a -yb_area -198720a -xr_area 1049518a -yt_area 600007a
+zoom_to -target area -xl_area 251990a -yb_area -198720a -xr_area 1049518a -yt_area 600007a
+zoom_to -target area -xl_area 251990a -yb_area -114815a -xr_area 1049518a -yt_area 683912a
+zoom_to -target area -xl_area 251990a -yb_area 317627a -xr_area 1049518a -yt_area 1116354a
+zoom_to -target area -xl_area 251990a -yb_area 453169a -xr_area 1049518a -yt_area 1251896a
+zoom_to -target area -xl_area 251990a -yb_area 458010a -xr_area 1049518a -yt_area 1256737a
+zoom_to -target area -xl_area 251990a -yb_area 453170a -xr_area 1049518a -yt_area 1251897a
+zoom_to -target area -xl_area 251990a -yb_area 458010a -xr_area 1049518a -yt_area 1256737a
+zoom_to -target area -xl_area 251990a -yb_area 508031a -xr_area 1049518a -yt_area 1306758a
+zoom_to -target area -xl_area 251990a -yb_area 1155081a -xr_area 1049518a -yt_area 1953808a
+zoom_to -target area -xl_area 251990a -yb_area 1127650a -xr_area 1049518a -yt_area 1926377a
+zoom_to -target area -xl_area 251990a -yb_area 1076016a -xr_area 1049518a -yt_area 1874743a
+zoom_to -target area -xl_area 251990a -yb_area 767820a -xr_area 1049518a -yt_area 1566547a
+zoom_to -target area -xl_area 251990a -yb_area 616142a -xr_area 1049518a -yt_area 1414869a
+zoom_to -target area -xl_area 251990a -yb_area 582257a -xr_area 1049518a -yt_area 1380984a
+zoom_to -target area -xl_area 251990a -yb_area 559667a -xr_area 1049518a -yt_area 1358394a
+zoom_to -target area -xl_area 251990a -yb_area 559667a -xr_area 1049518a -yt_area 1358394a
+zoom_to -target area -xl_area 251990a -yb_area 553212a -xr_area 1049518a -yt_area 1351939a
+zoom_to -target area -xl_area 251990a -yb_area 498350a -xr_area 1049518a -yt_area 1297077a
+zoom_to -target area -xl_area 251990a -yb_area 351514a -xr_area 1049518a -yt_area 1150241a
+zoom_to -target area -xl_area 251990a -yb_area 324083a -xr_area 1049518a -yt_area 1122810a
+zoom_to -target area -xl_area 251990a -yb_area 272448a -xr_area 1049518a -yt_area 1071175a
+zoom_to -target area -xl_area 251990a -yb_area 227267a -xr_area 1049518a -yt_area 1025994a
+zoom_to -target area -xl_area 251990a -yb_area -210016a -xr_area 1049518a -yt_area 588711a
+zoom_to -target area -xl_area 251990a -yb_area -311672a -xr_area 1049518a -yt_area 487055a
+zoom_to -target area -xl_area 251990a -yb_area -339103a -xr_area 1049518a -yt_area 459624a
+zoom_to -target area -xl_area 251990a -yb_area -334263a -xr_area 1049518a -yt_area 464464a
+zoom_to -target area -xl_area 251990a -yb_area -322968a -xr_area 1049518a -yt_area 475759a
+zoom_to -target area -xl_area 251990a -yb_area -289082a -xr_area 1049518a -yt_area 509645a
+zoom_to -target area -xl_area 251990a -yb_area -266492a -xr_area 1049518a -yt_area 532235a
+zoom_to -target area -xl_area 251990a -yb_area -261651a -xr_area 1049518a -yt_area 537076a
+zoom_to -target area -xl_area 251990a -yb_area -239061a -xr_area 1049518a -yt_area 559666a
+zoom_to -target area -xl_area 251990a -yb_area -221312a -xr_area 1049518a -yt_area 577415a
+zoom_to -target area -xl_area 251990a -yb_area -171290a -xr_area 1049518a -yt_area 627437a
+zoom_to -target area -xl_area 251990a -yb_area -64793a -xr_area 1049518a -yt_area 733934a
+zoom_to -target area -xl_area 251990a -yb_area -53498a -xr_area 1049518a -yt_area 745229a
+zoom_to -target area -xl_area 251990a -yb_area 14272a -xr_area 1049518a -yt_area 812999a
+zoom_to -target area -xl_area 251990a -yb_area 19113a -xr_area 1049518a -yt_area 817840a
+zoom_to -target area -xl_area 251990a -yb_area 48158a -xr_area 1049518a -yt_area 846885a
+zoom_to -target area -xl_area 251990a -yb_area 143360a -xr_area 1049518a -yt_area 942087a
+zoom_to -target area -xl_area 251990a -yb_area 161109a -xr_area 1049518a -yt_area 959836a
+zoom_to -target area -xl_area 251990a -yb_area 182086a -xr_area 1049518a -yt_area 980813a
+zoom_to -target area -xl_area 251990a -yb_area 272447a -xr_area 1049518a -yt_area 1071174a
+zoom_to -target area -xl_area 251990a -yb_area 290196a -xr_area 1049518a -yt_area 1088923a
+zoom_to -target area -xl_area 251990a -yb_area 295037a -xr_area 1049518a -yt_area 1093764a
+zoom_to -target area -xl_area 251990a -yb_area 312787a -xr_area 1049518a -yt_area 1111514a
+zoom_to -target area -xl_area 251990a -yb_area 367649a -xr_area 1049518a -yt_area 1166376a
+zoom_to -target area -xl_area 251990a -yb_area 374103a -xr_area 1049518a -yt_area 1172830a
+zoom_to -target area -xl_area 251990a -yb_area 424124a -xr_area 1049518a -yt_area 1222851a
+zoom_to -target area -xl_area 251990a -yb_area 453169a -xr_area 1049518a -yt_area 1251896a
+zoom_to -target area -xl_area 251990a -yb_area 464464a -xr_area 1049518a -yt_area 1263191a
+zoom_to -target area -xl_area 251990a -yb_area 530621a -xr_area 1049518a -yt_area 1329348a
+zoom_to -target area -xl_area 251990a -yb_area 537076a -xr_area 1049518a -yt_area 1335803a
+zoom_to -target area -xl_area 251990a -yb_area 541916a -xr_area 1049518a -yt_area 1340643a
+zoom_to -target area -xl_area 251990a -yb_area 654868a -xr_area 1049518a -yt_area 1453595a
+zoom_to -target area -xl_area 251990a -yb_area 693594a -xr_area 1049518a -yt_area 1492321a
+zoom_to -target area -xl_area 251990a -yb_area 688754a -xr_area 1049518a -yt_area 1487481a
+zoom_to -target area -xl_area 251990a -yb_area 682300a -xr_area 1049518a -yt_area 1481027a
+zoom_to -target area -xl_area 251990a -yb_area 677459a -xr_area 1049518a -yt_area 1476186a
+zoom_to -target area -xl_area 251990a -yb_area 661323a -xr_area 1049518a -yt_area 1460050a
+zoom_to -target area -xl_area 251990a -yb_area 638733a -xr_area 1049518a -yt_area 1437460a
+zoom_to -target area -xl_area 251990a -yb_area 598393a -xr_area 1049518a -yt_area 1397120a
+zoom_to -target area -xl_area 251990a -yb_area 541917a -xr_area 1049518a -yt_area 1340644a
+zoom_to -target area -xl_area 251990a -yb_area 519327a -xr_area 1049518a -yt_area 1318054a
+zoom_to -target area -xl_area 251990a -yb_area 519327a -xr_area 1049518a -yt_area 1318054a
+zoom_to -target area -xl_area 251990a -yb_area 519327a -xr_area 1049518a -yt_area 1318054a
+set_option -name window:main:floorplan_panel:location -value {1503 77}
+set_option -name window:main:floorplan_panel:size -value {417 749}
+set_option -name window:main:message_area:size -value {1169 216}
+zoom_to -target area -xl_area 479871a -yb_area 544337a -xr_area 1117893a -yt_area 1183318a
+zoom_to -target area -xl_area 251991a -yb_area 519326a -xr_area 1049518a -yt_area 1318052a
+zoom_to -target area -xl_area -4305609a -yb_area 19114a -xr_area -317974a -yt_area 4012744a
+zoom_to -target area -xl_area -8103610a -yb_area -397729a -xr_area -1457552a -yt_area 6258319a
+zoom_to -target area -xl_area -10477359a -yb_area -658255a -xr_area -2169787a -yt_area 7661803a
+zoom_to -target area -xl_area -13444545a -yb_area -983913a -xr_area -3060081a -yt_area 9416158a
+zoom_to -target area -xl_area -10477357a -yb_area -658254a -xr_area -2169786a -yt_area 7661801a
+zoom_to -target area -xl_area -4542983a -yb_area -6936a -xr_area -389198a -yt_area 4153090a
+zoom_to -target area -xl_area -766564a -yb_area 407538a -xr_area 743902a -yt_area 1920274a
+zoom_to -target area -xl_area -334972a -yb_area 454906a -xr_area 873399a -yt_area 1665094a
+zoom_to -target area -xl_area -159370a -yb_area 579348a -xr_area 807325a -yt_area 1547497a
+zoom_to -target area -xl_area 262072a -yb_area 878007a -xr_area 648749a -yt_area 1265266a
+zoom_to -target area -xl_area 382484a -yb_area 963338a -xr_area 603441a -yt_area 1184628a
+zoom_to -target area -xl_area 414594a -yb_area 986093a -xr_area 591359a -yt_area 1163124a
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value false
+zoom_to -target area -xl_area 395538a -yb_area 958153a -xr_area 616494a -yt_area 1179441a
+zoom_to -target area -xl_area 371718a -yb_area 923227a -xr_area 647913a -yt_area 1199837a
+zoom_to -target area -xl_area 341944a -yb_area 879570a -xr_area 687187a -yt_area 1225332a
+zoom_to -target area -xl_area 304726a -yb_area 824999a -xr_area 736279a -yt_area 1257201a
+zoom_to -target area -xl_area 258203a -yb_area 756785a -xr_area 797644a -yt_area 1297037a
+zoom_to -target area -xl_area 200050a -yb_area 671518a -xr_area 874351a -yt_area 1346832a
+zoom_to -target area -xl_area 198301a -yb_area 560500a -xr_area 1041176a -yt_area 1404642a
+zoom_to -target area -xl_area 196114a -yb_area 421728a -xr_area 1249707a -yt_area 1476905a
+zoom_to -target area -xl_area 193381a -yb_area 248263a -xr_area 1510372a -yt_area 1567234a
+zoom_to -target area -xl_area 189964a -yb_area 31432a -xr_area 1836202a -yt_area 1680145a
+zoom_to -target area -xl_area 193380a -yb_area 248263a -xr_area 1510370a -yt_area 1567233a
+zoom_to -target area -xl_area 199236a -yb_area 619972a -xr_area 951801a -yt_area 1373669a
+zoom_to -target area -xl_area 201838a -yb_area 785176a -xr_area 703548a -yt_area 1287640a
+zoom_to -target area -xl_area 202879a -yb_area 851257a -xr_area 604247a -yt_area 1253228a
+zoom_to -target area -xl_area 204267a -yb_area 939366a -xr_area 471845a -yt_area 1207346a
+zoom_to -target area -xl_area 204822a -yb_area 974609a -xr_area 418884a -yt_area 1188993a
+zoom_to -target area -xl_area 205562a -yb_area 1021600a -xr_area 348269a -yt_area 1164522a
+zoom_to -target area -xl_area 205858a -yb_area 1040396a -xr_area 320023a -yt_area 1154733a
+zoom_to -target area -xl_area 206094a -yb_area 1055433a -xr_area 297426a -yt_area 1146902a
+select_objects -objects [get_area_objects -type cell -xl_area 201900a -yb_area 1088000a -xr_area 232300a -yt_area 1102000a -filter "@name == FILL_c7552 && @xorigin == 201900 && @yorigin == 1088000"] -keep true
+select_objects -objects [get_area_objects -type cell -xl_area 232300a -yb_area 1088000a -xr_area 239900a -yt_area 1102000a -filter "@name == FILL_c7553 && @xorigin == 232300 && @yorigin == 1088000"] -keep false
+select_objects -objects [get_area_objects -type cell -xl_area 224700a -yb_area 1102000a -xr_area 226600a -yt_area 1116000a -filter "@name == FILL_c7563 && @xorigin == 224700 && @yorigin == 1102000"] -keep false
+zoom_to -target area -xl_area 201191a -yb_area 1040765a -xr_area 315356a -yt_area 1155101a
+zoom_to -target area -xl_area 195062a -yb_area 1022430a -xr_area 337768a -yt_area 1165350a
+zoom_to -target area -xl_area 187401a -yb_area 999512a -xr_area 365783a -yt_area 1178162a
+zoom_to -target area -xl_area 177825a -yb_area 970865a -xr_area 400802a -yt_area 1194177a
+zoom_to -target area -xl_area 165855a -yb_area 935056a -xr_area 444576a -yt_area 1214195a
+zoom_to -target area -xl_area 150893a -yb_area 890295a -xr_area 499293a -yt_area 1239218a
+set_option -name view:design:scheme0:layer1:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer1:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer0:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer3:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer3:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer2:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer5:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer5:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer4:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer7:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer7:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer6:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer9:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer9:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer8:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer11:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer11:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer10:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer13:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer13:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer12:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer15:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer15:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer14:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer17:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer17:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer16:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer19:global_route:via_top:visible -value true
+set_option -name view:design:scheme0:layer19:global_route:via_bottom:visible -value true
+set_option -name view:design:scheme0:layer18:global_route:via_cut:visible -value true
+set_option -name view:design:scheme0:layer1:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer1:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer0:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer3:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer3:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer2:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer5:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer5:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer4:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer7:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer7:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer6:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer9:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer9:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer8:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer11:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer11:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer10:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer13:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer13:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer12:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer15:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer15:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer14:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer17:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer17:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer16:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer19:global_route:via_top:visible -value false
+set_option -name view:design:scheme0:layer19:global_route:via_bottom:visible -value false
+set_option -name view:design:scheme0:layer18:global_route:via_cut:visible -value false
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value true
+set_option -name view:design:scheme0:layer1:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer3:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer5:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer7:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer9:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer11:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer13:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer15:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer17:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer19:final_route:wire:visible -value false
+set_option -name view:design:scheme0:layer1:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer3:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer5:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer7:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer9:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer11:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer13:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer15:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer17:pre_route:wire:visible -value true
+set_option -name view:design:scheme0:layer19:pre_route:wire:visible -value true
+zoom_to -target area -xl_area 147698a -yb_area 850909a -xr_area 583197a -yt_area 1287062a
+zoom_to -target area -xl_area 123737a -yb_area 555515a -xr_area 1212484a -yt_area 1645897a
+zoom_to -target area -xl_area 63837a -yb_area -182970a -xr_area 2785704a -yt_area 2542983a
+zoom_to -target area -xl_area -2719a -yb_area -1003509a -xr_area 4533725a -yt_area 3539745a
+zoom_to -target area -xl_area 30559a -yb_area -593239a -xr_area 3659714a -yt_area 3041363a
+zoom_to -target area -xl_area 104511a -yb_area 318471a -xr_area 1717468a -yt_area 1933849a
+zoom_to -target area -xl_area 142158a -yb_area 782614a -xr_area 728687a -yt_area 1370024a
+zoom_to -target area -xl_area 146460a -yb_area 835658a -xr_area 615683a -yt_area 1305586a
+zoom_to -target area -xl_area 149902a -yb_area 878094a -xr_area 525280a -yt_area 1254036a
+zoom_to -target area -xl_area 157550a -yb_area 972396a -xr_area 324384a -yt_area 1139481a
+zoom_to -target area -xl_area 161221a -yb_area 1017660a -xr_area 227954a -yt_area 1084494a
+zoom_to -target area -xl_area 162269a -yb_area 1030593a -xr_area 200402a -yt_area 1068783a
+zoom_to -target area -xl_area 162548a -yb_area 1034041a -xr_area 193054a -yt_area 1064593a
+zoom_to -target area -xl_area 162771a -yb_area 1036800a -xr_area 187175a -yt_area 1061241a
+select_objects -objects [get_area_objects -type wire -xl_area 162100a -yb_area 9150a -xr_area 163500a -yt_area 1270850a -filter "@net_name == VSS && @length == 1261700.0000 && @width == 1400.0000 && @layer == metal6 && @orientation == vertical && @route_type == pre_route"] -keep false
+zoom_to -target area -xl_area 162722a -yb_area 1039382a -xr_area 182245a -yt_area 1058934a
+zoom_to -target area -xl_area 162683a -yb_area 1041448a -xr_area 178301a -yt_area 1057089a
+zoom_to -target area -xl_area 162652a -yb_area 1043100a -xr_area 175145a -yt_area 1055612a
+zoom_to -target area -xl_area 162627a -yb_area 1044422a -xr_area 172620a -yt_area 1054431a
+zoom_to -target area -xl_area 162607a -yb_area 1045479a -xr_area 170601a -yt_area 1053486a
+zoom_to -target area -xl_area 162626a -yb_area 1044421a -xr_area 172618a -yt_area 1054429a
+zoom_to -target area -xl_area 162691a -yb_area 1040896a -xr_area 179344a -yt_area 1057576a
+zoom_to -target area -xl_area 162801a -yb_area 1035021a -xr_area 190556a -yt_area 1062821a
+zoom_to -target area -xl_area 162869a -yb_area 1031349a -xr_area 197562a -yt_area 1066099a
+zoom_to -target area -xl_area 163098a -yb_area 1019111a -xr_area 220919a -yt_area 1077027a
+zoom_to -target area -xl_area 163241a -yb_area 1011462a -xr_area 235517a -yt_area 1083856a
+zoom_to -target area -xl_area 163718a -yb_area 985966a -xr_area 284178a -yt_area 1106622a
+zoom_to -target area -xl_area 182199a -yb_area 994131a -xr_area 278566a -yt_area 1090655a
+zoom_to -target area -xl_area 229241a -yb_area 1014916a -xr_area 264283a -yt_area 1050015a
+zoom_to -target area -xl_area 242681a -yb_area 1020854a -xr_area 260202a -yt_area 1038403a
+zoom_to -target area -xl_area 245369a -yb_area 1022041a -xr_area 259385a -yt_area 1036080a
+zoom_to -target area -xl_area 247519a -yb_area 1022991a -xr_area 258731a -yt_area 1034221a
+zoom_to -target area -xl_area 249239a -yb_area 1023751a -xr_area 258208a -yt_area 1032734a
+zoom_to -target area -xl_area 250615a -yb_area 1024358a -xr_area 257790a -yt_area 1031544a
+zoom_to -target area -xl_area 251716a -yb_area 1024844a -xr_area 257455a -yt_area 1030592a
+select_objects -objects [get_area_objects -type wire -xl_area 254500a -yb_area 23150a -xr_area 255900a -yt_area 1284850a -filter "@net_name == VDD && @length == 1261700.0000 && @width == 1400.0000 && @layer == metal6 && @orientation == vertical && @route_type == pre_route"] -keep false
+select_objects -objects [get_area_objects -type wire -xl_area 254500a -yb_area 23150a -xr_area 255900a -yt_area 1284850a -filter "@net_name == VDD && @length == 1261700.0000 && @width == 1400.0000 && @layer == metal6 && @orientation == vertical && @route_type == pre_route"] -keep false
+select_objects -objects [get_area_objects -type wire -xl_area 257300a -yb_area 9150a -xr_area 258700a -yt_area 1270850a -filter "@net_name == VSS && @length == 1261700.0000 && @width == 1400.0000 && @layer == metal6 && @orientation == vertical && @route_type == pre_route"] -keep false
+zoom_to -target area -xl_area 251534a -yb_area 1024949a -xr_area 256125a -yt_area 1029547a
+zoom_to -target area -xl_area 251389a -yb_area 1025033a -xr_area 255061a -yt_area 1028711a
+zoom_to -target area -xl_area 251273a -yb_area 1025100a -xr_area 254210a -yt_area 1028042a
+zoom_to -target area -xl_area 251388a -yb_area 1025032a -xr_area 255059a -yt_area 1028709a
+zoom_to -target area -xl_area 252256a -yb_area 1024526a -xr_area 261433a -yt_area 1033718a
+zoom_to -target area -xl_area 253220a -yb_area 1023962a -xr_area 268515a -yt_area 1039282a
+zoom_to -target area -xl_area 253822a -yb_area 1023610a -xr_area 272940a -yt_area 1042759a
+zoom_to -target area -xl_area 254575a -yb_area 1023170a -xr_area 278472a -yt_area 1047105a
+zoom_to -target area -xl_area 255516a -yb_area 1022620a -xr_area 285387a -yt_area 1052538a
+zoom_to -target area -xl_area 256692a -yb_area 1021932a -xr_area 294030a -yt_area 1059329a
+zoom_to -target area -xl_area 258162a -yb_area 1021072a -xr_area 304834a -yt_area 1067818a
+zoom_to -target area -xl_area 260000a -yb_area 1019997a -xr_area 318340a -yt_area 1078429a
+zoom_to -target area -xl_area 262298a -yb_area 1018654a -xr_area 335223a -yt_area 1091694a
+zoom_to -target area -xl_area 265171a -yb_area 1016975a -xr_area 356327a -yt_area 1108275a
+zoom_to -target area -xl_area 286720a -yb_area 1004387a -xr_area 514610a -yt_area 1232637a
+zoom_to -target area -xl_area 295698a -yb_area 999141a -xr_area 580560a -yt_area 1284453a
+zoom_to -target area -xl_area 306921a -yb_area 992584a -xr_area 662998a -yt_area 1349224a
+zoom_to -target area -xl_area 320950a -yb_area 984388a -xr_area 766046a -yt_area 1430188a
+zoom_to -target area -xl_area 338487a -yb_area 974143a -xr_area 894857a -yt_area 1531393a
+zoom_to -target area -xl_area 360408a -yb_area 961337a -xr_area 1055870a -yt_area 1657899a
+zoom_to -target area -xl_area 120443a -yb_area 914371a -xr_area 989770a -yt_area 1785073a
+zoom_to -target area -xl_area 360408a -yb_area 961336a -xr_area 1055869a -yt_area 1657897a
+zoom_to -target area -xl_area 552381a -yb_area 998908a -xr_area 1108749a -yt_area 1556156a
+zoom_to -target area -xl_area 705958a -yb_area 1028965a -xr_area 1151052a -yt_area 1474763a
+zoom_to -target area -xl_area 828820a -yb_area 1053011a -xr_area 1184895a -yt_area 1409649a
+zoom_to -target area -xl_area 1101846a -yb_area 1106446a -xr_area 1260101a -yt_area 1264951a
+zoom_to -target area -xl_area 1223190a -yb_area 1130195a -xr_area 1293525a -yt_area 1200641a
+zoom_to -target area -xl_area 1235119a -yb_area 1137439a -xr_area 1291386a -yt_area 1193795a
+zoom_to -target area -xl_area 1251024a -yb_area 1147097a -xr_area 1288535a -yt_area 1184667a
+zoom_to -target area -xl_area 1257386a -yb_area 1150960a -xr_area 1287394a -yt_area 1181016a
+zoom_to -target area -xl_area 1262476a -yb_area 1154051a -xr_area 1286481a -yt_area 1178095a
+zoom_to -target area -xl_area 1257386a -yb_area 1150960a -xr_area 1287392a -yt_area 1181015a
+zoom_to -target area -xl_area 1251025a -yb_area 1147097a -xr_area 1288531a -yt_area 1184665a
+zoom_to -target area -xl_area 1243073a -yb_area 1142268a -xr_area 1289955a -yt_area 1189227a
+zoom_to -target area -xl_area 1233134a -yb_area 1136232a -xr_area 1291735a -yt_area 1194930a
+zoom_to -target area -xl_area 1220710a -yb_area 1128687a -xr_area 1293960a -yt_area 1202059a
+zoom_to -target area -xl_area 1205180a -yb_area 1119256a -xr_area 1296742a -yt_area 1210971a
+zoom_to -target area -xl_area 1185768a -yb_area 1107467a -xr_area 1300219a -yt_area 1222110a
+zoom_to -target area -xl_area 1161503a -yb_area 1092731a -xr_area 1304566a -yt_area 1236034a
+zoom_to -target area -xl_area 1131172a -yb_area 1074312a -xr_area 1310000a -yt_area 1253440a
+zoom_to -target area -xl_area 1093257a -yb_area 1051287a -xr_area 1316792a -yt_area 1275197a
+zoom_to -target area -xl_area 1045865a -yb_area 1022507a -xr_area 1325283a -yt_area 1302393a
+zoom_to -target area -xl_area 1022682a -yb_area 1022591a -xr_area 1302100a -yt_area 1302477a
+zoom_to -target area -xl_area 932214a -yb_area 1022591a -xr_area 1211632a -yt_area 1302477a
+zoom_to -target area -xl_area 915817a -yb_area 1022591a -xr_area 1195235a -yt_area 1302477a
+zoom_to -target area -xl_area 787465a -yb_area 1022591a -xr_area 1066883a -yt_area 1302477a
+zoom_to -target area -xl_area 711698a -yb_area 1022591a -xr_area 991116a -yt_area 1302477a
+zoom_to -target area -xl_area 640454a -yb_area 1022591a -xr_area 919872a -yt_area 1302477a
+zoom_to -target area -xl_area 597482a -yb_area 1022591a -xr_area 876900a -yt_area 1302477a
+zoom_to -target area -xl_area 538112a -yb_area 1022591a -xr_area 817530a -yt_area 1302477a
+zoom_to -target area -xl_area 528500a -yb_area 1022591a -xr_area 807918a -yt_area 1302477a
+zoom_to -target area -xl_area 523976a -yb_area 1022591a -xr_area 803394a -yt_area 1302477a
+zoom_to -target area -xl_area 447644a -yb_area 1022591a -xr_area 727062a -yt_area 1302477a
+zoom_to -target area -xl_area 386012a -yb_area 1022591a -xr_area 665430a -yt_area 1302477a
+zoom_to -target area -xl_area 354914a -yb_area 1022591a -xr_area 634332a -yt_area 1302477a
+zoom_to -target area -xl_area 274058a -yb_area 1022591a -xr_area 553476a -yt_area 1302477a
+zoom_to -target area -xl_area 271796a -yb_area 1022591a -xr_area 551214a -yt_area 1302477a
+zoom_to -target area -xl_area 262184a -yb_area 1022591a -xr_area 541602a -yt_area 1302477a
+zoom_to -target area -xl_area 255399a -yb_area 1022591a -xr_area 534817a -yt_area 1302477a
+zoom_to -target area -xl_area 245786a -yb_area 1022591a -xr_area 525204a -yt_area 1302477a
+zoom_to -target area -xl_area 224300a -yb_area 1022591a -xr_area 503718a -yt_area 1302477a
+zoom_to -target area -xl_area 202814a -yb_area 1022591a -xr_area 482232a -yt_area 1302477a
+zoom_to -target area -xl_area 188678a -yb_area 1022591a -xr_area 468096a -yt_area 1302477a
+zoom_to -target area -xl_area 186417a -yb_area 1022591a -xr_area 465835a -yt_area 1302477a
+zoom_to -target area -xl_area 176804a -yb_area 1022591a -xr_area 456222a -yt_area 1302477a
+zoom_to -target area -xl_area 155318a -yb_area 1022591a -xr_area 434736a -yt_area 1302477a
+zoom_to -target area -xl_area 148533a -yb_area 1022591a -xr_area 427951a -yt_area 1302477a
+zoom_to -target area -xl_area 134397a -yb_area 1022591a -xr_area 413815a -yt_area 1302477a
+zoom_to -target area -xl_area 129309a -yb_area 1022591a -xr_area 408727a -yt_area 1302477a
+zoom_to -target area -xl_area 110650a -yb_area 1022591a -xr_area 390068a -yt_area 1302477a
+zoom_to -target area -xl_area 105561a -yb_area 1022591a -xr_area 384979a -yt_area 1302477a
+zoom_to -target area -xl_area 101037a -yb_area 1022591a -xr_area 380455a -yt_area 1302477a
+zoom_to -target area -xl_area 77289a -yb_area 1022591a -xr_area 356707a -yt_area 1302477a
+zoom_to -target area -xl_area 38840a -yb_area 1022591a -xr_area 318258a -yt_area 1302477a
+zoom_to -target area -xl_area 24705a -yb_area 1022591a -xr_area 304123a -yt_area 1302477a
+zoom_to -target area -xl_area 22443a -yb_area 1022591a -xr_area 301861a -yt_area 1302477a
+zoom_to -target area -xl_area 17920a -yb_area 1022591a -xr_area 297338a -yt_area 1302477a
+zoom_to -target area -xl_area 8307a -yb_area 1022591a -xr_area 287725a -yt_area 1302477a
+zoom_to -target area -xl_area 9560a -yb_area 1053746a -xr_area 233094a -yt_area 1277654a
+zoom_to -target area -xl_area 11709a -yb_area 1107154a -xr_area 139442a -yt_area 1235101a
+zoom_to -target area -xl_area 12936a -yb_area 1137673a -xr_area 85926a -yt_area 1210785a
+zoom_to -target area -xl_area 13263a -yb_area 1145811a -xr_area 71655a -yt_area 1204300a
+zoom_to -target area -xl_area 13525a -yb_area 1152321a -xr_area 60238a -yt_area 1199112a
+zoom_to -target area -xl_area 13874a -yb_area 1161001a -xr_area 45016a -yt_area 1192195a
+zoom_to -target area -xl_area 14173a -yb_area 1168442a -xr_area 31968a -yt_area 1186266a
+zoom_to -target area -xl_area 14252a -yb_area 1170426a -xr_area 28488a -yt_area 1184685a
+zoom_to -target area -xl_area 14315a -yb_area 1172013a -xr_area 25703a -yt_area 1183420a
+zoom_to -target area -xl_area 14251a -yb_area 1170426a -xr_area 28485a -yt_area 1184684a
+zoom_to -target area -xl_area 14171a -yb_area 1168442a -xr_area 31963a -yt_area 1186264a
+zoom_to -target area -xl_area 14071a -yb_area 1165962a -xr_area 36310a -yt_area 1188239a
+zoom_to -target area -xl_area 16196a -yb_area 1167721a -xr_area 33986a -yt_area 1185542a
+zoom_to -target area -xl_area 17896a -yb_area 1169128a -xr_area 32127a -yt_area 1183384a
+zoom_to -target area -xl_area 19255a -yb_area 1170254a -xr_area 30639a -yt_area 1181658a
+zoom_to -target area -xl_area 20342a -yb_area 1171154a -xr_area 29449a -yt_area 1180277a
+zoom_to -target area -xl_area 21212a -yb_area 1171874a -xr_area 28497a -yt_area 1179172a
+zoom_to -target area -xl_area 20847a -yb_area 1171024a -xr_area 29952a -yt_area 1180146a
+zoom_to -target area -xl_area 20390a -yb_area 1169962a -xr_area 31771a -yt_area 1181364a
+zoom_to -target area -xl_area 19819a -yb_area 1168634a -xr_area 34045a -yt_area 1182886a
+zoom_to -target area -xl_area 19106a -yb_area 1166975a -xr_area 36888a -yt_area 1184789a
+zoom_to -target area -xl_area 18215a -yb_area 1164901a -xr_area 40442a -yt_area 1187168a
+zoom_to -target area -xl_area 17101a -yb_area 1162309a -xr_area 44884a -yt_area 1190142a
+zoom_to -target area -xl_area 15708a -yb_area 1159069a -xr_area 50436a -yt_area 1193859a
+zoom_to -target area -xl_area 13967a -yb_area 1155019a -xr_area 57376a -yt_area 1198506a
+zoom_to -target area -xl_area 11791a -yb_area 1149957a -xr_area 66052a -yt_area 1204315a
+zoom_to -target area -xl_area 9071a -yb_area 1143628a -xr_area 76897a -yt_area 1211575a
+zoom_to -target area -xl_area 5671a -yb_area 1135718a -xr_area 90453a -yt_area 1220651a
+zoom_to -target area -xl_area 1421a -yb_area 1125830a -xr_area 107398a -yt_area 1231996a
+zoom_to -target area -xl_area -3890a -yb_area 1113470a -xr_area 128580a -yt_area 1246177a
+zoom_to -target area -xl_area -10529a -yb_area 1098021a -xr_area 155057a -yt_area 1263904a
+zoom_to -target area -xl_area -18827a -yb_area 1078710a -xr_area 188153a -yt_area 1286063a
+zoom_to -target area -xl_area -46489a -yb_area 1014340a -xr_area 298476a -yt_area 1359927a
+zoom_to -target area -xl_area -35031a -yb_area 1066073a -xr_area 240939a -yt_area 1342542a
+zoom_to -target area -xl_area -12116a -yb_area 1169539a -xr_area 125867a -yt_area 1307773a
+zoom_to -target area -xl_area -659a -yb_area 1221272a -xr_area 68331a -yt_area 1290388a
+zoom_to -target area -xl_area 1632a -yb_area 1231619a -xr_area 56823a -yt_area 1286911a
+zoom_to -target area -xl_area 3465a -yb_area 1239896a -xr_area 47617a -yt_area 1284129a
+zoom_to -target area -xl_area 4931a -yb_area 1246517a -xr_area 40252a -yt_area 1281903a
+clear_selection
+zoom_to -target area -xl_area 5160a -yb_area 1252043a -xr_area 33416a -yt_area 1280351a
+zoom_to -target area -xl_area 5343a -yb_area 1256464a -xr_area 27947a -yt_area 1279109a
+zoom_to -target area -xl_area 5159a -yb_area 1252043a -xr_area 33414a -yt_area 1280349a
+zoom_to -target area -xl_area 4929a -yb_area 1246518a -xr_area 40247a -yt_area 1281899a
+zoom_to -target area -xl_area 4642a -yb_area 1239612a -xr_area 48789a -yt_area 1283837a
+zoom_to -target area -xl_area 4283a -yb_area 1230980a -xr_area 59466a -yt_area 1286260a
+zoom_to -target area -xl_area 3834a -yb_area 1220189a -xr_area 72812a -yt_area 1289289a
+select_objects -objects [get_area_objects -type cell -xl_area 10000a -yb_area 1270000a -xr_area 17600a -yt_area 1284000a -filter "@name == FILL_c8774 && @xorigin == 10000 && @yorigin == 1270000"] -keep true
+select_objects -objects [get_area_objects -type wire -xl_area 13700a -yb_area 23150a -xr_area 15100a -yt_area 1284850a -filter "@net_name == VDD && @length == 1261700.0000 && @width == 1400.0000 && @layer == metal6 && @orientation == vertical && @route_type == pre_route"] -keep false
+zoom_to -target area -xl_area 1249a -yb_area 1209422a -xr_area 87471a -yt_area 1295797a
+zoom_to -target area -xl_area -1981a -yb_area 1195964a -xr_area 105795a -yt_area 1303932a
+zoom_to -target area -xl_area -6019a -yb_area 1179141a -xr_area 128700a -yt_area 1314101a
+zoom_to -target area -xl_area -11066a -yb_area 1158113a -xr_area 157331a -yt_area 1326812a
+zoom_to -target area -xl_area -6018a -yb_area 1179141a -xr_area 128698a -yt_area 1314099a
+zoom_to -target area -xl_area 4077a -yb_area 1221196a -xr_area 71435a -yt_area 1288675a
+zoom_to -target area -xl_area 9685a -yb_area 1244560a -xr_area 39621a -yt_area 1274550a
+zoom_to -target area -xl_area 10582a -yb_area 1248298a -xr_area 34530a -yt_area 1272289a
+zoom_to -target area -xl_area 11299a -yb_area 1251288a -xr_area 30457a -yt_area 1270480a
+zoom_to -target area -xl_area 11873a -yb_area 1253680a -xr_area 27199a -yt_area 1269033a
+zoom_to -target area -xl_area 12332a -yb_area 1255593a -xr_area 24592a -yt_area 1267875a
+zoom_to -target area -xl_area 11872a -yb_area 1253679a -xr_area 27197a -yt_area 1269031a
+zoom_to -target area -xl_area 11297a -yb_area 1251287a -xr_area 30453a -yt_area 1270476a
+zoom_to -target area -xl_area 10579a -yb_area 1248297a -xr_area 34524a -yt_area 1272283a
+zoom_to -target area -xl_area 9681a -yb_area 1244560a -xr_area 39612a -yt_area 1274542a
+zoom_to -target area -xl_area 8559a -yb_area 1239888a -xr_area 45972a -yt_area 1277365a
+zoom_to -target area -xl_area 7157a -yb_area 1234049a -xr_area 53923a -yt_area 1280895a
+zoom_to -target area -xl_area 5404a -yb_area 1226750a -xr_area 63861a -yt_area 1285307a
+zoom_to -target area -xl_area 3213a -yb_area 1217626a -xr_area 76284a -yt_area 1290822a
+zoom_to -target area -xl_area 474a -yb_area 1206221a -xr_area 91812a -yt_area 1297715a
+zoom_to -target area -xl_area -2948a -yb_area 1191965a -xr_area 111223a -yt_area 1306332a
+zoom_to -target area -xl_area -7226a -yb_area 1174146a -xr_area 135486a -yt_area 1317104a
+zoom_to -target area -xl_area -12574a -yb_area 1151872a -xr_area 165815a -yt_area 1330569a
+zoom_to -target area -xl_area -19258a -yb_area 1124029a -xr_area 203727a -yt_area 1347400a
+zoom_to -target area -xl_area -27614a -yb_area 1089226a -xr_area 251116a -yt_area 1368439a
+zoom_to -target area -xl_area -72185a -yb_area 1051504a -xr_area 276226a -yt_area 1400520a
+zoom_to -target area -xl_area -127898a -yb_area 1004351a -xr_area 307614a -yt_area 1440621a
+zoom_to -target area -xl_area -197540a -yb_area 945410a -xr_area 346849a -yt_area 1490747a
+zoom_to -target area -xl_area -284592a -yb_area 871734a -xr_area 395893a -yt_area 1553405a
+zoom_to -target area -xl_area -393407a -yb_area 779640a -xr_area 457198a -yt_area 1631728a
+zoom_to -target area -xl_area -529426a -yb_area 664522a -xr_area 533829a -yt_area 1729631a
+zoom_to -target area -xl_area -699449a -yb_area 520625a -xr_area 629618a -yt_area 1852010a
+zoom_to -target area -xl_area -911978a -yb_area 340754a -xr_area 749354a -yt_area 2004984a
+zoom_to -target area -xl_area -699447a -yb_area 520625a -xr_area 629617a -yt_area 1852008a
+zoom_to -target area -xl_area -335110a -yb_area 828975a -xr_area 424354a -yt_area 1589765a
+zoom_to -target area -xl_area -237953a -yb_area 911201a -xr_area 369617a -yt_area 1519833a
+zoom_to -target area -xl_area -160227a -yb_area 976982a -xr_area 325827a -yt_area 1463887a
+zoom_to -target area -xl_area -98047a -yb_area 1029607a -xr_area 290795a -yt_area 1419130a
+zoom_to -target area -xl_area 26312a -yb_area 1134857a -xr_area 220732a -yt_area 1329618a
+zoom_to -target area -xl_area 67765a -yb_area 1169940a -xr_area 197378a -yt_area 1299780a
+zoom_to -target area -xl_area 84346a -yb_area 1183973a -xr_area 188036a -yt_area 1287845a
+zoom_to -target area -xl_area 97611a -yb_area 1195199a -xr_area 180562a -yt_area 1278296a
+zoom_to -target area -xl_area 84346a -yb_area 1183973a -xr_area 188034a -yt_area 1287843a
+zoom_to -target area -xl_area 40131a -yb_area 1146552a -xr_area 212943a -yt_area 1319668a
+zoom_to -target area -xl_area -125676a -yb_area 1006222a -xr_area 306354a -yt_area 1439012a
+set_option -name window:main:view:state -value maximized

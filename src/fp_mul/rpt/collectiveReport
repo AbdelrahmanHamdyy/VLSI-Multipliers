@@ -3,47 +3,47 @@ Report Physical info:
                         |             |Area (squm)|Leakage (uW)
 ------------------------+-------------+-----------+------------
 Design Name             |fp_mul       |           |            
-  Total Instances       |          509|       1219|      23.217
+  Total Instances       |          220|        626|      11.716
     Macros              |            0|          0|       0.000
     Pads                |            0|          0|       0.000
     Phys                |            0|          0|       0.000
-    Blackboxes          |            0|          0|       0.000
-    Cells               |          509|       1219|      23.217
+    Blackboxes          |            1|          0|       0.000
+    Cells               |          219|        626|      11.716
       Buffers           |            0|          0|       0.000
-      Inverters         |           42|         22|       0.603
-      Clock-Gates       |            3|         12|       0.177
-      Combinational     |          291|        384|       8.587
+      Inverters         |           33|         18|       0.474
+      Clock-Gates       |            2|          8|       0.118
+      Combinational     |           81|        135|       2.976
       Latches           |            0|          0|       0.000
-      FlipFlops         |          173|        801|      13.850
-       Single-Bit FF    |          173|        801|      13.850
+      FlipFlops         |          103|        466|       8.149
+       Single-Bit FF    |          103|        466|       8.149
        Multi-Bit FF     |            0|          0|       0.000
-       Clock-Gated      |          144|           |            
-       Bits             |          173|        801|      13.850
+       Clock-Gated      |           97|           |            
+       Bits             |          103|        466|       8.149
          Load-Enabled   |            0|           |            
-         Clock-Gated    |          144|           |            
+         Clock-Gated    |           97|           |            
   Tristate Pin Count    |            0|           |            
 Physical Info           |Placed       |           |            
-  Chip Size (mm x mm)   |0.105 x 0.105|      11042|            
+  Chip Size (mm x mm)   |0.092 x 0.092|       8518|            
   Fixed Cell Area       |             |          0|            
     Phys Only           |            0|          0|            
-  Placeable Area        |             |       2017|            
-  Movable Cell Area     |             |       1219|            
+  Placeable Area        |             |       1034|            
+  Movable Cell Area     |             |        626|            
   Utilization (%)       |           60|           |            
   Chip Utilization (%)  |           60|           |            
-  Total Wire Length (mm)|        5.374|           |            
-  Longest Wire (mm)     |        0.057|           |            
-  Average Wire (mm)     |        0.054|           |            
+  Total Wire Length (mm)|        4.743|           |            
+  Longest Wire (mm)     |        0.050|           |            
+  Average Wire (mm)     |        0.028|           |            
 ------------------------+-------------+-----------+------------
 Report Path Groups: 
 -----+-------+------+---------+---------
      | Path  |Weight|Critical |Worst    
      | Group |      |Range(ps)|Slack(ps)
 -----+-------+------+---------+---------
-1    |default| 1.000|      0.0|    845.5
-2    |I2R    | 1.000|      0.0|   1674.5
+1    |default| 1.000|      0.0|   1169.7
+2    |I2R    | 1.000|      0.0|   1609.6
 3    |I2O    | 1.000|      0.0|<ill>    
-4    |R2O    | 1.000|      0.0|   1403.9
+4    |R2O    | 1.000|      0.0|   1404.5
 -----+-------+------+---------+---------
-179  |                            |                    |                     |                   |                 
-180  |*TOTAL                      |          422.312958|           444.545990|          23.217094|       890.076050
+221  |                            |                    |                     |                   |                 
+222  |*TOTAL                      |          218.213120|           141.861465|          11.716015|       371.790588
 -----+----------------------------+--------------------+---------------------+-------------------+-----------------
