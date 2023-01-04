@@ -1,0 +1,246 @@
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.seqTB
+# vsim -gui work.seqTB 
+# Start time: 06:50:27 on Jan 04,2023
+# Loading work.seqTB
+# Loading work.seq_multiplier
+add wave sim:/seqTB/*
+run
+run
+# TestCase# 0 : success
+run
+# TestCase# 1 : success
+run
+# TestCase# 2 : success
+run
+run
+# TestCase# 3 : success
+run
+# TestCase# 4 : success
+run
+# TestCase# 5 : success
+run
+run
+# TestCase# 6 : success
+run
+# TestCase# 7 : success
+run
+# TestCase# 8 : success
+run
+# TestCase# 9 : success
+run
+run
+# TestCase# 10 : failed with input 0 and 1348760118 | Output = -1199060305 | where it should be =1199060305 
+run
+# TestCase# 11 : success
+run
+# TestCase# 12 : success
+run
+run
+run
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.seqTB
+# Loading work.seq_multiplier
+run
+run
+# TestCase# 0 : success
+run
+# TestCase# 1 : success
+run
+# TestCase# 2 : success
+run
+run
+# TestCase# 3 : success
+run
+# TestCase# 4 : success
+run
+# TestCase# 5 : success
+run
+run
+# TestCase# 6 : success
+run
+# TestCase# 7 : success
+run
+# TestCase# 8 : success
+run
+# TestCase# 9 : success
+run
+run
+# TestCase# 10 : success
+run
+# TestCase# 11 : success
+run
+# TestCase# 12 : success
+run
+run
+run
+run
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v failed with 3 errors.
+# Compile of simpleMultiplier.v was successful.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.simpleMultTb
+# End time: 07:02:38 on Jan 04,2023, Elapsed time: 0:12:11
+# Errors: 0, Warnings: 4
+# vsim -gui work.simpleMultTb 
+# Start time: 07:02:38 on Jan 04,2023
+# Loading work.simpleMultTb
+# Loading work.simpleMultiplier
+# ** Error: (vsim-3033) Instantiation of 'buffer' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /simpleMultTb/simpleMult File: C:/Users/ASUS/Downloads/no3mn ygd3an/Hamdy/simpleMultiplier.v Line: 14
+#         Searched libraries:
+#             C:/Users/ASUS/OneDrive/Desktop/VLSI-Multipliers/src/Noaman/work
+# ** Error: (vsim-3033) Instantiation of 'buffer' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /simpleMultTb/simpleMult File: C:/Users/ASUS/Downloads/no3mn ygd3an/Hamdy/simpleMultiplier.v Line: 15
+#         Searched libraries:
+#             C:/Users/ASUS/OneDrive/Desktop/VLSI-Multipliers/src/Noaman/work
+# ** Error: (vsim-3033) Instantiation of 'multOperator' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /simpleMultTb/simpleMult File: C:/Users/ASUS/Downloads/no3mn ygd3an/Hamdy/simpleMultiplier.v Line: 17
+#         Searched libraries:
+#             C:/Users/ASUS/OneDrive/Desktop/VLSI-Multipliers/src/Noaman/work
+# ** Error: (vsim-3033) Instantiation of 'buffer' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /simpleMultTb/simpleMult File: C:/Users/ASUS/Downloads/no3mn ygd3an/Hamdy/simpleMultiplier.v Line: 19
+#         Searched libraries:
+#             C:/Users/ASUS/OneDrive/Desktop/VLSI-Multipliers/src/Noaman/work
+# Error loading design
+# End time: 07:02:39 on Jan 04,2023, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 1
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# Compile of buffer.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.simpleMultTb
+# vsim -gui work.simpleMultTb 
+# Start time: 07:04:01 on Jan 04,2023
+# Loading work.simpleMultTb
+# Loading work.simpleMultiplier
+# Loading work.buffer
+# ** Error: (vsim-3033) Instantiation of 'multOperator' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /simpleMultTb/simpleMult File: C:/Users/ASUS/Downloads/no3mn ygd3an/Hamdy/simpleMultiplier.v Line: 17
+#         Searched libraries:
+#             C:/Users/ASUS/OneDrive/Desktop/VLSI-Multipliers/src/Noaman/work
+# Error loading design
+# End time: 07:04:02 on Jan 04,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# Compile of buffer.v was successful.
+# Compile of multOperator.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.simpleMultTb
+# vsim -gui work.simpleMultTb 
+# Start time: 07:05:33 on Jan 04,2023
+# Loading work.simpleMultTb
+# Loading work.simpleMultiplier
+# Loading work.buffer
+# Loading work.multOperator
+add wave sim:/simpleMultTb/*
+run
+# TestCase# 0 : success
+# TestCase# 1 : success
+# TestCase# 2 : success
+# TestCase# 3 : success
+# TestCase# 4 : success
+# TestCase# 5 : success
+# TestCase# 6 : success
+run
+# TestCase# 7 : success
+# TestCase# 8 : success
+# TestCase# 9 : success
+# TestCase# 10 : success
+# TestCase# 11 : success
+# TestCase# 12 : success
+run
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# Compile of buffer.v was successful.
+# Compile of multOperator.v was successful.
+# Compile of booth_multiplier.v was successful.
+# Compile of booth_multiplier_tb.v failed with 8 errors.
+# 8 compiles, 1 failed with 8 errors.
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# Compile of buffer.v was successful.
+# Compile of multOperator.v was successful.
+# Compile of booth_multiplier.v was successful.
+# Compile of booth_multiplier_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.BoothTB
+# End time: 07:17:18 on Jan 04,2023, Elapsed time: 0:11:45
+# Errors: 0, Warnings: 6
+# vsim -gui work.BoothTB 
+# Start time: 07:17:19 on Jan 04,2023
+# Loading work.BoothTB
+# Loading work.booth_multiplier
+add wave sim:/BoothTB/*
+run
+run
+# TestCase# 0 : success
+run
+# TestCase# 1 : success
+run
+run
+# TestCase# 2 : success
+run
+# TestCase# 3 : failed with input 4294967037 and 553524 | Output = -143362716 | where it should be =0 
+run
+# TestCase# 4 : success
+run
+# Compile of seq_multiplier.v was successful.
+# Compile of seq_multiplier_tb.v was successful.
+# Compile of simple_mult_tb.v was successful.
+# Compile of simpleMultiplier.v was successful.
+# Compile of buffer.v was successful.
+# Compile of multOperator.v was successful.
+# Compile of booth_multiplier.v was successful.
+# Compile of booth_multiplier_tb.v was successful.
+# 8 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.BoothTB
+# Loading work.booth_multiplier
+run
+run
+# TestCase# 0 : success
+run
+# TestCase# 1 : success
+run
+run
+# TestCase# 2 : success
+run
+# TestCase# 3 : success
+run
+# TestCase# 4 : success
+run
+run
+# TestCase# 5 : success
+run
+# TestCase# 6 : success
+run
+run
+run
+# End time: 07:20:30 on Jan 04,2023, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 1

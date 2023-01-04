@@ -25,45 +25,74 @@ initial begin
 	reset = 1;
 	#4;
 	reset = 0;
-	a=35;
-	b=96;
-	#128;
-	a=-15;
-	b=20;
+	a=553524;
+	b=840;
+	#132;
+	`assert(a,b,64'd464960160,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=553524;
+	b=-259;
+	#132
+	`assert(a,b,-64'd143362716,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=1348760118;
+	b=-1199060305;
+	#132
+	`assert(a,b,-64'd1617244718460915990,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=-259;
+	b=553524;
+	#132
+	`assert(a,b,-64'd143362716,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=-1199060305;
+	b=1348760118;
+	#132
+	`assert(a,b,-64'd1617244718460915990,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=-259;
+	b=-259;
+	#132
+	`assert(a,b,64'd67081,TestsCounter,result)
+	reset=1;
+	#4;
+	reset=0;
+	a=-1199060305;
+	b=-2005095693;
+	#132
+	`assert(a,b,64'd2404230653202766365,TestsCounter,result)	
+	reset=1;
 	#4
-	`assert(a,b,3360,TestsCounter,result)
-	#124;
-	a=-17;
-	b=-17;
+	reset=0;
+	a = 32'd1;
+	b = 32'd1348760118;
+	#132
+	`assert(a,b,64'd1348760118,TestsCounter,result)	
+	reset=1;
 	#4
-	`assert(a,b,-300,TestsCounter,result)
-	#124;
-	a=1;
-	b=40;
+	reset=0;
+		a = -32'd1199060305;
+		b = 32'd1; //result =10
+	#132
+	`assert(a,b,-64'd1199060305,TestsCounter,result)
+		reset=1;
 	#4
-	`assert(a,b,289,TestsCounter,result)
-	#124;
-	a=0;
-	b=64;
-	#4
-	`assert(a,b,40,TestsCounter,result)
-	#124;
-	a=36;
-	b=42;
-	#4
-	`assert(a,b,0,TestsCounter,result)
-	#124;
-	a=165;
-	b=348;
-	#4
-	`assert(a,b,1512,TestsCounter,result)
-	#124;
-	a=3672;
-	b=9648;
-	#4
-	`assert(a,b,57420,TestsCounter,result)	
-	#128;
-	`assert(a,b,35427456,TestsCounter,result)
+	reset=0;
+		a = 32'd0;
+		b = 32'd1348760118; //result =10
+	#132
+	`assert(a,b,0,TestsCounter,result)		
+
 end
 always begin
 	#2;

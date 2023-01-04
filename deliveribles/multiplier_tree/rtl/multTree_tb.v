@@ -25,36 +25,36 @@ initial begin
 	reset = 1;
 	#4;
 	reset = 0;
-	a=35;
-	b=96;
+	a=553524;
+	b=840;
 	#8;
 	`assert(a,b,3360,TestsCounter,result)
-	a=-15;
-	b=20;	
+	a=1348760118;
+	b=1348543286;
 	#8;
 	`assert(a,b,-300,TestsCounter,result)
-	a=-17;
-	b=-17;	
+	a=553524;
+	b=-259;
 	#8;
 	`assert(a,b,289,TestsCounter,result)
-	a=1;
-	b=40;
+	a=1348760118;
+	b=-1199060305;
 	#8;
 	`assert(a,b,40,TestsCounter,result)
-	a=0;
-	b=64;
+	a=-259;
+	b=553524;
 	#8;
 	`assert(a,b,0,TestsCounter,result)
-	a=36;
-	b=42;
+	a=-1199060305;
+	b=1348760118;
 	#8;
 	`assert(a,b,1512,TestsCounter,result)
-	a=165;
-	b=348;	
+	a=-259;
+	b=-259;
 	#8;
 	`assert(a,b,57420,TestsCounter,result)
-	a=3672;
-	b=9648;
+	a=-1199060305;
+	b=-2005095693;
 	#8
 	`assert(a,b,35427456,TestsCounter,result)
 end
