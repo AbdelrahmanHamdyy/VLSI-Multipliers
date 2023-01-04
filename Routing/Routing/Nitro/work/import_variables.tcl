@@ -28,7 +28,7 @@ set MGC_libDbPath               ""            ; # REVIEW: Path to the lib.db if 
 #set MGC_libDbPath     "/home/vlsi/Desktop/Lab3/work/dbs/libs.db/"
 
 ## This section contains variables related to tech files 
-set workdir  "/home/vlsi/Desktop/Nitro" ;        # REQUIRED: Path to project home
+set workdir  "/mnt/hgfs/shared/VLSI-Multipliers/Routing/Routing/Nitro" ;        # REQUIRED: Path to project home
 set MGC_physical_library_tech   "${workdir}/lib_data/NangateOpenCellLibrary.tech.lef"            ; # REQUIRED: Path to Tech LEF file. Typically used for 40nm and above
 set MGC_physical_libraries      "${workdir}/lib_data/NangateOpenCellLibrary.macro.lef"            ; # REQUIRED: Path to standard cell and macro LEF files. For example lef/std_cell.lef
 set MGC_itf_to_lef_layer_map    ""            ; # REVIEW  : Path to a layer mapping file when there is a mismatch between LEF and PTF layer names. For example itf/map.txt
@@ -122,9 +122,9 @@ set MGC_CornerTiming(corner_0_0) new_pvt
 ##########################################################################################################################
 #                   START: Variables needed to build design database dbs/import.db                                       #
 ##########################################################################################################################
-set MGC_importVerilogNetlist "${workdir}/verilog/demo_booth_multiplier.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
+set MGC_importVerilogNetlist "${workdir}/verilog/demo_fp_mul.syn.v"                     ; # REQUIRED: Path to vg netlist.  Multiple files/wildcards allowed, but must 
                                                       #           match vg files only. NOT REQUIRED FOR mxdb flow.
-set MGC_topDesign            "booth_multiplier"                ; # REQUIRED  : Name of top level module in verilog netlist(s).
+set MGC_topDesign            "fp_mul"                ; # REQUIRED  : Name of top level module in verilog netlist(s).
 set MGC_nrf_floorplanning    "auto"                     ; # REVIEW  : Type floorplanning to be performed: auto | manual | none
 #set MGC_floorLoadDefFile     "/home/vlsi/Desktop/Lab2/outputs_adder/floorplan/demo_ripple_adder.def"                     ; # REVIEW  : Path to floorPlan def if available
 set MGC_floorLoadDefFile      ""

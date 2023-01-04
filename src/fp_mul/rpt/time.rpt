@@ -1,9 +1,9 @@
 Report for group default
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Startpoint: mul_start_reg/Q
-    (Clocked by sysclk R)
+    (Clocked by vsysclk R)
 Endpoint: unsigned_seq_multiplier_dut/Accumulator_reg[22]/D
-    (Clocked by sysclk R)
+    (Clocked by vsysclk R)
 Path Group: default
 Data required time: 1964.9
     (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 35.1)
@@ -66,36 +66,38 @@ unsigned_seq_multiplier_dut/Accumulator_reg[22]/D
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2R
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-Startpoint: b_s[22]
-    (Clocked by rtDefaultClock R)
-Endpoint: b_reg[22]/D
-    (Clocked by sysclk R)
+Startpoint: rst
+    (Clocked by vsysclk R)
+Endpoint: clk_gate_overflow_reg/E
+    (Clocked by vsysclk R)
 Path Group: I2R
-Data required time: 1747.0
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 253.0)
-Data arrival time: 200.4
-Slack: 1546.6
-Logic depth: 0
+Data required time: 1912.3
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Setup time: 87.7)
+Data arrival time: 237.8
+Slack: 1674.5
+Logic depth: 2
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
 Path                     Module/Cell           Edge     Time    Delay    Delay    Delay     Slew     Load     Load    out     Location Power Domain      (V)
                                                         (ps)     (ps)     (ps)     (ps)     (ps)     (ff)     (ff)    (#)      (um,um)                      
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-b_s[22]                  {set_input_delay}        f    200.0    200.0    200.0                        3.0      4.1      1    52,  105                       
-b_reg[22]/D              DFF_X1                   f    200.4      0.4               0.4    707.3                             52,   52  /PD_TOP        (1.10)
+rst                      {set_input_delay}        r    200.0    200.0    200.0                        4.4     91.5      6     0,   54                       
+i_0_0_70/A->ZN           INV_X8                  rf    204.5      4.5      4.1      0.4      0.0      0.3      4.2      1    52,   52  /PD_TOP        (1.10)
+i_0_0_67/A->ZN           OAI21_X4*               fr    237.8     33.3     33.3      0.0      3.4      0.9     29.8      3    52,   52  /PD_TOP        (1.10)
+clk_gate_overflow_reg/E  CLKGATETST_X2            r    237.8      0.0               0.0     15.3                             52,   52  /PD_TOP        (1.10)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Report for group I2O
 Report for group R2O
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Startpoint: c_out_reg[30]/Q
-    (Clocked by sysclk R)
+    (Clocked by vsysclk R)
 Endpoint: c_out[30]
-    (Clocked by sysclk R)
+    (Clocked by vsysclk R)
 Path Group: R2O
-Data required time: 1000.0
-    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 1000.0)
-Data arrival time: 110.9
-Slack: 889.1
+Data required time: 1500.0
+    (Clock shift: 2000.0, minus Uncertainty: 0.0, plus Latency 0.0, minus Out delay: 500.0)
+Data arrival time: 96.1
+Slack: 1403.9
 Logic depth: 0
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                      Arrival               Arc      Net               Net    Total   fan-                                   
@@ -105,6 +107,6 @@ Path                     Module/Cell           Edge     Time    Delay    Delay  
 clk                      {create_clock}           r      0.0      0.0      0.0                        0.0      0.0     32   105,   55                       
 clk_gate_overflow_reg/CK->GCK
                          CLKGATETST_X1           rr      0.0      0.0      0.0      0.0      0.0      0.0      0.0     33    52,   52  /PD_TOP        (1.10)
-c_out_reg[30]/CK->Q      DFF_X1                  rr    110.5    110.5    110.5      0.0      0.0      3.2     13.2      1    52,   52  /PD_TOP        (1.10)
-c_out[30]                                         r    110.9      0.4               0.4     33.0                            105,   56                       
+c_out_reg[30]/CK->Q      DFF_X1                  rf     95.7     95.7     95.7      0.0      0.0      3.2     13.2      1    52,   52  /PD_TOP        (1.10)
+c_out[30]                                         f     96.1      0.4               0.4     17.2                            105,   56                       
 ------------------------------------------------------------------------------------------------------------------------------------------------------------

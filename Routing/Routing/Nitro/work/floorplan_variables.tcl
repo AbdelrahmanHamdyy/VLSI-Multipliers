@@ -19,7 +19,7 @@
 #
 
 set fp_units            micro
-set fp_top_partition    "booth_multiplier"         ; # INPUT REQUIRED: Top partition name
+set fp_top_partition    "fp_mul"         ; # INPUT REQUIRED: Top partition name
 
 #
 # By default, the chip size will be determined by utilization.
