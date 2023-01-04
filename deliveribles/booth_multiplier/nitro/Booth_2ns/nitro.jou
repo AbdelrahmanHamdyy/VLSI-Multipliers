@@ -1956,3 +1956,30 @@ set_option -name view:design:scheme0:layer19:pre_route:via_top:visible -value fa
 set_option -name view:design:scheme0:layer19:pre_route:via_bottom:visible -value false
 set_option -name view:design:scheme0:layer18:pre_route:via_cut:visible -value false
 set_option -name window:main:view:state -value hidden
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 05:52:26 2023
+# version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
+# Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 31066 
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+start
+## trigger_gui -name main:activate_window -param design:view
+set_option -name toolbar:main:floorplan:location -value {0 0}
+set_option -name toolbar:main:layers:location -value {0 0}
+set_option -name toolbar:main:interactive_modes:location -value {0 77}
+set_option -name toolbar:main:windows:location -value {60 20}
+set_option -name toolbar:main:zoom:location -value {310 20}
+set_option -name toolbar:main:custom_editing:location -value {508 20}
+set_option -name toolbar:main:objects:location -value {735 20}
+set_option -name toolbar:main:cross_probe:location -value {412 48}
+## trigger_gui -name main:open_design
+read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db -cpus 4
+## trigger_gui -name main:open_design
+read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/booth_multiplier/nitro/Booth_2ns/db/final.db -cpus 4
+set_option -name view:design:mfg_grid:step:y -value 50
+report_region_utilization 
+set_option -name window:main:view:state -value hidden
+exit
+#---------------------------------------------------------------------
+# end session at Wed Jan 4 05:54:17 2023
+#---------------------------------------------------------------------

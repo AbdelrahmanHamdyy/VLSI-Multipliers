@@ -1,0 +1,641 @@
+# Loading project ffff
+# reading /home/vlsi/Installation/Nitro/modelsim_dlx/linuxpe/../modelsim.ini
+# Loading project kkk
+# Compile of multiplier.route.v was successful.
+# Compile of NangateOpenCellLibrary.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim fp_mul -t ps -sdfmax ./multiplier.sdf
+# vsim fp_mul -t ps -sdfmax "./multiplier.sdf" 
+# Start time: 05:05:18 on Jan 04,2023
+# //  ModelSim DE 2022.4 Oct 18 2022 Linux 3.10.0-1062.12.1.el7.x86_64
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim DE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.fp_mul
+# Loading work.CLKBUF_X3
+# Loading work.OR2_X1
+# Loading work.NAND3_X1
+# Loading work.OAI21_X1
+# Loading work.INV_X1
+# Loading work.NOR2_X1
+# Loading work.AOI211_X1
+# Loading work.NOR4_X1
+# Loading work.AOI21_X1
+# Loading work.AND2_X1
+# Loading work.NAND2_X1
+# Loading work.XNOR2_X1
+# Loading work.NOR2_X2
+# Loading work.HA_X1
+# Loading work.FA_X1
+# Loading work.CLKGATETST_X8
+# Loading work.DFF_X1
+# Loading work.MUX2_X1
+# Loading work.unsigned_seq_multiplier
+# Loading work.AOI22_X1
+# Loading work.CLKGATETST_X4
+# Loading work.datapath
+# Loading work.OAI22_X1
+# Loading work.OR3_X1
+# Loading work.NOR3_X1
+# Loading work.AOI221_X1
+# Loading work.XOR2_X1
+# Loading work.DFFR_X1
+# Loading work.CLKBUF_X1
+# Loading instances from ./multiplier.sdf
+# Loading work.seq_CLKGATETST_X8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\counter_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\counter_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 999
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(999): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_DFF_X1
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\counter_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\counter_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1000
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1000): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\counter_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\counter_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1001
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1001): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\counter_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\counter_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1002
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1002): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\counter_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\counter_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1003
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1003): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[23]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1004
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1004): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[24]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1005
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1005): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[25]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1006
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1006): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[26]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1007
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1007): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[27]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1008
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1008): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[28]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1009
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1009): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[29]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1010
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1010): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[30]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1011
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1011): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[23]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1012
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1012): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[24]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1013
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1013): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[25]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1014
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1014): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[26]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1015
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1015): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[27]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1016
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1016): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[28]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1017
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1017): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[29]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1018
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1018): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[30]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1019
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1019): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[31]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1020
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1020): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[31]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1021
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1021): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'mul_start_reg'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/mul_start_reg File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1023
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1023): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1024
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1024): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1025
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1025): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1026
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1026): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1027
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1027): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1028
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1028): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1029
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1029): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1030
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1030): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1031
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1031): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1032
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1032): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1033
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1033): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1034
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1034): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1035
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1035): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1036
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1036): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1037
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1037): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1038
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1038): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1039
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1039): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1040
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1040): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1041
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1041): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1042
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1042): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1043
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1043): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1044
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1044): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1045
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1045): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\a_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\a_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1046
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1046): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1047
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1047): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1048
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1048): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1049
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1049): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1050
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1050): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1051
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1051): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1052
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1052): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1053
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1053): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1054
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1054): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1055
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1055): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1056
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1056): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1057
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1057): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1058
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1058): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1059
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1059): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1060
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1060): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1061
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1061): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1062
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1062): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1063
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1063): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1064
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1064): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1065
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1065): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1066
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1066): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1067
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1067): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1068
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1068): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\b_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\b_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1069
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1069): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1070
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1070): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1071
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1071): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1072
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1072): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1073
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1073): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1074
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1074): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1075
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1075): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1076
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1076): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1077
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1077): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1078
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1078): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1079
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1079): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1080
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1080): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1081
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1081): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1082
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1082): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1083
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1083): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1084
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1084): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1085
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1085): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1086
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1086): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1087
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1087): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1088
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1088): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1089
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1089): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1090
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1090): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1091
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1091): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1092
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1092): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[23]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1093
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1093): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[24] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[24]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1094
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1094): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[25] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[25]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1095
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1095): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[26] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[26]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1096
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1096): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[27] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[27]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1097
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1097): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[28] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[28]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1098
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1098): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[29] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[29]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1099
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1099): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[30] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[30]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1100
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1100): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\c_out_reg[31] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/\c_out_reg[31]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1101
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1101): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'overflow_reg'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/overflow_reg File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1102
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1102): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'unsigned_seq_multiplier_dut'.  Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 1103
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(1103): [TFMPC] - Missing connection for port 'clk'.
+# Loading work.seq_CLKGATETST_X4
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 605
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(605): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 606
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(606): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 607
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(607): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 608
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(608): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 609
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(609): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 610
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(610): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 611
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(611): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 612
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(612): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 613
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(613): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 614
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(614): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 615
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(615): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 616
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(616): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 617
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(617): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 618
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(618): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 619
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(619): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 620
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(620): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 621
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(621): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 622
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(622): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 623
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(623): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 624
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(624): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 625
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(625): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 626
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(626): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\A_r_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\A_r_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 627
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(627): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[0] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 628
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(628): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[1] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 629
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(629): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[2] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 630
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(630): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[3] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 631
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(631): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[4] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 632
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(632): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[5] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 633
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(633): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[6] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 634
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(634): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[7] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 635
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(635): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[8] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 636
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(636): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[9] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 637
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(637): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[10] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 638
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(638): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[11] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 639
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(639): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[12] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 640
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(640): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[13] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 641
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(641): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[14] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 642
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(642): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[15] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 643
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(643): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[16] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 644
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(644): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[17] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 645
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(645): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[18] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 646
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(646): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[19] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 647
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(647): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[20] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 648
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(648): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[21] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 649
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(649): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[22] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 650
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(650): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\B_r_reg[23] '.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\B_r_reg[23]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 651
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(651): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[0] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[0]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 659
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(659): [TFMPC] - Missing connection for port 'QN'.
+# Loading work.seq_DFFR_X1
+# Loading work.ng_xbuf
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[1] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[1]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 660
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(660): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[2] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[2]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 661
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(661): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[3] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[3]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 662
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(662): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[4] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[4]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 663
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(663): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[5] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[5]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 664
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(664): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[6] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[6]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 665
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(665): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[7] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[7]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 666
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(666): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[8] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[8]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 667
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(667): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[9] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[9]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 668
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(668): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[10] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[10]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 669
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(669): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[11] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[11]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 670
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(670): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[12] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[12]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 671
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(671): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[13] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[13]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 672
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(672): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[14] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[14]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 673
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(673): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[15] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[15]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 674
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(674): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[16] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[16]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 675
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(675): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[17] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[17]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 676
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(676): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[18] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[18]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 677
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(677): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[19] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[19]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 678
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(678): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[20] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[20]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 679
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(679): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[21] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[21]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 680
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(680): [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\Accumulator_reg[22] '.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul/unsigned_seq_multiplier_dut/\Accumulator_reg[22]  File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v Line: 681
+# ** Warning: (vsim-3722) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v(681): [TFMPC] - Missing connection for port 'QN'.
+# Loading timing data from ./multiplier.sdf
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1233): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1240): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1241): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1253): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1254): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(1255): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-8756) Instance 'fp_mul.clk_gate_b_reg__1' - Negative timing check limits detected in simulation with cells modeled without delayed copies of data or reference signals.
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/lib_data/NangateOpenCellLibrary.v Line: 1114
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6871): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6872): Timing check limit can not be negative. Setting negative check constraint (-45 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6887): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6888): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6903): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6904): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6919): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6920): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6935): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6936): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6951): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6952): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6967): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6968): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6983): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6984): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(6999): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7000): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7015): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7016): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7031): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7032): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7047): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7048): Timing check limit can not be negative. Setting negative check constraint (-38 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7063): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7064): Timing check limit can not be negative. Setting negative check constraint (-45 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7079): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7080): Timing check limit can not be negative. Setting negative check constraint (-45 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7095): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7096): Timing check limit can not be negative. Setting negative check constraint (-45 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7111): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7112): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7127): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7128): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7143): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7144): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7159): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7160): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7175): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7176): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7191): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7192): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7207): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7208): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Error (suppressible): (vsim-SDF-12091) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7223): Failed to find matching specify timing constraint for REMOVAL. 
+# ** Warning: (vsim-3448) /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.sdf(7224): Timing check limit can not be negative. Setting negative check constraint (-42 ps) to zero.
+# ** Fatal: (vsim-SDF-3444) Failed to annotate from SDF file "./multiplier.sdf".
+#    Time: 0 ps  Iteration: 0  Instance: /fp_mul File: /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/mul_before_well_taps/work/multiplier.route.v
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 05:05:19 on Jan 04,2023, Elapsed time: 0:00:01
+# Errors: 24, Warnings: 384

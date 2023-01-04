@@ -1,0 +1,47 @@
+*******************************************************************
+*      Copyright (c) 2004 - 2020 Mentor Graphics Corporation      *
+*                       All Rights Reserved                       *
+*                                                                 *
+*                                                                 *
+*   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION   *
+*      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION       *
+*        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.        *
+*                                                                 *
+* Program : ../bin/Linux-x86_64-O/oasysGui                        *
+* Version : 19.2-p002                                             *
+* Date    : Fri Jan 10 14:27:22 PST 2020                          *
+* Build   : releases/19.2-49727.0-CentOS_6.5-O                    *
+*******************************************************************
+ config sdc-v1.7-cpd cli cmd explore mxdb
+loading: oasys fp rta dft RTTessent-d ctl verify edit bt upf-c aos conc vcd prot int
+checked out licenses: psyncore psynfloorplan psyndft psynpower
+
+         date     : Wed Jan 04 00:48:32 EET 2023
+         ppid/pid : 7454/7464
+         hostname : localhost.localdomain
+         arch/os  : x86_64/Linux-3.10.0-1062.12.1.el7.x86_64 
+         install  : /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1
+         currdir  : /mnt/hgfs/shared/VLSI-Multipliers/src
+         logfile  : /mnt/hgfs/shared/VLSI-Multipliers/src/oasys.log.04
+         tmpdir   : /tmp/oasys.7454/
+> source /home/vlsi/Installation/Oasys/Oasys-RTL-2019.2.R1/tcl/library/history.tcl
+> source scripts/4_clear_designs.tcl
+> delete_design
+> remove_upf
+error: upf is not enabled
+
+    while executing
+"reset_upf"
+    (file "scripts/4_clear_designs.tcl" line 2)
+    invoked from within
+"tcl_source scripts/4_clear_designs.tcl"
+> source scripts/4_clear_designs.tcl
+> delete_design
+> remove_upf
+error: upf is not enabled
+
+    while executing
+"reset_upf"
+    (file "scripts/4_clear_designs.tcl" line 2)
+    invoked from within
+"tcl_source scripts/4_clear_designs.tcl"

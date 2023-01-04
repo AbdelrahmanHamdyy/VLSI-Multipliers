@@ -3971,3 +3971,148 @@ LAYOUT MEMORY    =            6437 K  =            6 M
 LAYOUT READ TIME = 0 sec REAL.  TOTAL TIME = 0 sec REAL.
 
 % 
+#---------------------------------------------------------------------
+# start session at Wed Jan 4 05:55:03 2023
+# Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
+#---------------------------------------------------------------------
+----------------------------------------------------------------------------------
+|     Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019     | 
+| Running on localhost.localdomain 4cores 7.3GBytes 2.6GHz 64bits mode pid 31314 | 
+|              Copyright (c) 2003-2019 Mentor Graphics Corporation               | 
+|                              All Rights Reserved                               | 
+|          THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION           | 
+|              WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION              | 
+|               OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.                | 
+----------------------------------------------------------------------------------
+
+Nitro-SoC> start
+Nitro-SoC> read_db -file /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db -cpus 4
+info UI1340: Loading folded database from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db'.
+Database information: 
+---------------------------------------------------------------------------------------------------
+| Property Name | Property Value                                                  | Property Type | 
+|---------------+-----------------------------------------------------------------+---------------|
+| name*         |                                                                 | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| file          | /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/ | string        | 
+|               | nitro/FInalMultTree_2ns/db/final.db/                            |               | 
+|---------------+-----------------------------------------------------------------+---------------|
+| host          | Linux (localhost.localdomain)                                   | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| build         | 1.68700.2.290                                                   | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| date          | Fri Dec 23 16:39:10 2022                                        | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| p_version     | 2019.1.R2                                                       | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| comment*      |                                                                 | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| db_version    | 4.0.5                                                           | string        | 
+|---------------+-----------------------------------------------------------------+---------------|
+| is_current    | true                                                            | bool          | 
+---------------------------------------------------------------------------------------------------
+
+info UI33: performed database load for 0 sec (CPU time: 0 sec; MEM: RSS - 162M, CVMEM - 761M, PVMEM - 784M)
+info UI1340: Loading libraries from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db/Technology/'.
+info UI33: performed library load for 0 sec (CPU time: 0 sec; MEM: RSS - 164M, CVMEM - 771M, PVMEM - 784M)
+info UI1340: Loading design from '/mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db/Design'.
+info Reading Scan data
+info Reading Trailing data
+Successfully mapped 0 checks
+info UI33: performed design load for 0 sec (CPU time: 0 sec; MEM: RSS - 194M, CVMEM - 801M, PVMEM - 890M)
+info UI33: performed source of /mnt/hgfs/shared/VLSI-Multipliers/deliveribles/multiplier_tree/nitro/FInalMultTree_2ns/db/final.db/init_db.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 194M, CVMEM - 801M, PVMEM - 890M)
+Nitro-SoC> report_region_utilization 
+info running report region utilization in global placement context: 
+    - utilization = (mobile_cell_area/(row_area - obstruction_area)).
+    - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
+    - by default, cell area include all bloats associated with the cells. 
+
+
+info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
+Report 'Region_Utilization': Region Utilization Report
+Generated on Wed Jan 4 05:55:55 2023
+  
+--------------------------------------------------------------------------------------------------------------------------------
+|                                                  Report Region Utilization                                                   |
+|---+------------------+----+-----+-----------+----------------+--------------+-----------------------+------------------------|
+|   | Partition/Region | MH | NMH | Cell Area | Placeable Area | Useable Area | Placer Utilization(%) | Silicon Utilization(%) | 
+|---+------------------+----+-----+-----------+----------------+--------------+-----------------------+------------------------|
+| 0 | multiplierTree   | -  | -   | 8099.43   | 7345.32        | 8099.43      | 110.267               | 96.3                   | 
+--------------------------------------------------------------------------------------------------------------------------------
+
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 209M, CVMEM - 820M, PVMEM - 890M)
+Nitro-SoC> zoom_to -target area -xl_area -64980a -yb_area 282161a -xr_area 1364580a -yt_area 1714121a
+Nitro-SoC> zoom_to -target area -xl_area -64980a -yb_area 2712153a -xr_area 1364580a -yt_area 4144113a
+Nitro-SoC> zoom_to -target area -xl_area -139532a -yb_area 2541836a -xr_area 1647417a -yt_area 4331786a
+Nitro-SoC> zoom_to -target area -xl_area -1630576a -yb_area -864492a -xr_area 7304169a -yt_area 8085258a
+Nitro-SoC> zoom_to -target area -xl_area -2873114a -yb_area -3703099a -xr_area 12018126a -yt_area 11213150a
+Nitro-SoC> zoom_to -target area -xl_area -2251844a -yb_area -2283795a -xr_area 9661147a -yt_area 9649203a
+Nitro-SoC> zoom_to -target area -xl_area -1754828a -yb_area -1148351a -xr_area 7775563a -yt_area 8398045a
+Nitro-SoC> zoom_to -target area -xl_area -760796a -yb_area 1122534a -xr_area 4004398a -yt_area 5895732a
+Nitro-SoC> zoom_to -target area -xl_area -561989a -yb_area 1576711a -xr_area 3250165a -yt_area 5395269a
+
+nitro.log, current date/time: Wed Jan  4 05:58:16 2023
+version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019
+host localhost.localdomain, pid 31314, ppid 1
+
+Stack trace of thread 31314 'gmain_exec'
+
+#0 (0x0737025f) (null) : _ZN3sda6common14PrintAllStacksEv line: 0
+#1 (0x010a9362) (null) : _ZN15GMainSigHandler13signalHandlerEi line: 0
+#2 (0x7fb02ebe73b0) (null) : stat line: 0
+#3 (0x7fb02eca4bed) (null) : stat line: 0
+#4 (0x7fb0339f237c) (null) : stat line: 0
+#5 (0x7fb0339f24ac) (null) : stat line: 0
+#6 (0x07c86665) (null) : _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE line: 0
+#7 (0x0757d906) (null) : _ZN23QGuiEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE line: 0
+#8 (0x07c6397f) (null) : _ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE line: 0
+#9 (0x07c63c0d) (null) : _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE line: 0
+#10 (0x07c6802b) (null) : _ZN16QCoreApplication4execEv line: 0
+#11 (0x010ac995) (null) : _ZN5GMain14runApplicationEv line: 0
+#12 (0x0046aecd) (null) : main line: 0
+#13 (0x7fb02ebd3505) (null) : stat line: 0
+#14 (0x0108f4a5) (null) : _start line: 0
+
+
+Stack trace of thread 31322 'gmain_exec'
+
+#0 (0x0736f4ff) SierraBFD.cpp : _ZN3sda6commonL26print_stack_signal_handlerEiP7siginfoPv line: 0
+#1 (0x7fb031ff45f0) (null) : stat line: 0
+#2 (0x7fb031ff09f3) (null) : stat line: 0
+#3 (0x7fb02f3345ac) (null) : stat line: 0
+#4 (0x0736fe2d) SierraBFD.cpp : _ZN3sda6commonL21freeze_signal_handlerEiP7siginfoPv line: 0
+#5 (0x7fb031ff45f0) (null) : stat line: 0
+#6 (0x7fb02eca6953) (null) : stat line: 0
+#7 (0x7fb03273a20c) (null) : stat line: 0
+#8 (0x7fb031fece65) (null) : stat line: 0
+#9 (0x7fb02ecaf88d) (null) : stat line: 0
+
+
+Stack trace of thread 31360 'TermCmdLine'
+
+#0 (0x0736f4ff) SierraBFD.cpp : _ZN3sda6commonL26print_stack_signal_handlerEiP7siginfoPv line: 0
+#1 (0x7fb031ff45f0) (null) : stat line: 0
+#2 (0x7fb031ff09f3) (null) : stat line: 0
+#3 (0x7fb02f3345ac) (null) : stat line: 0
+#4 (0x0736fe2d) SierraBFD.cpp : _ZN3sda6commonL21freeze_signal_handlerEiP7siginfoPv line: 0
+#5 (0x7fb031ff45f0) (null) : stat line: 0
+#6 (0x7fb031ff0da2) (null) : stat line: 0
+#7 (0x07b92bfa) qthread_unix.cpp : _ZL12thread_sleepP8timespec line: 0
+#8 (0x07b9312d) (null) : _ZN7QThread6msleepEm line: 0
+#9 (0x0112200e) (null) : _ZN20GMainTerminalCmdLine10event_hookEv line: 0
+#10 (0x7fb03221df81) (null) : stat line: 0
+#11 (0x7fb032211327) (null) : stat line: 0
+#12 (0x7fb03221147c) (null) : stat line: 0
+#13 (0x7fb03220cd63) (null) : stat line: 0
+#14 (0x7fb03221e7b0) (null) : stat line: 0
+#15 (0x011234fc) (null) : _ZN20GMainTerminalCmdLine15commandLineLoopEv line: 0
+#16 (0x01124254) (null) : _ZN20GMainTerminalCmdLine3runEv line: 0
+#17 (0x07b93a45) (null) : _ZN14QThreadPrivate5startEPv line: 0
+#18 (0x7fb031fece65) (null) : stat line: 0
+#19 (0x7fb02ecaf88d) (null) : stat line: 0
+
+error UI158: Can't read or write to the terminal.
+info UI155: Nitro-SoC terminated with exit status of 2 (fatal).
+#---------------------------------------------------------------------
+# end session at Wed Jan 4 05:58:18 2023
+#---------------------------------------------------------------------

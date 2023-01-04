@@ -1,0 +1,27 @@
+//
+//  Rule file generated on Wed Jan 04 02:57:53 EET 2023
+//     by Calibre Interactive - DRC (v2020.1_25.14)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "/home/vlsi/Desktop/Nitro/work/fp_mul.gds"
+LAYOUT PRIMARY "fp_mul"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "fp_mul.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "fp_mul.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+INCLUDE "/mnt/hgfs/shared/VLSI-Multipliers/drc_lvs/calibre-drc-block.rule"
+

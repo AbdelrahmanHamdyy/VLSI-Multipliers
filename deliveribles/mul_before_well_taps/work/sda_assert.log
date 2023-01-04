@@ -59,3 +59,15 @@ Stack trace of thread 26000 'TermCmdLine'
 #18 (0x7ff0f0889e65) (null) : stat line: 0
 #19 (0x7ff0ed54c88d) (null) : stat line: 0
 
+
+sda_assert.log, current date/time: Wed Jan  4 06:21:22 2023
+version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019
+host localhost.localdomain, pid 31720, ppid 1
+
+Stack trace of thread 31720 'gmain_exec'
+
+#0 (0x0737025f) (null) : _ZN3sda6common14PrintAllStacksEv line: 0
+#1 (0x010a9362) (null) : _ZN15GMainSigHandler13signalHandlerEi line: 0
+#2 (0x7f324b4163b0) (null) : stat line: 0
+#3 (0x7f324b4d3bed) (null) : stat line: 0
+

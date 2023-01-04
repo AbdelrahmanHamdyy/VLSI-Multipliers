@@ -1,0 +1,1209 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         fp_mul.lvs.report
+LAYOUT NAME:              /home/vlsi/Desktop/Nitro/work/fp_mul.sp ('fp_mul')
+SOURCE NAME:              _source.net_ ('fp_mul')
+RULE FILE:                /home/vlsi/Desktop/Nitro/work/_calibre-lvs.rule_
+RULE FILE TITLE:          LVS Rule File for FreePDK45
+CREATION TIME:            Wed Jan  4 03:04:24 2023
+CURRENT DIRECTORY:        /home/vlsi/Desktop/Nitro/work
+USER NAME:                vlsi
+CALIBRE VERSION:          v2020.1_25.14    Mon Feb 3 16:40:25 PST 2020
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      fp_mul                        fp_mul
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VCC"
+   LVS GROUND NAME                        "GROUND"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtl)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vth)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_vtg)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mn(nmos_thkox)  w w 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  l l 4e-09 ABSOLUTE
+   TRACE PROPERTY  mp(pmos_thkox)  w w 4e-09 ABSOLUTE
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports (see below).
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         fp_mul
+SOURCE CELL NAME:         fp_mul
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              0       100    *
+
+ Nets:            4251      4780    *
+
+ Instances:       3788      3788         MN (4 pins)
+                  3788      3788         MP (4 pins)
+                ------    ------
+ Total Inst:      7576      7576
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              0       100    *
+
+ Nets:            2114      2610    *
+
+ Instances:       1344        46    *    MN (4 pins)
+                  1579        25    *    MP (4 pins)
+                   872         0    *    SMP2 (4 pins)
+                    14         0    *    SMP3 (5 pins)
+                     8         0    *    SMP4 (6 pins)
+                    32        32         SPMN_2_1 (5 pins)
+                     6         6         SPMN_2_2 (6 pins)
+                     7         7         SPMN_3_1 (6 pins)
+                    69        69         SPMP_2_1 (5 pins)
+                     3         3         SPMP_2_1_1 (6 pins)
+                    24        24         SPMP_2_2 (6 pins)
+                     1         1         SPMP_2_2_1 (7 pins)
+                     7         7         SPMP_3_1 (6 pins)
+                     0      1296    *    _invv (4 pins)
+                     0         4    *    _invx2v (4 pins)
+                     0       122    *    _nand2v (5 pins)
+                     0         2    *    _nand3v (6 pins)
+                     0        61    *    _nor2v (5 pins)
+                     0         7    *    _nor3v (6 pins)
+                     0         8    *    _nor4v (7 pins)
+                    64         0    *    _pmn2b (5 pins)
+                     7         0    *    _pmn3b (6 pins)
+                     8         0    *    _pmn4b (7 pins)
+                   986         0    *    _smn2b (5 pins)
+                     2       866    *    _smn2v (4 pins)
+                    32         0    *    _smn3b (6 pins)
+                     0        30    *    _smn3v (5 pins)
+                     0       811    *    _smp2v (4 pins)
+                     0         7    *    _smp3v (5 pins)
+                ------    ------
+ Total Inst:      5065      3434
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net 232                                                   Xunsigned_seq_multiplier_dut/n_115
+       --- 8 Connections On This Net ---                         --- 6 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMP2):input                                              ** missing connection **
+         X6545/M2(14.270,11.520):g
+       
+       
+       (_pmn2b):in2                                              ** missing connection **
+         X6545/M0(14.270,12.110):g
+       
+       
+       X5946/M5(13.875,7.280):d                                  ** missing connection **
+       X5946/M2(13.875,6.690):d                                  ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nor2v):in2
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_133/M_i_1:g
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_133/M_i_3:g
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   Xunsigned_seq_multiplier_dut/Xi_1_92/M_i_0:d
+                                                                   Xunsigned_seq_multiplier_dut/Xi_1_92/M_i_1:d
+       
+       
+       (SPMP_2_1):input                                          ** unmatched connection **
+         X6415/M3(14.105,10.080):g
+       
+       
+       (_smn2b):in2                                              ** unmatched connection **
+         X6415/M0(14.105,9.490):g
+       
+       
+       ** unmatched connection **                                (SPMP_2_1):input
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_55/M_i_4:g
+       
+       
+       ** unmatched connection **                                (_smn2v):in2
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_55/M_i_1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net 59                                                    Xunsigned_seq_multiplier_dut/n_67
+       --- 8 Connections On This Net ---                         --- 6 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMP2):input                                              ** missing connection **
+         X6545/M3(14.460,11.520):g
+       
+       
+       (_pmn2b):in1                                              ** missing connection **
+         X6545/M1(14.460,12.110):g
+       
+       
+       X6386/M1(13.115,11.520):d                                 ** missing connection **
+       X6386/M0(13.115,12.110):d                                 ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_nor2v):in1
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_133/M_i_0:g
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_133/M_i_2:g
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   Xunsigned_seq_multiplier_dut/Xi_1_64/M_i_0:d
+                                                                   Xunsigned_seq_multiplier_dut/Xi_1_64/M_i_1:d
+       
+       
+       (SPMP_2_1):input                                          ** unmatched connection **
+         X6415/M4(14.295,10.080):g
+       
+       
+       (_smn2b):in1                                              ** unmatched connection **
+         X6415/M1(14.295,9.490):g
+       
+       
+       ** unmatched connection **                                (SPMP_2_1):input
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_55/M_i_3:g
+       
+       
+       ** unmatched connection **                                (_smn2v):in1
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_55/M_i_0:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net 63                                                    Xunsigned_seq_multiplier_dut/Xi_4/n_102
+       --- 5 Connections On This Net ---                         --- 5 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       (SMP2):output                                             ** missing connection **
+         X6755/M5(16.740,10.080):d
+       
+       
+       (SMP2):output                                             ** missing connection **
+         X6755/M6(16.930,10.080):s
+       
+       
+       ** missing connection **                                  (_smp2v):out1
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_126/M_i_7:s
+       
+       
+       ** missing connection **                                  (_smp2v):out1
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_126/M_i_4:d
+       
+       
+       (SPMN_2_2):output                                         ** unmatched connection **
+         X6755/M3(17.120,9.490):s
+         X6755/M2(16.930,9.490):d
+       
+       
+       ** unmatched connection **                                (SPMN_2_2):output
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_126/M_i_1:s
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_126/M_i_0:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net 239                                                   Xunsigned_seq_multiplier_dut/Xi_4/n_50
+       --- 4 Connections On This Net ---                         --- 3 Connections On This Net ---
+       --------------------------                                --------------------------
+       
+       X6391/M1(17.385,11.520):d                                 ** missing connection **
+       X6391/M0(17.385,12.110):d                                 ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_74/M_i_0:d
+                                                                   Xunsigned_seq_multiplier_dut/Xi_4/Xi_74/M_i_1:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net 205                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net 171                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net 634                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net 204                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net 215                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net 209                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net 217                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net 214                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net 1                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net 219                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net 223                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    Net 635                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    Net 10                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    Net 279                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    Net 636                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    Net 278                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    Net 652                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    Net 203                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    Net 653                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    Net 654                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    Net 6                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    Net 245                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    Net 7                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    Net 532                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    Net 650                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    Net 665                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    Net 411                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    Net 8                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    Net 291                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    Net 646                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    Net 662                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    Net 17                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    Net 13                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    Net 478                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    Net 14                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    Net 18                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    Net 533                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    Net 643                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    Net 664                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    Net 480                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    Net 20                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    Net 24                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    Net 640                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    Net 657                                                   ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    Net 16                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    Net 21                                                    ** no similar net **
+
+
+**************************************************************************************************************
+                                   INCORRECT PORTS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 51    ** missing port **                                        VSS on net: VSS
+ 52    ** missing port **                                        clk on net: clk
+ 53    ** missing port **                                        rst on net: rst
+ 54    ** missing port **                                        a_s[31] on net: a_s[31]
+ 55    ** missing port **                                        a_s[30] on net: a_s[30]
+ 56    ** missing port **                                        a_s[29] on net: a_s[29]
+ 57    ** missing port **                                        a_s[28] on net: a_s[28]
+ 58    ** missing port **                                        a_s[27] on net: a_s[27]
+ 59    ** missing port **                                        a_s[26] on net: a_s[26]
+ 60    ** missing port **                                        a_s[25] on net: a_s[25]
+ 61    ** missing port **                                        a_s[24] on net: a_s[24]
+ 62    ** missing port **                                        a_s[23] on net: a_s[23]
+ 63    ** missing port **                                        a_s[22] on net: a_s[22]
+ 64    ** missing port **                                        a_s[21] on net: a_s[21]
+ 65    ** missing port **                                        a_s[20] on net: a_s[20]
+ 66    ** missing port **                                        a_s[19] on net: a_s[19]
+ 67    ** missing port **                                        a_s[18] on net: a_s[18]
+ 68    ** missing port **                                        a_s[17] on net: a_s[17]
+ 69    ** missing port **                                        a_s[16] on net: a_s[16]
+ 70    ** missing port **                                        a_s[15] on net: a_s[15]
+ 71    ** missing port **                                        a_s[14] on net: a_s[14]
+ 72    ** missing port **                                        a_s[13] on net: a_s[13]
+ 73    ** missing port **                                        a_s[12] on net: a_s[12]
+ 74    ** missing port **                                        a_s[11] on net: a_s[11]
+ 75    ** missing port **                                        a_s[10] on net: a_s[10]
+ 76    ** missing port **                                        a_s[9] on net: a_s[9]
+ 77    ** missing port **                                        a_s[8] on net: a_s[8]
+ 78    ** missing port **                                        a_s[7] on net: a_s[7]
+ 79    ** missing port **                                        a_s[6] on net: a_s[6]
+ 80    ** missing port **                                        a_s[5] on net: a_s[5]
+ 81    ** missing port **                                        a_s[4] on net: a_s[4]
+ 82    ** missing port **                                        a_s[3] on net: a_s[3]
+ 83    ** missing port **                                        a_s[2] on net: a_s[2]
+ 84    ** missing port **                                        a_s[1] on net: a_s[1]
+ 85    ** missing port **                                        a_s[0] on net: a_s[0]
+ 86    ** missing port **                                        b_s[31] on net: b_s[31]
+ 87    ** missing port **                                        b_s[30] on net: b_s[30]
+ 88    ** missing port **                                        b_s[29] on net: b_s[29]
+ 89    ** missing port **                                        b_s[28] on net: b_s[28]
+ 90    ** missing port **                                        b_s[27] on net: b_s[27]
+ 91    ** missing port **                                        b_s[26] on net: b_s[26]
+ 92    ** missing port **                                        b_s[25] on net: b_s[25]
+ 93    ** missing port **                                        b_s[24] on net: b_s[24]
+ 94    ** missing port **                                        b_s[23] on net: b_s[23]
+ 95    ** missing port **                                        b_s[22] on net: b_s[22]
+ 96    ** missing port **                                        b_s[21] on net: b_s[21]
+ 97    ** missing port **                                        b_s[20] on net: b_s[20]
+ 98    ** missing port **                                        b_s[19] on net: b_s[19]
+ 99    ** missing port **                                        b_s[18] on net: b_s[18]
+100    ** missing port **                                        b_s[17] on net: b_s[17]
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+101    M21(15.585,11.695)  MN(NMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_0  MN(NMOS_VTL)
+         g: 239                                                    g: Xunsigned_seq_multiplier_dut/Xi_4/n_50
+         d: 171                                                    ** no similar net **
+         b: 635                                                    ** no similar net **
+         ** no similar net **                                      d: VSS
+         ** no similar net **                                      b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+102    M20(15.395,11.695)  MN(NMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_1  MN(NMOS_VTL)
+         g: 67                                                     g: Xunsigned_seq_multiplier_dut/Xi_4/n_48
+         d: 241                                                    d: Xunsigned_seq_multiplier_dut/Xi_4/n_47
+         b: 635                                                    ** no similar net **
+         ** no similar net **                                      b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+103    M18(15.015,11.695)  MN(NMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_3  MN(NMOS_VTL)
+         g: 59                                                     g: Xunsigned_seq_multiplier_dut/n_67
+         d: 171                                                    ** no similar net **
+         b: 635                                                    ** no similar net **
+         ** no similar net **                                      d: VSS
+         ** no similar net **                                      b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+104    M17(14.825,11.695)  MN(NMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_4  MN(NMOS_VTL)
+         g: 232                                                    g: Xunsigned_seq_multiplier_dut/n_115
+         d: 241                                                    d: Xunsigned_seq_multiplier_dut/Xi_4/n_47
+         b: 635                                                    ** no similar net **
+         ** no similar net **                                      b: VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+105    M44(15.015,10.890)  MP(PMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_8  MP(PMOS_VTL)
+         g: 59                                                     g: Xunsigned_seq_multiplier_dut/n_67
+         b: 653                                                    ** no similar net **
+         ** no similar net **                                      b: Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+106    M43(14.825,10.890)  MP(PMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_9  MP(PMOS_VTL)
+         g: 232                                                    g: Xunsigned_seq_multiplier_dut/n_115
+         b: 653                                                    ** no similar net **
+         ** no similar net **                                      b: Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+107    M47(15.585,10.890)  MP(PMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_5  MP(PMOS_VTL)
+         g: 239                                                    g: Xunsigned_seq_multiplier_dut/Xi_4/n_50
+         b: 653                                                    ** no similar net **
+         ** no similar net **                                      b: Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+108    M46(15.395,10.890)  MP(PMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_6  MP(PMOS_VTL)
+         g: 67                                                     g: Xunsigned_seq_multiplier_dut/Xi_4/n_48
+         b: 653                                                    ** no similar net **
+         ** no similar net **                                      b: Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+109    M45(15.205,10.890)  MP(PMOS_VTL)                          Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/M_i_7  MP(PMOS_VTL)
+         g: 63                                                     g: Xunsigned_seq_multiplier_dut/Xi_4/n_102
+         b: 653                                                    ** no similar net **
+         ** no similar net **                                      b: Xunsigned_seq_multiplier_dut/Xi_4/Xi_71/VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+110    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6541/M0(10.660,40.290)  MN(NMOS_VTL)
+         X6541/M1(10.850,40.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+111    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6542/M0(11.800,23.310)  MN(NMOS_VTL)
+         X6542/M1(11.990,23.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+112    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6550/M1(17.690,26.110)  MN(NMOS_VTL)
+         X6550/M0(17.500,26.110)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+113    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6536/M0(8.380,37.310)  MN(NMOS_VTL)
+         X6536/M1(8.570,37.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+114    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6546/M1(14.840,26.290)  MN(NMOS_VTL)
+         X6546/M0(14.650,26.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+115    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6551/M1(18.450,23.490)  MN(NMOS_VTL)
+         X6551/M0(18.260,23.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+116    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6558/M1(23.390,17.710)  MN(NMOS_VTL)
+         X6558/M0(23.200,17.710)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+117    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6535/M0(7.490,40.290)  MN(NMOS_VTL)
+         X6535/M1(7.300,40.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+118    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6556/M0(22.500,23.490)  MN(NMOS_VTL)
+         X6556/M1(22.310,23.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+119    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6534/M0(6.920,40.290)  MN(NMOS_VTL)
+         X6534/M1(6.730,40.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+120    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6554/M1(19.970,12.290)  MN(NMOS_VTL)
+         X6554/M0(19.780,12.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+121    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6553/M1(19.020,9.310)  MN(NMOS_VTL)
+         X6553/M0(18.830,9.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+122    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6547/M0(15.850,23.310)  MN(NMOS_VTL)
+         X6547/M1(15.660,23.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+123    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6543/M0(13.320,40.110)  MN(NMOS_VTL)
+         X6543/M1(13.510,40.110)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+124    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6544/M0(14.330,20.690)  MN(NMOS_VTL)
+         X6544/M1(14.140,20.690)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+125    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6561/M0(26.430,17.890)  MN(NMOS_VTL)
+         X6561/M1(26.620,17.890)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+126    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6562/M0(26.430,20.510)  MN(NMOS_VTL)
+         X6562/M1(26.620,20.510)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+127    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6539/M0(9.710,9.490)  MN(NMOS_VTL)
+         X6539/M1(9.900,9.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+128    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6537/M0(8.950,37.310)  MN(NMOS_VTL)
+         X6537/M1(9.140,37.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+129    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6538/M0(9.390,6.690)  MN(NMOS_VTL)
+         X6538/M1(9.200,6.690)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+130    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6552/M1(18.890,6.690)  MN(NMOS_VTL)
+         X6552/M0(19.080,6.690)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+131    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6634/M0(15.965,12.110)  MN(NMOS_VTL)
+         X6634/M1(16.155,12.110)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+132    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6721/M0(26.985,20.510)  MN(NMOS_VTL)
+         X6721/M1(27.175,20.510)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+133    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6592/M3(36.720,26.110)  MN(NMOS_VTL)
+         X6592/M4(36.910,26.110)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+134    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6591/M3(32.730,28.910)  MN(NMOS_VTL)
+         X6591/M4(32.540,28.910)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+135    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6635/M0(33.725,9.310)  MN(NMOS_VTL)
+         X6635/M1(33.535,9.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+136    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6636/M0(33.825,26.290)  MN(NMOS_VTL)
+         X6636/M1(34.015,26.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+137    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6637/M0(33.825,31.890)  MN(NMOS_VTL)
+         X6637/M1(34.015,31.890)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+138    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6720/M0(26.035,31.890)  MN(NMOS_VTL)
+         X6720/M1(26.225,31.890)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+139    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6719/M0(24.515,23.310)  MN(NMOS_VTL)
+         X6719/M1(24.705,23.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+140    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6718/M0(20.715,9.490)  MN(NMOS_VTL)
+         X6718/M1(20.905,9.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+141    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6717/M0(19.765,23.490)  MN(NMOS_VTL)
+         X6717/M1(19.955,23.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+142    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6716/M0(19.665,34.690)  MN(NMOS_VTL)
+         X6716/M1(19.475,34.690)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+143    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6715/M0(18.055,34.510)  MN(NMOS_VTL)
+         X6715/M1(18.245,34.510)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+144    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6714/M0(17.485,12.290)  MN(NMOS_VTL)
+         X6714/M1(17.675,12.290)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+145    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6713/M0(15.775,37.490)  MN(NMOS_VTL)
+         X6713/M1(15.965,37.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+146    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6712/M0(13.685,9.310)  MN(NMOS_VTL)
+         X6712/M1(13.875,9.310)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+147    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6711/M0(13.775,20.690)  MN(NMOS_VTL)
+         X6711/M1(13.585,20.690)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+148    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6710/M0(12.165,9.490)  MN(NMOS_VTL)
+         X6710/M1(12.355,9.490)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+149    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6709/M0(12.445,26.110)  MN(NMOS_VTL)
+         X6709/M1(12.255,26.110)  MN(NMOS_VTL)
+
+--------------------------------------------------------------------------------------------------------------
+
+150    (_pmn2b)                                                  ** missing injected instance **
+
+       Devices: 
+         X6708/M0(10.265,37.310)  MN(NMOS_VTL)
+         X6708/M1(10.455,37.310)  MN(NMOS_VTL)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               0          0            0          100
+
+   Nets:                6          6         2108         2604
+
+   Instances:           1          1         1343           45    MN(NMOS_VTL)
+                        0          0         1579           25    MP(PMOS_VTL)
+                        0          0          872            0    SMP2
+                        0          0           14            0    SMP3
+                        0          0            8            0    SMP4
+                        0          0           32           32    SPMN_2_1
+                        0          0            6            6    SPMN_2_2
+                        0          0            7            7    SPMN_3_1
+                        0          0           69           69    SPMP_2_1
+                        0          0            3            3    SPMP_2_1_1
+                        0          0           24           24    SPMP_2_2
+                        1          1            0            0    SPMP_2_2_1
+                        0          0            7            7    SPMP_3_1
+                        0          0            0         1296    _invv
+                        0          0            0            4    _invx2v
+                        0          0            0          122    _nand2v
+                        0          0            0            2    _nand3v
+                        0          0            0           61    _nor2v
+                        0          0            0            7    _nor3v
+                        0          0            0            8    _nor4v
+                        0          0           64            0    _pmn2b
+                        0          0            7            0    _pmn3b
+                        0          0            8            0    _pmn4b
+                        0          0          986            0    _smn2b
+                        2          2            0          864    _smn2v
+                        0          0           32            0    _smn3b
+                        0          0            0           30    _smn3v
+                        0          0            0          811    _smp2v
+                        0          0            0            7    _smp3v
+                  -------    -------    ---------    ---------
+   Total Inst:          4          4         5061         3430
+
+
+o Statistics:
+
+   120 layout mos transistors were reduced to 34.  8 connecting nets were deleted.
+     70 mos transistors were deleted by parallel reduction.
+     16 mos transistors and 8 connecting nets were deleted by split-gate reduction.
+   120 source mos transistors were reduced to 34.  8 connecting nets were deleted.
+     70 mos transistors were deleted by parallel reduction.
+     16 mos transistors and 8 connecting nets were deleted by split-gate reduction.
+
+   29 source nets had all their pins removed and were deleted.
+
+
+
+**************************************************************************************************************
+                                  UNMATCHED OBJECTS
+       LAYOUT                                                    SOURCE
+**************************************************************************************************************
+
+       X6520/M7(38.460,17.120)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6519/M7(25.100,17.120)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6518/M7(23.010,33.920)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6517/M7(18.320,22.720)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6516/M7(17.560,7.280)  MP(PMOS_VTL)                      ** unmatched instance **
+       X6515/M7(15.600,29.680)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6514/M7(7.810,5.920)  MP(PMOS_VTL)                       ** unmatched instance **
+       X6513/M7(7.490,38.080)  MP(PMOS_VTL)                      ** unmatched instance **
+       X6512/M7(2.740,7.280)  MP(PMOS_VTL)                       ** unmatched instance **
+       X6444/M5(39.970,17.120)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6443/M5(34.230,24.080)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6442/M5(27.580,32.480)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6441/M5(24.730,33.920)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6440/M5(21.160,35.280)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6439/M5(21.310,33.920)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6438/M5(21.310,24.080)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6437/M5(19.410,12.880)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6436/M5(16.410,7.280)  MP(PMOS_VTL)                      ** unmatched instance **
+       X6435/M5(16.560,8.720)  MP(PMOS_VTL)                      ** unmatched instance **
+       X6434/M5(14.510,39.520)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6433/M5(11.810,10.080)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6432/M5(11.810,8.720)  MP(PMOS_VTL)                      ** unmatched instance **
+       X6431/M5(8.580,8.720)  MP(PMOS_VTL)                       ** unmatched instance **
+       X6430/M5(8.200,7.280)  MP(PMOS_VTL)                       ** unmatched instance **
+       X6429/M5(7.440,7.280)  MP(PMOS_VTL)                       ** unmatched instance **
+       X6676/M28(32.500,21.595)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6676/M29(32.690,21.595)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6675/M28(29.080,30.805)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6675/M29(29.270,30.805)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6674/M28(27.180,14.005)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6674/M29(27.370,14.005)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6673/M28(26.610,24.395)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6673/M29(26.800,24.395)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6672/M28(25.280,30.805)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6672/M29(25.470,30.805)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6671/M28(24.900,8.405)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6671/M29(25.090,8.405)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6670/M28(24.140,27.195)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6670/M29(24.330,27.195)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6669/M28(23.000,32.795)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6669/M29(23.190,32.795)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6668/M28(20.340,21.595)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6668/M29(20.530,21.595)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6667/M28(19.580,36.405)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6667/M29(19.770,36.405)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6666/M28(19.200,5.605)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6666/M29(19.390,5.605)  MP(PMOS_VTL)                     ** unmatched instance **
+       X6665/M28(18.440,32.795)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6665/M29(18.630,32.795)  MP(PMOS_VTL)                    ** unmatched instance **
+       X6664/M28(17.490,14.005)  MP(PMOS_VTL)                    ** unmatched instance **
+
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_65/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_65/M_i_3  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_33/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_33/M_i_3  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_64/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_64/M_i_3  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_67/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_60/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_59/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_45/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_9/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_8/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xi_0_0_7/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_134/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_120/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_119/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_108/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_94/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_80/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_70/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_64/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_63/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_62/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_61/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_60/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_59/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_57/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_56/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_55/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_54/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_53/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_52/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_51/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_50/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_49/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_48/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_46/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_45/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_44/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_42/M_i_5  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_41/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_39/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_38/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_36/M_i_42  MP(PMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_34/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_33/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_32/M_i_13  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_30/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_29/M_i_2  MN(NMOS_VTL)
+       ** unmatched instance **                                  Xunsigned_seq_multiplier_dut/Xi_4/Xi_27/M_i_2  MN(NMOS_VTL)
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec
