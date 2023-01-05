@@ -2,7 +2,7 @@ module simpleMultiplier (
     input clk,
     input rst,
     input en,
-    input singed [31:0] a,
+    input signed [31:0] a,
     input signed [31:0] b,
     output signed [63:0] c
 );

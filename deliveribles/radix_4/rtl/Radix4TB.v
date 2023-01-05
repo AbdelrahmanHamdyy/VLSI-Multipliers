@@ -22,11 +22,11 @@ module Radix4TB;
 	integer FailureCounter = 0, SuccessCounter = 0,TestsCounter=0;
 
 	Radix4 mult (
-		.start(start), 
+		.Initial(start), 
 		.clk(clk), 
-		.inputA(a), 
-		.inputB(b), 
-		.outResult(out)
+		.inputOne(a), 
+		.inputTwo(b), 
+		.MulResult(out)
 	);
 always begin #1 clk = ~ clk ;end  //clock
 	initial begin
