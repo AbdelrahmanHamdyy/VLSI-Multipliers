@@ -1,9 +1,0 @@
-# Automagically generated file: Please do not edit!
-lvs_ExtfVersion 3
-lvs_ExtRunTimes 1672799741 1672799743
-lvs_ExtOutFile RUNDIR /home/vlsi/Desktop/Routing/Nitro/work
-lvs_ExtOutFile RULES_FILE /home/vlsi/Desktop/Routing/Nitro/work/_calibre-lvs.rule_
-lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /home/vlsi/Desktop/Routing/Nitro/work/fp_adder_buff.sp
-lvs_ExtOutFile EXTRACTION_REPORT fp_adder_buff.lvs.report.ext

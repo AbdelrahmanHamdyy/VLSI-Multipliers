@@ -1,8 +1,0 @@
-/mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v {1 {vlog -work work -stats=none /mnt/hgfs/shared/VLSI-Multipliers/src/rtl/booth_multiplier/booth_multiplier.v
-Model Technology ModelSim DE vlog 2022.4 Compiler 2022.10 Oct 18 2022
--- Compiling module booth_multiplier
-
-Top level modules:
-	booth_multiplier
-
-} {} {}}

@@ -1,0 +1,84 @@
+Report 'report_drc': DRC Violations
+Generated on Fri Dec 23 02:51:00 2022
+  
+-----------------------------
+| Constraint Max Transition | 
+| Total Cost -33.5280       | 
+| Violators  66             | 
+-----------------------------
+
+
+  
+--------------------------------------------
+| Pin            Actual Limit Slack   Edge | 
+|------------------------------------------|
+| drc_ipo_c1/A   707    199   -0.5080 Fall | 
+| drc_ipo_c2/A   707    199   -0.5080 Fall | 
+| regA/i_0_10/A2 707    199   -0.5080 Fall | 
+| regA/i_0_11/A2 707    199   -0.5080 Fall | 
+| regA/i_0_12/A2 707    199   -0.5080 Fall | 
+| regA/i_0_13/A2 707    199   -0.5080 Fall | 
+| regA/i_0_14/A2 707    199   -0.5080 Fall | 
+| regA/i_0_15/A2 707    199   -0.5080 Fall | 
+| regA/i_0_16/A2 707    199   -0.5080 Fall | 
+| regA/i_0_17/A2 707    199   -0.5080 Fall | 
+| regA/i_0_18/A2 707    199   -0.5080 Fall | 
+| regA/i_0_19/A2 707    199   -0.5080 Fall | 
+| regA/i_0_2/A2  707    199   -0.5080 Fall | 
+| regA/i_0_20/A2 707    199   -0.5080 Fall | 
+| regA/i_0_21/A2 707    199   -0.5080 Fall | 
+| regA/i_0_22/A2 707    199   -0.5080 Fall | 
+| regA/i_0_23/A2 707    199   -0.5080 Fall | 
+| regA/i_0_24/A2 707    199   -0.5080 Fall | 
+| regA/i_0_25/A2 707    199   -0.5080 Fall | 
+| regA/i_0_26/A2 707    199   -0.5080 Fall | 
+| regA/i_0_27/A2 707    199   -0.5080 Fall | 
+| regA/i_0_28/A2 707    199   -0.5080 Fall | 
+| regA/i_0_29/A2 707    199   -0.5080 Fall | 
+| regA/i_0_3/A2  707    199   -0.5080 Fall | 
+| regA/i_0_30/A2 707    199   -0.5080 Fall | 
+| regA/i_0_31/A2 707    199   -0.5080 Fall | 
+| regA/i_0_32/A2 707    199   -0.5080 Fall | 
+| regA/i_0_33/A2 707    199   -0.5080 Fall | 
+| regA/i_0_4/A2  707    199   -0.5080 Fall | 
+| regA/i_0_5/A2  707    199   -0.5080 Fall | 
+| regA/i_0_6/A2  707    199   -0.5080 Fall | 
+| regA/i_0_7/A2  707    199   -0.5080 Fall | 
+| regA/i_0_8/A2  707    199   -0.5080 Fall | 
+| regA/i_0_9/A2  707    199   -0.5080 Fall | 
+| regB/i_0_10/A2 707    199   -0.5080 Fall | 
+| regB/i_0_11/A2 707    199   -0.5080 Fall | 
+| regB/i_0_12/A2 707    199   -0.5080 Fall | 
+| regB/i_0_13/A2 707    199   -0.5080 Fall | 
+| regB/i_0_14/A2 707    199   -0.5080 Fall | 
+| regB/i_0_15/A2 707    199   -0.5080 Fall | 
+| regB/i_0_16/A2 707    199   -0.5080 Fall | 
+| regB/i_0_17/A2 707    199   -0.5080 Fall | 
+| regB/i_0_18/A2 707    199   -0.5080 Fall | 
+| regB/i_0_19/A2 707    199   -0.5080 Fall | 
+| regB/i_0_2/A2  707    199   -0.5080 Fall | 
+| regB/i_0_20/A2 707    199   -0.5080 Fall | 
+| regB/i_0_21/A2 707    199   -0.5080 Fall | 
+| regB/i_0_22/A2 707    199   -0.5080 Fall | 
+| regB/i_0_23/A2 707    199   -0.5080 Fall | 
+| regB/i_0_24/A2 707    199   -0.5080 Fall | 
+| regB/i_0_25/A2 707    199   -0.5080 Fall | 
+| regB/i_0_26/A2 707    199   -0.5080 Fall | 
+| regB/i_0_27/A2 707    199   -0.5080 Fall | 
+| regB/i_0_28/A2 707    199   -0.5080 Fall | 
+| regB/i_0_29/A2 707    199   -0.5080 Fall | 
+| regB/i_0_3/A2  707    199   -0.5080 Fall | 
+| regB/i_0_30/A2 707    199   -0.5080 Fall | 
+| regB/i_0_31/A2 707    199   -0.5080 Fall | 
+| regB/i_0_32/A2 707    199   -0.5080 Fall | 
+| regB/i_0_33/A2 707    199   -0.5080 Fall | 
+| regB/i_0_4/A2  707    199   -0.5080 Fall | 
+| regB/i_0_5/A2  707    199   -0.5080 Fall | 
+| regB/i_0_6/A2  707    199   -0.5080 Fall | 
+| regB/i_0_7/A2  707    199   -0.5080 Fall | 
+| regB/i_0_8/A2  707    199   -0.5080 Fall | 
+| regB/i_0_9/A2  707    199   -0.5080 Fall | 
+--------------------------------------------
+
+
+info UI33: performed report_constraints for 0 sec (CPU time: 0 sec; MEM: RSS - 375M, CVMEM - 1849M, PVMEM - 2637M)

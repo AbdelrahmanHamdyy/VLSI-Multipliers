@@ -1,6 +1,0 @@
-# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
-# FILE: svdb/fp_adder_buff.dv
-dv_start notcompared                              
-dv_cell {fp_adder_buff} {fp_adder_buff} notcompared
-dv_obj_count -transformed_nets {2171 2173} -transformed_inst {3916 3912} -transformed_port {0 103}
-dv_end

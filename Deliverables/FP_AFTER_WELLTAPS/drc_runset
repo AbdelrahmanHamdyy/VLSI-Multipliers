@@ -1,0 +1,8 @@
+*drcRulesFile: /mnt/hgfs/shared/VLSI-Multipliers/drc_lvs/calibre-drc-block.rule
+*drcRunDir: /home/vlsi/Desktop/Nitro/work
+*drcLayoutPaths: /home/vlsi/Desktop/Nitro/work/fp_mul.gds
+*drcLayoutPrimary: fp_mul
+*drcResultsFile: fp_mul.drc.results
+*drcSummaryFile: fp_mul.drc.summary
+*drcDFMDefaultsResultsFile: fp_mul.dfmDefaults.db
+*cmnFDIDEFLayoutPath: fp_mul.def
